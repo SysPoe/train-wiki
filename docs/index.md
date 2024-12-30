@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+## Hello!
+Welcome to *SysPoe's Train Wiki!*
+This site is dedicated to Queensland Rail's SEQ network and providing information for people who love trains (like me!) Other trains that I am interested in may appear here as well.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Have fun!
