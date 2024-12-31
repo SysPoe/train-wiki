@@ -1,4 +1,4 @@
-# EMUs
+# EMU (Electric Multiple Unit)
 <img src="../../media/EMU53_Darra_preview.png" alt="EMU53" width="20%">
 
 > EMU53 at Darra Station, Platform 1, operating BRIP (Brisbane City - Ipswich) service. Run 1554. Taken 28/12/24 @ 18:59. [View png](../../media/EMU53_Darra_preview.png).
