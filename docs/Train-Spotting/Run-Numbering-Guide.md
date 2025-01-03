@@ -29,10 +29,10 @@ only include relevant entries for suburban areas.
 `C` - From Corinda to Yeerongpilly (Suburban) <br>
 `D` - Darra via Toowong (Suburban) <br>
 `E` - Ferny Grove line (Suburban) <br>
-`F` - Various destinations as determined by Control <br>
-- 0-79 Brisbane District <br>
-- 80-89 Rockhampton District <br>
-- 90-99 Townsville District <br>
+`F` - Various destinations as determined by Control: <br>
+&nbsp;&nbsp;&nbsp; - 0-79 Brisbane District <br>
+&nbsp;&nbsp;&nbsp; - 80-89 Rockhampton District <br>
+&nbsp;&nbsp;&nbsp; - 90-99 Townsville District <br>
 `G` - Beyond Beenleigh to Robina (Suburban) <br>
 `K` - Springfield <br>
 `L` - Yandina (Suburban) <br>

@@ -2,7 +2,13 @@
 
 The QTMP is a $9.5 billion program funded by the Queensland Government to design, build, and maintain 65 new trains for the SEQ network. The program also includes the construction of a purpose-built manufacturing faciltiy in the Fraser Coast region, as well as a new rail faciltiy in Ormeau for train maintenance and stabling.
 
-After a bidding process involving Alstom, CAF, and Downer that started in June 2021, Downer was named the preferred applicant in Febuary 2023.
+> QTMP contract has an option for a further 10 but they cant guarantee they will be delivered before the Olympics, only the 65 already contracted.
+>
+> Source: [https://www.reddit.com/r/BrisbaneTrains/comments/1h74d2a/comment/m0iwxv1](https://www.reddit.com/r/BrisbaneTrains/comments/1h74d2a/comment/m0iwxv1)
+
+> QTMP will have a "remote startup" capability that enables the train to start and reboot remotely including clearing any fault logs prior to the drivers arrival.
+>
+> Source: [https://www.reddit.com/r/BrisbaneTrains/comments/1hifhrg/comment/m2ymu2u](https://www.reddit.com/r/BrisbaneTrains/comments/1hifhrg/comment/m2ymu2u)
 
 ## Timeline
 
@@ -25,5 +31,5 @@ After a bidding process involving Alstom, CAF, and Downer that started in June 2
 
 ## Gallery
 
-![QTMP Concept](../../media/QTMP_1.webp)
-![QTMP Concept](../../media/QTMP_2.jpeg)
+![QTMP Concept](../media/QTMP_1.webp)
+![QTMP Concept](../media/QTMP_2.jpeg)
