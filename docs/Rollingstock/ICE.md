@@ -1,4 +1,4 @@
-# ICE (InterCity Express)
+# ICE (Walkers/Adtranz InterCity Express)
 
 ## Gallery
 ![ICE158's interior](../media/ICE_Interior_1.png)

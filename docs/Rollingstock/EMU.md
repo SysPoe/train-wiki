@@ -1,8 +1,34 @@
-# EMU (Electric Multiple Unit)
+# EMU (Walkers/Adtranz Electric Multiple Unit)
 
-EMUs are objectively the best of all the train types on the QR SEQ network.
+EMUs are objectively the best of all the train types on the QR SEQ network (in my opinion).
 
-Back in the 1970s
+Back in the 1970s, QR stared electrifying Brisbane's suburban railways. The first section completed was between Ferny Grove and Darra and naturally, QR needed some new electric trains to run along the electrified route.
+
+QR ordered a batch of modern air-conditioned commuter trains from Walkers/ASEA at Maryborough. The EMUs are composed of three cars permanently coupled and are capable of seating up to 248 passengers, however they are often operated with two sets coupled together to form a six-car set.
+
+All cars are air-conditioned with air operated doors, which can be opened by passengers and are closed by drivers. A public address system, UHF crew to crew radio and crew intercommunication systems are fitted. Guards sometimes make passenger announcements when the automatic announcements aren’t working.
+
+The 88 suburban units weigh approx. 150 tonnes, are 72.4m over couplers, have a maximum service speed of 100km/h (62.5mph) and an emergency stopping distance from that speed of only 415 metres.
+
+## Timeline
+- *July 1979 - December 1986*: EMU units delivered.
+- *1984*: 48 units, which were purchased for the price of $44.26 million were sold and leased back.
+- *September 1986*: Units 84, 85, 86 and 88 were hauled to Gladstone to operate a VIP train to Rockhampton in connection with the completion of an electrification project, before operating some special services to Bajool and Mount Larcom.
+- *29 April 1988*: Units 81–88 operated Sunshine Coast line services from Caboolture to Nambour pending the delivery of the InterCity Express fleet after being fitted with VHF radios. Others appeared on Sunshine Coast services with hand held radios.
+- *September 1988*: InterCity Express units delivered, EMUs operated in multiple with them for a period.
+- *August 1990*: Units 84 and 68 ran through to Gympie North temporarily.
+- *Late 1993*: EMUs fitted with yellow cab ends for higher visibility.
+- *1996*: Some EMUs appeared on Gold Coast line services, although they were only used sparingly, not being geared to operate at the 140km/h line speed.
+- *1998-2000*: The cab windows were modified on EMU60-88 for better visibility and also the fitting of a rear view mirror and security cameras inside.
+- *2000*: The first series EMUs (01-19) were upgraded with high visibility cab ends which incorporated a fender (which incorporates an anti-climber to precent outriders hanging off the back of a unit) with ditch lights and a new colour scheme with a black band across the windscreen (hence the nickname of these units, ‘Bandicoots’).
+- *May 2001*: EMU62 was severely damaged after an Arson attack at Mayne.
+- *21 September 2001*: EMU05 and EMU60 were both written off in the Cattletrain derailment at Petrie in September. EMU62 was returned to service, while one 3-car unit was salvaged out of both EMU05 and EMU60 to form EMU60, including EM305 replacing EM160, EM260, and EM360.
+- *2018*: Withdrawls begin of the EMUs as NGRs were delivered.
+- *January 2019*: 30 EMUs in store.
+- *August 2019*: Queensland Rail operated a farewell tour with units 01 and 04 over two days covering all Brisbane suburban lines including a reenactment of the first electric train service in Brisbane from Ferny Grove to Darra. Both units were removed from service and taken to Ipswich Workshops for static preservation.
+- *2020*: EMU60 scrapped.
+
+
 
 ## Fleet Status
 
