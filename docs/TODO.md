@@ -75,3 +75,6 @@ Varsity Lakes Station
 - Good trainspotting locations - Under Gympie Rd
 - Train horns
 - Things to do on the QR Netowrk
+- https://qroti.com/
+  > - Last active: [https://web.archive.org/web/20110218064554/http://www.qroti.com/](https://web.archive.org/web/20110218064554/http://www.qroti.com/)
+  > - Retired: [https://web.archive.org/web/20110513234651/http://qroti.com/](https://web.archive.org/web/20110513234651/http://qroti.com/)
