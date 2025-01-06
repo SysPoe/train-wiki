@@ -6,6 +6,11 @@ Back in the 1970s, QR stared electrifying Brisbane's suburban railways. The firs
 
 QR ordered a batch of modern air-conditioned commuter trains from Walkers/ASEA at Maryborough. The EMUs are composed of three cars permanently coupled and are capable of seating up to 248 passengers, however they are often operated with two sets coupled together to form a six-car set. The 88 suburban units weigh approx. 150 tonnes, are 72.4m over couplers, have a maximum service speed of 100km/h (62.5mph) and an emergency stopping distance from that speed of only 415 metres.
 
+Individual car seating capacity:
+
+- 80 (DM101–88: driving motor car, DT301–59, DT380–8: driving trailer car, T460–79: trailer car)
+- 88 (M201–88: motor car)
+
 Sets 01–13 have a smooth roof, while Sets 14–88, which were built from 1983 to 1986, have a corrugated roof. Most sets consist of a driving motor car, motor car and a driving trailer car. Sets 60–79 consist of a driving motor car, motor car and a trailer car, and thus have a driver’s cab at only one end, so operate with two sets combined to form a six-carriage train.
 
 All cars are air-conditioned with air operated doors, which can be opened by passengers and are closed by drivers. A public address system, UHF crew to crew radio and crew intercommunication systems are fitted. Guards sometimes make passenger announcements when the automatic announcements aren’t working.
@@ -52,8 +57,10 @@ All cars are air-conditioned with air operated doors, which can be opened by pas
 > The cab of an EMU maybe??. Source: [https://www.reddit.com/r/BrisbaneTrains/comments/1658g65/was_a_great_day_to_play_trains](https://www.reddit.com/r/BrisbaneTrains/comments/1658g65/was_a_great_day_to_play_trains/)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nngiPQ2tajY?si=FRzmHGJxyaErzLrH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-> Another video of the inside of an EMU. Source: [https://www.youtube.com/watch?v=nngiPQ2tajY](https://www.youtube.com/watch?v=nngiPQ2tajY). [Archived](../media/EMU_cab.mp4).
+> Another video of the inside of an EMU, this time EM336. Source: [https://www.youtube.com/watch?v=nngiPQ2tajY](https://www.youtube.com/watch?v=nngiPQ2tajY). [Archived](../media/EMU_cab.mp4).
 
 ## Sources
 
-\[1\] [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu)
+- [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu)
+- [https://www.railtram.com.au/emu-electric-multiple-unit](https://www.railtram.com.au/emu-electric-multiple-unit)
+- [https://en.wikipedia.org/wiki/Electric_multiple_unit_(Queensland_Rail)](https://en.wikipedia.org/wiki/Electric_multiple_unit_(Queensland_Rail))

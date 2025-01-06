@@ -61,3 +61,17 @@ Varsity Lakes Station
 ### Train
 
 - [https://www.reddit.com/user/cjmw/](https://www.reddit.com/user/cjmw/)
+
+# Pages
+
+- ICE
+- NGR
+- QTMP
+- SMU
+- IMU
+- Tips while Lineside
+- Good trainspotting locations - petrie
+- Good trainspotting locations - Eagle junction
+- Good trainspotting locations - Under Gympie Rd
+- Train horns
+- Things to do on the QR Netowrk

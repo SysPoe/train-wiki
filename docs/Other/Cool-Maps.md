@@ -14,7 +14,7 @@ I think it has the new CRR line pairings, but I'm not really sure what they're g
 
 RailMaps ([https://railmaps.com.au/](https://railmaps.com.au/)) has some cool maps of Australian rail networks.
 
-- [Brisbane Area](../media/RailMaps-Brisbane.pdf) [(Source)](https://railmaps.com.au/brisbane.htm)
+- [Brisbane Area](../media/RailMaps-Brisbane.pdf) ([Source](https://railmaps.com.au/brisbane.htm))
 - [Queensland](https://railmaps.com.au/queensland.htm)
-- [Australia (Overview)](../media/RailMaps-Australia.pdf) [(Source)](https://railmaps.com.au/index.html)
-- [Australia (Every Station)](../media/RailMaps-Australia_Every_Station.pdf) [(Source)](https://railmaps.com.au/National_Rail_Map.htm)
+- [Australia (Overview)](../media/RailMaps-Australia.pdf) ([Source](https://railmaps.com.au/index.html))
+- [Australia (Every Station)](../media/RailMaps-Australia_Every_Station.pdf) ([Source](https://railmaps.com.au/National_Rail_Map.htm))
