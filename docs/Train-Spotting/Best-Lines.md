@@ -1,7 +1,9 @@
 # Best Lines to See Different Models
 
 ## Image Summary
+
 ![Train Guide](../media/train_guide.png)
+
 > Source
 
 ## Gold Coast / Airport line
@@ -21,16 +23,18 @@ NGRs are common on the Redcliffe Peninsula / Springfield Line because of the lar
 NGRs are not allowed west of Ipswich, so there is mostly IMUs, SMUs, and EMUs on the Rosewood line.
 
 ## Ipswich / Caboolture / Nambour
+
 Mainly SMUs and IMUs but some NGRs.
 
 ## Gympie North
 
 NGRs will not operate on Sunshine Coast line services north of Nambour until signalling upgrades to Gympie North have been completed. Currently trains are required to be compatible with the operation of Automatic Train Protection which isn't fitted on the NGRs. (Information may be outdated).
 
-The Gympie North line generally features IMU100's/120's.
+The Gympie North line generally features IMU100's/120's due to the ATP requirement.
 
 ## Cleveland / Shorncliffe
-The Cleveland / Shorncliffe line has the second least amount of NGRs on it, after Beenleigh / Ferny Grove, most likely due to stabling reasons. However, it is still mostly NGRs. 
+
+The Cleveland / Shorncliffe line has the second least amount of NGRs on it, after Beenleigh / Ferny Grove, most likely due to stabling reasons. However, it is still mostly NGRs.
 
 ## Post CRR
 

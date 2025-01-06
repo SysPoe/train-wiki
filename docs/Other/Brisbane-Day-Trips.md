@@ -1,4 +1,6 @@
-# (External) Brisbane Train Day Trip Ideas
-Redirecting you to [https://railmaps.com.au/brisbanedaytrips.htm](https://railmaps.com.au/brisbanedaytrips.htm) in 3 seconds...
+# (External) Things to do on the QR Network
 
-<meta http-equiv="refresh" content="3; url=https://railmaps.com.au/brisbanedaytrips.htm"/>
+See:
+
+- [https://railmaps.com.au/brisbanedaytrips.htm](https://railmaps.com.au/brisbanedaytrips.htm)
+- [https://www.reddit.com/r/brisbane/comments/1bswr51/things_to_do_within_the_brisbane_rail_network/](https://www.reddit.com/r/brisbane/comments/1bswr51/things_to_do_within_the_brisbane_rail_network/)

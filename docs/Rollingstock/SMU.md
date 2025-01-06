@@ -9,4 +9,33 @@ To keep the auxiliary converters (and systems) online through neutral sections 2
 For some reason at speeds around 40-60km/h they can produce a rather nasty shudder through the train. As a driver there isn’t much that can be done to prevent it. Some do it, some don’t, some are worse than others. Just a quirk of the units.
 Source: [https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321aky](https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321aky)
 
+SMU222, along with another unit, is usually used for driver training.
+
+Source: [https://www.reddit.com/r/brisbane/comments/k0hqc3/comment/gdijsfo](https://www.reddit.com/r/brisbane/comments/k0hqc3/comment/gdijsfo)
+
 ## EDI/Bombardier Suburban Multiple Unit 260 series (SMU260)
+
+### Gallery
+
+![](../media/SMU260_Dark.jpeg)
+[u/akkobutnotreally](https://www.reddit.com/user/akkobutnotreally/) on [Reddit](https://www.reddit.com/r/brisbane/comments/11lmi2d/comment/jbe84wn/):
+
+> Alright, I got everyone hooked with the photo. Now you'll have to read the story behind it.
+>
+> It was late. I was at Robina waiting for something to get me to Helensvale. My girlfriend was waiting for me there.
+>
+> The train arrives on time at 11:42pm: a pair of SMU260s. "Weird", I thought: the Gold Coast line is mostly served by NGRs but it didn't matter at that point. We departed on time as well.
+>
+> The lights on the last carriage were already turned off. I asked the guard about it and he told me that they were planning to uncouple the rear unit at Beenleigh. He was just making preparations beforehand, and then he asked me where I was headed to.
+>
+> "Helensvale", I said.
+>
+> He said I could stay in the dark carriage for the moment if I wanted to, so I went and picked a front-facing seat. It was pitch black. Mostly silent: just the sound of the motors going at speed.
+>
+> I've always liked trains, but back in my home country it's always a shitshow to be on one. Between the morons playing music with pretty much an entire band, fuckwits selling you shit or idiots asking you for money, as well as the employees just not giving a fuck and taking bribes to look the other way. It's never a pleasant experience. It's futile for me.
+>
+> I started to cry. I've been living here for just a few months and I just couldn't believe it. I feel safe here. I can enjoy my time on the rails here, just zoning out and actually smiling for once, or sometimes exchanging a quick chat with the QR employees which always seem to be kind enough to talk with this idiot.
+>
+> We arrived at Helensvale. I said thanks to the guard and went to my girlfriend's car.
+>
+> Thanks to everyone for being so friendly. It means a lot to me.
