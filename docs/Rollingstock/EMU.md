@@ -48,6 +48,9 @@ All cars are air-conditioned with air operated doors, which can be opened by pas
 
 ## Gallery
 
+<div class="sketchfab-embed-wrapper"> <iframe title="Queensland Rail EMU (Low Poly)" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/47f3a898ef624ec59bc29b0a3f6c23c1/embed?dnt=1"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/queensland-rail-emu-low-poly-47f3a898ef624ec59bc29b0a3f6c23c1?utm_medium=embed&utm_campaign=share-popup&utm_content=47f3a898ef624ec59bc29b0a3f6c23c1" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Queensland Rail EMU (Low Poly) </a> by <a href="https://sketchfab.com/Jotrain?utm_medium=embed&utm_campaign=share-popup&utm_content=47f3a898ef624ec59bc29b0a3f6c23c1" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Jotrain Models </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=47f3a898ef624ec59bc29b0a3f6c23c1" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+> A 3D model of EMU45/53 on [Sketchfab](https://sketchfab.com/3d-models/queensland-rail-emu-low-poly-47f3a898ef624ec59bc29b0a3f6c23c1). Switch to First Person view for a better navigation experience.
+
 ![](../media/EMU53_Darra_preview.png)
 
 > EMU53 at Darra Station, Platform 1, operating BRIP (Brisbane City - Ipswich) service. Run 1554. Taken 28/12/24 @ 18:59. [View png](../media/EMU53_Darra_preview.png).
@@ -63,4 +66,4 @@ All cars are air-conditioned with air operated doors, which can be opened by pas
 
 - [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu)
 - [https://www.railtram.com.au/emu-electric-multiple-unit](https://www.railtram.com.au/emu-electric-multiple-unit)
-- [https://en.wikipedia.org/wiki/Electric_multiple_unit_(Queensland_Rail)](https://en.wikipedia.org/wiki/Electric_multiple_unit_(Queensland_Rail))
+- [https://en.wikipedia.org/wiki/Electric*multiple_unit*(Queensland_Rail)](<https://en.wikipedia.org/wiki/Electric_multiple_unit_(Queensland_Rail)>)
