@@ -1,5 +1,9 @@
 # EMU (Walkers/Adtranz Electric Multiple Unit)
 
+![](../media/EMU_QR_SideShot.jpg)
+
+> The EMU as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
+
 EMUs are objectively the best of all the train types on the QR SEQ network (in my opinion).
 
 Back in the 1970s, QR stared electrifying Brisbane's suburban railways. The first section completed was between Ferny Grove and Darra and naturally, QR needed some new electric trains to run along the electrified route.
@@ -50,15 +54,15 @@ All cars are air-conditioned with air operated doors, which can be opened by pas
 
 ### Carriage 1 (DM)
 
-![](../media/EMU_layout_1.jpg)
+![](../media/Layouts/EMU_layout_1.jpg)
 
 ### Carriage 2 (M)
 
-![](../media/EMU_layout_2.jpg)
+![](../media/Layouts/EMU_layout_2.jpg)
 
 ### Carriage 3 (DT)
 
-![](../media/EMU_layout_3.jpg)
+![](../media/Layouts/EMU_layout_3.jpg)
 
 ## Gallery
 

@@ -1,5 +1,9 @@
 # NGR (New Generation Rollingstock)
 
+![](../media/NGR_QR_SideShot.jpg)
+
+> The NGR as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
+
 ## Some Observations about NGRs
 
 ### Uncomfortable Seats
