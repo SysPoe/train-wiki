@@ -1,5 +1,11 @@
 site_name: SysPoe's Train Wiki
 theme: readthedocs
+# site_url: https://syspoe.github.io/train-wiki/
+site_author: SysPoe
+# site_description: ""
+repo_url: https://github.com/SysPoe/train-wiki/
+edit_uri: edit/main/docs/
+# copyright: ""
 nav:
   - index.md
   - Rollingstock:
@@ -20,10 +26,10 @@ nav:
     - Train-Spotting/Run-Numbering-Guide.md
     - Train-Spotting/Tips-While-Lineside.md
   - Gallery:
+    - Gallery/Cool-Maps.md
     - Gallery/Dark-Trains.md
   - Other:
     - Other/Brisbane-Day-Trips.md
-    - Other/Cool-Maps.md
     - Other/Glossary.md
     - Other/Honk.md
     - Other/SEQ-Craziness.md
