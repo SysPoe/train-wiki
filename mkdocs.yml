@@ -1,2 +1,20 @@
 site_name: SysPoe's Train Wiki
-theme: readthedocs
+# site_url: https://syspoe.github.io/train-wiki/
+site_author: SysPoe
+# site_description: ""
+repo_url: https://github.com/SysPoe/train-wiki/
+edit_uri: edit/main/docs/
+# copyright: ""
+
+# theme: readthedocs
+
+theme:
+  name: null
+  custom_dir: cinder
+  colorscheme: github
+  highlightjs: true
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
