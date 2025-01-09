@@ -81,3 +81,4 @@ Varsity Lakes Station
   > - Retired: [https://web.archive.org/web/20110513234651/http://qroti.com/](https://web.archive.org/web/20110513234651/http://qroti.com/)
 - [http://www.railpage.org.au/qrhistory/](http://www.railpage.org.au/qrhistory/)
 - EMU events between 2001 and 2018
+- look into QR contract disclosures

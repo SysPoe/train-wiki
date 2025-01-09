@@ -8,7 +8,7 @@
 
 Refurbishment of SMU200s: [https://www.downergroup.com/downer-secures-80-million-queensland-rail-con](https://www.downergroup.com/downer-secures-80-million-queensland-rail-con)
 
-### Carriage Layout
+### Carriage Layout (Design A)
 
 #### Carriage 1
 
