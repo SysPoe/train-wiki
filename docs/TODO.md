@@ -69,6 +69,7 @@ Varsity Lakes Station
 - QTMP
 - SMU
 - IMU
+- QR's rollingstock
 - Tips while Lineside
 - Good trainspotting locations - petrie
 - Good trainspotting locations - Eagle junction
@@ -78,4 +79,5 @@ Varsity Lakes Station
 - [https://qroti.com/](https://qroti.com/)
   > - Last active: [https://web.archive.org/web/20110218064554/http://www.qroti.com/](https://web.archive.org/web/20110218064554/http://www.qroti.com/)
   > - Retired: [https://web.archive.org/web/20110513234651/http://qroti.com/](https://web.archive.org/web/20110513234651/http://qroti.com/)
-- [https://railpage.com.au/](https://railpage.com.au/)
+- [http://www.railpage.org.au/qrhistory/](http://www.railpage.org.au/qrhistory/)
+- EMU events between 2001 and 2018

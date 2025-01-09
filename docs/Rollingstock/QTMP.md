@@ -10,6 +10,10 @@ The QTMP is a $9.5 billion program funded by the Queensland Government to design
 >
 > Source: [https://www.reddit.com/r/BrisbaneTrains/comments/1hifhrg/comment/m2ymu2u](https://www.reddit.com/r/BrisbaneTrains/comments/1hifhrg/comment/m2ymu2u)
 
+> QTMP trains will have a real-time passenger counting system
+>
+> See: [https://channellife.com.au/story/st-engineering-wins-contract-for-new-train-information-system-in-qld](https://channellife.com.au/story/st-engineering-wins-contract-for-new-train-information-system-in-qld)
+
 ## Timeline
 
 - *October 2020:* Funding announced for a new fleet of trains.

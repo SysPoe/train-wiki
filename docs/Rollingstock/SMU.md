@@ -6,6 +6,8 @@
 
 > The SMU200 as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
 
+Refurbishment of SMU200s: [https://www.downergroup.com/downer-secures-80-million-queensland-rail-con](https://www.downergroup.com/downer-secures-80-million-queensland-rail-con)
+
 ### Carriage Layout
 
 #### Carriage 1
@@ -19,6 +21,25 @@
 #### Carriage 3
 
 ![](../media/Layouts/SMU200_C.jpg)
+
+### Carriage Layout (Design B)
+
+[Source](https://railknowledgebank.com/Presto/content/GetDoc.axd?ctID=MTk4MTRjNDUtNWQ0My00OTBmLTllYWUtZWFjM2U2OTE0ZDY3&rID=OTY2&pID=Nzkx&attchmnt=True&uSesDM=False&rIdx=MTg1Mw==&rCFU=) Archived [here](../media/Archive/Andrew%20Whitten.pdf)
+
+#### Carriage 1
+
+[View full image](../media/Layouts/SMU200_DesignB_1.png)
+![](../media/Layouts/SMU200_DesignB_1.png)
+
+#### Carriage 2
+
+[View full image](../media/Layouts/SMU200_DesignB_2.png)
+![](../media/Layouts/SMU200_DesignB_2.png)
+
+#### Carriage 3
+
+[View full image](../media/Layouts/SMU200_DesignB_3.png)
+![](../media/Layouts/SMU200_DesignB_3.png)
 
 ## EDI/Bombardier Suburban Multiple Unit 220 series (SMU220)
 
