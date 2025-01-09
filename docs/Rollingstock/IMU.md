@@ -24,7 +24,7 @@ Common Lines Served: Gold Coast line, Airport line, Nambour and Gympie North lin
   > - New electrical systems (in partnership with ABB), including upgrade of onboard traction equipment and installation of a new Train Control Management System (TCMS).
 - _2023_: Refurbishment of IMU100s and SMU200s was completed, with the sole exception of IMU105, which still retains it's green ocean themed seat covers<sup>\[8]</sup>.
 
-### Carriage Layout (Design A)
+### Carriage Layout
 
 [Source](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/imu-100)
 
@@ -39,25 +39,6 @@ Common Lines Served: Gold Coast line, Airport line, Nambour and Gympie North lin
 #### Carriage 3
 
 ![](../media/Layouts/IMU100_C.jpg)
-
-### Carriage Layout (Design B)
-
-[Source](https://railknowledgebank.com/Presto/content/GetDoc.axd?ctID=MTk4MTRjNDUtNWQ0My00OTBmLTllYWUtZWFjM2U2OTE0ZDY3&rID=OTY2&pID=Nzkx&attchmnt=True&uSesDM=False&rIdx=MTg1Mw==&rCFU=) Archived [here](../media/Archive/Andrew%20Whitten.pdf)
-
-#### Carriage 1
-
-[View full image](../media/Layouts/IMU100_DesignB_1.png)
-![](../media/Layouts/IMU100_DesignB_1.png)
-
-#### Carriage 2
-
-[View full image](../media/Layouts/IMU100_DesignB_2.png)
-![](../media/Layouts/IMU100_DesignB_2.png)
-
-#### Carriage 3
-
-[View full image](../media/Layouts/IMU100_DesignB_3.png)
-![](../media/Layouts/IMU100_DesignB_3.png)
 
 ## EDI/Bombardier Interurban Multiple Unit 120 series (IMU120)
 
@@ -87,6 +68,27 @@ Source: [https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321ak
 #### Carriage 3
 
 ![](../media/Layouts/IMU120_C.jpg)
+
+
+### Detailed Carriage Layout
+
+[Source](https://railknowledgebank.com/Presto/content/GetDoc.axd?ctID=MTk4MTRjNDUtNWQ0My00OTBmLTllYWUtZWFjM2U2OTE0ZDY3&rID=OTY2&pID=Nzkx&attchmnt=True&uSesDM=False&rIdx=MTg1Mw==&rCFU=) Archived [here](../media/Archive/Andrew%20Whitten.pdf)
+
+#### Carriage 1
+
+[View full image](../media/Layouts/IMU120_DesignB_1.png)
+![](../media/Layouts/IMU120_DesignB_1.png)
+
+#### Carriage 2
+
+[View full image](../media/Layouts/IMU120_DesignB_2.png)
+![](../media/Layouts/IMU120_DesignB_2.png)
+
+#### Carriage 3
+
+[View full image](../media/Layouts/IMU120_DesignB_3.png)
+![](../media/Layouts/IMU120_DesignB_3.png)
+
 
 ## EDI/Bombardier Interurban Multiple Unit 160 series (IMU160)
 

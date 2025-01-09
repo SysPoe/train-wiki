@@ -5,6 +5,8 @@ only include relevant entries for suburban areas.
 
 ## 1st Number Designation
 
+This denotes some informaion about what the locomotive / type of the train is.
+
 `1` - 6 car EMU, SMU or HS/SMU in revenue service <br>
 `2` - EMU/SMU/IMU/ICE empty cars (any length) <br>
 `D` - NGR train in revenue service <br>
@@ -14,6 +16,8 @@ only include relevant entries for suburban areas.
 `X` - ICE or ICE/EMU in revenue service (any length) <br>
 
 ## 2nd Number Designation
+
+This denotes where the train's destination is.
 
 `0` - Bowen Hills/Mayne Area <br>
 `1` - Caboolture (Suburban) <br>
