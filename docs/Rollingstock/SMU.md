@@ -24,7 +24,9 @@ Refurbishment of SMU200s: [https://www.downergroup.com/downer-secures-80-million
 
 ### Carriage Layout (Design B)
 
-[Source](https://railknowledgebank.com/Presto/content/GetDoc.axd?ctID=MTk4MTRjNDUtNWQ0My00OTBmLTllYWUtZWFjM2U2OTE0ZDY3&rID=OTY2&pID=Nzkx&attchmnt=True&uSesDM=False&rIdx=MTg1Mw==&rCFU=) Archived [here](../media/Archive/Andrew%20Whitten.pdf)
+May also be SMU220, but I can't tell the difference.
+
+[Source](https://railknowledgebank.com/Presto/content/GetDoc.axd?ctID=MTk4MTRjNDUtNWQ0My00OTBmLTllYWUtZWFjM2U2OTE0ZDY3&rID=OTY2&pID=Nzkx&attchmnt=True&uSesDM=False&rIdx=MTg1Mw==&rCFU=) archived [here](../media/Archive/Andrew%20Whitten.pdf)  - see figure A1
 
 #### Carriage 1
 
@@ -91,6 +93,8 @@ Source: [https://www.reddit.com/r/brisbane/comments/k0hqc3/comment/gdijsfo](http
 ![](../media/Layouts/SMU260_C.jpg)
 
 ### Gallery
+
+There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 
 ![](../media/SMU260_Dark.jpeg)
 [u/akkobutnotreally](https://www.reddit.com/user/akkobutnotreally/) on [Reddit](https://www.reddit.com/r/brisbane/comments/11lmi2d/comment/jbe84wn/):

@@ -1,5 +1,7 @@
 Title: TODO
 
+This is just a list of stuff I want to add to this website or change about it or stuff.
+
 # Trainspotting
 
 Yeerongpilly overpass
@@ -71,6 +73,7 @@ Varsity Lakes Station
 - IMU
 - QR's rollingstock
 - Tips while Lineside
+- Lineside histories
 - Good trainspotting locations - petrie
 - Good trainspotting locations - Eagle junction
 - Good trainspotting locations - Under Gympie Rd
@@ -80,5 +83,18 @@ Varsity Lakes Station
   > - Last active: [https://web.archive.org/web/20110218064554/http://www.qroti.com/](https://web.archive.org/web/20110218064554/http://www.qroti.com/)
   > - Retired: [https://web.archive.org/web/20110513234651/http://qroti.com/](https://web.archive.org/web/20110513234651/http://qroti.com/)
 - [http://www.railpage.org.au/qrhistory/](http://www.railpage.org.au/qrhistory/)
-- EMU events between 2001 and 2018
+- EMU events
 - look into QR contract disclosures
+- That one website that has all of the blueprints on it. Maybe [here](https://www.steammachine.com/prototype_archive/qr_electrics/qr_electric.html), [here](https://www.steammachine.com/prototype_archive/qr_electrics/), [here](https://www.steammachine.com/prototype_archive/), or [here](https://www.steammachine.com/)? IDK cuz I'm on a plane RN and don't have internet.
+- Freight timetables for other than CAB-ROK
+- SEQ Timetable
+- Should I really include location data for all of my images? (in the descriptions)
+- add that one sliced NGR render
+- Move the dark photos on the various pages to the gallery, under "Dark Photos"
+- Taieri Gorge
+- Ocean Beach railway
+- Other heritage services in Brisbane?
+- Full run numbering guide
+- FTT for other than CABROK
+- improve FTT to show which trains are where (possibly on a map???)
+- Fix FTT so you can navigate with a mouse

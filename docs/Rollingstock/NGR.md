@@ -46,6 +46,8 @@ u/EliraeTheBow on [Reddit](https://www.reddit.com/r/brisbane/comments/1b68fog/co
 
 ## Gallery
 
+There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
+
 ![](../media/NGR_dark.jpeg)
 
 > An NGR that stopped at Bowen Hills and had to do a full restart to fix something, taken around midnight.

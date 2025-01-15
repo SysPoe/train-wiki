@@ -9,7 +9,7 @@ edit_uri: edit/main/docs/
 nav:
   - index.md
   - Rollingstock:
-      - Rollingstock/index.md
+      # - Rollingstock/index.md
       - Rollingstock/ICE.md
       - Rollingstock/EMU.md
       - Rollingstock/IMU.md
@@ -17,6 +17,7 @@ nav:
       - Rollingstock/NGR.md
       - Rollingstock/QTMP.md
   - Train Spotting:
+      # - Train-Spotting/index.md
       - Train-Spotting/AnyTrip.md
       - Train-Spotting/Best-Lines.md
       - Good Trainspotting Locations:
@@ -29,12 +30,14 @@ nav:
       - Gallery/Blueprints.md
       - Gallery/Cool-Maps.md
       - Gallery/Dark-Trains.md
+      - Gallery/My-Photos.md
   - Other:
       - Other/Brisbane-Day-Trips.md
       - Other/Glossary.md
       - Other/Honk.md
       - Other/SEQ-Craziness.md
       - Other/Station-Abbreviations.md
+      - Freight Timetables: FTT/index.md
 
 markdown_extensions:
   - toc:

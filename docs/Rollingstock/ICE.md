@@ -2,6 +2,8 @@
 
 ## Gallery
 
+There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
+
 ![](../media/QR_EMU_ICE_Details.jpg)
 
 [View full image](../media/QR_EMU_ICE_Details.jpg)

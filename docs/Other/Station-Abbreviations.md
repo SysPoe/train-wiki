@@ -146,6 +146,8 @@ This list isn't complete yet...
 - **YBO**: Yalboroo
 - **YRE**: Yengarie
 
+<!--
+
 DONE:
 
 - CAB to ROK
@@ -154,10 +156,14 @@ DONE:
 
 TODO:
 
-- ROK to MKY: [link](https://www.queenslandrail.com.au/business/acccess/Master%20Train%20Plans%20%20North%20Coast%20line%20system/ROK%20to%20MKY%20Monday.pdf)
+- ROK to MKY: https://www.queenslandrail.com.au/business/acccess/Master%20Train%20Plans%20%20North%20Coast%20line%20system/ROK%20to%20MKY%20Monday.pdf
 - Other regions apart from North Coast line
 
+-->
+
 ## Sources
+
+Mostly from the Master Train Plans released from QR. You can see them [here](https://www.queenslandrail.com.au/business/acccess/Pages/Master-train-plans.aspx).
 
 <!-- Note the <br> in the URL text cuz otherwise it overflows and creates horizontal scrolling -->
 

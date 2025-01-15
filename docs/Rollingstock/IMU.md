@@ -1,6 +1,6 @@
 # IMU (Interurban Multiple Unit)
 
-The IMUs were introduced to provide new rollingstock for the Gold Coast line in 1996. The IMUs are a long-distance optimised version of the SMUs, with extra features such as larger seats, luggage racks, toilets<sup>\[2\]</sup>. On the exterior, they are similar enough that Queensland Rail uses identical photos for them on their "[Carriage Layouts](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)" section. Another difference is the IMU100 and 120's higher top speeds than their SMU counterparts. I think it is due to a better cooling system for one of the parts, but I can't seem to find the place where I read it again. They also have a higher gear ratio of 1:4.367 vs 1:5.169 on the SMUs (not sure which variant tho, possibly the 100/200?)<sup>\[4, 10\]</sup>.
+The IMUs were introduced to provide new rollingstock for the Gold Coast line in 1996. The IMUs are a long-distance optimised version of the SMUs, with extra features such as larger seats, luggage racks, toilets<sup>\[2\]</sup>. On the exterior, they are similar enough that Queensland Rail uses identical photos for them on their "[Carriage Layouts](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)" section. Another difference is the IMU100 and 120's higher top speeds than their SMU counterparts. I think it is due to a better cooling system for one of the parts (traction motors?), but I can't seem to find the place where I read it again. They also have a higher gear ratio of 1:4.367 vs 1:5.169 on the SMUs (not sure which variant tho, possibly the 100/200?)<sup>\[4, 10\]</sup>.
 
 Depots: Mayne, Robina, Nambour<sup>\[11\]</sup><br>
 Common Lines Served: Gold Coast line, Airport line, Nambour and Gympie North line<sup>\[11\]</sup>
@@ -75,7 +75,7 @@ Source: [https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321ak
 
 ### Detailed Carriage Layout
 
-[Source](https://railknowledgebank.com/Presto/content/GetDoc.axd?ctID=MTk4MTRjNDUtNWQ0My00OTBmLTllYWUtZWFjM2U2OTE0ZDY3&rID=OTY2&pID=Nzkx&attchmnt=True&uSesDM=False&rIdx=MTg1Mw==&rCFU=) Archived [here](../media/Archive/Andrew%20Whitten.pdf)
+[Source](https://railknowledgebank.com/Presto/content/GetDoc.axd?ctID=MTk4MTRjNDUtNWQ0My00OTBmLTllYWUtZWFjM2U2OTE0ZDY3&rID=OTY2&pID=Nzkx&attchmnt=True&uSesDM=False&rIdx=MTg1Mw==&rCFU=) archived [here](../media/Archive/Andrew%20Whitten.pdf) - see figure A2
 
 #### Carriage 1
 
