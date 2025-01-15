@@ -97,4 +97,3 @@ Varsity Lakes Station
 - Full run numbering guide
 - FTT for other than CABROK
 - improve FTT to show which trains are where (possibly on a map???)
-- Fix FTT so you can navigate with a mouse

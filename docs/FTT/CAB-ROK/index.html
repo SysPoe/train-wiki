@@ -13,6 +13,12 @@
         overflow-y: hidden;
       }
 
+      .container {
+        position: relative;
+        padding: 0;
+        margin: 0;
+      }
+
       .line {
         position: absolute;
         background: black;
@@ -24,12 +30,16 @@
         position: absolute;
         left: 5px;
         bottom: 5px;
+        z-index: 1000;
+        background: white;
       }
 
       .buttons button {
         cursor: pointer;
       }
     </style>
+    <script src='https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js'></script>
+
   </head>
   <body>
     <div class="buttons">
@@ -37,7 +47,7 @@
       <button id="prev">Previous Day</button>
       <button id="next">Next Day</button>
     </div>
-    <div id="loading">Loading (~40MB)...</div>
+    <div id="loading">Loading (~55MB)...</div>
     <script>
       let days = [
         "Monday",
@@ -63,15 +73,23 @@
         location.reload();
       };
 
+      let container = document.createElement("div");
       let image = document.createElement("img");
+
       let day = new Date().toLocaleString("en-us", { weekday: "long" });
       if (location.hash.replace("#", "") != "")
         day = location.hash.replace("#", "");
       location.hash = day;
       currentDay = days.indexOf(day);
-      image.src = `./Timetables/CAB to ROK ${day}-1.png`;
+
+      container.classList.add("container");
+
+      image.src = `./Timetables/CAB to ROK ${day}/0.jpg`;
       image.style.display = "none";
-      document.body.appendChild(image);
+
+      document.body.append(container);
+
+      container.appendChild(image);
       image.onload = () => {
         document.getElementById("loading").remove();
         image.style.display = "";
@@ -107,10 +125,10 @@
         let scale = image.height / IMG_HEIGHT;
 
         line.style.height = `${(px_bottom - px_top) * scale}px`;
-        line.style.left = `${v_left * scale}px`;
+        line.style.left = `${v_left * scale - 1}px`;
         line.style.top = `${px_top * scale}px`;
 
-        document.body.prepend(line);
+        container.prepend(line);
 
         setInterval(() => {
           if (tval > 1) location.reload();
@@ -118,6 +136,8 @@
           v_left = tval * (px_right - px_left) + px_left;
           line.style.left = `${v_left * scale}px`;
         }, 10_000);
+
+        panzoom(container);
       };
     </script>
   </body>
