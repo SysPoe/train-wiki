@@ -91,3 +91,16 @@ Varsity Lakes Station
 - Full run numbering guide
 - FTT for other than CABROK
 - improve FTT to show which trains are where (possibly on a map???)
+- [Brisbane Suburban System Infromation Pack](https://www.queenslandrail.com.au/business/acccess/Documents/Brisbane%20Metropolitan%20System%20Information%20Pack%20-%20Issue%203%20-%20October%202016.pdf).
+  > - Appendix B
+  > - Appendix D
+  > - Appendix F
+  > - Appendix H
+- [North Coast Line System South Information Pack]([https://www.queenslandrail.com.au/business/acccess/Documents/North Coast Line South System Information Pack - Issue 3 - October 2016.pdf](https://www.queenslandrail.com.au/business/acccess/Documents/North%20Coast%20Line%20South%20System%20Information%20Pack-%20Issue%204%20-%20May%202024%20%28PDF%2C%2010.72%20MB%29.pdf))
+> -  Appendix B
+> -  Appendix D
+> -  Appendix F
+- [NCLS North IP](https://www.queenslandrail.com.au/business/acccess/Documents/North%20Coast%20Line%20North%20System%20Information%20Pack-%20Issue%204%20-%20May%202024%20(PDF,%2010.72%20MB).pdf#search=North%20Coast%20Line%20System%20Information%20Pack)
+- [https://www.yumpu.com/user/queenslandrail.com.au](https://www.yumpu.com/user/queenslandrail.com.au)
+- [QCLS](https://www.queenslandscalemodels.com.au/Qld%20Colour%20Light%20Signalling.doc.pdf)
+- 
