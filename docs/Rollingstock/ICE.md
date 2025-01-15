@@ -2,6 +2,12 @@
 
 ## Gallery
 
+![](../media/QR_EMU_ICE_Details.jpg)
+
+[View full image](../media/QR_EMU_ICE_Details.jpg)
+
+> Details of the EMU and ICE fleet
+
 <div class="sketchfab-embed-wrapper"> <iframe title="Queensland Rail ICE (InterCity Express) Train" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/7cac661c6a9940bb86aeae1c79f6fc8d/embed?dnt=1"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/queensland-rail-ice-intercity-express-train-7cac661c6a9940bb86aeae1c79f6fc8d?utm_medium=embed&utm_campaign=share-popup&utm_content=7cac661c6a9940bb86aeae1c79f6fc8d" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Queensland Rail ICE (InterCity Express) Train </a> by <a href="https://sketchfab.com/Jotrain?utm_medium=embed&utm_campaign=share-popup&utm_content=7cac661c6a9940bb86aeae1c79f6fc8d" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Jotrain Models </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=7cac661c6a9940bb86aeae1c79f6fc8d" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
 
 > A 3D model of ICE154/156 on [Sketchfab](https://sketchfab.com/3d-models/queensland-rail-ice-intercity-express-train-7cac661c6a9940bb86aeae1c79f6fc8d). Switch to First Person view for a better navigation experience.

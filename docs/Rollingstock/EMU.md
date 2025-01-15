@@ -37,6 +37,13 @@ All cars are air-conditioned with air operated doors, which can be opened by pas
 - _January 2019_: 30 EMUs in store.
 - _August 2019_: Queensland Rail operated a farewell tour with units 01 and 04 over two days covering all Brisbane suburban lines including a reenactment of the first electric train service in Brisbane from Ferny Grove to Darra. Both units were removed from service and taken to Ipswich Workshops for static preservation.
 - _2020_: EMU60 scrapped.
+- _2023_: QR replaced the routers in EMUs, IMU100s, SMU200s, IMU120s, and SMU220s. The work was contracted out to Nomad Digital and cost $1.75 million<sup>\[5\]</sup>. QR also contracted UGL Rail to do a wheelset overhaul on one or (probably) multiple EMU trains, costing $700 thousand<sup>\[5\]</sup>.
+- _2024_: QR performed a variety of operations on one or multiple EMU trains (I'm guessing muiltiple because surely it can't cost that much to do it on just one), including:
+  > - An overhaul of the transformers and reactors, contracted to AC Hargreaves and costing $1.32 million<sup>\[5\]</sup>.
+  > - An overhaul of the AC units done by Noske-Kaeser Rail & Vehicle and costing $1.19 million<sup>\[5\]</sup>.
+  > - Changed out some side doors on EMU trains, contracted to Festo for $422 thousand<sup>\[5\]</sup>.
+  > - Changed out some couplers, contracted to Voith Turbo for $2.94 million<sup>\[5\]</sup>.
+  > - "Bogie relife", and "Bogie Relife 1" (Heavy Overhaul of QR EMU Bogie) both contracted to Downer EDI Rail and totalling $12.63 million<sup>\[5, 6\]</sup>.
 
 ## Fleet Status
 
@@ -66,6 +73,12 @@ All cars are air-conditioned with air operated doors, which can be opened by pas
 
 ## Gallery
 
+![](../media/QR_EMU_ICE_Details.jpg)
+
+[View full image](../media/QR_EMU_ICE_Details.jpg)
+
+> Details of the EMU and ICE fleet
+
 <div class="sketchfab-embed-wrapper"> <iframe title="Queensland Rail EMU (Low Poly)" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/47f3a898ef624ec59bc29b0a3f6c23c1/embed?dnt=1"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/queensland-rail-emu-low-poly-47f3a898ef624ec59bc29b0a3f6c23c1?utm_medium=embed&utm_campaign=share-popup&utm_content=47f3a898ef624ec59bc29b0a3f6c23c1" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Queensland Rail EMU (Low Poly) </a> by <a href="https://sketchfab.com/Jotrain?utm_medium=embed&utm_campaign=share-popup&utm_content=47f3a898ef624ec59bc29b0a3f6c23c1" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Jotrain Models </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=47f3a898ef624ec59bc29b0a3f6c23c1" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
 > A 3D model of EMU45/53 on [Sketchfab](https://sketchfab.com/3d-models/queensland-rail-emu-low-poly-47f3a898ef624ec59bc29b0a3f6c23c1). Switch to First Person view for a better navigation experience.
 
@@ -82,7 +95,9 @@ All cars are air-conditioned with air operated doors, which can be opened by pas
 
 ## Sources
 
-- [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu)
-- [https://www.railtram.com.au/emu-electric-multiple-unit](https://www.railtram.com.au/emu-electric-multiple-unit)
-- [https://en.wikipedia.org/wiki/Electric*multiple_unit*(Queensland_Rail)](<https://en.wikipedia.org/wiki/Electric_multiple_unit_(Queensland_Rail)>)
-- [https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/emu](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/emu)
+- **\[1\]** [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu)
+- **\[2\]** [https://www.railtram.com.au/emu-electric-multiple-unit](https://www.railtram.com.au/emu-electric-multiple-unit)
+- **\[3\]** [https://en.wikipedia.org/wiki/Electric*multiple_unit*(Queensland_Rail)](<https://en.wikipedia.org/wiki/Electric_multiple_unit_(Queensland_Rail)>)
+- **\[4\]** [https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/emu](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/emu)
+- **\[5\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365) archived [here](../media/Archive/qr-contract-disclosure-fy2023-2024.csv)
+- **\[6\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2024-2025](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2024-2025) archived [here](../media/Archive/qr-contract-disclosure-fy2024-2025.csv)

@@ -49,7 +49,7 @@ This denotes where the train's destination is.
 `Y` - Kippa Ring / Petrie <br>
 `Z` - Exhibition (Suburban) <br>
 
-## 3rd Character – Part of the train ID or additional information
+## 3rd Character - Part of the train ID or additional information
 
 Mainly part of the trains actual number but in many cases, the 3rd character is used to supply additional information on
 the train. If the 3rd character is numeric, there is no additional information. 3rd character alpha codes are not found
@@ -57,13 +57,13 @@ in any manual or text book. They are usually locally agreed characters and can v
 
 Brisbane district:-
 
-NOTE – ‘a’ = Alpha, ‘n’ = numeric, ‘x’ = alpha/numeric. All descriptions have examples, except “work trains”.
+NOTE - 'a' = Alpha, 'n' = numeric, 'x' = alpha/numeric. All descriptions have examples, except “work trains”.
 
 Suburban: <br>
-`xDYn` – Via South Brisbane to Darra (1DY2) <br>
-`x5Yn` – Via South Brisbane to Ipswich (15Y2) <br>
-`xxPn` – School train (18P4) (may be cancelled during school holidays) <br>
-`xxTn` – Extra service for special events etc. (1GT4) <br>
-`xFXn` – Exhibition Circular Services (1FX5) <br>
+`xDYn` - Via South Brisbane to Darra (1DY2) <br>
+`x5Yn` - Via South Brisbane to Ipswich (15Y2) <br>
+`xxPn` - School train (18P4) (may be cancelled during school holidays) <br>
+`xxTn` - Extra service for special events etc. (1GT4) <br>
+`xFXn` - Exhibition Circular Services (1FX5) <br>
 
 With the new timetable, third character alpha's are just a continuation of the numerals (IE: 0,1, 2 -> 8, 9, A, B etc. EG: 4 successive Airport trains might be TP97, 1P99, TPA1, 1PA3 etc).

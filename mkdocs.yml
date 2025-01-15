@@ -9,31 +9,32 @@ edit_uri: edit/main/docs/
 nav:
   - index.md
   - Rollingstock:
-    - Rollingstock/index.md
-    - Rollingstock/ICE.md
-    - Rollingstock/EMU.md
-    - Rollingstock/IMU.md
-    - Rollingstock/SMU.md
-    - Rollingstock/NGR.md
-    - Rollingstock/QTMP.md
+      - Rollingstock/index.md
+      - Rollingstock/ICE.md
+      - Rollingstock/EMU.md
+      - Rollingstock/IMU.md
+      - Rollingstock/SMU.md
+      - Rollingstock/NGR.md
+      - Rollingstock/QTMP.md
   - Train Spotting:
-    - Train-Spotting/AnyTrip.md
-    - Train-Spotting/Best-Lines.md
-    - Good Trainspotting Locations:
-      - Train-Spotting/Good-Trainspotting-Locations/Eagle-Junction.md
-      - Train-Spotting/Good-Trainspotting-Locations/Petrie.md
-    - Train-Spotting/Radio-Frequencies.md
-    - Train-Spotting/Run-Numbering-Guide.md
-    - Train-Spotting/Tips-While-Lineside.md
+      - Train-Spotting/AnyTrip.md
+      - Train-Spotting/Best-Lines.md
+      - Good Trainspotting Locations:
+          - Train-Spotting/Good-Trainspotting-Locations/Eagle-Junction.md
+          - Train-Spotting/Good-Trainspotting-Locations/Petrie.md
+      - Train-Spotting/Radio-Frequencies.md
+      - Train-Spotting/Run-Numbering-Guide.md
+      - Train-Spotting/Tips-While-Lineside.md
   - Gallery:
-    - Gallery/Cool-Maps.md
-    - Gallery/Dark-Trains.md
+      - Gallery/Blueprints.md
+      - Gallery/Cool-Maps.md
+      - Gallery/Dark-Trains.md
   - Other:
-    - Other/Brisbane-Day-Trips.md
-    - Other/Glossary.md
-    - Other/Honk.md
-    - Other/SEQ-Craziness.md
-
+      - Other/Brisbane-Day-Trips.md
+      - Other/Glossary.md
+      - Other/Honk.md
+      - Other/SEQ-Craziness.md
+      - Other/Station-Abbreviations.md
 
 markdown_extensions:
   - toc:
