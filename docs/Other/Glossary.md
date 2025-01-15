@@ -1,6 +1,6 @@
 # Glossary
 
-Here is a glossary for some of the acronyms that you might see.
+Here is a glossary for some of the acronyms or terms that you might see. I'll probably add to this whenever I see something that I don't know.
 
 - **ATP**: Automatic Train Protection
 - **B2N**: Beerberum to Nambour (Rail Upgrade project)

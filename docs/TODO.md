@@ -40,12 +40,7 @@ Varsity Lakes Station
 
 ### Bus
 
-- [https://www.reddit.com/r/brisbane/comments/16oul84/ask_a_driver/](https://www.reddit.com/r/brisbane/comments/16oul84/ask_a_driver/)
-- [https://www.reddit.com/r/brisbane/comments/1c123h6/psa_from_a_friendly_brissie_bus_driver_regarding/](https://www.reddit.com/r/brisbane/comments/1c123h6/psa_from_a_friendly_brissie_bus_driver_regarding/)
-- [https://www.reddit.com/r/brisbane/comments/6phm47/heres_why_your_bus_drivers_are_striking/](https://www.reddit.com/r/brisbane/comments/6phm47/heres_why_your_bus_drivers_are_striking/)
-
-### Train
-
+- [https://www.https://live-b2b-gdm-figaro1.pantheonsite.io/wp-content/uploads/sites/13/2017/09/1l-Image-2.jpg
 - [https://www.reddit.com/r/brisbane/comments/593l3a/they_say_theres_a_train_driver_shortage_on_the/](https://www.reddit.com/r/brisbane/comments/593l3a/they_say_theres_a_train_driver_shortage_on_the/)
 - [https://www.reddit.com/r/brisbane/comments/vrhngc/shout_out_to_old_mate_train_driver_bringing_that/](https://www.reddit.com/r/brisbane/comments/vrhngc/shout_out_to_old_mate_train_driver_bringing_that/)
 - [https://www.reddit.com/r/brisbane/comments/18h3pk4/train_horns/](https://www.reddit.com/r/brisbane/comments/18h3pk4/train_horns/)
@@ -89,7 +84,6 @@ Varsity Lakes Station
 - Freight timetables for other than CAB-ROK
 - SEQ Timetable
 - Should I really include location data for all of my images? (in the descriptions)
-- add that one sliced NGR render
 - Move the dark photos on the various pages to the gallery, under "Dark Photos"
 - Taieri Gorge
 - Ocean Beach railway
