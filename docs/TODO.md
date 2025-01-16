@@ -40,7 +40,7 @@ Varsity Lakes Station
 
 ### Bus
 
-- [https://www.https://live-b2b-gdm-figaro1.pantheonsite.io/wp-content/uploads/sites/13/2017/09/1l-Image-2.jpg
+- [https://www.https://live-b2b-gdm-figaro1.pantheonsite.io/wp-content/uploads/sites/13/2017/09/1l-Image-2.jpg](https://www.https://live-b2b-gdm-figaro1.pantheonsite.io/wp-content/uploads/sites/13/2017/09/1l-Image-2.jpg)
 - [https://www.reddit.com/r/brisbane/comments/593l3a/they_say_theres_a_train_driver_shortage_on_the/](https://www.reddit.com/r/brisbane/comments/593l3a/they_say_theres_a_train_driver_shortage_on_the/)
 - [https://www.reddit.com/r/brisbane/comments/vrhngc/shout_out_to_old_mate_train_driver_bringing_that/](https://www.reddit.com/r/brisbane/comments/vrhngc/shout_out_to_old_mate_train_driver_bringing_that/)
 - [https://www.reddit.com/r/brisbane/comments/18h3pk4/train_horns/](https://www.reddit.com/r/brisbane/comments/18h3pk4/train_horns/)
@@ -96,7 +96,7 @@ Varsity Lakes Station
   > - Appendix D
   > - Appendix F
   > - Appendix H
-- [North Coast Line System South Information Pack]([https://www.queenslandrail.com.au/business/acccess/Documents/North Coast Line South System Information Pack - Issue 3 - October 2016.pdf](https://www.queenslandrail.com.au/business/acccess/Documents/North%20Coast%20Line%20South%20System%20Information%20Pack-%20Issue%204%20-%20May%202024%20%28PDF%2C%2010.72%20MB%29.pdf))
+- [North Coast Line System South Information Pack](https://www.queenslandrail.com.au/business/acccess/Documents/North%20Coast%20Line%20South%20System%20Information%20Pack-%20Issue%204%20-%20May%202024%20%28PDF%2C%2010.72%20MB%29.pdf)
 > -  Appendix B
 > -  Appendix D
 > -  Appendix F
