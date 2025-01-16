@@ -51,3 +51,10 @@ Trains can lose power for various reasons, and with the UV strip lighting on the
 > Thanks to everyone for being so friendly. It means a lot to me.
 
 ![](../media/SMU260_Dark.jpeg)
+
+## 3: NGR Restart
+
+[https://imgur.com/3oQMwy3](https://imgur.com/3oQMwy3), [u/beastjim](https://www.reddit.com/user/beastjim/) on [Reddit](https://www.reddit.com/r/brisbane/comments/11lmi2d/comment/jbe5u5w):
+
+> An NGR that stopped at Bowen Hills and had to do a full restart to fix something, taken around midnight.
+> ![](../media/NGR_dark.jpeg)

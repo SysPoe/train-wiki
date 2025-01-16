@@ -51,9 +51,3 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 ![](../media/Gallery/NGR_Cutthrough.jpg)
 
 > Source: [https://live-b2b-gdm-figaro1.pantheonsite.io/wp-content/uploads/sites/13/2017/09/1l-Image-2.jpg](https://live-b2b-gdm-figaro1.pantheonsite.io/wp-content/uploads/sites/13/2017/09/1l-Image-2.jpg)
-
-![](../media/NGR_dark.jpeg)
-
-> An NGR that stopped at Bowen Hills and had to do a full restart to fix something, taken around midnight.
->
-> Source: [https://imgur.com/3oQMwy3](https://imgur.com/3oQMwy3), [u/beastjim](https://www.reddit.com/user/beastjim/) on [Reddit](https://www.reddit.com/r/brisbane/comments/11lmi2d/comment/jbe5u5w)
