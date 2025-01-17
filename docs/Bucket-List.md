@@ -16,7 +16,7 @@ Check out the [Queensland Explorer Pass](https://www.queenslandrailtravel.com.au
 - [ ] [The Gulflander](https://www.queenslandrailtravel.com.au/railexperiences/ourtrains/gulflander) - Normanton to Croydon
 
 **NSW TrainLink** <br>
-Check out the [Discovery Pass](https://transportnsw.info/tickets-opal/regional-tickets-fares/discovery-pass) [map](https://transportnsw.info/regional-network-map)
+Check out the [Discovery Pass](https://transportnsw.info/tickets-opal/regional-tickets-fares/discovery-pass) and [map](https://transportnsw.info/regional-network-map)
 
 - [x] Brisbane to Sydney XPT (To be completed 22 Jan 2025)
 - [ ] Brisbane to Sydney NSW R-Set

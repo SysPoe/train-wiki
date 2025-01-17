@@ -36,3 +36,5 @@ TO ADD:
 - Ocean Beach Railway [fb](https://www.facebook.com/OceanBeachRailway/)
 - Dunedin Railways [web](https://www.dunedinrailways.co.nz/)
 - Rosewood Railway [fb](https://www.facebook.com/RosewoodRailway.org.au) [web](https://www.rosewoodrailway.org.au/)
+- Sunshine Express [web](https://www.sunshineexpress.org.au/) [fb maybe?](https://www.facebook.com/arhsqld)
+- Woodford Railway [web](https://angrms.org.au/) [fb](https://www.facebook.com/TheWoodfordRailway)
