@@ -80,11 +80,9 @@ Varsity Lakes Station
 - [http://www.railpage.org.au/qrhistory/](http://www.railpage.org.au/qrhistory/)
 - EMU events
 - look into QR contract disclosures
-- That one website that has all of the blueprints on it. Maybe [here](https://www.steammachine.com/prototype_archive/qr_electrics/qr_electric.html), [here](https://www.steammachine.com/prototype_archive/qr_electrics/), [here](https://www.steammachine.com/prototype_archive/), or [here](https://www.steammachine.com/)? IDK cuz I'm on a plane RN and don't have internet.
 - Freight timetables for other than CAB-ROK
 - SEQ Timetable
 - Should I really include location data for all of my images? (in the descriptions)
-- Move the dark photos on the various pages to the gallery, under "Dark Photos"
 - Taieri Gorge
 - Ocean Beach railway
 - Other heritage services in Brisbane?
@@ -92,12 +90,11 @@ Varsity Lakes Station
 - FTT for other than CABROK
 - improve FTT to show which trains are where (possibly on a map???)
 - [Brisbane Suburban System Infromation Pack](https://www.queenslandrail.com.au/business/acccess/Documents/Brisbane%20Metropolitan%20System%20Information%20Pack%20-%20Issue%203%20-%20October%202016.pdf).
-  > - Appendix B
   > - Appendix D
   > - Appendix F
   > - Appendix H
+- Network schematic [here](https://www.queenslandrail.com.au/business/acccess/Access%20Undertaking%20and%20related%20documents/Queensland%20Rail%20Network%20Infrastructure%20Ownership%20Line%20Diagrams%20October%202024%20(PDF,%208.89%20MB).pdf)
 - [North Coast Line System South Information Pack](https://www.queenslandrail.com.au/business/acccess/Documents/North%20Coast%20Line%20South%20System%20Information%20Pack-%20Issue%204%20-%20May%202024%20%28PDF%2C%2010.72%20MB%29.pdf)
-> -  Appendix B
 > -  Appendix D
 > -  Appendix F
 - [NCLS North IP](https://www.queenslandrail.com.au/business/acccess/Documents/North%20Coast%20Line%20North%20System%20Information%20Pack-%20Issue%204%20-%20May%202024%20(PDF,%2010.72%20MB).pdf#search=North%20Coast%20Line%20System%20Information%20Pack)
