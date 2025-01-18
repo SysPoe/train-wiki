@@ -101,10 +101,20 @@ Vehicles:
       let k2 = v.tripInstance.trip.route.mode;
       k2 = vsSwap[k2];
       if (k2 == "Trains") {
+        let run = /.{4}\)?$/.exec(v.vehicleInstance.vehicleModel)[0].split(")")[0];
         key = key.replace(/train$/, "");
         if (key.length == 4) {
           if (key[0] == "D") key = "New Generation Rollingstock (NGR)";
           else key = "6 car non-NGR";
+        }
+        if(run[1] == "6") {
+            key = "Rosewood EMU"
+            let el = document.createElement("div");
+            el.style.background = "yellow";
+            el.innerHTML = "Rosewood EMU!!! <a href=''>here</a>";
+            el.querySelector("a").href = "https://anytrip.com.au/region/qld?selectedTrip=" +
+            encodeURIComponent(latest.vehicleInstance._tripInstancePath);
+            document.body.prepend(el);
         }
       }
       if (vs[k2] == undefined) vs[k2] = {};
@@ -119,7 +129,9 @@ Vehicles:
     for (let k1 of k2) {
       let currH = vs[k1];
       let keys = Object.keys(currH).sort((a, b) => currH[b] - currH[a]);
-      ihtml += `<p>${k1}</p>  <ul>`;
+      let totalK2 = 0;
+      for(let key of keys) totalK2+=currH[key];
+      ihtml += `<p>${k1}: ${totalK2}</p>  <ul>`;
       for (let key of keys) {
         if (key.trim() != "") ihtml += `<li>${currH[key]} x ${key}</li>`;
       }
