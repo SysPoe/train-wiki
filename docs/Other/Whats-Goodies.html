@@ -1,0 +1,134 @@
+There are currently:
+<ul>
+<li><span class="reporting"></span> reporting their live location</li>
+<li><span class="late-num"></span> running at least 1 minute late. The
+  latest one is a <a href="" class="latest-name"></a> <span class="latest-loc"></span>, running
+  <span class="latest-time"></span> minutes late.</li>
+<li><span class="crossing"></span> crossing the Victoria St Bridge. </li>
+</ul>
+
+Vehicles:
+
+<div class="vehicles"></div>
+
+<script>
+  function fill(id, fill) {
+    document.querySelectorAll("." + id).forEach((v) => (v.innerText = fill));
+  }
+  function fillHref(id, fill) {
+    document.querySelectorAll("." + id).forEach((v) => (v.href = fill));
+  }
+  function fillHtml(id, fill) {
+    document.querySelectorAll("." + id).forEach((v) => (v.innerHTML = fill));
+  }
+
+  async function main() {
+    let res = await fetch(
+      "https://anytrip.com.au/api/v3/region/au4/vehicles?feeds=au4:se"
+    );
+    let js = await res.json();
+    window.js = js;
+
+    let totalV = js.response.vehicles.length;
+
+    fill("reporting", `${totalV} ${totalV == 1 ? "vehicle" : "vehicles"}`);
+
+    let late = js.response.vehicles.filter(
+      (v) => v.vehicleInstance.lastPosition.linearDelay > 60
+    );
+
+    fill(
+      "late-num",
+      `${late.length} ${late.length == 1 ? "vehicle" : "vehicles"}`
+    );
+
+    let latest = late.sort((a, b) => {
+      return (
+        b.vehicleInstance.lastPosition.linearDelay -
+        a.vehicleInstance.lastPosition.linearDelay
+      );
+    })[0];
+
+    window.latest = latest;
+
+    fill(
+      "latest-time",
+      Math.round(latest.vehicleInstance.lastPosition.linearDelay / 60)
+    );
+    fill(
+      "latest-name",
+      `${latest.tripInstance.trip.route.name} - ${latest.tripInstance.trip.route.longName}`
+    );
+    fillHtml(
+      "latest-loc",
+      `<code>${latest.vehicleInstance.lastPosition.statusString}</code>`
+    );
+    fillHref(
+      "latest-name",
+      "https://anytrip.com.au/region/qld?selectedTrip=" +
+        encodeURIComponent(latest.vehicleInstance._tripInstancePath)
+    );
+
+    let crossingRes = await fetch(
+      "https://anytrip.com.au/api/v3/region/au4/vehicles?feeds=au4:se&maxLat=-27.471401944265658&maxLon=153.0226213941208&minLat=-27.473325476734196&minLon=153.01966097887606"
+    );
+    let crossing = await crossingRes.json();
+    crossing = crossing.response.vehicles.length;
+
+    fill("crossing", `${crossing} ${crossing == 1 ? "bus" : "buses"}`);
+
+    let vsSwap = {
+      "au4:buses": "Buses",
+      "au4:ferries": "Ferries",
+      "au4:lightrail": "Light Rail",
+      "au4:trains": "Trains",
+    };
+
+    let vs = {};
+    js.response.vehicles.forEach((v) => {
+      let key = v.vehicleInstance.vehicleModel
+        .trim()
+        .replaceAll(/ +\(run.*\)/g, "")
+        .replaceAll(/^\d+$/g, "")
+        .replaceAll(/\(\d+\)$/g, "")
+        .replaceAll(/[\"\“\”]/g, "")
+        .replaceAll(/^.{2,3}$/g, "")
+        .replaceAll(/^\d+, /g, "")
+        .replace("6 car IMU", "6 car IMU or SMU")
+        .replace(/^6 car EMU or SMU.*$/, "6 car non-NGR")
+        .replace(/^3 car EMU or SMU.*$/, "3 car non-NGR")
+        .trim();
+      let k2 = v.tripInstance.trip.route.mode;
+      k2 = vsSwap[k2];
+      if (k2 == "Trains") {
+        key = key.replace(/train$/, "");
+        if (key.length == 4) {
+          if (key[0] == "D") key = "New Generation Rollingstock (NGR)";
+          else key = "6 car non-NGR";
+        }
+      }
+      if (vs[k2] == undefined) vs[k2] = {};
+      if (vs[k2][key] == undefined) vs[k2][key] = 0;
+      vs[k2][key]++;
+    });
+
+    console.log(vs);
+
+    let k2 = Object.keys(vs).sort();
+    let ihtml = "<blockquote>";
+    for (let k1 of k2) {
+      let currH = vs[k1];
+      let keys = Object.keys(currH).sort((a, b) => currH[b] - currH[a]);
+      ihtml += `<p>${k1}</p>  <ul>`;
+      for (let key of keys) {
+        if (key.trim() != "") ihtml += `<li>${currH[key]} x ${key}</li>`;
+      }
+      if (currH[""] != undefined) ihtml += `<li>${currH[""]} x Other</li>`;
+      ihtml += "</ul>";
+    }
+    ihtml += "</blockquote>";
+    fillHtml("vehicles", ihtml);
+  }
+
+  main();
+</script>
