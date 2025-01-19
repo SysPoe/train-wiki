@@ -100,4 +100,4 @@ Varsity Lakes Station
 - [NCLS North IP](https://www.queenslandrail.com.au/business/acccess/Documents/North%20Coast%20Line%20North%20System%20Information%20Pack-%20Issue%204%20-%20May%202024%20(PDF,%2010.72%20MB).pdf#search=North%20Coast%20Line%20System%20Information%20Pack)
 - [https://www.yumpu.com/user/queenslandrail.com.au](https://www.yumpu.com/user/queenslandrail.com.au)
 - [QCLS](https://www.queenslandscalemodels.com.au/Qld%20Colour%20Light%20Signalling.doc.pdf)
-- 
+-  boggo rd/park rd platform four has stopping markers for the XPT
