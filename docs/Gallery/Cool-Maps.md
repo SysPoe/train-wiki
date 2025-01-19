@@ -2,6 +2,8 @@
 
 Here are some cool maps and posters of the SEQ / QLD / AUS rail network that I found. And some other ones too.
 
+See also: [QR Network Schematic](Qr-Network-Schematic.html)
+
 ## 2024 Translink Map w/ CRR and Railbus
 
 I think it has the new CRR line pairings, but I'm not really sure what they're going to be.
