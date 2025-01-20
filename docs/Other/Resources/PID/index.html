@@ -13,8 +13,9 @@
         background: rgb(31, 31, 31);
         color: rgb(179, 179, 179);
       }
-      button, input {
-        background-color: rgb(31,31,31);
+      button,
+      input {
+        background-color: rgb(31, 31, 31);
         color: rgb(179, 179, 179);
         border: solid black 1px;
       }
@@ -155,7 +156,7 @@
         <tr id="tr1">
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
-          <td class="active">Exp</td>
+          <td contenteditable="true" class="active">Exp</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
             <div class="tcar" style="display: none">
@@ -168,7 +169,7 @@
         <tr id="tr2">
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
-          <td class="active">Exp</td>
+          <td contenteditable="true" class="active">Exp</td>
           <td class="active">
             <div class="tcar" style="display: none">
               <img src="./3car.svg" />
@@ -181,7 +182,7 @@
         <tr id="tr3">
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
-          <td class="active">Exp</td>
+          <td contenteditable="true" class="active">Exp</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
             <div class="tcar" style="display: none">
@@ -194,7 +195,7 @@
         <tr id="tr4">
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
-          <td class="active">Exp</td>
+          <td contenteditable="true" class="active">Exp</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
             <div class="tcar" style="display: none">
@@ -207,7 +208,7 @@
         <tr id="tr5">
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
-          <td class="active">Exp</td>
+          <td contenteditable="true" class="active">Exp</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
             <div class="tcar" style="display: none">
@@ -220,7 +221,7 @@
         <tr id="tr6">
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
-          <td class="active">Exp</td>
+          <td contenteditable="true" class="active">Exp</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
             <div class="tcar" style="display: none">
@@ -374,14 +375,14 @@
         let mkel = document.querySelector("#tcar" + num);
         let ngr = pel.querySelectorAll("td")[3].querySelector(".ngr");
         let tcar = pel.querySelectorAll("td")[3].querySelector(".tcar");
-        if ((ngr.style.display == "" && setTo == null) || setTo == '0') {
+        if ((ngr.style.display == "" && setTo == null) || setTo == "0") {
           ngr.style.display = "none";
           tcar.style.display = "";
-          mkel.innerText = "NGR #"+num;
+          mkel.innerText = "NGR #" + num;
         } else {
           ngr.style.display = "";
           tcar.style.display = "none";
-          mkel.innerText = "3car #"+num;
+          mkel.innerText = "3car #" + num;
         }
       }
 
@@ -429,9 +430,19 @@
           document.querySelector("#tr" + i).style.backgroundColor = val;
         };
       }
+
+      let ctrl = false;
+      document.onkeydown = (ev) => {
+        if (ev.key == "Control") ctrl = true;
+      };
+      document.onkeyup = (ev) => {
+        if (ev.key == "Control") ctrl = false;
+      };
+
       document.querySelectorAll(".active").forEach((el) => {
         el.onclick = (e) => {
           if (el.parentElement.style.opacity == "0") return;
+          if (ctrl) return;
           if (
             e.target != el &&
             (e.target.classList.contains("active") ||
@@ -442,9 +453,13 @@
           if (el.classList.contains("active")) {
             el.classList.remove("active");
             el.classList.add("inactive");
+            if (el.hasAttribute("contenteditable"))
+              el.setAttribute("contenteditable", "false");
           } else {
             el.classList.remove("inactive");
             el.classList.add("active");
+            if (el.hasAttribute("contenteditable"))
+              el.setAttribute("contenteditable", "true");
           }
         };
       });
