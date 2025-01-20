@@ -1,8 +1,10 @@
 There are currently:
 
-- <span class="reporting"></span> reporting their live location, including <span class="reporting-stats"></span>
-- <span class="late-num"></span> running at least 5 minutes late. The latest one is a <a href="" class="latest-name"></a> <span class="latest-loc"></span>, running <span class="latest-time"></span> minutes late.
-- <span class="crossing"></span> crossing the Victoria St Bridge.</li>
+<ul>
+<li><span class="reporting"></span> reporting their live location, including <span class="reporting-stats"></span></li>
+<li><span class="late-num"></span> running at least 5 minutes late. The latest one is a <a href="" class="latest-name"></a> <span class="latest-loc"></span>, running <span class="latest-time"></span> minutes late.</li>
+<li><span class="crossing"></span> crossing the Victoria St Bridge.</li></li>
+</ul>
 
 Vehicles:
 
@@ -21,7 +23,7 @@ Vehicles:
 
   async function main() {
     let res = await fetch(
-      "https://anytrip.com.au/api/v3/region/au4/vehicles?feeds=au4:se"
+      "https://corsproxy.io/?url="+encodeURIComponent("https://anytrip.com.au/api/v3/region/au4/vehicles?feeds=au4:se")
     );
     let js = await res.json();
     window.js = js;
