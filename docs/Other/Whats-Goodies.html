@@ -93,7 +93,7 @@ Vehicles:
     );
 
     let crossingRes = await fetch(
-      "https://anytrip.com.au/api/v3/region/au4/vehicles?feeds=au4:se&maxLat=-27.471401944265658&maxLon=153.0226213941208&minLat=-27.473325476734196&minLon=153.01966097887606"
+      "https://corsproxy.io/?url="+encodeURIComponent("https://anytrip.com.au/api/v3/region/au4/vehicles?feeds=au4:se&maxLat=-27.471401944265658&maxLon=153.0226213941208&minLat=-27.473325476734196&minLon=153.01966097887606")
     );
     let crossing = await crossingRes.json();
     crossing = crossing.response.vehicles.length;
