@@ -125,6 +125,12 @@
       button {
         cursor: pointer;
       }
+
+      button[disabled] {
+        cursor: default;
+        color: rgb(63, 63, 63);
+      }
+
       .inactive:hover {
         opacity: 0.3;
       }
@@ -267,6 +273,16 @@
       </button>
     </div>
 
+    <div class="select-station">
+      <input list="station-list" placeholder="Loading stations..." />
+      <datalist id="station-list">
+        <option value="test">test</option>
+      </datalist>
+      <button onclick="updateStationSW()" disabled>South & West (WIP)</button>
+      <button onclick="updateStationNE()" disabled>North & East (WIP)</button>
+      <button onclick="updateStationAll()">All trains (WIP)</button>
+    </div>
+
     <div class="color">
       <div>
         <label for="colsel1">Select color for #1: </label
@@ -385,7 +401,6 @@
           mkel.innerText = "3car #" + num;
         }
       }
-
       function hide(num, setTo = null) {
         let el = document.querySelector("#tr" + num);
         if (el.classList.contains("hidden")) el.classList.remove("hidden");
@@ -463,6 +478,127 @@
           }
         };
       });
+
+      async function main() {
+        let res = await fetch(
+          "https://corsproxy.io/" +
+            encodeURIComponent(
+              "https://anytrip.com.au/api/v3/region/au4/stops?limit=500&maxLat=-26.39899568258307&maxLon=153.7892943671533&minLat=-28.226719490511584&minLon=152.33085930855955&modes=au4:trains"
+            )
+        );
+        let stations = await res.json();
+        window.stations = stations;
+
+        let sList = document.querySelector("#station-list");
+
+        let nameToID = {};
+
+        window.updateStationSW = async () => {
+          let el = document.querySelector(".select-station input");
+          console.log(nameToID[el.value]);
+        };
+        window.updateStationNE = async () => {
+          let el = document.querySelector(".select-station input");
+          console.log(nameToID[el.value]);
+        };
+        window.updateStationAll = async () => {
+          let el = document.querySelector(".select-station input");
+          let id = nameToID[el.value];
+          let res = await fetch(
+            "https://corsproxy.io/" +
+              encodeURIComponent(
+                "https://anytrip.com.au/api/v3/region/au4/departures/" +
+                  encodeURIComponent(id) +
+                  "?limit=250"
+              )
+          );
+          let js = await res.json();
+          window.station = js;
+
+          let now = new Date();
+          let time = now.getTime();
+
+          js.response.departures = js.response.departures
+            .filter((v) => v.tripInstance.trip.route.mode == "au4:trains")
+            .filter((v) => v.stopTimeInstance.departure.time - time / 1000 > 0)
+            .sort(
+              (a, b) =>
+                a.stopTimeInstance.departure.time -
+                b.stopTimeInstance.departure.time
+            );
+          let len = Math.min(js.response.departures.length, 6);
+          for (let i = 6; i > len; i--) {
+            hide(i, "0");
+          }
+          for (let i = 1; i <= len; i++) {
+            hide(i, "1");
+          }
+
+          document.querySelector(".lmrmiddle").innerText = "Next (1-6) Trains";
+
+          let nowh = ((now.getHours() - 1) % 12) + 1;
+          let nowm = now.getMinutes().toString();
+          let nows = now.getSeconds().toString();
+
+          while (nowm.length < 2) nowm = "0" + nowm;
+          while (nows.length < 2) nows = "0" + nows;
+
+          document.querySelector(".time").innerText = `${nowh}:${nowm}:${nows}`;
+
+          for (let i = 1; i <= len; i++) {
+            let dep = js.response.departures[i - 1];
+            let plt = dep.stopTimeInstance.stop.disassembled.platformName;
+            let det = dep.stopTimeInstance.departure.time;
+            let dest = dep.tripInstance.trip.route.longName
+              .split(" -")[1]
+              .trim()
+              .replace("Springfield", "Springfield Central");
+            let color = "#" + dep.tripInstance.trip.route.color;
+            let isNGR =
+              dep.vehicle.vehicleModel != undefined &&
+              dep.vehicle.vehicleModel.includes("NGR");
+
+            setColor(i, color);
+            let td = (v) =>
+              document.querySelector("#tr" + i).querySelectorAll("td")[v];
+            td(1).innerText = dest;
+            if (td(2).classList.contains("active"))
+              td(2).classList.remove("active");
+            td(2).classList.add("inactive");
+            td(2).setAttribute("contenteditable", "false");
+            td(3).innerText = plt;
+            if (isNGR) {
+              if (td(4).classList.contains("inactive"))
+                td(4).classList.remove("inactive");
+              td(4).classList.add("active");
+            } else {
+              if (td(4).classList.contains("active"))
+                td(4).classList.remove("active");
+              td(4).classList.add("inactive");
+            }
+
+            let deth = (new Date(det * 1000).getHours() - 1) % 12 + 1;
+            let detm = new Date(det * 1000).getMinutes().toString();
+            while (detm.length < 2) detm = "0" + detm;
+            td(0).innerText = `${deth}:${detm}`;
+            td(5).innerText = Math.round((det - time / 1000) / 60) + " min";
+            // console.log(dep);
+          }
+        };
+
+        stations.response.stops.forEach((s) => {
+          let option = document.createElement("option");
+          option.value = s.stop.fullName;
+          option.innerText = s.stop.fullName;
+          nameToID[s.stop.fullName] = s.stop.id;
+          sList.appendChild(option);
+        });
+
+        document
+          .querySelector(".select-station input")
+          .setAttribute("placeholder", "Select your station...");
+      }
+      main();
     </script>
   </body>
 </html>
