@@ -100,6 +100,13 @@
       .inactive {
         opacity: 0;
       }
+      .hidden,
+      .hidden .active,
+      .hidden .inactive {
+        cursor: default;
+        user-select: none;
+      }
+
       .inactive,
       .active,
       button {
@@ -200,12 +207,12 @@
     <button onclick="takeshot()">Screenshot</button><br />
 
     <div class="hide-buttons">
-      <button onclick="hide(1)">Hide #1</button>
-      <button onclick="hide(2)">Hide #2</button>
-      <button onclick="hide(3)">Hide #3</button>
-      <button onclick="hide(4)">Hide #4</button>
-      <button onclick="hide(5)">Hide #5</button>
-      <button onclick="hide(6)">Hide #6</button>
+      <button id="hide1" onclick="hide(1)">Hide #1</button>
+      <button id="hide2" onclick="hide(2)">Hide #2</button>
+      <button id="hide3" onclick="hide(3)">Hide #3</button>
+      <button id="hide4" onclick="hide(4)">Hide #4</button>
+      <button id="hide5" onclick="hide(5)">Hide #5</button>
+      <button id="hide6" onclick="hide(6)">Hide #6</button>
       <button onclick="for(let i = 1; i <= 6; i++) hide(i, '0');">
         Hide All
       </button>
@@ -241,7 +248,7 @@
       </div>
     </div>
 
-    <br>
+    <br />
     <div class="color-select">
       Colors:
       <ul>
@@ -319,11 +326,36 @@
       }
       function hide(num, setTo = null) {
         let el = document.querySelector("#tr" + num);
+        if (el.classList.contains("hidden")) el.classList.remove("hidden");
         if (setTo != null) {
           el.style.opacity = setTo;
+          if (setTo == "1") {
+            document.querySelector("#hide" + num).innerText = "Hide #" + num;
+            el.querySelectorAll("[contenteditable=false]").forEach((v) =>
+              v.setAttribute("contenteditable", "true")
+            );
+          } else {
+            document.querySelector("#hide" + num).innerText = "Show #" + num;
+            el.classList.add("hidden");
+            el.querySelectorAll("[contenteditable=true]").forEach((v) =>
+              v.setAttribute("contenteditable", "false")
+            );
+          }
           return;
         }
         if (el.style.opacity == "") el.style.opacity = "1";
+        document.querySelector("#hide" + num).innerText =
+          el.style.opacity == "1" ? "Show #" + num : "Hide #" + num;
+        if (el.style.opacity == "1") {
+          el.classList.add("hidden");
+          el.querySelectorAll("[contenteditable=true]").forEach((v) =>
+            v.setAttribute("contenteditable", "false")
+          );
+        } else {
+          el.querySelectorAll("[contenteditable=false]").forEach((v) =>
+            v.setAttribute("contenteditable", "true")
+          );
+        }
         el.style.opacity = el.style.opacity == "1" ? "0" : "1";
       }
       function setColor(i, val) {
@@ -338,6 +370,7 @@
       }
       document.querySelectorAll(".active").forEach((el) => {
         el.onclick = (e) => {
+          if (el.parentElement.style.opacity == "0") return;
           if (
             e.target != el &&
             (e.target.classList.contains("active") ||
