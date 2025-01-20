@@ -67,12 +67,16 @@
         width: 70px;
       }
       .service-table td:nth-child(2) {
-        width: 355px;
+        width: 392px;
       }
       .service-table td:nth-child(3) {
-        width: 55px;
+        width: 60px;
       }
       .service-table td:nth-child(4) {
+        width: 79px;
+        text-align: center;
+      }
+      .service-table td:nth-child(5) {
         width: 29px;
         position: relative;
       }
@@ -85,10 +89,6 @@
         top: 3px;
         width: 30px;
       }
-      .service-table td:nth-child(5) {
-        width: 87px;
-        text-align: center;
-      }
       .service-table td:nth-child(6) {
         text-align: right;
       }
@@ -96,8 +96,8 @@
         background-color: black;
         position: relative;
         width: 100%;
-        height: 26px;
-        font-size: 21px;
+        height: 22px;
+        font-size: 19px;
       }
       .service-table th:nth-child(1) {
         position: absolute;
@@ -157,78 +157,78 @@
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
           <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false">5</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
             <div class="tcar" style="display: none">
               <img src="./3car.svg" />
             </div>
           </td>
-          <td contenteditable="true" spellcheck="false">5</td>
           <td contenteditable="true" spellcheck="false">2 min</td>
         </tr>
         <tr id="tr2">
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
           <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false">5</td>
           <td class="active">
             <div class="tcar" style="display: none">
               <img src="./3car.svg" />
             </div>
             <div class="ngr"><img src="./NGR.svg" /></div>
           </td>
-          <td contenteditable="true" spellcheck="false">5</td>
           <td contenteditable="true" spellcheck="false">2 min</td>
         </tr>
         <tr id="tr3">
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
           <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false">5</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
             <div class="tcar" style="display: none">
               <img src="./3car.svg" />
             </div>
           </td>
-          <td contenteditable="true" spellcheck="false">5</td>
           <td contenteditable="true" spellcheck="false">2 min</td>
         </tr>
         <tr id="tr4">
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
           <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false">5</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
             <div class="tcar" style="display: none">
               <img src="./3car.svg" />
             </div>
           </td>
-          <td contenteditable="true" spellcheck="false">5</td>
           <td contenteditable="true" spellcheck="false">2 min</td>
         </tr>
         <tr id="tr5">
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
           <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false">5</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
             <div class="tcar" style="display: none">
               <img src="./3car.svg" />
             </div>
           </td>
-          <td contenteditable="true" spellcheck="false">5</td>
           <td contenteditable="true" spellcheck="false">2 min</td>
         </tr>
         <tr id="tr6">
           <td contenteditable="true" spellcheck="false">9:01</td>
           <td contenteditable="true" spellcheck="false">Ipswich</td>
           <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false">5</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
             <div class="tcar" style="display: none">
               <img src="./3car.svg" />
             </div>
           </td>
-          <td contenteditable="true" spellcheck="false">5</td>
           <td contenteditable="true" spellcheck="false">2 min</td>
         </tr>
       </table>
@@ -373,8 +373,8 @@
       function car3(num, setTo = null) {
         let pel = document.querySelector("#tr" + num);
         let mkel = document.querySelector("#tcar" + num);
-        let ngr = pel.querySelectorAll("td")[3].querySelector(".ngr");
-        let tcar = pel.querySelectorAll("td")[3].querySelector(".tcar");
+        let ngr = pel.querySelectorAll("td")[4].querySelector(".ngr");
+        let tcar = pel.querySelectorAll("td")[4].querySelector(".tcar");
         if ((ngr.style.display == "" && setTo == null) || setTo == "0") {
           ngr.style.display = "none";
           tcar.style.display = "";
