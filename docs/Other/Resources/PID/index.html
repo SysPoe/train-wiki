@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/coloris.min.css" />
+    <script src="dist/coloris.min.js"></script>
+    <script src="dist/html2canvas.min.js"></script>
+    <title>PID Maker</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        aspect-ratio: calc(16 / 9);
+        height: 355px;
+        width: 740px;
+        background-color: black;
+        color: white;
+        font-family: "Arial";
+        font-weight: bold;
+      }
+      .lmr {
+        height: 25px;
+        font-size: 21px;
+        display: flex;
+        padding-left: 3px;
+        padding-right: 3px;
+        position: relative;
+      }
+      .margin {
+        height: 25px;
+      }
+      .lmrmiddle {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .lmrleft {
+        position: absolute;
+      }
+      .time {
+        color: yellow;
+      }
+      .lmrright {
+        position: absolute;
+        right: 3px;
+      }
+      .service-table {
+        font-size: 24px;
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .service-table tr {
+        height: 40px;
+        border-top: 3px solid black;
+        background-color: #00871c;
+      }
+      .service-table td:nth-child(1) {
+        width: 70px;
+      }
+      .service-table td:nth-child(2) {
+        width: 355px;
+      }
+      .service-table td:nth-child(3) {
+        width: 55px;
+      }
+      .service-table td:nth-child(4) {
+        width: 29px;
+        position: relative;
+      }
+      .ngr {
+        position: absolute;
+        top: 3px;
+      }
+      .service-table td:nth-child(5) {
+        width: 87px;
+        text-align: center;
+      }
+      .service-table td:nth-child(6) {
+        text-align: right;
+      }
+      .service-table .header-row {
+        background-color: black;
+        position: relative;
+        width: 100%;
+        height: 26px;
+        font-size: 21px;
+      }
+      .service-table th:nth-child(1) {
+        position: absolute;
+      }
+      .service-table th:nth-child(2) {
+        position: absolute;
+        right: 130px;
+      }
+      .service-table th:nth-child(3) {
+        position: absolute;
+        right: 0;
+      }
+      .inactive {
+        opacity: 0;
+      }
+      .inactive,
+      .active,
+      button {
+        cursor: pointer;
+      }
+      .inactive:hover {
+        opacity: 0.3;
+      }
+      .active:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SysPoe's Passenger Information Display Maker!</h1>
+    <div class="container">
+      <div class="lmr">
+        <div class="lmrleft time" contenteditable="true" spellcheck="false">
+          8:59:55
+        </div>
+        <div class="lmrmiddle" contenteditable="true" spellcheck="false">
+          Next (1-6) Trains South & West
+        </div>
+        <!-- <div class="lmrright">Departs</div> -->
+      </div>
+      <div class="margin"></div>
+      <table class="service-table">
+        <tr class="header-row">
+          <th>Service</th>
+          <th>Platform</th>
+          <th>Departs</th>
+        </tr>
+        <tr id="tr1">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td class="active">Exp</td>
+          <td class="active">
+            <div class="ngr"><img src="./NGR.svg" /></div>
+          </td>
+          <td contenteditable="true" spellcheck="false">5</td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+        <tr id="tr2">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td class="active">Exp</td>
+          <td class="active">
+            <div class="ngr"><img src="./NGR.svg" /></div>
+          </td>
+          <td contenteditable="true" spellcheck="false">5</td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+        <tr id="tr3">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td class="active">Exp</td>
+          <td class="active">
+            <div class="ngr"><img src="./NGR.svg" /></div>
+          </td>
+          <td contenteditable="true" spellcheck="false">5</td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+        <tr id="tr4">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td class="active">Exp</td>
+          <td class="active">
+            <div class="ngr"><img src="./NGR.svg" /></div>
+          </td>
+          <td contenteditable="true" spellcheck="false">5</td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+        <tr id="tr5">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td class="active">Exp</td>
+          <td class="active">
+            <div class="ngr"><img src="./NGR.svg" /></div>
+          </td>
+          <td contenteditable="true" spellcheck="false">5</td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+        <tr id="tr6">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td class="active">Exp</td>
+          <td class="active">
+            <div class="ngr"><img src="./NGR.svg" /></div>
+          </td>
+          <td contenteditable="true" spellcheck="false">5</td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+      </table>
+      <!-- 54px high vs 366px -->
+    </div>
+
+    <button onclick="takeshot()">Screenshot</button><br />
+
+    <div class="hide-buttons">
+      <button onclick="hide(1)">Hide #1</button>
+      <button onclick="hide(2)">Hide #2</button>
+      <button onclick="hide(3)">Hide #3</button>
+      <button onclick="hide(4)">Hide #4</button>
+      <button onclick="hide(5)">Hide #5</button>
+      <button onclick="hide(6)">Hide #6</button>
+      <button onclick="for(let i = 1; i <= 6; i++) hide(i, '0');">
+        Hide All
+      </button>
+      <button onclick="for(let i = 1; i <= 6; i++) hide(i, '1');">
+        Show All
+      </button>
+    </div>
+
+    <div class="color">
+      <div>
+        <label for="colsel1">Select color for #1: </label
+        ><input name="colsel1" id="colsel1" type="text" data-coloris />
+      </div>
+      <div>
+        <label for="colsel2">Select color for #2: </label
+        ><input name="colsel2" id="colsel2" type="text" data-coloris />
+      </div>
+      <div>
+        <label for="colsel3">Select color for #3: </label
+        ><input name="colsel3" id="colsel3" type="text" data-coloris />
+      </div>
+      <div>
+        <label for="colsel4">Select color for #4: </label
+        ><input name="colsel4" id="colsel4" type="text" data-coloris />
+      </div>
+      <div>
+        <label for="colsel5">Select color for #5: </label
+        ><input name="colsel5" id="colsel5" type="text" data-coloris />
+      </div>
+      <div>
+        <label for="colsel6">Select color for #6: </label
+        ><input name="colsel6" id="colsel6" type="text" data-coloris />
+      </div>
+    </div>
+
+    <br>
+    <div class="color-select">
+      Colors:
+      <ul>
+        <li>
+          <button onclick="setColor(1, '#00871C')">Set #1</button>
+          <button onclick="setColor(2, '#00871C')">Set #2</button>
+          <button onclick="setColor(3, '#00871C')">Set #3</button>
+          <button onclick="setColor(4, '#00871C')">Set #4</button>
+          <button onclick="setColor(5, '#00871C')">Set #5</button>
+          <button onclick="setColor(6, '#00871C')">Set #6</button>
+          #00871C Ipswich / Sunshine Coast
+        </li>
+        <li>
+          <button onclick="setColor(1, '#E31837')">Set #1</button>
+          <button onclick="setColor(2, '#E31837')">Set #2</button>
+          <button onclick="setColor(3, '#E31837')">Set #3</button>
+          <button onclick="setColor(4, '#E31837')">Set #4</button>
+          <button onclick="setColor(5, '#E31837')">Set #5</button>
+          <button onclick="setColor(6, '#E31837')">Set #6</button>
+          #E31837 Beenleigh / Ferny Grove
+        </li>
+        <li>
+          <button onclick="setColor(1, '#1578BE')">Set #1</button>
+          <button onclick="setColor(2, '#1578BE')">Set #2</button>
+          <button onclick="setColor(3, '#1578BE')">Set #3</button>
+          <button onclick="setColor(4, '#1578BE')">Set #4</button>
+          <button onclick="setColor(5, '#1578BE')">Set #5</button>
+          <button onclick="setColor(6, '#1578BE')">Set #6</button>
+          #1578BE Springfield Central / Redcliffe
+        </li>
+        <li>
+          <button onclick="setColor(1, '#00467F')">Set #1</button>
+          <button onclick="setColor(2, '#00467F')">Set #2</button>
+          <button onclick="setColor(3, '#00467F')">Set #3</button>
+          <button onclick="setColor(4, '#00467F')">Set #4</button>
+          <button onclick="setColor(5, '#00467F')">Set #5</button>
+          <button onclick="setColor(6, '#00467F')">Set #6</button>
+          #00467F Cleveland / Shorncliffe
+        </li>
+        <li>
+          <button onclick="setColor(1, '#FFC425')">Set #1</button>
+          <button onclick="setColor(2, '#FFC425')">Set #2</button>
+          <button onclick="setColor(3, '#FFC425')">Set #3</button>
+          <button onclick="setColor(4, '#FFC425')">Set #4</button>
+          <button onclick="setColor(5, '#FFC425')">Set #5</button>
+          <button onclick="setColor(6, '#FFC425')">Set #6</button>
+          #FFC425 Gold Coast / Airport
+        </li>
+        <li>
+          <button onclick="setColor(1, '#A54399')">Set #1</button>
+          <button onclick="setColor(2, '#A54399')">Set #2</button>
+          <button onclick="setColor(3, '#A54399')">Set #3</button>
+          <button onclick="setColor(4, '#A54399')">Set #4</button>
+          <button onclick="setColor(5, '#A54399')">Set #5</button>
+          <button onclick="setColor(6, '#A54399')">Set #6</button>
+          #A54399 Doomben
+        </li>
+      </ul>
+    </div>
+    <script>
+      function takeshot() {
+        const element = document.querySelector(".container");
+
+        // Use html2canvas to take a screenshot
+        html2canvas(element).then((canvas) => {
+          // Convert the canvas to a data URL
+          const dataURL = canvas.toDataURL("image/png");
+
+          // Create a temporary link to download the image
+          const link = document.createElement("a");
+          link.href = dataURL;
+          link.download = "screenshot.png";
+          link.click();
+        });
+      }
+      function hide(num, setTo = null) {
+        let el = document.querySelector("#tr" + num);
+        if (setTo != null) {
+          el.style.opacity = setTo;
+          return;
+        }
+        if (el.style.opacity == "") el.style.opacity = "1";
+        el.style.opacity = el.style.opacity == "1" ? "0" : "1";
+      }
+      function setColor(i, val) {
+        document.querySelector("#colsel" + i).value = val;
+        document.querySelector("#tr" + i).style.backgroundColor = val;
+      }
+      for (let i = 1; i <= 6; i++) {
+        document.querySelector("#colsel" + i).onchange = () => {
+          let val = document.querySelector("#colsel" + i).value;
+          document.querySelector("#tr" + i).style.backgroundColor = val;
+        };
+      }
+      document.querySelectorAll(".active").forEach((el) => {
+        el.onclick = (e) => {
+          if (
+            e.target != el &&
+            (e.target.classList.contains("active") ||
+              e.target.classList.contains("inactive") ||
+              e.target.classList.contains("ignore"))
+          )
+            return;
+          if (el.classList.contains("active")) {
+            el.classList.remove("active");
+            el.classList.add("inactive");
+          } else {
+            el.classList.remove("inactive");
+            el.classList.add("active");
+          }
+        };
+      });
+    </script>
+  </body>
+</html>

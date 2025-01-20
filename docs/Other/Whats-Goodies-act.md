@@ -1,11 +1,8 @@
 There are currently:
-<ul>
-<li><span class="reporting"></span> reporting their live location</li>
-<li><span class="late-num"></span> running at least 1 minute late. The
-  latest one is a <a href="" class="latest-name"></a> <span class="latest-loc"></span>, running
-  <span class="latest-time"></span> minutes late.</li>
-<li><span class="crossing"></span> crossing the Victoria St Bridge. </li>
-</ul>
+
+- <span class="reporting"></span> reporting their live location, including <span class="reporting-stats"></span>
+- <span class="late-num"></span> running at least 5 minutes late. The latest one is a <a href="" class="latest-name"></a> <span class="latest-loc"></span>, running <span class="latest-time"></span> minutes late.
+- <span class="crossing"></span> crossing the Victoria St Bridge.</li>
 
 Vehicles:
 
@@ -31,15 +28,39 @@ Vehicles:
 
     let totalV = js.response.vehicles.length;
 
+    let rBuses = js.response.vehicles.filter(
+      (v) => v.tripInstance.trip.route.mode == "au4:buses"
+    ).length;
+    let rFerries = js.response.vehicles.filter(
+      (v) => v.tripInstance.trip.route.mode == "au4:ferries"
+    ).length;
+    let rTrams = js.response.vehicles.filter(
+      (v) => v.tripInstance.trip.route.mode == "au4:lightrail"
+    ).length;
+    let rTrains = js.response.vehicles.filter(
+      (v) => v.tripInstance.trip.route.mode == "au4:trains"
+    ).length;
+
     fill("reporting", `${totalV} ${totalV == 1 ? "vehicle" : "vehicles"}`);
+    fillHtml(
+      "reporting-stats",
+      `
+    ${rBuses} ${rBuses == 1 ? "bus" : "buses"},
+    ${rFerries} ${rFerries == 1 ? "ferry" : "ferries"},
+    ${rTrams} ${rTrams == 1 ? "tram" : "trams"}, and
+    ${rTrains} ${rTrains == 1 ? "train" : "trains"}.
+    `
+    );
 
     let late = js.response.vehicles.filter(
-      (v) => v.vehicleInstance.lastPosition.linearDelay > 60
+      (v) => v.vehicleInstance.lastPosition.linearDelay > 300
     );
 
     fill(
       "late-num",
-      `${late.length} ${late.length == 1 ? "vehicle" : "vehicles"}`
+      `${late.length} ${late.length == 1 ? "vehicle" : "vehicles"} (${
+        Math.round((late.length / totalV) * 1000) / 10
+      }%)`
     );
 
     let latest = late.sort((a, b) => {
@@ -79,8 +100,8 @@ Vehicles:
 
     let vsSwap = {
       "au4:buses": "Buses",
-      "au4:ferries": "Ferries",
-      "au4:lightrail": "Light Rail",
+      "au4:ferries": "",
+      "au4:lightrail": "",
       "au4:trains": "Trains",
     };
 
@@ -101,20 +122,10 @@ Vehicles:
       let k2 = v.tripInstance.trip.route.mode;
       k2 = vsSwap[k2];
       if (k2 == "Trains") {
-        let run = /.{4}\)?$/.exec(v.vehicleInstance.vehicleModel)[0].split(")")[0];
         key = key.replace(/train$/, "");
         if (key.length == 4) {
           if (key[0] == "D") key = "New Generation Rollingstock (NGR)";
           else key = "6 car non-NGR";
-        }
-        if(run[1] == "6") {
-            key = "Rosewood EMU"
-            let el = document.createElement("div");
-            el.style.background = "yellow";
-            el.innerHTML = "Rosewood EMU!!! <a href=''>here</a>";
-            el.querySelector("a").href = "https://anytrip.com.au/region/qld?selectedTrip=" +
-            encodeURIComponent(latest.vehicleInstance._tripInstancePath);
-            document.body.prepend(el);
         }
       }
       if (vs[k2] == undefined) vs[k2] = {};
@@ -125,12 +136,13 @@ Vehicles:
     console.log(vs);
 
     let k2 = Object.keys(vs).sort();
+    k2 = k2.filter(v => v.trim() != "")
     let ihtml = "<blockquote>";
     for (let k1 of k2) {
       let currH = vs[k1];
       let keys = Object.keys(currH).sort((a, b) => currH[b] - currH[a]);
       let totalK2 = 0;
-      for(let key of keys) totalK2+=currH[key];
+      for (let key of keys) totalK2 += currH[key];
       ihtml += `<p>${k1}: ${totalK2}</p>  <ul>`;
       for (let key of keys) {
         if (key.trim() != "") ihtml += `<li>${currH[key]} x ${key}</li>`;

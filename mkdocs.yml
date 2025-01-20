@@ -39,6 +39,7 @@ nav:
       - Other/SEQ-Craziness.md
       - Other/Station-Abbreviations.md
       - Other/Whats-Goodies.md
+      - PID Maker: Other/Resources/PID/index.html
       - Freight Timetables: FTT/index.md
 
 markdown_extensions:
