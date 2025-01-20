@@ -72,6 +72,11 @@
         position: absolute;
         top: 3px;
       }
+      .tcar {
+        position: absolute;
+        top: 3px;
+        width: 30px;
+      }
       .service-table td:nth-child(5) {
         width: 87px;
         text-align: center;
@@ -146,6 +151,9 @@
           <td class="active">Exp</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
+            <div class="tcar" style="display: none">
+              <img src="./3car.svg" />
+            </div>
           </td>
           <td contenteditable="true" spellcheck="false">5</td>
           <td contenteditable="true" spellcheck="false">2 min</td>
@@ -155,6 +163,9 @@
           <td contenteditable="true" spellcheck="false">Ipswich</td>
           <td class="active">Exp</td>
           <td class="active">
+            <div class="tcar" style="display: none">
+              <img src="./3car.svg" />
+            </div>
             <div class="ngr"><img src="./NGR.svg" /></div>
           </td>
           <td contenteditable="true" spellcheck="false">5</td>
@@ -166,6 +177,9 @@
           <td class="active">Exp</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
+            <div class="tcar" style="display: none">
+              <img src="./3car.svg" />
+            </div>
           </td>
           <td contenteditable="true" spellcheck="false">5</td>
           <td contenteditable="true" spellcheck="false">2 min</td>
@@ -176,6 +190,9 @@
           <td class="active">Exp</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
+            <div class="tcar" style="display: none">
+              <img src="./3car.svg" />
+            </div>
           </td>
           <td contenteditable="true" spellcheck="false">5</td>
           <td contenteditable="true" spellcheck="false">2 min</td>
@@ -186,6 +203,9 @@
           <td class="active">Exp</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
+            <div class="tcar" style="display: none">
+              <img src="./3car.svg" />
+            </div>
           </td>
           <td contenteditable="true" spellcheck="false">5</td>
           <td contenteditable="true" spellcheck="false">2 min</td>
@@ -196,6 +216,9 @@
           <td class="active">Exp</td>
           <td class="active">
             <div class="ngr"><img src="./NGR.svg" /></div>
+            <div class="tcar" style="display: none">
+              <img src="./3car.svg" />
+            </div>
           </td>
           <td contenteditable="true" spellcheck="false">5</td>
           <td contenteditable="true" spellcheck="false">2 min</td>
@@ -218,6 +241,21 @@
       </button>
       <button onclick="for(let i = 1; i <= 6; i++) hide(i, '1');">
         Show All
+      </button>
+    </div>
+
+    <div class="tcar-buttons">
+      <button id="tcar1" onclick="car3(1)">3car #1</button>
+      <button id="tcar2" onclick="car3(2)">3car #2</button>
+      <button id="tcar3" onclick="car3(3)">3car #3</button>
+      <button id="tcar4" onclick="car3(4)">3car #4</button>
+      <button id="tcar5" onclick="car3(5)">3car #5</button>
+      <button id="tcar6" onclick="car3(6)">3car #6</button>
+      <button onclick="for(let i = 1; i <= 6; i++) car3(i, '0');">
+        3car All
+      </button>
+      <button onclick="for(let i = 1; i <= 6; i++) car3(i, '1');">
+        NGR All
       </button>
     </div>
 
@@ -324,6 +362,22 @@
           link.click();
         });
       }
+      function car3(num, setTo = null) {
+        let pel = document.querySelector("#tr" + num);
+        let mkel = document.querySelector("#tcar" + num);
+        let ngr = pel.querySelectorAll("td")[3].querySelector(".ngr");
+        let tcar = pel.querySelectorAll("td")[3].querySelector(".tcar");
+        if ((ngr.style.display == "" && setTo == null) || setTo == '0') {
+          ngr.style.display = "none";
+          tcar.style.display = "";
+          mkel.innerText = "NGR #"+num;
+        } else {
+          ngr.style.display = "";
+          tcar.style.display = "none";
+          mkel.innerText = "3car #"+num;
+        }
+      }
+
       function hide(num, setTo = null) {
         let el = document.querySelector("#tr" + num);
         if (el.classList.contains("hidden")) el.classList.remove("hidden");
