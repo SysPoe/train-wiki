@@ -22,7 +22,7 @@
       .container {
         aspect-ratio: calc(16 / 9);
         height: 355px;
-        width: 740px;
+        width: 680px;
         background-color: black;
         color: white;
         font-family: "Arial";
@@ -67,7 +67,7 @@
         width: 70px;
       }
       .service-table td:nth-child(2) {
-        width: 392px;
+        width: 332px;
       }
       .service-table td:nth-child(3) {
         width: 60px;
@@ -140,8 +140,10 @@
     </style>
   </head>
   <body>
-    <h1>SysPoe's Passenger Information Display Maker!</h1>
-    Please excuse the NGR logo. It's traced from a really bad photo I took.
+    <div class="hide">
+      <h1>SysPoe's Passenger Information Display Maker!</h1>
+      Please excuse the NGR logo. It's traced from a really bad photo I took.
+    </div>
     <div class="container">
       <div class="lmr">
         <div class="lmrleft time" contenteditable="true" spellcheck="false">
@@ -243,131 +245,132 @@
 
     <button onclick="takeshot()">Screenshot</button><br />
 
-    <div class="hide-buttons">
-      <button id="hide1" onclick="hide(1)">Hide #1</button>
-      <button id="hide2" onclick="hide(2)">Hide #2</button>
-      <button id="hide3" onclick="hide(3)">Hide #3</button>
-      <button id="hide4" onclick="hide(4)">Hide #4</button>
-      <button id="hide5" onclick="hide(5)">Hide #5</button>
-      <button id="hide6" onclick="hide(6)">Hide #6</button>
-      <button onclick="for(let i = 1; i <= 6; i++) hide(i, '0');">
-        Hide All
-      </button>
-      <button onclick="for(let i = 1; i <= 6; i++) hide(i, '1');">
-        Show All
-      </button>
-    </div>
+    <div class="hide">
+      <div class="hide-buttons">
+        <button id="hide1" onclick="hide(1)">Hide #1</button>
+        <button id="hide2" onclick="hide(2)">Hide #2</button>
+        <button id="hide3" onclick="hide(3)">Hide #3</button>
+        <button id="hide4" onclick="hide(4)">Hide #4</button>
+        <button id="hide5" onclick="hide(5)">Hide #5</button>
+        <button id="hide6" onclick="hide(6)">Hide #6</button>
+        <button onclick="for(let i = 1; i <= 6; i++) hide(i, '0');">
+          Hide All
+        </button>
+        <button onclick="for(let i = 1; i <= 6; i++) hide(i, '1');">
+          Show All
+        </button>
+      </div>
 
-    <div class="tcar-buttons">
-      <button id="tcar1" onclick="car3(1)">3car #1</button>
-      <button id="tcar2" onclick="car3(2)">3car #2</button>
-      <button id="tcar3" onclick="car3(3)">3car #3</button>
-      <button id="tcar4" onclick="car3(4)">3car #4</button>
-      <button id="tcar5" onclick="car3(5)">3car #5</button>
-      <button id="tcar6" onclick="car3(6)">3car #6</button>
-      <button onclick="for(let i = 1; i <= 6; i++) car3(i, '0');">
-        3car All
-      </button>
-      <button onclick="for(let i = 1; i <= 6; i++) car3(i, '1');">
-        NGR All
-      </button>
-    </div>
+      <div class="tcar-buttons">
+        <button id="tcar1" onclick="car3(1)">3car #1</button>
+        <button id="tcar2" onclick="car3(2)">3car #2</button>
+        <button id="tcar3" onclick="car3(3)">3car #3</button>
+        <button id="tcar4" onclick="car3(4)">3car #4</button>
+        <button id="tcar5" onclick="car3(5)">3car #5</button>
+        <button id="tcar6" onclick="car3(6)">3car #6</button>
+        <button onclick="for(let i = 1; i <= 6; i++) car3(i, '0');">
+          3car All
+        </button>
+        <button onclick="for(let i = 1; i <= 6; i++) car3(i, '1');">
+          NGR All
+        </button>
+      </div>
 
-    <div class="select-station">
-      <input list="station-list" placeholder="Loading stations..." />
-      <datalist id="station-list">
-      </datalist>
-      <button onclick="updateStationSW()" disabled>South & West (WIP)</button>
-      <button onclick="updateStationNE()" disabled>North & East (WIP)</button>
-      <button onclick="updateStationAll()">All trains (WIP)</button>
-    </div>
+      <div class="select-station">
+        <input list="station-list" placeholder="Loading stations..." />
+        <datalist id="station-list"> </datalist>
+        <button onclick="updateStationSW()" disabled>South & West (WIP)</button>
+        <button onclick="updateStationNE()" disabled>North & East (WIP)</button>
+        <button onclick="updateStationAll()">All trains (WIP)</button>
+      </div>
 
-    <div class="color">
-      <div>
-        <label for="colsel1">Select color for #1: </label
-        ><input name="colsel1" id="colsel1" type="text" data-coloris />
+      <div class="color">
+        <div>
+          <label for="colsel1">Select color for #1: </label
+          ><input name="colsel1" id="colsel1" type="text" data-coloris />
+        </div>
+        <div>
+          <label for="colsel2">Select color for #2: </label
+          ><input name="colsel2" id="colsel2" type="text" data-coloris />
+        </div>
+        <div>
+          <label for="colsel3">Select color for #3: </label
+          ><input name="colsel3" id="colsel3" type="text" data-coloris />
+        </div>
+        <div>
+          <label for="colsel4">Select color for #4: </label
+          ><input name="colsel4" id="colsel4" type="text" data-coloris />
+        </div>
+        <div>
+          <label for="colsel5">Select color for #5: </label
+          ><input name="colsel5" id="colsel5" type="text" data-coloris />
+        </div>
+        <div>
+          <label for="colsel6">Select color for #6: </label
+          ><input name="colsel6" id="colsel6" type="text" data-coloris />
+        </div>
       </div>
-      <div>
-        <label for="colsel2">Select color for #2: </label
-        ><input name="colsel2" id="colsel2" type="text" data-coloris />
-      </div>
-      <div>
-        <label for="colsel3">Select color for #3: </label
-        ><input name="colsel3" id="colsel3" type="text" data-coloris />
-      </div>
-      <div>
-        <label for="colsel4">Select color for #4: </label
-        ><input name="colsel4" id="colsel4" type="text" data-coloris />
-      </div>
-      <div>
-        <label for="colsel5">Select color for #5: </label
-        ><input name="colsel5" id="colsel5" type="text" data-coloris />
-      </div>
-      <div>
-        <label for="colsel6">Select color for #6: </label
-        ><input name="colsel6" id="colsel6" type="text" data-coloris />
-      </div>
-    </div>
 
-    <br />
-    <div class="color-select">
-      Colors:
-      <ul>
-        <li>
-          <button onclick="setColor(1, '#00871C')">Set #1</button>
-          <button onclick="setColor(2, '#00871C')">Set #2</button>
-          <button onclick="setColor(3, '#00871C')">Set #3</button>
-          <button onclick="setColor(4, '#00871C')">Set #4</button>
-          <button onclick="setColor(5, '#00871C')">Set #5</button>
-          <button onclick="setColor(6, '#00871C')">Set #6</button>
-          #00871C Ipswich / Sunshine Coast
-        </li>
-        <li>
-          <button onclick="setColor(1, '#E31837')">Set #1</button>
-          <button onclick="setColor(2, '#E31837')">Set #2</button>
-          <button onclick="setColor(3, '#E31837')">Set #3</button>
-          <button onclick="setColor(4, '#E31837')">Set #4</button>
-          <button onclick="setColor(5, '#E31837')">Set #5</button>
-          <button onclick="setColor(6, '#E31837')">Set #6</button>
-          #E31837 Beenleigh / Ferny Grove
-        </li>
-        <li>
-          <button onclick="setColor(1, '#1578BE')">Set #1</button>
-          <button onclick="setColor(2, '#1578BE')">Set #2</button>
-          <button onclick="setColor(3, '#1578BE')">Set #3</button>
-          <button onclick="setColor(4, '#1578BE')">Set #4</button>
-          <button onclick="setColor(5, '#1578BE')">Set #5</button>
-          <button onclick="setColor(6, '#1578BE')">Set #6</button>
-          #1578BE Springfield Central / Redcliffe
-        </li>
-        <li>
-          <button onclick="setColor(1, '#00467F')">Set #1</button>
-          <button onclick="setColor(2, '#00467F')">Set #2</button>
-          <button onclick="setColor(3, '#00467F')">Set #3</button>
-          <button onclick="setColor(4, '#00467F')">Set #4</button>
-          <button onclick="setColor(5, '#00467F')">Set #5</button>
-          <button onclick="setColor(6, '#00467F')">Set #6</button>
-          #00467F Cleveland / Shorncliffe
-        </li>
-        <li>
-          <button onclick="setColor(1, '#FFC425')">Set #1</button>
-          <button onclick="setColor(2, '#FFC425')">Set #2</button>
-          <button onclick="setColor(3, '#FFC425')">Set #3</button>
-          <button onclick="setColor(4, '#FFC425')">Set #4</button>
-          <button onclick="setColor(5, '#FFC425')">Set #5</button>
-          <button onclick="setColor(6, '#FFC425')">Set #6</button>
-          #FFC425 Gold Coast / Airport
-        </li>
-        <li>
-          <button onclick="setColor(1, '#A54399')">Set #1</button>
-          <button onclick="setColor(2, '#A54399')">Set #2</button>
-          <button onclick="setColor(3, '#A54399')">Set #3</button>
-          <button onclick="setColor(4, '#A54399')">Set #4</button>
-          <button onclick="setColor(5, '#A54399')">Set #5</button>
-          <button onclick="setColor(6, '#A54399')">Set #6</button>
-          #A54399 Doomben
-        </li>
-      </ul>
+      <br />
+      <div class="color-select">
+        Colors:
+        <ul>
+          <li>
+            <button onclick="setColor(1, '#00871C')">Set #1</button>
+            <button onclick="setColor(2, '#00871C')">Set #2</button>
+            <button onclick="setColor(3, '#00871C')">Set #3</button>
+            <button onclick="setColor(4, '#00871C')">Set #4</button>
+            <button onclick="setColor(5, '#00871C')">Set #5</button>
+            <button onclick="setColor(6, '#00871C')">Set #6</button>
+            #00871C Ipswich / Sunshine Coast
+          </li>
+          <li>
+            <button onclick="setColor(1, '#E31837')">Set #1</button>
+            <button onclick="setColor(2, '#E31837')">Set #2</button>
+            <button onclick="setColor(3, '#E31837')">Set #3</button>
+            <button onclick="setColor(4, '#E31837')">Set #4</button>
+            <button onclick="setColor(5, '#E31837')">Set #5</button>
+            <button onclick="setColor(6, '#E31837')">Set #6</button>
+            #E31837 Beenleigh / Ferny Grove
+          </li>
+          <li>
+            <button onclick="setColor(1, '#1578BE')">Set #1</button>
+            <button onclick="setColor(2, '#1578BE')">Set #2</button>
+            <button onclick="setColor(3, '#1578BE')">Set #3</button>
+            <button onclick="setColor(4, '#1578BE')">Set #4</button>
+            <button onclick="setColor(5, '#1578BE')">Set #5</button>
+            <button onclick="setColor(6, '#1578BE')">Set #6</button>
+            #1578BE Springfield Central / Redcliffe
+          </li>
+          <li>
+            <button onclick="setColor(1, '#00467F')">Set #1</button>
+            <button onclick="setColor(2, '#00467F')">Set #2</button>
+            <button onclick="setColor(3, '#00467F')">Set #3</button>
+            <button onclick="setColor(4, '#00467F')">Set #4</button>
+            <button onclick="setColor(5, '#00467F')">Set #5</button>
+            <button onclick="setColor(6, '#00467F')">Set #6</button>
+            #00467F Cleveland / Shorncliffe
+          </li>
+          <li>
+            <button onclick="setColor(1, '#FFC425')">Set #1</button>
+            <button onclick="setColor(2, '#FFC425')">Set #2</button>
+            <button onclick="setColor(3, '#FFC425')">Set #3</button>
+            <button onclick="setColor(4, '#FFC425')">Set #4</button>
+            <button onclick="setColor(5, '#FFC425')">Set #5</button>
+            <button onclick="setColor(6, '#FFC425')">Set #6</button>
+            #FFC425 Gold Coast / Airport
+          </li>
+          <li>
+            <button onclick="setColor(1, '#A54399')">Set #1</button>
+            <button onclick="setColor(2, '#A54399')">Set #2</button>
+            <button onclick="setColor(3, '#A54399')">Set #3</button>
+            <button onclick="setColor(4, '#A54399')">Set #4</button>
+            <button onclick="setColor(5, '#A54399')">Set #5</button>
+            <button onclick="setColor(6, '#A54399')">Set #6</button>
+            #A54399 Doomben
+          </li>
+        </ul>
+      </div>
     </div>
     <script>
       function takeshot() {
@@ -548,6 +551,9 @@
             let dep = js.response.departures[i - 1];
             let plt = dep.stopTimeInstance.stop.disassembled.platformName;
             let det = dep.stopTimeInstance.departure.time;
+            let deldet = det;
+            if (dep.stopTimeInstance.departure.delay != undefined)
+              deldet -= dep.stopTimeInstance.departure.delay;
             let dest = dep.tripInstance.trip.route.longName
               .split(" -")[1]
               .trim()
@@ -576,8 +582,8 @@
               td(4).classList.add("inactive");
             }
 
-            let deth = (new Date((det - dep.stopTimeInstance.departure.delay) * 1000).getHours() - 1) % 12 + 1;
-            let detm = new Date((det - dep.stopTimeInstance.departure.delay) * 1000).getMinutes().toString();
+            let deth = ((new Date(deldet * 1000).getHours() - 1) % 12) + 1;
+            let detm = new Date(deldet * 1000).getMinutes().toString();
             while (detm.length < 2) detm = "0" + detm;
             td(0).innerText = `${deth}:${detm}`;
             td(5).innerText = Math.floor((det - time / 1000) / 60) + " min";
@@ -596,6 +602,15 @@
         document
           .querySelector(".select-station input")
           .setAttribute("placeholder", "Select your station...");
+
+        if (window.location.hash.replace("#", "").trim() != "") {
+          document
+            .querySelectorAll(".hide")
+            .forEach((el) => (el.style.display = "none"));
+          document.querySelector(".select-station input").value =
+            decodeURIComponent(location.hash.replace("#", ""));
+          window.updateStationAll();
+        }
       }
       main();
     </script>
