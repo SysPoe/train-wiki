@@ -276,7 +276,6 @@
     <div class="select-station">
       <input list="station-list" placeholder="Loading stations..." />
       <datalist id="station-list">
-        <option value="test">test</option>
       </datalist>
       <button onclick="updateStationSW()" disabled>South & West (WIP)</button>
       <button onclick="updateStationNE()" disabled>North & East (WIP)</button>
@@ -577,11 +576,11 @@
               td(4).classList.add("inactive");
             }
 
-            let deth = (new Date(det * 1000).getHours() - 1) % 12 + 1;
-            let detm = new Date(det * 1000).getMinutes().toString();
+            let deth = (new Date((det - dep.stopTimeInstance.departure.delay) * 1000).getHours() - 1) % 12 + 1;
+            let detm = new Date((det - dep.stopTimeInstance.departure.delay) * 1000).getMinutes().toString();
             while (detm.length < 2) detm = "0" + detm;
             td(0).innerText = `${deth}:${detm}`;
-            td(5).innerText = Math.round((det - time / 1000) / 60) + " min";
+            td(5).innerText = Math.floor((det - time / 1000) / 60) + " min";
             // console.log(dep);
           }
         };
