@@ -932,7 +932,9 @@
           }
 
           document.querySelector(".lmrmiddle").innerText =
-            "Next (1-6) Trains " + zones[zoneSt].south.display;
+            "Next (1-6) Trains " + (id == "au4:place_romsta"
+              ? "South & West"
+              : zones[zoneSt].south.display);
 
           let nowh = ((now.getHours() - 1) % 12) + 1;
           let nowm = now.getMinutes().toString();
