@@ -1009,7 +1009,18 @@
               (v) => v.stop.parent.id == id
             )[0].index;
             let isCity = false;
-            if (id != "au4:place_romsta") {
+            if (
+              innerCity.stations.includes(
+                stops.realtimePattern[
+                  stops.realtimePattern.length - 1
+                ].stop.parent.fullName
+                  .toLowerCase()
+                  .replace("station", "")
+                  .trim()
+              )
+            )
+              color = innerCity.colour;
+            else if (id != "au4:place_romsta") {
               for (let i = upTo + 1; i < stops.realtimePattern.length; i++) {
                 let { stop } = stops.realtimePattern[i];
                 if (
@@ -1025,18 +1036,7 @@
                 }
               }
             }
-            if (
-              innerCity.stations.includes(
-                stops.realtimePattern[
-                  stops.realtimePattern.length - 1
-                ].stop.parent.fullName
-                  .toLowerCase()
-                  .replace("station", "")
-                  .trim()
-              )
-            ) {
-              color = innerCity.colour;
-            }
+
             setColor(i, color);
             let td = (v) =>
               document.querySelector("#tr" + i).querySelectorAll("td")[v];
@@ -1063,7 +1063,9 @@
             let estdepmin = Math.floor((det - time / 1000) / 60) % 60;
             let estdeph = Math.floor(Math.floor((det - time / 1000) / 60) / 60);
             td(5).innerText =
-              estdeph == 0 ? estdepmin + " min" : `${estdeph}:${estdepmin < 10 ? "0" : ""}${estdepmin}`;
+              estdeph == 0
+                ? estdepmin + " min"
+                : `${estdeph}:${estdepmin < 10 ? "0" : ""}${estdepmin}`;
             // console.log(dep);
           }
         }
