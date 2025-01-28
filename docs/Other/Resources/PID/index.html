@@ -776,29 +776,38 @@
           ],
         },
       ];
+      let innerInnerCity = [
+        "bowen hills",
+        "fortitude valley",
+        "central",
+        "roma street",
+        "exhibition",
+        "south brisbane",
+        "south bank",
+        "boggo rd",
+        "park rd",
+        "boggo rd/park rd",
+        "boggo rd / park rd",
+        "boggo road",
+        "park road",
+        "boggo road/park road",
+        "boggo road / park road",
+      ];
       let innerCity = {
         colour: "#c7c8ca",
         stations: [
-          "bowen hills",
-          "fortitude valley",
-          "central",
-          "roma street",
-          "exhibition",
-          "south brisbane",
-          "south bank",
-          "boggo rd",
-          "park rd",
-          "boggo rd/park rd",
-          "boggo rd / park rd",
-          "boggo road",
-          "park road",
-          "boggo road/park road",
-          "boggo road / park road",
+          "northgate",
+          "nundah",
+          "toombul",
+          "eagle junction",
+          "wooloowin",
+          "albion",
+          ...innerInnerCity
         ],
       };
       let nameOverrides = {
-        "Redcliffe Peninsula": "Redcliffe",
-        Springfield: "Springfield Central",
+        "Kippa-Ring": "Redcliffe",
+        "Varsity Lakes": "Gold Coast",
       };
 
       function takeshot() {
@@ -933,6 +942,7 @@
 
         async function _updateStation(
           id,
+          thisStation,
           filterfunc = (v) => {
             return true;
           },
@@ -987,8 +997,9 @@
             let deldet = det;
             if (dep.stopTimeInstance.departure.delay != undefined)
               deldet -= dep.stopTimeInstance.departure.delay;
-            let dest = dep.tripInstance.trip.route.longName
-              .split(" -")[1]
+            let dest = dep.tripInstance.trip.headsign.headline
+              .trim()
+              .replace(/ station$/, "")
               .trim();
             if (nameOverrides[dest] != undefined) dest = nameOverrides[dest];
             let color = "#" + dep.tripInstance.trip.route.color;
@@ -1020,7 +1031,11 @@
               )
             )
               color = innerCity.colour;
-            else if (id != "au4:place_romsta") {
+            if (
+              !innerInnerCity.includes(
+                thisStation.toLowerCase().replace(" station", "").trim()
+              )
+            ) {
               for (let i = upTo + 1; i < stops.realtimePattern.length; i++) {
                 let { stop } = stops.realtimePattern[i];
                 if (
@@ -1078,6 +1093,7 @@
 
           _updateStation(
             id,
+            el.value,
             (v) => {
               let dest = v.tripInstance.trip.headsign.headline;
               let destZone = getZone(dest);
@@ -1121,17 +1137,35 @@
           console.log(zoneSt);
           _updateStation(
             id,
-            (v) =>
-              zones[zoneSt].north.zones.includes(
-                getZone(v.tripInstance.trip.headsign.headline)
-              ),
+            el.value,
+            (v) => {
+              let dest = v.tripInstance.trip.headsign.headline;
+              let destZone = getZone(dest);
+              if (zoneSt == destZone) {
+                let cel = el.value.toLowerCase().replace("station", "").trim();
+                let del = dest.toLowerCase().replace("station", "").trim();
+                if (
+                  zones[zoneSt].order == 0 &&
+                  zones[zoneSt].stations.findIndex((s) => s == cel) >
+                    zones[zoneSt].stations.findIndex((s) => s == del)
+                )
+                  return true;
+                if (
+                  zones[zoneSt].order == 1 &&
+                  zones[zoneSt].stations.findIndex((s) => s == cel) <
+                    zones[zoneSt].stations.findIndex((s) => s == del)
+                )
+                  return true;
+              }
+              return zones[zoneSt].north.zones.includes(destZone);
+            },
             "Next (1-6) Trains " + zones[zoneSt].north.display
           );
         };
         window.updateStationAll = async () => {
           let el = document.querySelector(".select-station input");
           let id = nameToID[el.value];
-          _updateStation(id);
+          _updateStation(id, el.value);
         };
 
         stations.response.stops.forEach((s) => {
