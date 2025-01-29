@@ -49,12 +49,14 @@ Common Lines Served: Gold Coast line, Airport line, Nambour and Gympie North lin
 
 > The IMU120 as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
 
-### Quirks
+In 1999, four IMU120 series units (121-124) were ordered for the Airtrain line to Brisbane Airport. They entered service in 2001 and feature high-backed seats with a head cushion as an extension to the SMU220-based seat design<sup>\[2\]</sup>, as well as a top speed of 140km/h<sup>\[14\]</sup>. There is one toilet per unit and the luggage racks are in different configurations than the IMU100s due to interior design differences<sup>\[2\]</sup>.
 
-To keep the auxiliary converters (and systems) online through neutral sections 220’s and 120’s automatically apply a small amount of regenerative braking when traversing neutral sections at speeds above 20km/h. This reduces the need to rely on the battery system and is why they maintain full lighting and air conditioning compared to other units in the fleet.
+While the IMU100s and IMU120s can be used together to form 6-car sets, they no longer do so in revenue service due to electrical and mechanical differences<sup>\[2\]</sup>. The IMU120s are fitted with electric plug doors as opposed to air operated plug doors on the IMU100s, they are fitted with one A/C pod per car as opposed to two, and the cooling system has been changed to water cooling which eliminates the noise associated with the traction blower fans<sup>\[14\]</sup>.
 
-For some reason at speeds around 40-60km/h they can produce a rather nasty shudder through the train. As a driver there isn’t much that can be done to prevent it. Some do it, some don’t, some are worse than others. Just a quirk of the units.
-Source: [https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321aky](https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321aky)
+In order to keep the auxiliary converters and systems online through neutral sections of track, IMU120s and SMU220s automatically apply a small amount of regenerative braking while traversing sections at speeds above 20km/h. This reduces the need to rely on the battery system and is also the reason why they maintain full lighting and air conditioning compared to other units in the fleet. However, this can produce a nasty shudder through the train at speeds around 40-60km/h which is mostly unpreventable and varys depending on the unit<sup>\[15\]</sup>.
+
+**Seat Capacity**:<br>
+76 (IM5121–4: driving motor car); 80 (IM7121–4: trailer car); 59 (IM8121–4: driving motor car)
 
 ### Carriage Layout
 
@@ -130,3 +132,5 @@ Source: [https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321ak
 - **\[11\]** [https://en-academic.com/dic.nsf/enwiki/6614269](https://en-academic.com/dic.nsf/enwiki/6614269)
 - **\[12\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365) archived [here](../media/Archive/qr-contract-disclosure-fy2023-2024.csv)
 - **\[13\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2022-2023/resource/d135ec7d-4a7a-40b2-98e4-3df90365f374](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2022-2023/resource/d135ec7d-4a7a-40b2-98e4-3df90365f374) archived [here](../media/Archive/qr-contract-disclosure-fy2022-2023.csv)
+- **\[14\]** [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/edibombardier-interurban-multiple-unit-120-series-imu120](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/edibombardier-interurban-multiple-unit-120-series-imu120)
+- **\[15\]** [https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321aky](https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321aky)
