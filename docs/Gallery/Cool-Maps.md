@@ -2,7 +2,7 @@
 
 Here are some cool maps and posters of the SEQ / QLD / AUS rail network that I found. And some other ones too.
 
-See also: [QR Network Schematic](QR-Network-Schematic.html)
+See also: [QR Network Schematic](Cool-Maps/QR-Network-Schematic.html)
 
 ## 2024 Translink Map w/ CRR and Railbus
 

@@ -56,7 +56,15 @@ While the IMU100s and IMU120s can be used together to form 6-car sets, they no l
 In order to keep the auxiliary converters and systems online through neutral sections of track, IMU120s and SMU220s automatically apply a small amount of regenerative braking while traversing sections at speeds above 20km/h. This reduces the need to rely on the battery system and is also the reason why they maintain full lighting and air conditioning compared to other units in the fleet. However, this can produce a nasty shudder through the train at speeds around 40-60km/h which is mostly unpreventable and varys depending on the unit<sup>\[15\]</sup>.
 
 **Seat Capacity**:<br>
-76 (IM5121–4: driving motor car); 80 (IM7121–4: trailer car); 59 (IM8121–4: driving motor car)
+76 (IM5121–4: driving motor car); 80 (IM7121–4: trailer car); 59 (IM8121–4: driving motor car)<sup>\[16\]</sup>
+
+### Timeline
+- _1999_: IMU121-124 ordered<sup>\[2\]</sup>.
+- _2001 - 2002_: IMU121-124 entered service<sup>\[2\]</sup>.
+- _2021_: Brake and pneumatic overhauls of SMU220s and IMU120s completed by Faiveley Transport Australia Ltd at a price of $5,735,919.34<sup>\[13\]</sup>.
+- _2022_: Coupler overhaul of SMU220s and IMU120s completed by Voith Turbo Pty Ltd at a price of $3,200,000, and compressor and air dryer overhauls completed by Knorr-Bremse Australia Pty Ltd at a price of $975,475.54<sup>\[13\]</sup>.
+- _2023_: Routers replaced in EMUs, IMU100s, SMU200s, IMU120s and SMU220s by Nomad Digital Pty Ltd for $1,756,757.72<sup>\[12\]</sup>.
+- _November 30, 2023_: QR issued a tender for contractors to perform a Traction Package and TCMS Replacement on IMU120/160s and SMU220/260s (98x 3-car vehicles in total), stating that the existing Bombardier MITRAC traction package and Train Control Management System (TCMS) [known as TPT] equipment is becoming obsolete<sup>\[17\]</sup>.
 
 ### Carriage Layout
 
@@ -134,3 +142,5 @@ In order to keep the auxiliary converters and systems online through neutral sec
 - **\[13\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2022-2023/resource/d135ec7d-4a7a-40b2-98e4-3df90365f374](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2022-2023/resource/d135ec7d-4a7a-40b2-98e4-3df90365f374) archived [here](../media/Archive/qr-contract-disclosure-fy2022-2023.csv)
 - **\[14\]** [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/edibombardier-interurban-multiple-unit-120-series-imu120](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/edibombardier-interurban-multiple-unit-120-series-imu120)
 - **\[15\]** [https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321aky](https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321aky)
+- **\[16\]** [https://www.railtram.com.au/imu-interurban-multiple-unit-120](https://www.railtram.com.au/imu-interurban-multiple-unit-120)
+- **\[17\]** [https://qtenders.epw.qld.gov.au/qtenders/tender/display/tender-details.do?CSRFNONCE=2FBE6ED066A0345628B4CB1E58AE282F&id=51072&action=display-tender-details](https://qtenders.epw.qld.gov.au/qtenders/tender/display/tender-details.do?CSRFNONCE=2FBE6ED066A0345628B4CB1E58AE282F&id=51072&action=display-tender-details)
