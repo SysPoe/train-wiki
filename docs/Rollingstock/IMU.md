@@ -55,7 +55,7 @@ While the IMU100s and IMU120s can be used together to form 6-car sets, they no l
 
 In order to keep the auxiliary converters and systems online through neutral sections of track, IMU120s and SMU220s automatically apply a small amount of regenerative braking while traversing sections at speeds above 20km/h. This reduces the need to rely on the battery system and is also the reason why they maintain full lighting and air conditioning compared to other units in the fleet. However, this can produce a nasty shudder through the train at speeds around 40-60km/h which is mostly unpreventable and varys depending on the unit<sup>\[15\]</sup>.
 
-**Seat Capacity**:<br>
+**Seating Capacity**:<br>
 76 (IM5121–4: driving motor car); 80 (IM7121–4: trailer car); 59 (IM8121–4: driving motor car)<sup>\[16\]</sup>
 
 ### Timeline
@@ -109,6 +109,16 @@ In order to keep the auxiliary converters and systems online through neutral sec
 
 > The IMU160 as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
 
+
+The IMU160 Series trains were ordered in 2005 when the Gold Coast line was being upgraded and duplicated, and were introduced in service from 2007 to 2011. The units are virtually identical to the TransPerth B series trains<sup>\[19\]</sup>, which incorporate a European style Streamlined design, albeit with exposed Air-conditioning Pods<sup>\[18\]</sup>. They are also similar to the V/Line VLocity DMU, and Adelaide Metro 4000 class EMU trains with alterations to the headlights to complement with the rest of the Citytrain fleet<sup>\[2\]</sup>.
+
+They operate as three-car sets, with a driving motor car at each end and a trailer car in the middle. The trailer cars have pantographs but do not have motors<sup>\[19\]</sup> These trains are interoperable with the 260 series Suburban Multiple Units as they have almost identical specifications<sup>\[2\]</sup>.
+
+In 2007, it was discovered during a "1200-point check" that the air conditioning units on top of the carriages had been built 10mm too wide for the loading gauge, sparking concerns over tunnel clearance in a 4m section between Central and Fortitude Valley stations<sup>\[20\]</sup>.
+
+**Seating Capacity:**<br>
+66 (IM5161–88: driving motor car); 84 (IM7161–88: trailer car); 65 (IM8161–88: driving motor car)<sup>\[19\]</sup>.
+
 ### Carriage Layout
 
 [Source](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/imu-160)
@@ -124,6 +134,11 @@ In order to keep the auxiliary converters and systems online through neutral sec
 #### Carriage 3
 
 ![](../media/Layouts/IMU160_C.jpg)
+
+### IMU160 Virtual Tour
+<iframe width="400" height="240" src="https://my.matterport.com/show/?m=b2NXFEAnhyA" frameborder="0" allowfullscreen allow="xr-spatial-tracking" title="Virtual Tour"></iframe>
+
+See: [https://www.queenslandrail.com.au/Customers/Accessibility/Site%20Assets/Virtual%20Tours/IMU.html](https://www.queenslandrail.com.au/Customers/Accessibility/Site%20Assets/Virtual%20Tours/IMU.html)
 
 ## Sources
 
@@ -144,3 +159,6 @@ In order to keep the auxiliary converters and systems online through neutral sec
 - **\[15\]** [https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321aky](https://www.reddit.com/r/BrisbaneTrains/comments/1hikjzi/comment/m321aky)
 - **\[16\]** [https://www.railtram.com.au/imu-interurban-multiple-unit-120](https://www.railtram.com.au/imu-interurban-multiple-unit-120)
 - **\[17\]** [https://qtenders.epw.qld.gov.au/qtenders/tender/display/tender-details.do?CSRFNONCE=2FBE6ED066A0345628B4CB1E58AE282F&id=51072&action=display-tender-details](https://qtenders.epw.qld.gov.au/qtenders/tender/display/tender-details.do?CSRFNONCE=2FBE6ED066A0345628B4CB1E58AE282F&id=51072&action=display-tender-details)
+- **\[18\]** [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/edibombardier-interurban-multiple-unit-160-series-imu160](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/edibombardier-interurban-multiple-unit-160-series-imu160)
+- **\[19\]** [https://www.railtram.com.au/imu-interurban-multiple-unit-160](https://www.railtram.com.au/imu-interurban-multiple-unit-160)
+- **\[20\]** [https://web.archive.org/web/20110811094831/http://www.couriermail.com.au/news/queensland/bungle-halts-trains/story-e6freoof-1111113052829](https://web.archive.org/web/20110811094831/http://www.couriermail.com.au/news/queensland/bungle-halts-trains/story-e6freoof-1111113052829) archived from [the original](http://www.couriermail.com.au/news/queensland/bungle-halts-trains/story-e6freoof-1111113052829)
