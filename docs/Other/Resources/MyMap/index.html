@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="svgpanzoom.js"></script>
+    <title>MyMap</title>
+    <style>
+      body {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      #map-diagram {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <object
+      type="image/svg+xml"
+      id="map-diagram"
+      data="../../../media/MapsPosters/QR-Network-Diagram.svg"
+    >
+      Loading svg...
+    </object>
+
+    <script>
+      async function main() {
+        await new Promise((res) => {
+          document.querySelector("#map-diagram").onload = res;
+        });
+
+        let pz = svgPanZoom(document.getElementById("map-diagram"), {
+          maxZoom: 1000,
+          dblClickZoomEnabled: false,
+        });
+        window.pz = pz;
+
+        let docel =
+          document.querySelector("#map-diagram").contentDocument
+            .documentElement;
+
+        let downtime = 0;
+        docel.onmousedown = () => {
+          downtime = Date.now();
+        };
+        docel.onmouseup = (ev) => {
+          if (Date.now() - downtime > 100) return;
+          downtime = 0;
+
+          let { x, y } = ev;
+          let panX = pz.getPan().x;
+          let panY = pz.getPan().y;
+          let zoom = pz.getZoom();
+          x -= panX;
+          x /= zoom;
+          y -= panY;
+          y /= zoom;
+          console.log(x, y);
+        };
+      }
+      main();
+    </script>
+  </body>
+</html>
