@@ -6,17 +6,23 @@ Here is a selection of some of my train photos that I think are nice, in no part
 
 ## EMUs
 
-![](../media/MyGallery/EMU57_SouthBrisbane_BNFG-FERNY-GROVE_1EC1_ORIGINAL-1.png)
-
-> [View full image](../media/MyGallery/EMU57_SouthBrisbane_BNFG-FERNY-GROVE_1EC1_ORIGINAL-1.png)
->
-> EMU57/50 arriving at South Brisbane station, platform 2, operating BNFG (Beenleigh to Ferny Grove) service. Run 1EC1. Taken 06/12/24 @ 18:05.
-
 ![](../media/MyGallery/EMU50_RomaStreet_BRBR-PARKROAD-JS06.jpg)
 
 > [View full image](../media/MyGallery/EMU50_RomaStreet_BRBR-PARKROAD-JS06.jpg)
 >
 > EMU50 (3 car) departing Roma St Platform 6, operating Boggo Road / Park Road (BRBR) service. Run JS06.
+
+![](../media/EMU53_Darra_preview.png)
+
+> [View full image](../media/EMU53_Darra_preview.png)
+>
+> EMU53 at Darra Station, Platform 1, operating BRIP (Brisbane City - Ipswich) service. Run 1554. Taken 28/12/24 @ 18:59.
+
+![](../media/MyGallery/EMU57_SouthBrisbane_BNFG-FERNY-GROVE_1EC1_ORIGINAL-1.png)
+
+> [View full image](../media/MyGallery/EMU57_SouthBrisbane_BNFG-FERNY-GROVE_1EC1_ORIGINAL-1.png)
+>
+> EMU57/50 arriving at South Brisbane station, platform 2, operating BNFG (Beenleigh to Ferny Grove) service. Run 1EC1. Taken 06/12/24 @ 18:05.
 
 ## IMUs
 
