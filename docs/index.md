@@ -15,4 +15,4 @@ By the way, if you would like the original uncompressed versions of the images i
 
 Email: [poe@duck.com](mailto:poe@duck.com) <br>
 Github: [https://github.com/SysPoe](https://github.com/SysPoe) <br>
-You can also see the source code of this wiki over at [https://github.com/SysPoe/train-wiki](https://github.com/SysPoe/train-wiki). It might not last there forever, though, and I might have to migrate the media to another site that allows for larger files. So far, almost all of the media and archives are stored in the repo. As of Jan 15, 2025, it totals 761 MB, so not too bad.
+You can also see the source code of this wiki over at [https://github.com/SysPoe/train-wiki](https://github.com/SysPoe/train-wiki). It might not last there forever, though, and I might have to migrate the media to another site that allows for larger files. So far, almost all of the media and archives are stored in the repo. As of Feb 10, 2025, it totals a whopping 3.05GB.
