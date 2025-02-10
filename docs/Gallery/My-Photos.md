@@ -90,6 +90,6 @@ Here is a selection of some of my train photos that I think are nice, in no part
 
 ![](../media/MyGallery/Electric%20Tilt%20Train%20at%20Fortitude%20Valley-Enhanced-NR.png)
 
-> [View full image](../media/MyGallery/Electric%20Tilt%20Train%20at%20Fortitude%20Valley-Enhanced-NR.png)
+> [View full image](../media/MyGallery/Electric%20Tilt%20Train%20at%20Central-Enhanced-NR.png)
 >
-> The Electric Tilt Train passing through Fortitude Valley Station, platform 5. Taken 05/12/24 @ 10:06.
+> The Electric Tilt Train passing through Central Station, platform 5. Taken 05/12/24 @ 10:06.
