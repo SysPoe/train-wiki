@@ -1,5 +1,7 @@
 # ICE (Walkers/Adtranz InterCity Express)
 
+**This page is under construction!! Check out [ICE on Wikipedia](https://en.wikipedia.org/wiki/InterCity_Express_(Queensland_Rail)).**
+
 ## Gallery
 
 There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
