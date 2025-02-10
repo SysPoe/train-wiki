@@ -1,12 +1,64 @@
 # SMU (Suburban Multiple Unit)
 
+The SMUs are a class of units used by QR in SEQ, manufactured between 1994 and 2011. SMUs are divided into 3 subclasses, the SMU200, SMU220, and SMU260<sup>\[1\]</sup>.
+
 ## Walkers/Adtranz Surban Multiple Unit 200 series (SMU200)
 
 ![](../media/SMU200_QR_SideShot.jpg)
 
 > The SMU200 as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
 
-Refurbishment of SMU200s: [https://www.downergroup.com/downer-secures-80-million-queensland-rail-con](https://www.downergroup.com/downer-secures-80-million-queensland-rail-con)
+The 12 SMU200s were introduced in 1994 due to a shortage in rollingstock caused by an increase in demand<sup>\[1\]</sup>, as well as to offset the loco-hauled SX Set run services that were slowly being phased out for health and safety reasons<sup>\[2\]</sup>. The trains, numbered SMU201-212, entered service on the 16<sup>th</sup> of August 1994 and were the first new trains since EMU deliveries ended in 1989<sup>\[1\]</sup>.
+
+The units used modern thyristor traction control systems (EMUs also used thyristor TCS's), with the units set up similar to the EMUs with a Driver-Motor, Motor, and Driver Trailer cars. They use blower for cooling both the traction equipment and braking grids, and although the EMUs are quite louder with their high-pitch traction motors, the SMU200s (and IMU100s) are known to be quite loud on take-off due to their blowers winding up. Although when running they are very quiet and have the typical gear switching sound of a thyristor control system<sup>\[2\]</sup>.
+
+The SMU200s are commonly mixed with SMU220 class to make up 6-car trains, however as they use the Scharfenburg coupler they can be coupled to EMUs, IMUs, ICE sets, and Tilt Trains for haulage purposes only as they are not 100% electrically compatible<sup>\[2\]</sup>.
+
+The SMU200s were fitted with the Digital Voice Announcement System, which inform the passengers of the route and next station over the Public Address system, from their manufacturing, while the EMUs were only fitted with it later<sup>\[4\]</sup>.
+
+### Specs
+
+| Spec                          | Value                                                                                                                                                     |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Manufacturer                  | Walkers Ltd. Maryborough/ABB Transportation, Switzerland<sup>\[4\]</sup>                                                                                  |
+| Gauge                         | Narrow Gauge (1,067mm or 3' 6")<sup>\[4\]</sup>                                                                                                           |
+| Length when Coupled           | 72,422mm<sup>\[4\]</sup>                                                                                                                                  |
+| Bogie Centres                 | 17,000mm<sup>\[4\]</sup>                                                                                                                                  |
+| Bogie Wheelbase               | 2,500mm<sup>\[4\]</sup>                                                                                                                                   |
+| Wheel Diameter                | 840mm<sup>\[4\]</sup>                                                                                                                                     |
+| Width                         | 2,720mm<sup>\[4\]</sup>                                                                                                                                   |
+| Height over Roofline          | 3,872mm<sup>\[4\]</sup>                                                                                                                                   |
+| Height of Floor               | 1,100mm<sup>\[4\]</sup>                                                                                                                                   |
+| Road numbers                  | DM5201–12, M6201–12, DT8201–12<sup>\[3\]</sup>                                                                                                            |
+| Maximum speed                 | 100km/h<sup>\[1\]</sup>                                                                                                                                   |
+| Traction Rating               | 8 x 180 kW<sup>\[4\]</sup>                                                                                                                                |
+| Maximum Acceleration          | .8m/s<sup>2</sup> <sup>\[4\]</sup>                                                                                                                        |
+| Maximum Service Brake         | 1.15m/s<sup>2</sup> <sup>\[4\]</sup>                                                                                                                      |
+| Weight                        | 45,020 kg (DM / driving motor car); 46,130 kg (M / non-driving motor car); 35,020 kg (DT / driving trailer car)<sup>\[4\]</sup>                           |
+| Length                        | 23.5 m (DM / driving motor car, DT); 23.1 (M / non-driving motor car)<sup>\[3\]</sup>                                                                     |
+| Seats                         | 76 (DM / driving motor car, DT / driving trailer car); 88 (M / non-driving motor car)<sup>\[3\]</sup>                                                     |
+| Total Service Capacity (3car) | 500<sup>\[6\]</sup>                                                                                                                                       |
+| Traction System               | ABB MICAS-S2 GTO-VVVF<sup>\[1\]</sup>                                                                                                                     |
+| Traction Motor Control        | One GTO Thyristor converter per 8 asynchronous AC traction motors using three phase variable voltage/variable frequency (VVVF) technology<sup>\[4\]</sup> |
+| Transmission                  | Bogie suspended traction motor through cardan shaft to right angle axle gear drive unit<sup>\[4\]</sup>                                                   |
+| Gear Ratio                    | 1:5.169<sup>\[4\]</sup>                                                                                                                                   |
+| Braking System                | Regenerative electric and electropneumatic thread brake<sup>\[4\]</sup>                                                                                   |
+| Auxillary System              | 2 x 100 kVA three phase static converters<sup>\[4\]</sup>                                                                                                 |
+| Climate Control               | 2 x roof mounted air conditioners per car each with 30 kW cooling capacity<sup>\[4\]</sup>                                                                |
+
+### Timeline
+
+- _December 2018_: Downer awarded an $80 million contract to overhaul the IMU100s and SMU200s to be completed at Downer’s Maryborough Service Delivery Centre<sup>\[5\]</sup>, including:
+  > - Interior refresh – new floor coverings, refreshed handrails and grab handles and new seat foams and covers for enhanced customer experience
+  > - Overhaul of key train subsystems to ensure the safety and reliability of the fleet
+  > - New electrical systems (in partnership with ABB), including upgrade of onboard traction equipment and installation of a new Train Control Management System (TCMS).
+- _2023_: Downer's SMU200 overhaul completed<sup>\[5\]</sup>.
+- _December 5, 2023_: Noske-Kaeser New Zealand awarded a contract to complete 10 Year Overhauls on IMU100s and SMU200s, including these replacements<sup>\[7\]</sup>:
+> - Compressors and various refrigeration components
+> - The PLC and switching gear
+> - Safety devices such as pressure transducers and heaters overtemperature switches
+> - Heaters, fans, insulation on covers
+> - \[add new?\] Circuit breakers to address obsolescence of existing breakers and compliance with MD-10-125
 
 ### Carriage Layout (Design A)
 
@@ -26,7 +78,7 @@ Refurbishment of SMU200s: [https://www.downergroup.com/downer-secures-80-million
 
 May also be SMU220, but I can't tell the difference.
 
-[Source](https://railknowledgebank.com/Presto/content/GetDoc.axd?ctID=MTk4MTRjNDUtNWQ0My00OTBmLTllYWUtZWFjM2U2OTE0ZDY3&rID=OTY2&pID=Nzkx&attchmnt=True&uSesDM=False&rIdx=MTg1Mw==&rCFU=) archived [here](../media/Archive/Andrew%20Whitten.pdf)  - see figure A1
+[Source](https://railknowledgebank.com/Presto/content/GetDoc.axd?ctID=MTk4MTRjNDUtNWQ0My00OTBmLTllYWUtZWFjM2U2OTE0ZDY3&rID=OTY2&pID=Nzkx&attchmnt=True&uSesDM=False&rIdx=MTg1Mw==&rCFU=) archived [here](../media/Archive/Andrew%20Whitten.pdf) - see figure A1
 
 #### Carriage 1
 
@@ -98,6 +150,10 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 
 ## Sources
 
-- [https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/smu-200](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/smu-200)
-- [https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/smu-220](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/smu-220)
-- [https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/smu-260](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/smu-260)
+- **\[1\]** [https://en.wikipedia.org/wiki/Suburban_multiple_unit](https://en.wikipedia.org/wiki/Suburban_multiple_unit)
+- **\[2\]** [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-suburban-multiple-unit-200-series-smu200](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-suburban-multiple-unit-200-series-smu200)
+- **\[3\]** [https://www.railtram.com.au/smu-suburban-multiple-unit-200](https://www.railtram.com.au/smu-suburban-multiple-unit-200)
+- **\[4\]** [http://www.railpage.org.au/qrhistory/html/locomotives/electrics/smu.htm](http://www.railpage.org.au/qrhistory/html/locomotives/electrics/smu.htm)
+- **\[5\]** [https://www.downergroup.com/downer-secures-80-million-queensland-rail-con](https://www.downergroup.com/downer-secures-80-million-queensland-rail-con)
+- **\[6\]** [https://queensland-trains.fandom.com/wiki/SEQ_Network_Fleet](https://queensland-trains.fandom.com/wiki/SEQ_Network_Fleet)
+- **\[7\]** [https://qtenders.epw.qld.gov.au/qtenders/contract/view.do?CSRFNONCE=376F38EAD88F3EB9E36E5CC47D8CB634&tenderId=48267](https://qtenders.epw.qld.gov.au/qtenders/contract/view.do?CSRFNONCE=376F38EAD88F3EB9E36E5CC47D8CB634&tenderId=48267)
