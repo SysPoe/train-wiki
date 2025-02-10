@@ -1,0 +1,231 @@
+{
+  "first": {
+    "0": ["Diesel-hauled Infrastructure Work Train"],
+    "1": ["6 car EMU, SMU or HS/SMU in revenue service"],
+    "2": ["EMU/SMU/IMU/ICE empty cars (any length)"],
+    "3": ["Diesel-hauled passenger train in revenue service; max 80km/h"],
+    "4": ["Diesel-hauled empty coaches"],
+    "5": ["Railmotor in revenue service"],
+    "6": ["Diesel-hauled freight train; max speed 80km/h"],
+    "7": ["Diesel-hauled freight train; max speed 60km/h"],
+    "8": ["Diesel-hauled freight train; max speed 100km/h"],
+    "9": ["Diesel-hauled unit mineral train"],
+    "A": ["Electric-hauled passenger train in revenue service; max 100km/h"],
+    "B": ["Electric-hauled empty coaches"],
+    "C": ["Electric-hauled freight train; max speed 80km/h"],
+    "D": ["NGR (suburban)", "Electric-hauled freight train; max speed 60km/h"],
+    "E": ["Electric-hauled unit mineral train"],
+    "F": ["Electric-hauled freight train; max speed 100km/h"],
+    "G": ["Electric light engine"],
+    "H": [
+      "Electric hauled or EMU departmental work train, tuition or test train."
+    ],
+    "I": ["(Not to be used) - Too similar to '1'"],
+    "J": ["3-car EMU, SMU or HS/SMU in revenue service"],
+    "K": ["Standard Gauge train"],
+    "L": ["Diesel light engine(s)"],
+    "M": ["Steam-hauled passenger train in revenue service"],
+    "N": ["Non-Revenue railmotor"],
+    "O": ["(Not to be used) - Too similiar to '0'"],
+    "P": ["Diesel-hauled passenger train in revenue service; max 100km/h"],
+    "Q": ["Electric Tilt Train (empty or in revenue service)"],
+    "R": ["Steam light engine or empty cars"],
+    "S": ["Diesel yard shunt engine"],
+    "T": ["6-car IMU in revenue service"],
+    "U": [
+      "3-car IMU in revenue service",
+      "Electric-hauled Coal Services (Pacific National)"
+    ],
+    "V": ["Diesel Tilt Train (empty or in revenue service)"],
+    "W": ["- redundant -"],
+    "X": ["ICE or ICE/EMU in revenue service (any length)"],
+    "Y": [
+      "2800 class loco hauled freight south of Rockhampton.; max 100km/h - see Note 3"
+    ],
+    "Z": ["On Track Vehicle(s) and some Hi-rail vehicle(s)"]
+  },
+  "second": {
+    "0": ["Bowen Hills/Mayne Area"],
+    "1": ["Caboolture (Suburban)", "Saraji mine (Mackay Coal System)"],
+    "2": ["Townsville", "Goonyella (Mackay Coal System)"],
+    "3": ["Rockhampton", "Peak Downs (Mackay Coal System)"],
+    "4": ["Gympie North", "Norwich Park (Mackay Coal System)"],
+    "5": [
+      "Beyond Darra to Grandchester (except Rosewood EMU services)",
+      "German Creek (Mackay Coal System)"
+    ],
+    "6": [
+      "Rosewood (suburban EMUs only, even numbers)",
+      "Beyond Grandchester to Toowoomba (all other traffic)",
+      "Oaky Creek (Mackay Coal System)"
+    ],
+    "7": [
+      "Beenleigh line (Suburban)",
+      "Moolabin/Clapham/Acacia Ridge (Freight)",
+      "Blair Athol (Mackay Coal System)"
+    ],
+    "8": [
+      "Cleveland (Suburban)",
+      "Fisherman Islands (Freight)",
+      "Riverside (Mackay Coal System)"
+    ],
+    "9": ["Roma Street", "North Goonyella (Mackay Coal System)"],
+    "A": [
+      "Shorncliffe line (Suburban)",
+      "Abbott Point (Bowen Coal System)",
+      "Clermont",
+      "Forsayth"
+    ],
+    "B": [
+      "Pinkenba line (Suburban)",
+      "Curragh (Gladstone Coal System)",
+      "Box Flat (Brisbane Coal System)",
+      "Sonoma Mine (Newlands)",
+      "Clermont"
+    ],
+    "C": [
+      "Corinda via South Brisbane (Suburban)",
+      "From Corinda to Yeerongpilly (Suburban)",
+      "Cairns",
+      "Yongala (Gladstone Coal System)"
+    ],
+    "D": [
+      "Darra via Toowong (Suburban)",
+      "Proserpine",
+      "Callemondah (Gladstone Coal System)",
+      "Dalby"
+    ],
+    "E": [
+      "Ferny Grove line (Suburban)",
+      "East End (Gladstone Limestone traffic)",
+      "Cloncurry",
+      "Emerald",
+      "Warwick",
+      "Ensham (Gladstone Coal System)",
+      "Ebenezer (Brisbane Coal System)"
+    ],
+    "F": [
+      "Golding (Gladstone Coal System)",
+      "Various destinations as determined by Control - 0-79 Brisbane District, 80-89 Rockhampton District, 90-99 Townsville District"
+    ],
+    "G": [
+      "Beyond Beenleigh to Robina (Suburban)",
+      "Gladstone",
+      "Hay Point (Mackay Coal System)",
+      "From Maryborough to Monto",
+      "Glenmorgan"
+    ],
+    "H": ["Boorgoon (Gladstone Coal System)", "Dirranbandi", "Hughenden"],
+    "I": ["Boonal (Gladstone Coal System - see note 4)"],
+    "J": ["Bundaberg", "Jilalan (Mackay Coal System)", "Jandowae"],
+    "K": [
+      "Kingaroy",
+      "Kinrola (Gladstone Coal System)",
+      "Kuranda",
+      "Springfield"
+    ],
+    "L": [
+      "Cobarra",
+      "Fishermans Landing (Gladstone Limestone traffic)",
+      "Wandoan",
+      "Yandina (Suburban)",
+      "Laleham (Gladstone Coal System)",
+      "Lake Vermont (Goonyella)"
+    ],
+    "M": [
+      "From Cleveland to Bowen Hills (Suburban)",
+      "Gregory (Gladstone Coal System)",
+      "Mount Isa",
+      "Mareeba",
+      "Maryborough",
+      "From Gladstone to Monto"
+    ],
+    "N": [
+      "Exhibition via Brisbane Central (Suburban)",
+      "Newlands (Bowen Coal System)",
+      "Koorilgah (Gladstone Coal System)"
+    ],
+    "P": [
+      "Barney Point (Gladstone Coal System)",
+      "Pring (Bowen Coal System)",
+      "Saint Lawrence",
+      "Milmerran",
+      "Springsure",
+      "Airport Spur (Suburban)"
+    ],
+    "Q": [
+      "Moura Mine (Gladstone Coal System)",
+      "Mary Valley Branch (Tourist Railway only)",
+      "Bowen",
+      "Quilpie",
+      "South Walker (Mackay Coal System)"
+    ],
+    "R": [
+      "From Shorncliffe to Roma Street (Suburban)",
+      "Roma",
+      "Gracemere",
+      "Callide Coalfields (Gladstone Coal System)",
+      "Collinsville (Bowen Coal System)",
+      "Burton (Mackay Coal System)"
+    ],
+    "S": [
+      "From Shorncliffe to South Bank/Yeerongpilly (Suburban)",
+      "McNaughton (Bowen Coal System)",
+      "Boundary Hill/Callide to QAL Gladstone (Gladstone Coal System)",
+      "Boorgoon to Stanwell Powerhouse (Gladstone Coal System)",
+      "Sarina",
+      "Charleville"
+    ],
+    "T": [
+      "Theodore",
+      "Phosphate Hill",
+      "Stuart - Calcium (Limestone traffic only)",
+      "Moranbah North (Mackay Coal System)"
+    ],
+    "U": ["Mackay", "Rolleston", "Beaudesert (Tourist Railway)"],
+    "V": ["Cunnamulla", "Biloela", "Dalrymple Bay (Mackay Coal System)"],
+    "W": [
+      "Boundary Hill (Gladstone Coal System)",
+      "Coppabella (Mackay Coal System)",
+      "Beyond Emerald to Winton",
+      "From Hughenden to Winton",
+      "Wallangarra",
+      "MacArthur (Mackay Coal System)",
+      "Zillmere Area"
+    ],
+    "X": ["Exhibition Direct (Suburban)"],
+    "Y": [
+      "Gordonstone (Gladstone Coal System)",
+      "Yaraka",
+      "Chinchilla",
+      "Yeppoon",
+      "Kippa Ring / Petrie"
+    ],
+    "Z": [
+      "Exhibition (Suburban)",
+      "Gladstone Powerhouse (Gladstone Coal System)",
+      "Mackay Harbour"
+    ]
+  },
+  "other": {
+    "0FBn": "a Work Train - Ballast",
+    "0FCn": "a Work Train - Concrete sleepers",
+    "0FPn": "a Work Train - Pantograph test train",
+    "0FRn": "a Work Train - Railset",
+    "0FSn": "a Work Train - Spoil/sleepers",
+    "0FTn": "a Work Train - Test engine/train",
+    "0FWn": "a Work Train - Wiring",
+    "xDYn": "going via South Brisbane to Darra",
+    "x5Yn": "going via South Brisbane to Ipswich",
+    "xxPn": "a school train (may be cancelled during school holidays)",
+    "xxTn": "an extra service for special events etc.",
+    "xFXn": "an Exhibition Circular Service"
+  },
+  "notes": [
+    "Where the 2nd character is 'F' (Various destinations), the 4th character can be odd or even, irrespective of direction. This is usually for \"trip shunts\" (7F30) and work trains (0FB9).",
+    "In the BSA, if a freight train changes direction to complete its journey, the Train Number assigned when the train entered the BSA is retained. (e.g. 6749 Toowoomba - Acacia Ridge freight travels in the Down direction from Toowoomba to Yeerongpilly thence in the Up direction to Acacia Ridge. The odd number is retained).",
+    "2800 class loco's are \"Out of Dimension of Standard Transit (ODST - outside the rollingstock gauge) which is why they have a separate train ID. Oddly enough, if a train is NOT hauled by a 2800 class, but has one as a vehicle in tow, then the applicable train number is used (6, 7, 8, C, D, F) and an OOG Authority is generated for that train.",
+    "Boonal loadout serves two mines. See \"3rd Character\" for train number differentiation.",
+    "With coal and BSA suburban traffic, trains are usually numbered progressively starting from either xxx1 (Down) or xxx2 (Up) at midnight each day. For all other traffic, there is no real pattern to numbering."
+  ]
+}

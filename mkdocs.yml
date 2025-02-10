@@ -42,6 +42,7 @@ nav:
       - List of Resources:
         - PID Maker: Other/Resources/PID/index.html
         - Freight Timetables: FTT/index.md
+        - Run Guru: Other/Resources/RunGuru/index.md
 
 markdown_extensions:
   - toc:
