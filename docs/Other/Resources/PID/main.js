@@ -726,7 +726,7 @@ const app = {
         v.stop.disassembled.stationName.replace("station", "").trim()
       );
 
-      const color = app.getColor(dep, stops);
+    const color = app.getColor(dep, stops);
     const finalDest = app.getFinalDestination(futureStops, dest, thisStation);
 
     ui.setRowColor(i, color);
@@ -744,20 +744,17 @@ const app = {
   getColor: (dep, stops) => {
     let color = "#" + dep.tripInstance.trip.route.color;
     console.log(color);
-    
+
     if (
-        CONFIG.innerCity.stations.includes(
-          stops.realtimePattern[
-            stops.realtimePattern.length - 1
-          ].stop.parent.fullName
-            .toLowerCase()
-            .replace("station", "")
-            .trim()
+      CONFIG.innerCity.stations.includes(
+        utils.normalizeStationName(
+          stops.realtimePattern[stops.realtimePattern.length - 1].stop.parent
+            .fullName
         )
       )
-        color = CONFIG.innerCity.colour;
+    )
+      color = CONFIG.innerCity.color;
 
-    console.log(color);
     return color;
   },
 
