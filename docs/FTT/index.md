@@ -4,7 +4,7 @@ This is just annotated versions of the Master Train Plans, which show freight tr
 
 I think the 4-digit code might be the run number, and I think that it are repeated every week. Not sure why it says the date. Maybe cuz the QR team print it out, so whenever they print out the next one they just change the date to be the one they need.
 
-For the run numbers, you might want to use [QRIG's run numbering guide](https://qrig.org/safeworking/train-numbering-guide) instead cuz it has all of the ones instead of just the suburban ones.
+For the run numbers, you might want to use [QRIG's run numbering guide](https://qrig.org/safeworking/train-numbering-guide) instead cuz it has all of the ones instead of just the suburban ones. You can also check out my [Run Guru](../Other/Resources/RunGuru/index.md).
 
 Anyway, here are the current ones I've done:
 
