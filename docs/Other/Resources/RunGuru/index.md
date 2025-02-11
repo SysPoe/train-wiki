@@ -17,6 +17,7 @@ Enter your run number and find out what it means!
     if(ev.key == "Enter") interpretTrainNumber()};
 
     window.interpretTrainNumber = function (trainNumber) {
+        document.querySelector("#train").value = document.querySelector("#train").value.toUpperCase();
         if(trainNumber == undefined) trainNumber = document.querySelector("#train").value;
       if (trainNumber.length !== 4) {
         document.querySelector(".results").innerHTML = "Invalid train number. It must be 4 characters long.";
