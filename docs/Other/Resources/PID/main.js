@@ -703,16 +703,15 @@ const cacheWrapper = {
    * @param {number} [ttl]
    * @returns {Promise<T>}
    */
-  async fetch(key, fetchFn, ttl = this.defaultTTL) {
+  async fetch(url, ttl = this.defaultTTL) {
     const now = Date.now();
-    const cached = this.cache.get(key);
+    const cached = this.cache.get(url);
 
-    if (cached && now - cached.timestamp < ttl * 1000) {
-      return cached.data;
-    }
+    if (cached && now - cached.timestamp < ttl * 1000) return cached.data;
 
-    const data = await fetchFn();
-    this.cache.set(key, {
+    const res = await fetch(url);
+    const data = await res.json();
+    this.cache.set(url, {
       data,
       timestamp: now,
     });
@@ -728,15 +727,9 @@ const apiService = {
   fetchStations: async () => {
     try {
       const data = await cacheWrapper.fetch(
-        "stations",
-        async () => {
-          const response = await fetch(
-            utils.getURL(
-              "https://anytrip.com.au/api/v3/region/au4/stops?limit=1000&modes=au4:trains&maxLat=-25.260733552498742&maxLon=155.34991455078128&minLat=-29.71149449264223&minLon=150.68798828125"
-            )
-          );
-          return await response.json();
-        },
+        utils.getURL(
+          "https://anytrip.com.au/api/v3/region/au4/stops?limit=1000&modes=au4:trains&maxLat=-25.260733552498742&maxLon=155.34991455078128&minLat=-29.71149449264223&minLon=150.68798828125"
+        ),
         3600
       );
       state.stations = data.response.stops;
@@ -754,16 +747,14 @@ const apiService = {
    */
   fetchDepartures: async (stationId) => {
     try {
-      return await cacheWrapper.fetch(`departures-${stationId}`, async () => {
-        const response = await fetch(
-          utils.getURL(
-            `https://anytrip.com.au/api/v3/region/au4/departures/${encodeURIComponent(
-              stationId
-            )}?limit=250`
-          )
-        );
-        return await response.json();
-      });
+      return await cacheWrapper.fetch(
+        utils.getURL(
+          `https://anytrip.com.au/api/v3/region/au4/departures/${encodeURIComponent(
+            stationId
+          )}?limit=250`
+        ),
+        60
+      );
     } catch (error) {
       console.error("Failed to fetch departures:", error);
       return { response: { departures: [] } };
@@ -776,12 +767,9 @@ const apiService = {
    */
   fetchTripDetails: async (tripPath) => {
     try {
-      return await cacheWrapper.fetch(`trip-${tripPath}`, async () => {
-        const response = await fetch(
-          utils.getURL(`https://anytrip.com.au/api/v3/region/au4/${tripPath}`)
-        );
-        return await response.json();
-      });
+      return await cacheWrapper.fetch(
+        utils.getURL(`https://anytrip.com.au/api/v3/region/au4/${tripPath}`)
+      );
     } catch (error) {
       console.error("Failed to fetch trip details:", error);
       return { response: { realtimePattern: [] } };
@@ -842,6 +830,13 @@ const app = {
       let num = Number.parseInt(v.id.replace("colsel", ""));
       v.onchange = () => ui.setRowColor(num, v.value);
     });
+
+    document.querySelectorAll("td:nth-child(5)").forEach(v => {
+      v.onclick = () => {
+        v.classList.toggle("active");
+        v.classList.toggle("inactive");
+      }
+    })
   },
   /**
    * @param {string} direction
@@ -992,7 +987,6 @@ const app = {
    */
   getColor: (dep, stops) => {
     let color = "#" + dep.tripInstance.trip.route.color;
-    console.log(color);
 
     if (
       CONFIG.innerCity.stations.includes(
@@ -1040,12 +1034,13 @@ const app = {
    * @returns {Promise<any>}
    */
   fetchStops: async (dep) => {
-    const response = await fetch(
-      utils.getURL(
-        "https://anytrip.com.au/api/v3/region/au4/" + dep.tripInstance._path
+    return (
+      await cacheWrapper.fetch(
+        utils.getURL(
+          "https://anytrip.com.au/api/v3/region/au4/" + dep.tripInstance._path
+        )
       )
-    );
-    return (await response.json()).response;
+    ).response;
   },
 
   /**
