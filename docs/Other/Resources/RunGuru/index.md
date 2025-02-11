@@ -56,7 +56,7 @@ Train ${trainNumber} is a <code>[${first.join(
         " OR a "
       )}]</code> heading to <code>[${second.join(" OR ")}]</code>.${
         other.length > 0
-          ? ` I can also tell you that it is <code>[${other.join(
+          ? ` It might also be <code>[${other.join(
               " AND "
             )}]</code>`
           : ""
