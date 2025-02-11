@@ -219,7 +219,27 @@
     "x5Yn": "going via South Brisbane to Ipswich",
     "xxPn": "a school train (may be cancelled during school holidays)",
     "xxTn": "an extra service for special events etc.",
-    "xFXn": "an Exhibition Circular Service"
+    "xFXn": "an Exhibition Circular Service",
+    "VC71": "the Spirit of Queensland heading to Cairns (Departs Roma St Monday)",
+    "VC75": "the Spirit of Queensland heading to Cairns (Departs Roma St Wednesday)",
+    "VC79": "the Spirit of Queensland heading to Cairns (Departs Roma St Friday)",
+    "VC81": "the Spirit of Queensland heading to Cairns (Departs Roma St Saturday)",
+    "V982": "the Spirit of Queensland heading to Roma St (Departs Cairns Monday)",
+    "V972": "the Spirit of Queensland heading to Roma St (Departs Cairns Wednesday)",
+    "V976": "the Spirit of Queensland heading to Roma St (Departs Cairns Friday)",
+    "V980": "the Spirit of Queensland heading to Roma St (Departs Cairns Sunday)",
+    "PW57": "the Spirit of the Outback heading to Longreach (Departs Roma St Tuesday/Saturday)",
+    "P986": "the Spirit of the Outback heading to Roma St (Departs Longreach Monday/Thursday)",
+    "Q301": "the Electric Tilt Train heading to Rockhampton (Departs Roma St Daily exc. Wed)",
+    "Q311": "the Electric Tilt Train heading to Rockhampton (Departs Roma St Tues, Sun Afternoon)",
+    "Q992": "the Electric Tilt Train heading to Roma St (Departs Rockhampton daily)",
+    "QJ11": "the Electric Tilt Train heading to Bundaberg (Departs Roma St Mon, Wed, Thurs, Fri)",
+    "Q994": "the Electric Tilt Train heading to Roma St (Departs Bundaberg daily exc. Wed, Sun)",
+    "3S86": "the Westlander heading to Charleville (Departs Roma St Tues, Thurs)",
+    "3987": "the Westlander heading to Roma St (Departs Charleville Wed, Fri)",
+    "3M34": "the Inlander heading to Mount Isa (Departs Townsville Wed, Sat)",
+    "3231": "the Inlander heading to Townsville (Departs Mount Isa Thu, Sun)"
+    
   },
   "notes": [
     "Where the 2nd character is 'F' (Various destinations), the 4th character can be odd or even, irrespective of direction. This is usually for \"trip shunts\" (7F30) and work trains (0FB9).",
