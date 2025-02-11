@@ -668,6 +668,8 @@ const app = {
       .filter((d) => d.tripInstance.trip.route.mode === "au4:trains")
       .filter((d) => d.stopTimeInstance.departure.time > now);
 
+    window.departures = departures;
+
     if (filters[direction]) {
       departures = departures.filter(filters[direction]);
     }
@@ -788,7 +790,10 @@ const app = {
   },
 
   getFinalDestination: (futureStops, dest, thisStation) => {
-    if (futureStops.includes("Caboolture") && futureStops[futureStops.length - 1] == "Nambour") {
+    if (
+      futureStops.includes("Caboolture") &&
+      futureStops[futureStops.length - 1] == "Nambour"
+    ) {
       dest = "Caboolture / Namb";
     }
     if (
