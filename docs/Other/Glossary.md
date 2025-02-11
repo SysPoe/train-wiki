@@ -9,7 +9,7 @@ Here is a glossary for some of the acronyms or terms that you might see. I'll pr
 - **BNBN**: Brisbane's New Bus Network
 - **CAMCOS**: Stands for Caloundra and Maroochydore Corridor Options Study, referring to [the Maroochydore railway line](https://en.wikipedia.org/wiki/Maroochydore_railway_line). Now renamed to Direct Sunshine Coast Line (DSCL).
 - **CRR**: Cross River Rail
-- **DSCL**: Stands for Direct Sunshine Coast Line, referring to [the Maroochydore railway line](https://en.wikipedia.org/wiki/Maroochydore_railway_line). Previously named Calounra and Maroochydore Corridor Options Study (CAMCOS).
+- **DSCL**: Stands for Direct Sunshine Coast Line, referring to [the Maroochydore railway line](https://en.wikipedia.org/wiki/Maroochydore_railway_line). Previously named Caloundra and Maroochydore Corridor Options Study (CAMCOS).
 - **ETCS**: European Train Control System
 - **GC**: Gold Coast
 - **GCLR**: Gold Coast Light Rail
