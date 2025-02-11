@@ -796,13 +796,17 @@ const app = {
     ) {
       dest = "Caboolture / Namb";
     }
+
     if (
       !CONFIG.innerInnerCity.includes(
         thisStation.toLowerCase().replace(" station", "").trim()
       )
     ) {
       for (let stop of futureStops) {
-        if (CONFIG.innerCity.stations.includes(stop.toLowerCase())) {
+        if (
+          CONFIG.innerCity.stations.includes(stop.toLowerCase()) &&
+          !futureStops[futureStops.length - 1].startsWith("Roma St")
+        ) {
           dest = "City & " + dest;
           break;
         }
