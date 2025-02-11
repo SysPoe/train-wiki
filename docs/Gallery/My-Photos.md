@@ -94,7 +94,7 @@ Here is a selection of some of my train photos that I think are nice, in no part
 
 ## Other
 
-![](../media/MyGallery/Electric%20Tilt%20Train%20at%20Fortitude%20Valley-Enhanced-NR.png)
+![](../media/MyGallery/Electric%20Tilt%20Train%20at%20Central-Enhanced-NR.png)
 
 > [View full image](../media/MyGallery/Electric%20Tilt%20Train%20at%20Central-Enhanced-NR.png)
 >
