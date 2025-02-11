@@ -448,7 +448,121 @@ const CONFIG = {
   },
 };
 
-// DOM Elements
+/**
+ * @typedef {Object} Stop
+ * @property {string} id - Stop ID
+ * @property {string | null} code - Stop code
+ * @property {string[]} modes - Transport modes available at this stop
+ * @property {string} locality - Stop locality
+ * @property {Object} name - Stop name information
+ * @property {string} name.station_name - Station name
+ * @property {string} name.platform_readable_name - Human-readable platform name
+ * @property {string} name.station_readable_name - Human-readable station name
+ * @property {string} [name.platform_name] - Platform number/identifier
+ * @property {string} [name.platform_type] - Type of platform
+ * @property {Object} disassembled - Disassembled stop information
+ * @property {string} disassembled.fullName - Full name of the stop
+ * @property {string} disassembled.stationName - Station name
+ * @property {string | null} disassembled.platformCombinedName - Combined platform name
+ * @property {string | null} disassembled.platformType - Type of platform
+ * @property {string | null} disassembled.platformName - Platform number/identifier
+ * @property {string} [disassembled.platformTypeAbbreviation] - Abbreviated platform type (e.g., "Plt")
+ * @property {string} fullName - Full name of the stop
+ * @property {Object} coordinates - Geographic coordinates
+ * @property {number} coordinates.lat - Latitude
+ * @property {number} coordinates.lon - Longitude
+ * @property {boolean | null} wheelchair - Wheelchair accessibility
+ * @property {Stop} [parent] - Parent stop information
+ * @property {Stop[]} [children] - Child stops
+ * @property {string} _path - API path for the stop
+ */
+
+/**
+ * @typedef {Object} Vehicle
+ * @property {string} id - Vehicle ID
+ * @property {string} vehicleModel - Vehicle model identifier
+ * @property {string} reportedTripId - Reported trip ID
+ * @property {Object} lastPosition - Last known position
+ * @property {number} lastPosition.time - Timestamp of last position
+ * @property {number} lastPosition.bearing - Vehicle bearing
+ * @property {number|null} lastPosition.speed - Vehicle speed
+ * @property {number} lastPosition.status - Vehicle status code
+ * @property {number} lastPosition.distance - Distance traveled
+ * @property {string} lastPosition.statusString - Human-readable status
+ * @property {Object} lastPosition.coordinates - Geographic coordinates
+ * @property {number} lastPosition.coordinates.lat - Latitude
+ * @property {number} lastPosition.coordinates.lon - Longitude
+ * @property {number} lastResetTime - Last reset timestamp
+ * @property {boolean} current - Whether this is the current vehicle
+ */
+
+/**
+ * @typedef {Object} Trip
+ * @property {string} id - Trip ID
+ * @property {string} tripHash - Trip hash
+ * @property {Object} headsign - Trip headsign
+ * @property {string} headsign.headline - Destination headline
+ * @property {string|null} headsign.subtitle - Headsign subtitle
+ * @property {string|null} shortName - Short name
+ * @property {number} directionId - Direction identifier
+ * @property {string} shapeId - Shape identifier
+ * @property {Object} route - Route information
+ * @property {string} route.id - Route ID
+ * @property {string} route.name - Route name
+ * @property {string} route.longName - Route long name
+ * @property {string} route.description - Route description
+ * @property {string} route.color - Route color
+ * @property {string} route.textColor - Route text color
+ * @property {string} route.mode - Transport mode
+ * @property {Object} route.agency - Agency information
+ * @property {string[]} serviceDates - Service dates
+ * @property {boolean} tripContinues - Whether trip continues
+ */
+
+/**
+ * @typedef {Object} StopTime
+ * @property {Stop} stop - Stop information
+ * @property {number} stopSequence - Stop sequence number
+ * @property {number} index - Stop index
+ * @property {Object} arrival - Arrival information
+ * @property {number} arrival.time - Arrival timestamp
+ * @property {number} arrival.delay - Arrival delay in seconds
+ * @property {number[]} [arrival.occupancy] - Arrival occupancy levels
+ * @property {Object} departure - Departure information
+ * @property {number} departure.time - Departure timestamp
+ * @property {number} departure.delay - Departure delay in seconds
+ * @property {number[]} [departure.occupancy] - Departure occupancy levels
+ * @property {number} pickUp - Pickup type
+ * @property {number} dropOff - Dropoff type
+ * @property {number} timepoint - Timepoint indicator
+ * @property {boolean} [firstStop] - Whether this is the first stop
+ * @property {boolean} [lastStop] - Whether this is the last stop
+ * @property {number} shapeDistance - Distance along shape
+ */
+
+/**
+ * @typedef {Object} TripInstance
+ * @property {Trip} trip - Trip information
+ * @property {string} startDate - Start date
+ * @property {number} instanceNumber - Instance number
+ * @property {number|null} realtimeState - Realtime state
+ * @property {number} realtimeStatus - Realtime status
+ * @property {string} routeVariantKey - Route variant key
+ * @property {string|null} realtimeBlockId - Realtime block ID
+ * @property {boolean} tripContinues - Whether trip continues
+ * @property {string} shapeId - Shape identifier
+ * @property {number} time - Timestamp
+ * @property {boolean} current - Whether this is the current trip
+ * @property {string} _path - Trip path
+ */
+
+/**
+ * @typedef {Object} Departure
+ * @property {Vehicle} vehicle - Vehicle information
+ * @property {TripInstance} tripInstance - Trip instance
+ * @property {StopTime} stopTimeInstance - Stop time instance
+ */
+
 const DOM = {
   container: document.querySelector(".container"),
   timeDisplay: document.querySelector(".time"),
@@ -458,15 +572,30 @@ const DOM = {
   rows: Array.from(document.querySelectorAll("[id^='tr']")),
 };
 
-// State Management
+/**
+ * @typedef {Object} Station
+ * @property {Stop} stop - Stop information
+ */
+
+/**
+ * @typedef {Object} State
+ * @property {boolean} ctrlKeyPressed - Whether the Control key is currently pressed
+ * @property {Station[]} stations - Array of station information
+ * @property {Map<string, string>} nameToID - Map of station names to their IDs
+ */
+
+/** @type {State} */
 let state = {
   ctrlKeyPressed: false,
   stations: [],
   nameToID: new Map(),
 };
 
-// Utility Functions
 const utils = {
+  /**
+   * @param {Date} date
+   * @returns {string}
+   */
   formatTime: (date) => {
     const hours = ((date.getHours() - 1) % 12) + 1;
     const minutes = date.getMinutes().toString().padStart(2, "0");
@@ -474,14 +603,26 @@ const utils = {
     return `${hours}:${minutes}:${seconds}`;
   },
 
+  /**
+   * @param {string} name
+   * @returns {string}
+   */
   normalizeStationName: (name) =>
     name.toLowerCase().replace("station", "").trim(),
 
+  /**
+   * @param {string} stationName
+   * @returns {number}
+   */
   getZone: (stationName) => {
     const normalized = utils.normalizeStationName(stationName);
     return CONFIG.zones.findIndex((zone) => zone.stations.includes(normalized));
   },
 
+  /**
+   * @param {string} url
+   * @returns {string}
+   */
   getURL: (url) => {
     let qurl = new URL("https://corsproxy.io/");
     qurl.searchParams.set("url", url);
@@ -489,12 +630,18 @@ const utils = {
   },
 };
 
-// UI Manipulation
 const ui = {
+  /**
+   * Updates the time display
+   */
   updateTime: () => {
     DOM.timeDisplay.textContent = utils.formatTime(new Date());
   },
 
+  /**
+   * @param {number} rowNumber
+   * @param {string} [setTo]
+   */
   toggleRowVisibility: (rowNumber, setTo) => {
     const row = DOM.rows[rowNumber - 1];
     if (!row) return;
@@ -510,6 +657,10 @@ const ui = {
     }
   },
 
+  /**
+   * @param {number} rowNumber
+   * @param {string | null} [set]
+   */
   toggleCarType: (rowNumber, set = null) => {
     const row = DOM.rows[rowNumber - 1];
     if (!row) return;
@@ -527,6 +678,10 @@ const ui = {
     }
   },
 
+  /**
+   * @param {number} rowNumber
+   * @param {string} color
+   */
   setRowColor: (rowNumber, color) => {
     const row = DOM.rows[rowNumber - 1];
     if (row) {
@@ -536,16 +691,54 @@ const ui = {
   },
 };
 
-// API Service
+const cacheWrapper = {
+  /** @type {Map<string, {data: any, timestamp: number}>} */
+  cache: new Map(),
+  defaultTTL: 30, // 30 seconds default TTL
+
+  /**
+   * @template T
+   * @param {string} key
+   * @param {() => Promise<T>} fetchFn
+   * @param {number} [ttl]
+   * @returns {Promise<T>}
+   */
+  async fetch(key, fetchFn, ttl = this.defaultTTL) {
+    const now = Date.now();
+    const cached = this.cache.get(key);
+
+    if (cached && now - cached.timestamp < ttl * 1000) {
+      return cached.data;
+    }
+
+    const data = await fetchFn();
+    this.cache.set(key, {
+      data,
+      timestamp: now,
+    });
+
+    return data;
+  },
+};
+
 const apiService = {
+  /**
+   * @returns {Promise<void>}
+   */
   fetchStations: async () => {
     try {
-      const response = await fetch(
-        utils.getURL(
-          "https://anytrip.com.au/api/v3/region/au4/stops?limit=1000&modes=au4:trains&maxLat=-25.260733552498742&maxLon=155.34991455078128&minLat=-29.71149449264223&minLon=150.68798828125"
-        )
+      const data = await cacheWrapper.fetch(
+        "stations",
+        async () => {
+          const response = await fetch(
+            utils.getURL(
+              "https://anytrip.com.au/api/v3/region/au4/stops?limit=1000&modes=au4:trains&maxLat=-25.260733552498742&maxLon=155.34991455078128&minLat=-29.71149449264223&minLon=150.68798828125"
+            )
+          );
+          return await response.json();
+        },
+        3600
       );
-      const data = await response.json();
       state.stations = data.response.stops;
       state.nameToID = new Map(
         state.stations.map((s) => [s.stop.fullName, s.stop.id])
@@ -555,28 +748,40 @@ const apiService = {
     }
   },
 
+  /**
+   * @param {string} stationId
+   * @returns {Promise<{response: {departures: Departure[]}}>}
+   */
   fetchDepartures: async (stationId) => {
     try {
-      const response = await fetch(
-        utils.getURL(
-          `https://anytrip.com.au/api/v3/region/au4/departures/${encodeURIComponent(
-            stationId
-          )}?limit=250`
-        )
-      );
-      return await response.json();
+      return await cacheWrapper.fetch(`departures-${stationId}`, async () => {
+        const response = await fetch(
+          utils.getURL(
+            `https://anytrip.com.au/api/v3/region/au4/departures/${encodeURIComponent(
+              stationId
+            )}?limit=250`
+          )
+        );
+        return await response.json();
+      });
     } catch (error) {
       console.error("Failed to fetch departures:", error);
       return { response: { departures: [] } };
     }
   },
 
+  /**
+   * @param {string} tripPath
+   * @returns {Promise<{response: {realtimePattern: any[]}}>}
+   */
   fetchTripDetails: async (tripPath) => {
     try {
-      const response = await fetch(
-        utils.getURL(`https://anytrip.com.au/api/v3/region/au4/${tripPath}`)
-      );
-      return await response.json();
+      return await cacheWrapper.fetch(`trip-${tripPath}`, async () => {
+        const response = await fetch(
+          utils.getURL(`https://anytrip.com.au/api/v3/region/au4/${tripPath}`)
+        );
+        return await response.json();
+      });
     } catch (error) {
       console.error("Failed to fetch trip details:", error);
       return { response: { realtimePattern: [] } };
@@ -584,8 +789,10 @@ const apiService = {
   },
 };
 
-// Core Application Logic
 const app = {
+  /**
+   * @returns {Promise<void>}
+   */
   initialize: async () => {
     await apiService.fetchStations();
     app.populateStationList();
@@ -598,6 +805,9 @@ const app = {
     }
   },
 
+  /**
+   * @returns {void}
+   */
   populateStationList: () => {
     DOM.stationList.innerHTML = state.stations
       .map(
@@ -607,6 +817,9 @@ const app = {
     DOM.stationInput.placeholder = "Enter station name...";
   },
 
+  /**
+   * @returns {void}
+   */
   setupEventListeners: () => {
     document.addEventListener("keydown", (e) => {
       state.ctrlKeyPressed = e.key === "Control";
@@ -630,6 +843,10 @@ const app = {
       v.onchange = () => ui.setRowColor(num, v.value);
     });
   },
+  /**
+   * @param {string} direction
+   * @returns {Promise<void>}
+   */
   updateDisplay: async (direction) => {
     const stationName = DOM.stationInput.value;
     const stationId = state.nameToID.get(stationName);
@@ -654,6 +871,12 @@ const app = {
     );
   },
 
+  /**
+   * @param {Departure[]} departures
+   * @param {string} direction
+   * @param {number} zoneSt
+   * @returns {Departure[]}
+   */
   filterDepartures: (departures, direction, zoneSt) => {
     const el = DOM.stationInput;
     const currentZone = utils.getZone(el.value);
@@ -682,6 +905,13 @@ const app = {
       .slice(0, 6);
   },
 
+  /**
+   * @param {Departure} departure
+   * @param {number} zoneSt
+   * @param {HTMLInputElement} el
+   * @param {string} direction
+   * @returns {boolean}
+   */
   filterByDirection: (departure, zoneSt, el, direction) => {
     const dest = departure.tripInstance.trip.headsign.headline;
     const destZone = utils.getZone(dest);
@@ -707,6 +937,13 @@ const app = {
     return CONFIG.zones[zoneSt][direction].zones.includes(destZone);
   },
 
+  /**
+   * @param {number} i
+   * @param {Departure} dep
+   * @param {string} id
+   * @param {string} thisStation
+   * @returns {Promise<void>}
+   */
   populateDepartureRow: async (i, dep, id, thisStation) => {
     const now = new Date();
     const time = now.getTime();
@@ -735,6 +972,11 @@ const app = {
     app.updateRowContent(i, finalDest, plt, det, delay, time, isNGR, isTCar);
   },
 
+  /**
+   * @param {Departure} dep
+   * @param {Record<string, string>} nameOverrides
+   * @returns {string}
+   */
   getDestination: (dep, nameOverrides) => {
     let dest = dep.tripInstance.trip.headsign.headline
       .trim()
@@ -743,6 +985,11 @@ const app = {
     return nameOverrides[dest] || dest;
   },
 
+  /**
+   * @param {Departure} dep
+   * @param {any} stops
+   * @returns {string}
+   */
   getColor: (dep, stops) => {
     let color = "#" + dep.tripInstance.trip.route.color;
     console.log(color);
@@ -760,6 +1007,10 @@ const app = {
     return color;
   },
 
+  /**
+   * @param {Departure} dep
+   * @returns {boolean}
+   */
   isNGR: (dep) => {
     return (
       dep.vehicle.vehicleModel &&
@@ -769,6 +1020,10 @@ const app = {
     );
   },
 
+  /**
+   * @param {Departure} dep
+   * @returns {boolean}
+   */
   isTCar: (dep) => {
     return (
       dep.vehicle.vehicleModel &&
@@ -780,6 +1035,10 @@ const app = {
     );
   },
 
+  /**
+   * @param {Departure} dep
+   * @returns {Promise<any>}
+   */
   fetchStops: async (dep) => {
     const response = await fetch(
       utils.getURL(
@@ -789,6 +1048,12 @@ const app = {
     return (await response.json()).response;
   },
 
+  /**
+   * @param {string[]} futureStops
+   * @param {string} dest
+   * @param {string} thisStation
+   * @returns {string}
+   */
   getFinalDestination: (futureStops, dest, thisStation) => {
     if (
       futureStops.includes("Caboolture") &&
@@ -815,6 +1080,16 @@ const app = {
     return dest;
   },
 
+  /**
+   * @param {number} i
+   * @param {string} dest
+   * @param {string} plt
+   * @param {number} det
+   * @param {number} delay
+   * @param {number} time
+   * @param {boolean} isNGR
+   * @param {boolean} isTCar
+   */
   updateRowContent: (i, dest, plt, det, delay, time, isNGR, isTCar) => {
     const td = (v) =>
       document.querySelector("#tr" + i).querySelectorAll("td")[v];
@@ -838,6 +1113,12 @@ const app = {
     td(5).innerText = estdeph === 0 ? `${estdepmin} min` : `${deth}:${detm}`;
   },
 
+  /**
+   * @param {Departure[]} departures
+   * @param {string} id
+   * @param {string} thisStation
+   * @returns {Promise<void>}
+   */
   populateDepartureRows: async (departures, id, thisStation) => {
     DOM.rows.forEach((row, index) => {
       const departure = departures[index];
@@ -855,6 +1136,9 @@ const app = {
 app.initialize();
 
 // Expose needed functions to global scope for HTML event handlers
+/**
+ * @returns {void}
+ */
 window.takeshot = () => {
   html2canvas(DOM.container).then((canvas) => {
     const link = document.createElement("a");
@@ -864,9 +1148,15 @@ window.takeshot = () => {
   });
 };
 
+/** @type {(rowNumber: number, setTo?: string) => void} */
 window.hide = ui.toggleRowVisibility;
+/** @type {(rowNumber: number, set?: string | null) => void} */
 window.car3 = ui.toggleCarType;
+/** @type {(rowNumber: number, color: string) => void} */
 window.setColor = ui.setRowColor;
+/** @type {() => Promise<void>} */
 window.updateStationSW = () => app.updateDisplay("SW");
+/** @type {() => Promise<void>} */
 window.updateStationNE = () => app.updateDisplay("NE");
+/** @type {() => Promise<void>} */
 window.updateStationAll = () => app.updateDisplay("ALL");
