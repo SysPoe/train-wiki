@@ -542,7 +542,7 @@ const apiService = {
     try {
       const response = await fetch(
         utils.getURL(
-          "https://anytrip.com.au/api/v3/region/au4/stops?limit=500&modes=au4:trains&maxLat=-27.260733552498742&maxLon=153.34991455078128&minLat=-27.71149449264223&minLon=152.68798828125"
+          "https://anytrip.com.au/api/v3/region/au4/stops?limit=1000&modes=au4:trains&maxLat=-25.260733552498742&maxLon=155.34991455078128&minLat=-29.71149449264223&minLon=150.68798828125"
         )
       );
       const data = await response.json();
@@ -788,7 +788,7 @@ const app = {
   },
 
   getFinalDestination: (futureStops, dest, thisStation) => {
-    if (futureStops.includes("Caboolture") && futureStops.includes("Nambour")) {
+    if (futureStops.includes("Caboolture") && futureStops[futureStops.length - 1] == "Nambour") {
       dest = "Caboolture / Namb";
     }
     if (
@@ -834,6 +834,7 @@ const app = {
       const departure = departures[index];
       if (departure) {
         app.populateDepartureRow(index + 1, departure, id, thisStation);
+        ui.toggleRowVisibility(index + 1, "1");
       } else {
         ui.toggleRowVisibility(index + 1, "0");
       }
