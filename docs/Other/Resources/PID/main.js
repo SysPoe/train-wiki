@@ -306,6 +306,7 @@ const CONFIG = {
         "dutton park",
         "fairfield",
         "yeronga",
+        "yeerongpilly",
         "moorooka",
         "rocklea",
         "coopers plains",
@@ -639,6 +640,30 @@ const ui = {
   },
 
   /**
+   * Updates the direction display on the top middle
+   * @param {Number} zone
+   * @param {String} direction
+   */
+  updateDirection: (zone, direction) => {
+    switch (direction) {
+      case "NE": {
+        DOM.middleHeader.innerText = `Next (1-6) Trains ${CONFIG.zones[zone].north.display}`;
+        break;
+      }
+
+      case "SW": {
+        DOM.middleHeader.innerText = `Next (1-6) Trains ${CONFIG.zones[zone].south.display}`;
+        break;
+      }
+
+      default: {
+        DOM.middleHeader.innerText = `Next Inbound and Outbound Trains`;
+        break;
+      }
+    }
+  },
+
+  /**
    * @param {number} rowNumber
    * @param {string} [setTo]
    */
@@ -831,12 +856,12 @@ const app = {
       v.onchange = () => ui.setRowColor(num, v.value);
     });
 
-    document.querySelectorAll("td:nth-child(5)").forEach(v => {
+    document.querySelectorAll("td:nth-child(5)").forEach((v) => {
       v.onclick = () => {
         v.classList.toggle("active");
         v.classList.toggle("inactive");
-      }
-    })
+      };
+    });
   },
   /**
    * @param {string} direction
@@ -859,6 +884,7 @@ const app = {
     );
 
     ui.updateTime();
+    ui.updateDirection(utils.getZone(stationName), direction);
     app.populateDepartureRows(
       filteredDepartures,
       stationId,
