@@ -151,7 +151,8 @@
       <div class="select-station">
         <input list="station-list" placeholder="Loading stations..." />
         <datalist id="station-list"> </datalist>
-        <input type="checkbox" name="goto" id="goto">
+        <button onclick="findClosestStop()" title="Use your current location to find the closest station">📍</button>
+        <input type="checkbox" name="goto" id="goto" title="Enable to enter fullscreen mode with auto-updates every second">
         <button onclick="updateStationSW()">South & West (WIP)</button>
         <button onclick="updateStationNE()">North & East (WIP)</button>
         <button onclick="updateStationAll()">All trains (WIP)</button>

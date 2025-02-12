@@ -595,6 +595,71 @@ let state = {
 
 const utils = {
   /**
+   * Calculate distance between two coordinates using Haversine formula
+   * @param {number} lat1 - Latitude of first point
+   * @param {number} lon1 - Longitude of first point
+   * @param {number} lat2 - Latitude of second point
+   * @param {number} lon2 - Longitude of second point
+   * @returns {number} Distance in kilometers
+   */
+  calculateDistance: (lat1, lon1, lat2, lon2) => {
+    const R = 6371; // Earth's radius in km
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = 
+      Math.sin(dLat/2) * Math.sin(dLat/2) +
+      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+      Math.sin(dLon/2) * Math.sin(dLon/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return R * c; // Distance in km
+  },
+
+  /**
+   * Find the closest station to given coordinates
+   * @returns {Promise<void>}
+   */
+  findClosestStop: async () => {
+    if (!navigator.geolocation) {
+      alert('Geolocation is not supported by your browser');
+      return;
+    }
+
+    try {
+      const position = await new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve, reject);
+      });
+
+      const { latitude, longitude } = position.coords;
+      
+      let closestStation = null;
+      let minDistance = Infinity;
+
+      state.stations.forEach(station => {
+        const distance = utils.calculateDistance(
+          latitude,
+          longitude,
+          station.stop.coordinates.lat,
+          station.stop.coordinates.lon
+        );
+
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestStation = station;
+        }
+      });
+
+      if (closestStation) {
+        DOM.stationInput.value = closestStation.stop.fullName;
+      } else {
+        alert('No stations found');
+      }
+    } catch (error) {
+      alert('Error getting your location. Please make sure location services are enabled.');
+      console.error(error);
+    }
+  },
+
+  /**
    * @param {Date} date
    * @returns {string}
    */
@@ -759,6 +824,7 @@ const apiService = {
         3600
       );
       state.stations = data.response.stops;
+      state.stations = state.stations.sort((a,b) => a.stop.fullName > b.stop.fullName);
       state.nameToID = new Map(
         state.stations.map((s) => [s.stop.fullName, s.stop.id])
       );
@@ -1198,6 +1264,8 @@ window.hide = ui.toggleRowVisibility;
 window.car3 = ui.toggleCarType;
 /** @type {(rowNumber: number, color: string) => void} */
 window.setColor = ui.setRowColor;
+/** @type {() => Promise<void>} */
+window.findClosestStop = utils.findClosestStop;
 /** @type {() => Promise<void>} */
 window.updateStationSW = () => app.updateDisplay("SW");
 /** @type {() => Promise<void>} */
