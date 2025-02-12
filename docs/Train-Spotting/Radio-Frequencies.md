@@ -1,9 +1,8 @@
 # Radio Frequencies
 
-I'm not too sure how good these are at helping you spot trains, as I've yet to actually use them, but I
-thought I might add it. You should be able to use just any generic UHF radio to listen to the frequencies in the 400mhz
-range, but if you don't have one I would personally recommend the Baofeng UV5R. While it is not the best, it is certaily
-cheap, weighing in at around 38 AUD.
+I'm not too sure how good these are at helping you spot trains. I've had a listen to some of these frequencies and also went on a trip to Ferny Grove from Roma St with an SDR so I could monitor most of the channels and didn't hear any chatter.
+
+You should be able to use just any generic UHF radio to listen to the frequencies in the 400mhz range, but if you don't have one I would personally recommend the Baofeng UV5R. While it is not the best, it is certainly cheap, weighing in at around 38 AUD.
 
 Here's some links:
 
@@ -13,7 +12,7 @@ Here's some links:
 ## Metropolitan
 
 | Transmit | Receive | Locality                                                                            |
-|----------|---------|-------------------------------------------------------------------------------------|
+| -------- | ------- | ----------------------------------------------------------------------------------- |
 | 418.100  | 408.650 | North Suburban Control                                                              |
 | 418.125  | 408.675 | Brisbane (Brunswick Street, Roma Street & City Tunnels)                             |
 | 418.150  | 408.700 | Central, Oxford Park and Ferny Grove                                                |
@@ -42,7 +41,7 @@ Here's some links:
 ### UHF
 
 | Channel    | TX      | RX      |
-|------------|---------|---------|
+| ---------- | ------- | ------- |
 | V81 (Ch21) | 418.100 | 408.650 |
 | V81 (Ch22) | 418.125 | 408.650 |
 | V81 (Ch23) | 418.150 | 408.700 |
@@ -63,19 +62,19 @@ Here's some links:
 
 ### VHF
 
-| Channel | Tx      | Rx          |
-|---------|---------|-------------|
-| VHF1    | 168.520 | 165.520     |
-| VHF2    | 168.640 | 168.640     |
-| VHF3    | 168.565 | 168.565     |
-| VHF4    | 168.775 | 168.775**** |
+| Channel | Tx      | Rx              |
+| ------- | ------- | --------------- |
+| VHF1    | 168.520 | 165.520         |
+| VHF2    | 168.640 | 168.640         |
+| VHF3    | 168.565 | 168.565         |
+| VHF4    | 168.775 | 168.775\*\*\*\* |
 
 ## Channel Usage by Region
 
 ### South West
 
 | Section                   | Channel |
-|---------------------------|---------|
+| ------------------------- | ------- |
 | Ipswich – Toowoomba       | V82     |
 | Toowoomba – Roma          | V83     |
 | Roma – Charleville        | V82     |
@@ -94,7 +93,7 @@ Here's some links:
 ### Lower North Coast
 
 | Section                   | Channel |
-|---------------------------|---------|
+| ------------------------- | ------- |
 | Caboolture – Nambour      | V81     |
 | Nambour – Gympie          | V83     |
 | Gympie – Maryborough      | V82     |
@@ -110,7 +109,7 @@ Here's some links:
 ### Far North Coast
 
 | Section                   | Channel |
-|---------------------------|---------|
+| ------------------------- | ------- |
 | Rockhampton – St Lawrence | V81     |
 | St Lawrence – Mackay      | V83     |
 | Mackay – Bowen            | V82     |
@@ -126,7 +125,7 @@ Here's some links:
 ### Mid West
 
 | Section                   | Channel |
-|---------------------------|---------|
+| ------------------------- | ------- |
 | Rockhampton – Bluff       | V83     |
 | Bluff – Laleham           | V82     |
 | Bluff – Emerald           | V82     |
@@ -145,7 +144,7 @@ Here's some links:
 ### Great Northern Railway
 
 | Section                | Channel |
-|------------------------|---------|
+| ---------------------- | ------- |
 | Stuart – Hughenden     | V82     |
 | Hughenden – Mt Isa     | V83     |
 | Flynn – Phosphate Hill | V83     |
@@ -154,7 +153,7 @@ Here's some links:
 ## Other Frequencies Used
 
 | Frequency | License | Type | Tone     | Alpha Tag    | Description                          | Mode | Tag      |
-|-----------|---------|------|----------|--------------|--------------------------------------|------|----------|
+| --------- | ------- | ---- | -------- | ------------ | ------------------------------------ | ---- | -------- |
 | 411.375   | VL4QR   | M    | CSQ      | 1            | WAYSIDE                              | FM   | Railroad |
 | 418.275   | VL4QR   | RM   | CSQ      | 2            | SHUNT                                | FM   | Railroad |
 | 418.300   | VL4QR   | RM   | CSQ      | 3            | SHUNT                                | FM   | Railroad |
@@ -287,4 +286,3 @@ Here's some links:
 
 - [Brisbane North Scan - QR Frequencies](https://brisbanenorthscan.tripod.com/index1.html/id21.html)
 - [Brisbane North Scan - Other Frequencies](https://brisbanenorthscan.tripod.com/index1.html/id2.html)
-
