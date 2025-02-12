@@ -4,7 +4,7 @@
 
 ![Train Guide](../media/train_guide.png)
 
-> Source
+> Source: [https://www.reddit.com/r/BrisbaneTrains/comments/1g6abiw/train_enjoyers_guide_to_train_models_and_how_to/](https://www.reddit.com/r/BrisbaneTrains/comments/1g6abiw/train_enjoyers_guide_to_train_models_and_how_to/)
 
 ## Gold Coast / Airport line
 
@@ -12,7 +12,7 @@ NGRs most of the day, with IMUs at peak times. You may get like 3 IMUs a day, so
 
 ## Beenleigh / Ferny Grove
 
-NGRs are prohibited on Ferny Grove line because Gathorne Station is so curved that the guard who has to positioned at the back on NGRs can't see all the way around the platform. Because Beenleigh is Ferny Grove's pair, it does not get NGRs either. Thus, mostly IMUs / SMUs will appear on the line, with EMUs sometiems on Ferny Grove.
+NGRs are prohibited on Ferny Grove line because Gathorne Station is so curved that the guard who has to positioned at the back on NGRs can't see all the way around the platform. Because Beenleigh is Ferny Grove's pair, it does not get NGRs either. Thus, mostly IMUs / SMUs will appear on the line, with EMUs sometimes on Ferny Grove.
 
 ## Redcliffe Peninsula / Springfield Line:
 
