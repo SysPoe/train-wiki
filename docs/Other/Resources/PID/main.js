@@ -570,6 +570,7 @@ const DOM = {
   middleHeader: document.querySelector(".lmrmiddle"),
   stationInput: document.querySelector(".select-station input"),
   stationList: document.querySelector("#station-list"),
+  goto: document.querySelector("#goto"),
   rows: Array.from(document.querySelectorAll("[id^='tr']")),
 };
 
@@ -719,7 +720,7 @@ const ui = {
 const cacheWrapper = {
   /** @type {Map<string, {data: any, timestamp: number}>} */
   cache: new Map(),
-  defaultTTL: 30, // 30 seconds default TTL
+  defaultTTL: 60, // 60 seconds default TTL
 
   /**
    * @template T
@@ -812,9 +813,16 @@ const app = {
     app.setupEventListeners();
 
     if (window.location.hash) {
-      const stationName = decodeURIComponent(window.location.hash.substring(1));
+      document
+        .querySelectorAll(".hide")
+        .forEach((v) => (v.style.display = "none"));
+      document.querySelectorAll(".show").forEach((v) => (v.style.display = ""));
+
+      const { stationName, direction } = JSON.parse(
+        decodeURIComponent(window.location.hash.substring(1))
+      );
       DOM.stationInput.value = stationName;
-      app.updateDisplay("NE");
+      setInterval((v) => app.updateDisplay(direction, false), 1000);
     }
   },
 
@@ -865,14 +873,29 @@ const app = {
   },
   /**
    * @param {string} direction
+   * @param {bool} doCheck
    * @returns {Promise<void>}
    */
-  updateDisplay: async (direction) => {
+  updateDisplay: async (direction, doCheck = true) => {
     const stationName = DOM.stationInput.value;
     const stationId = state.nameToID.get(stationName);
 
     if (!stationId) {
-      console.error("Station not found");
+      alert(
+        "Station not found. It is possible that the rate limit has been exceeded."
+      );
+      return;
+    }
+
+    if (
+      doCheck &&
+      DOM.goto.checked &&
+      location.hash.substring(1).trim() == "" &&
+      location.hash.substring(1).trim() !=
+        JSON.stringify({ stationName, direction })
+    ) {
+      location.hash = JSON.stringify({ stationName, direction });
+      location.reload();
       return;
     }
 
