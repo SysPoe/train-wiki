@@ -50,9 +50,25 @@
 
       async function main() {
         let res = await fetch("data.json");
-        let sampleData = await res.json();
+        /** @typedef {object} RailData
+         * @property {object} metadata
+         * @property {string} metadata.version
+         * @property {string} metadata.coordinateSystem
+         * @property {number} metadata.scale
+         * @property {object[]} tracks
+         * @property {string} tracks.id
+         * @property {string} tracks.name
+         * @property {object[]} tracks.blocks
+         * @property {string} tracks.blocks.blockId
+         * @property {string} tracks.blocks.direction
+         * @property {object[]} tracks.blocks.geometry
+         * @property {number} tracks.blocks.geometry.x
+         * @property {number} tracks.blocks.geometry.y
+         */
+        /** @type {RailData} */
+        let data = await res.json();
 
-        sampleData.tracks = sampleData.tracks.reverse();
+        data.tracks = data.tracks.reverse();
 
         /** @type {HTMLCanvasElement} */
         const canvas = document.getElementById("railCanvas");
@@ -61,9 +77,9 @@
         /** @type {CanvasRenderingContext2D} */
         const ctx = canvas.getContext("2d");
 
-        function renderTracks(data) {
-          const scaleFactor = 0.6; // Adjust based on your coordinate scale
+        const scaleFactor = 1; // Adjust based on your coordinate scale
 
+        function renderTracks(data) {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
           // ctx.fillStyle = "#000";
           // ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -98,7 +114,7 @@
                   point.x = prevX;
                 prevY = point.y;
                 prevX = point.x;
-                
+
                 const x = point.x * scaleFactor;
                 const y = point.y * scaleFactor;
 
@@ -130,11 +146,10 @@
             });
           });
         }
-
         // Add viewport transformations
-        let viewport = {
+        window.viewport = {
           x: 0,
-          y: 0,
+          y: -400,
           scale: 1,
         };
 
@@ -208,11 +223,11 @@
           ctx.clearRect(0, 0, canvas.width, canvas.height);
           ctx.translate(viewport.x, viewport.y);
           ctx.scale(viewport.scale, viewport.scale);
-          renderTracks(sampleData);
+          renderTracks(data);
         }
 
         // Initial render
-        renderTracks(sampleData);
+        redraw();
       }
       main();
     </script>
