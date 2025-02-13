@@ -94,8 +94,20 @@ Here is a selection of some of my train photos that I think are nice, in no part
 
 ## Other
 
+![](../media/MyGallery/Diesel%20Tilt%20Train%20at%20Roma%20Street%202.png)
+
+> [View full image](../media/MyGallery/Diesel%20Tilt%20Train%20at%20Roma%20Street%202.png)
+>
+> The Diesel Tilt Train at Roma Street as seen from the viewing platform. Taken 01/20/25 @ 15:03.
+
 ![](../media/MyGallery/Electric%20Tilt%20Train%20at%20Central-Enhanced-NR.png)
 
 > [View full image](../media/MyGallery/Electric%20Tilt%20Train%20at%20Central-Enhanced-NR.png)
 >
 > The Electric Tilt Train passing through Central Station, platform 5. Taken 05/12/24 @ 10:06.
+
+![](../media/MyGallery/Electric%20Tilt%20Train%20at%20Caboolture%201%20Q301.png)
+
+> [View full image](../media/MyGallery/Electric%20Tilt%20Train%20at%20Caboolture%201%20Q301.png)
+>
+> The Electric Tilt Train arriving at Caboolture Station, platform 1, for the almost-daily Q301 service to Rockhampton. Taken 01/21/25 @ 11:51.
