@@ -44,24 +44,27 @@
           document.querySelector("#map-diagram").contentDocument
             .documentElement;
 
-        let downtime = 0;
-        docel.onmousedown = () => {
-          downtime = Date.now();
-        };
-        docel.onmouseup = (ev) => {
-          if (Date.now() - downtime > 100) return;
-          downtime = 0;
 
+        pz.disableZoom();
+        pz.zoom(27);
+
+        window.geo = [];
+
+        docel.addEventListener('auxclick', (ev) => {
+          if(ev.button != 1) return;
+          ev.preventDefault();
           let { x, y } = ev;
           let panX = pz.getPan().x;
           let panY = pz.getPan().y;
           let zoom = pz.getZoom();
           x -= panX;
-          x /= zoom;
           y -= panY;
-          y /= zoom;
           console.log(x, y);
-        };
+
+          geo.push({x, y})
+
+          navigator.clipboard.writeText(JSON.stringify(geo).replace(/^\[/, "").replace(/\]$/, ""))
+        });
       }
       main();
     </script>

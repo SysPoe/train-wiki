@@ -1,0 +1,154 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Dispatcher View Track Layout",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string" },
+        "coordinateSystem": {
+          "type": "string",
+          "enum": ["cartesian2D", "geoJSON"]
+        },
+        "scale": { "type": "number" }
+      },
+      "required": ["version", "coordinateSystem"]
+    },
+    "tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "blocks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "blockId": { "type": "string" },
+                "name": { "type": "string" },
+                "length": { "type": "number" },
+                "geometry": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "x": { "type": "number" },
+                      "y": { "type": "number" }
+                    },
+                    "required": ["x", "y"]
+                  }
+                },
+                "direction": {
+                  "type": "string",
+                  "enum": ["bidirectional", "north", "south", "east", "west"]
+                }
+              },
+              "required": ["blockId", "geometry"]
+            }
+          }
+        },
+        "required": ["id", "blocks"]
+      }
+    },
+    "signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "blockId": { "type": "string" },
+          "position": {
+            "type": "object",
+            "properties": {
+              "x": { "type": "number" },
+              "y": { "type": "number" }
+            },
+            "required": ["x", "y"]
+          },
+          "state": {
+            "type": "string",
+            "enum": ["red", "yellow", "green", "off"]
+          },
+          "facing": {
+            "type": "string",
+            "enum": ["north", "south", "east", "west"]
+          }
+        },
+        "required": ["id", "blockId", "position"]
+      }
+    },
+    "switches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "position": {
+            "type": "object",
+            "properties": {
+              "x": { "type": "number" },
+              "y": { "type": "number" }
+            },
+            "required": ["x", "y"]
+          },
+          "state": {
+            "type": "string",
+            "enum": ["diverging", "straight"]
+          },
+          "connections": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["id", "position", "state"]
+      }
+    },
+    "stations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "location": {
+            "type": "object",
+            "properties": {
+              "x": { "type": "number" },
+              "y": { "type": "number" }
+            },
+            "required": ["x", "y"]
+          },
+          "platforms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "platformId": { "type": "string" },
+                "name": { "type": "string" },
+                "trackId": { "type": "string" },
+                "blockId": { "type": "string" },
+                "positionAlongTrack": { "type": "number" },
+                "side": {
+                  "type": "string",
+                  "enum": ["left", "right", "both"]
+                },
+                "length": { "type": "number" },
+                "status": {
+                  "type": "string",
+                  "enum": ["active", "closed", "maintenance"]
+                }
+              },
+              "required": ["platformId", "trackId", "blockId"]
+            }
+          }
+        },
+        "required": ["id", "name", "location"]
+      }
+    }
+  },
+  "required": ["metadata", "tracks", "stations"]
+}
