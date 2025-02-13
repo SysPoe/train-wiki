@@ -878,6 +878,8 @@ const app = {
     app.populateStationList();
     app.setupEventListeners();
 
+    window.SNFShown = false;
+
     if (window.location.hash) {
       document
         .querySelectorAll(".hide")
@@ -946,7 +948,8 @@ const app = {
     const stationName = DOM.stationInput.value;
     const stationId = state.nameToID.get(stationName);
 
-    if (!stationId) {
+    if (!stationId && !window.SNFShown) {
+      window.SNFShown = true;
       alert(
         "Station not found. It is possible that the rate limit has been exceeded."
       );
@@ -1040,7 +1043,7 @@ const app = {
         (CONFIG.zones[zoneSt].order === 0 && celIndex < delIndex) ||
         (CONFIG.zones[zoneSt].order === 1 && celIndex > delIndex)
       ) {
-        return true;
+        return direction == "south";
       }
     }
 
@@ -1074,6 +1077,7 @@ const app = {
       .map((v) =>
         v.stop.disassembled.stationName.replace("station", "").trim()
       );
+      console.log(dep, futureStops);
 
     const color = app.getColor(dep, stops);
     const finalDest = app.getFinalDestination(futureStops, dest, thisStation);
