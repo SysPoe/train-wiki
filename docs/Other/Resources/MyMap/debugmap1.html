@@ -376,7 +376,7 @@
           const closest = findClosestPoint(planeCoords.x, planeCoords.y);
 
 
-          if (selected_db.length >= 2) selected_db = selected_db.slice(1);
+          if (selected_db.length >= 2) selected_db = [];
           selected_db.push({
             t: closest.trackIndex,
             b: closest.blockIndex,

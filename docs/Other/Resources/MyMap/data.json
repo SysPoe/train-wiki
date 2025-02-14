@@ -9,8 +9,8 @@
     {
       "id": "RST",
       "location": {
-        "x": 475.3947485829859,
-        "y": 663.3708562099388
+        "x": 475,
+        "y": 535
       },
       "name": "Roma Street"
     },
@@ -18,9 +18,17 @@
       "id": "BNC",
       "location": {
         "x": 912.5,
-        "y": 740
+        "y": 570
       },
       "name": "Central"
+    },
+    {
+      "id": "BRC",
+      "location": {
+        "x": 1310,
+        "y": 590
+      },
+      "name": "Fortitude Valley"
     }
   ],
   "tracks": [
@@ -113,6 +121,24 @@
               "x": 1045.9996337890625,
               "y": 610.9605712890625
             },
+            { "x": 1260, "y": 610.8421325683594 }
+          ]
+        },
+        {
+          "blockId": "BRCP4",
+          "name": "Fortitude Valley Platform 4",
+          "direction": "bidirectional",
+          "geometry": [
+            { "x": 1260, "y": 610.8421325683594 },
+            { "x": 1360, "y": 610.8421325683594 }
+          ]
+        },
+        {
+          "blockId": "DNM4",
+          "name": "Down Main",
+          "direction": "bidirectional",
+          "geometry": [
+            { "x": 1360, "y": 610.8421325683594 },
             {
               "x": 3054.999267578125,
               "y": 610.9605712890625
@@ -267,6 +293,36 @@
               "y": 630.9604187011719
             },
             {
+              "x": 1260,
+              "y": 630.9604187011719
+            }
+          ]
+        },
+        {
+          "blockId": "BRCP3",
+          "name": "Fortitude Valley Platform 3",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 1260,
+              "y": 630.9604187011719
+            },
+            {
+              "x": 1360,
+              "y": 630.9604187011719
+            }
+          ]
+        },
+        {
+          "blockId": "UPM4",
+          "direction": "bidirectional",
+          "name": "Up Main",
+          "geometry": [
+            {
+              "x": 1360,
+              "y": 630.9604187011719
+            },
+            {
               "x": 3056.9990234375,
               "y": 630.9604187011719
             },
@@ -412,6 +468,36 @@
               "y": 647.9605407714844
             },
             {
+              "x": 1260,
+              "y": 647.9605407714844
+            }
+          ]
+        },
+        {
+          "blockId": "BRCP2",
+          "name": "Fortitude Valley Platform 2",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 1260,
+              "y": 647.9605407714844
+            },
+            {
+              "x": 1360,
+              "y": 647.9605407714844
+            }
+          ]
+        },
+        {
+          "blockId": "DNS4",
+          "name": "Down Suburban",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 1360,
+              "y": 647.9605407714844
+            },
+            {
               "x": 3056.000244140625,
               "y": 647.9605407714844
             },
@@ -522,6 +608,36 @@
             },
             {
               "x": 1097.0028686523438,
+              "y": 665.9606323242188
+            },
+            {
+              "x": 1260,
+              "y": 665.9606323242188
+            }
+          ]
+        },
+        {
+          "blockId": "BRCP1",
+          "direction": "bidirectional",
+          "name": "Fortitude Valley Platform 1",
+          "geometry": [
+            {
+              "x": 1260,
+              "y": 665.9606323242188
+            },
+            {
+              "x": 1360,
+              "y": 665.9606323242188
+            }
+          ]
+        },
+        {
+          "blockId": "UPS4",
+          "name": "Up Suburban",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 1360,
               "y": 665.9606323242188
             },
             {
@@ -1266,7 +1382,7 @@
               "y": 663.8422546386719
             },
             {
-              "x": 988.0001831054688,
+              "x": 983.0001831054688,
               "y": 663.8422546386719
             },
             {
