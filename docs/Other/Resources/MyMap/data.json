@@ -67,7 +67,6 @@
               "x": 540.0010757446289,
               "y": 593.9605407714844
             },
-
             {
               "x": 1027.9996337890625,
               "y": 593.9605407714844
@@ -304,6 +303,36 @@
           "geometry": [
             {
               "x": 533.9988708496094,
+              "y": 684.9605407714844
+            },
+            {
+              "x": 860.0003051757812,
+              "y": 684.9605407714844
+            }
+          ]
+        },
+        {
+          "name": "Central Platform 3",
+          "blockId": "BNCP3",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 860.0003051757812,
+              "y": 684.9605407714844
+            },
+            {
+              "x": 965.0003051757812,
+              "y": 684.9605407714844
+            }
+          ]
+        },
+        {
+          "name": "Down Suburban",
+          "blockId": "DNS3",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 965.0003051757812,
               "y": 684.9605407714844
             },
             {
@@ -771,11 +800,11 @@
           "direction": "bidirectional",
           "geometry": [
             {
-              "x": 535.9988861083984,
+              "x": 541.9988861083984,
               "y": 684.9605407714844
             },
             {
-              "x": 550.9988861083984,
+              "x": 558.9988861083984,
               "y": 700.9606628417969
             }
           ]
@@ -895,12 +924,12 @@
       ]
     },
     {
-      "name": "Down Suburban to Up Main Switch 1",
-      "id": "DNSUPMS1",
+      "name": "Roma Street Platform 7 Feeder 1 to Up Main Switch 1",
+      "id": "RSTP7F1UPMS1",
       "blocks": [
         {
-          "name": "Down Suburban to Up Main Switch 1 Block 1",
-          "blockId": "DNSUPMS1B1",
+          "name": "Roma Street Platform 7 Feeder 1 to Up Main Switch 1 Block 1",
+          "blockId": "RSTP7F1UPMS1B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -1056,7 +1085,7 @@
       "id": "DNSUPSS3",
       "blocks": [
         {
-      "name": "Down Suburban to Up Suburban Switch 3 Block 1",
+          "name": "Down Suburban to Up Suburban Switch 3 Block 1",
           "blockId": "DNSUPSS3B1",
           "geometry": [
             {
@@ -1086,6 +1115,124 @@
             {
               "x": 755.0005798339844,
               "y": 684.9605407714844
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BNCP4",
+      "name": "Central Platform 4",
+      "blocks": [
+        {
+          "blockId": "BNCP4F1",
+          "name": "Central Platform 4 Feeder 1",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 819.0003051757812,
+              "y": 684.9605407714844
+            },
+            {
+              "x": 846.0003051757812,
+              "y": 663.8422546386719
+            },
+            {
+              "x": 860.0003051757812,
+              "y": 663.8422546386719
+            }
+          ]
+        },
+        {
+          "blockId": "BNCP4",
+          "name": "Central Platform 4",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 860.0003051757812,
+              "y": 663.8422546386719
+            },
+            {
+              "x": 965.0003051757812,
+              "y": 663.8422546386719
+            }
+          ]
+        },
+        {
+          "blockId": "BNCP4F2",
+          "direction": "bidirectional",
+          "name": "Central Platform 4 Feeder 2",
+          "geometry": [
+            {
+              "x": 965.0003051757812,
+              "y": 663.8422546386719
+            },
+            {
+              "x": 988.0001831054688,
+              "y": 663.8422546386719
+            },
+            {
+              "x": 1013.0001831054688,
+              "y": 684.9605407714844
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BNCP2",
+      "name": "Central Platform 2",
+      "blocks": [
+        {
+          "blockId": "BNCP2F1",
+          "name": "Central Platform 2 Feeder 1",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 837.0001831054688,
+              "y": 719.9606628417969
+            },
+            {
+              "x": 854.0001831054688,
+              "y": 703.8422241210938
+            },
+            {
+              "x": 865.0001831054688,
+              "y": 703.8422241210938
+            }
+          ]
+        },
+        {
+          "blockId": "BNCP2",
+          "direction": "bidirectional",
+          "name": "Central Platform 2",
+          "geometry": [
+            {
+              "x": 865.0001831054688,
+              "y": 703.8422241210938
+            },
+            {
+              "x": 943.0001831054688,
+              "y": 703.8422241210938
+            }
+          ]
+        },
+        {
+          "blockId": "BNCP2F2",
+          "direction": "bidirectional",
+          "name": "Central Platform 2 Feeder 2",
+          "geometry": [
+            {
+              "x": 943.0001831054688,
+              "y": 703.8422241210938
+            },
+            {
+              "x": 955.0001831054688,
+              "y": 703.8422241210938
+            },
+            {
+              "x": 970.0001831054688,
+              "y": 719.9606628417969
             }
           ]
         }

@@ -29,40 +29,11 @@
       <button onclick="copyY()">=Y</button>
       <button onclick="plusX()">+X</button>
       <button onclick="minusX()">-X</button>
+      <button onclick="plusY()">+Y</button>
+      <button onclick="minusY()">-Y</button>
     </div>
 
     <script>
-      const sampleDataB = {
-        metadata: {
-          version: "1.0",
-          coordinateSystem: "cartesian2D",
-          scale: 1.0,
-        },
-        tracks: [
-          {
-            id: "T1",
-            name: "Main Line",
-            blocks: [
-              {
-                blockId: "B1",
-                geometry: [
-                  { x: 0, y: 0 },
-                  { x: 0, y: 500 },
-                  { x: 500, y: 500 },
-                ],
-              },
-              {
-                blockId: "B2",
-                geometry: [
-                  { x: 500, y: 500 },
-                  { x: 1000, y: 500 },
-                ],
-              },
-            ],
-          },
-        ],
-      };
-
       async function main() {
         let res = await fetch("data.json");
         /** @typedef {object} RailData
@@ -230,9 +201,17 @@
             ctx.fillStyle = "#FFF";
             let fontSize = 15 * scaleFactor;
             ctx.font = fontSize + "px Arial";
-            ctx.fillText(s.name, x - ctx.measureText(s.name).width / 2, y + fontSize / 2 - fontSize / 4);
+            ctx.fillText(
+              s.name,
+              x - ctx.measureText(s.name).width / 2,
+              y + fontSize / 2 - fontSize / 4
+            );
             ctx.font = fontSize / 2 + "px Arial";
-            ctx.fillText(s.id, x - ctx.measureText(s.id).width / 2, y + fontSize)
+            ctx.fillText(
+              s.id,
+              x - ctx.measureText(s.id).width / 2,
+              y + fontSize
+            );
           });
         }
 
@@ -245,7 +224,6 @@
             ].x;
           redraw();
         };
-
         window.copyY = () => {
           data.tracks[selected_db[1].t].blocks[selected_db[1].b].geometry[
             selected_db[1].p
@@ -255,7 +233,6 @@
             ].y;
           redraw();
         };
-
         window.plusX = () => {
           let i = selected_db.length - 1;
           data.tracks[selected_db[i].t].blocks[selected_db[i].b].geometry[
@@ -263,12 +240,25 @@
           ].x++;
           redraw();
         };
-
         window.minusX = () => {
           let i = selected_db.length - 1;
           data.tracks[selected_db[i].t].blocks[selected_db[i].b].geometry[
             selected_db[i].p
           ].x--;
+          redraw();
+        };
+        window.plusY = () => {
+          let i = selected_db.length - 1;
+          data.tracks[selected_db[i].t].blocks[selected_db[i].b].geometry[
+            selected_db[i].p
+          ].y++;
+          redraw();
+        };
+        window.minusY = () => {
+          let i = selected_db.length - 1;
+          data.tracks[selected_db[i].t].blocks[selected_db[i].b].geometry[
+            selected_db[i].p
+          ].y--;
           redraw();
         };
 
@@ -315,11 +305,13 @@
           redraw();
         }
         function startPan(event) {
+          // if(event.button != 1) return;
           isPanning = true;
           startPanX = event.offsetX - viewport.x;
           startPanY = event.offsetY - viewport.y;
         }
         function handlePan(event) {
+          // if(event.button != 1) return;
           if (isPanning) {
             viewport.x = event.offsetX - startPanX;
             viewport.y = event.offsetY - startPanY;
@@ -342,7 +334,6 @@
           const planeY = (screenY - viewport.y) / viewport.scale;
           return { x: planeX, y: planeY };
         }
-
         function distance(p1, p2) {
           return Math.sqrt(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2));
         }
@@ -356,10 +347,15 @@
           );
 
           for (const point of db_points) {
-            const dist = distance({ x, y }, point);
+            const dist = distance(
+              { x, y },
+              data.tracks[point.trackIndex].blocks[point.blockIndex].geometry[
+                point.pointIndex
+              ]
+            );
             if (dist < minDist) {
               minDist = dist;
-              closest = JSON.parse(JSON.stringify(point));
+              closest = point;
             }
           }
           return closest;
@@ -377,9 +373,6 @@
           // Find closest point
           const closest = findClosestPoint(planeCoords.x, planeCoords.y);
 
-          // Display info
-          console.log("Click coordinates (plane):", planeCoords);
-          console.log("Closest point:", closest);
 
           if (selected_db.length >= 2) selected_db = selected_db.slice(1);
           selected_db.push({
@@ -387,8 +380,6 @@
             b: closest.blockIndex,
             p: closest.pointIndex,
           });
-
-          console.log(selected_db);
 
           redraw();
         });
