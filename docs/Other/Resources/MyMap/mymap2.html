@@ -89,7 +89,7 @@
               ctx.beginPath();
               // ctx.strokeStyle = `hsl(${trackIndex * 30}, 100%, 50%)`; // Different color per track
               ctx.strokeStyle = "#FF0000";
-              if (/^[A-Z]{3}_P\d+$/.test(block.blockId))
+              if (/^[A-Z]{3}P\d+$/.test(block.blockId))
                 ctx.strokeStyle = "#0000FF";
               ctx.lineWidth = Math.max(3 / viewport.scale, 2);
               block.geometry[0].x -= 0.01;
@@ -110,20 +110,38 @@
           });
 
           data.tracks.forEach((v) => {
-            let prevX = Number.NEGATIVE_INFINITY;
-            let prevY = Number.NEGATIVE_INFINITY;
-
             v.blocks.forEach((block) => {
               // Draw block ID labels
+              if(!/^[A-Z]{3}P\d+(B\d+)?$/.test(block.blockId)) return;
               const firstPoint = block.geometry[0];
               ctx.fillStyle = "#FFF";
               ctx.font = "8px Arial";
               ctx.fillText(
-                block.blockId,
+                block.name,
                 firstPoint.x * scaleFactor + 5,
                 firstPoint.y * scaleFactor + 2
               );
             });
+          });
+
+          data.stations.forEach((s) => {
+            let { x, y } = s.location;
+            x *= scaleFactor;
+            y *= scaleFactor;
+            ctx.fillStyle = "#FFF";
+            let fontSize = 15 * scaleFactor;
+            ctx.font = fontSize + "px Arial";
+            ctx.fillText(
+              s.name,
+              x - ctx.measureText(s.name).width / 2,
+              y + fontSize / 2 - fontSize / 4
+            );
+            ctx.font = fontSize / 2 + "px Arial";
+            ctx.fillText(
+              s.id,
+              x - ctx.measureText(s.id).width / 2,
+              y + fontSize
+            );
           });
         }
         // Add viewport transformations

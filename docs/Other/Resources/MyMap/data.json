@@ -5,13 +5,24 @@
     "coordinateSystem": "cartesian2D",
     "scale": 1
   },
+  "stations": [
+    {
+      "id": "RST",
+      "location": {
+        "x": 475.3947485829859,
+        "y": 663.3708562099388
+      },
+      "name": "Roma Street"
+    }
+  ],
   "tracks": [
     {
-      "id": "DN_M",
+      "id": "DNM",
       "name": "Down Main",
       "blocks": [
         {
-          "blockId": "Down Main",
+          "name": "Down Main",
+          "blockId": "DNM1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -33,7 +44,8 @@
           ]
         },
         {
-          "blockId": "RST_P9",
+          "name": "Roma Street Platform 9",
+          "blockId": "RSTP9",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -47,14 +59,15 @@
           ]
         },
         {
-          "blockId": "Down Main",
+          "name": "Down Main",
+          "blockId": "DNM2",
           "direction": "bidirectional",
           "geometry": [
             {
               "x": 540.0010757446289,
               "y": 593.9605407714844
             },
-            
+
             {
               "x": 1027.9996337890625,
               "y": 593.9605407714844
@@ -136,11 +149,12 @@
       ]
     },
     {
-      "id": "UP_M",
+      "id": "UPM",
       "name": "Up Main",
       "blocks": [
         {
-          "blockId": "Up Main",
+          "name": "Up Main",
+          "blockId": "UPM1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -162,7 +176,8 @@
           ]
         },
         {
-          "blockId": "RST_P8",
+          "name": "Roma Street Platform 8",
+          "blockId": "RSTP8",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -176,7 +191,8 @@
           ]
         },
         {
-          "blockId": "Up Main",
+          "name": "Up Main",
+          "blockId": "UPM2",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -240,11 +256,12 @@
       ]
     },
     {
-      "id": "DN_S",
+      "id": "DNS",
       "name": "Down Suburban",
       "blocks": [
         {
-          "blockId": "Down Suburban",
+          "name": "Down Suburban",
+          "blockId": "DNS1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -266,7 +283,8 @@
           ]
         },
         {
-          "blockId": "RST_P6",
+          "name": "Roma Street Platform 6",
+          "blockId": "RSTP6",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -280,7 +298,8 @@
           ]
         },
         {
-          "blockId": "Down Suburban",
+          "name": "Down Suburban",
+          "blockId": "DNS2",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -312,11 +331,12 @@
       ]
     },
     {
-      "id": "UP_S",
+      "id": "UPS",
       "name": "Up Suburban",
       "blocks": [
         {
-          "blockId": "Up Suburban",
+          "name": "Up Suburban",
+          "blockId": "UPS1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -338,7 +358,8 @@
           ]
         },
         {
-          "blockId": "RST_P5",
+          "name": "Roma Street Platform 5",
+          "blockId": "RSTP5",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -352,7 +373,8 @@
           ]
         },
         {
-          "blockId": "Up Suburban",
+          "name": "Up Suburban",
+          "blockId": "UPS2",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -408,10 +430,12 @@
       ]
     },
     {
-      "id": "RST_P4",
+      "name": "Roma Street Platform 4",
+      "id": "RSTP4",
       "blocks": [
         {
-          "blockId": "",
+          "blockId": "RSTP4F1",
+          "name": "Roma Street Platform 4 Feeder 1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -429,7 +453,8 @@
           ]
         },
         {
-          "blockId": "RST_P4",
+          "name": "Roma Street Platform 4",
+          "blockId": "RSTP4",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -443,7 +468,8 @@
           ]
         },
         {
-          "blockId": "",
+          "blockId": "RSTP4F2",
+          "name": "Roma Street Platform 4 Feeder 2",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -463,10 +489,12 @@
       ]
     },
     {
-      "id": "Gauntlet Track",
+      "name": "Gauntlet Track",
+      "id": "GT",
       "blocks": [
         {
-          "blockId": "SG",
+          "name": "Roma Street Platform 2 Feeder 1",
+          "blockId": "RSTP2F1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -488,7 +516,8 @@
           ]
         },
         {
-          "blockId": "RST_P2",
+          "name": "Roma Street Platform 2",
+          "blockId": "RSTP2",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -502,7 +531,8 @@
           ]
         },
         {
-          "blockId": "",
+          "name": "Roma Street Platform 2 Feeder 2",
+          "blockId": "RSTP2F2",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -522,10 +552,12 @@
       ]
     },
     {
-      "id": "RST_P3",
+      "name": "Roma Street Platform 3",
+      "id": "RSTP3",
       "blocks": [
         {
-          "blockId": "",
+          "blockId": "RSTP3F1",
+          "name": "Roma Street Platform 3 Feeder 1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -547,7 +579,8 @@
           ]
         },
         {
-          "blockId": "RST_P3",
+          "name": "Roma Street Platform 3",
+          "blockId": "RSTP3",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -561,7 +594,8 @@
           ]
         },
         {
-          "blockId": "",
+          "name": "Roma Street Platform 3 Feeder 2",
+          "blockId": "RSTP3F2",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -577,10 +611,12 @@
       ]
     },
     {
-      "id": "UPM_DNS_S1",
+      "name": "Up Main to Down Suburban Switch 1",
+      "id": "UPMDNSS1",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Up Main to Down Suburban Switch 1 Block 1",
+          "blockId": "UPMDNSS1B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -596,10 +632,12 @@
       ]
     },
     {
-      "id": "UP_EX_F1",
+      "name": "Up Exhibition Feeder 1",
+      "id": "UPEXF1",
       "blocks": [
         {
-          "blockId": "UP_EX",
+          "name": "Up Exhibition Feeder 1 Block 1",
+          "blockId": "UPEXF1B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -619,10 +657,12 @@
       ]
     },
     {
-      "id": "DN_EX",
+      "name": "Down Exhibition",
+      "id": "DNEX",
       "blocks": [
         {
-          "blockId": "DN_EX",
+          "name": "Down Exhibition Block 1",
+          "blockId": "DNEXB1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -642,10 +682,12 @@
       ]
     },
     {
-      "id": "RST_P7",
+      "name": "Roma Street Platform 7",
+      "id": "RSTP7",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Roma Street Platform 7 Feeder 1",
+          "blockId": "RSTP7F1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -663,7 +705,8 @@
           ]
         },
         {
-          "blockId": "RST_P7",
+          "name": "Roma Street Platform 7",
+          "blockId": "RSTP7",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -677,7 +720,8 @@
           ]
         },
         {
-          "blockId": "",
+          "name": "Roma Street Platform 7 Feeder 2",
+          "blockId": "RSTP7F2",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -697,10 +741,12 @@
       ]
     },
     {
-      "id": "DNS-UPS-S1",
+      "name": "Down Suburban to Up Suburban Switch 1",
+      "id": "DNSUPSS1",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Down Street to Up Suburban Switch 1 Block 1",
+          "blockId": "DNSUPSS1B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -716,10 +762,12 @@
       ]
     },
     {
-      "id": "DNS-UPS-S2",
+      "name": "Down Suburban to Up Suburban Switch 2",
+      "id": "DNSUPSS2",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Down Street to Up Suburban Switch 2 Block 1",
+          "blockId": "DNSUPSS2B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -735,10 +783,12 @@
       ]
     },
     {
-      "id": "UP_EX_F2",
+      "name": "Up Exhibition Feeder 2",
+      "id": "UPEXF2",
       "blocks": [
         {
-          "blockId": "UP_EX",
+          "name": "Up Exhibition Feeder 2 Block 1",
+          "blockId": "UPEXF2B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -766,10 +816,12 @@
       ]
     },
     {
-      "id": "UP_EX_F3",
+      "name": "Up Exhibition Feeder 3",
+      "id": "UPEXF3",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Up Exhibition Feeder 3 Block 1",
+          "blockId": "UPEXF3B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -789,10 +841,12 @@
       ]
     },
     {
-      "id": "EX_MISC_1",
+      "name": "Exhibition Misc. 1",
+      "id": "EXMISC1",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Exhibition Misc. 1 Block 1",
+          "blockId": "EXMISC1B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -820,10 +874,12 @@
       ]
     },
     {
-      "id": "DNM_EXM1_S1",
+      "name": "Down Main to Exhibition Misc. 1 Switch 1",
+      "id": "DNMEXM1S1",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Down Main to Exhibition Misc. 1 Switch 1 Block 1",
+          "blockId": "DNMEXM1S1B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -839,10 +895,12 @@
       ]
     },
     {
-      "id": "DNS_UPM_S1",
+      "name": "Down Suburban to Up Main Switch 1",
+      "id": "DNSUPMS1",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Down Suburban to Up Main Switch 1 Block 1",
+          "blockId": "DNSUPMS1B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -858,10 +916,12 @@
       ]
     },
     {
-      "id": "DNS_UPM_S2",
+      "name": "Down Suburban to Up Main Switch 2",
+      "id": "DNSUPMS2",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Down Suburban to Up Main Switch 2 Block 1",
+          "blockId": "DNSUPMS2B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -877,10 +937,12 @@
       ]
     },
     {
-      "id": "RST_P10",
+      "name": "Roma Street Platform 10",
+      "id": "RSTP10",
       "blocks": [
         {
-          "blockId": "RST_P10",
+          "name": "Roma Street Platform 10",
+          "blockId": "RSTP10",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -902,7 +964,8 @@
           ]
         },
         {
-          "blockId": "",
+          "name": "Roma Street Platform 10 Feeder 1",
+          "blockId": "RSTP10F1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -918,10 +981,12 @@
       ]
     },
     {
-      "id": "UPM_RSTP10_S1",
+      "name": "Up Main to Roma Street Platform 10 Switch 1",
+      "id": "UPMRSTP10S1",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Up Main to Roma Street Platform 10 Switch 1 Block 1",
+          "blockId": "UPMRSTP10S1B1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -937,10 +1002,12 @@
       ]
     },
     {
-      "id": "DNS_DNM_S1",
+      "name": "Down Suburban to Down Main Switch 1",
+      "id": "DNSDNMS1",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Down Suburban to Down Main Switch 1 Block 1",
+          "blockId": "DNSDNMS1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -964,10 +1031,12 @@
       ]
     },
     {
-      "id": "DNM_RSTP10_S1",
+      "name": "Down Main to Roma Street Platform 10 Switch 1",
+      "id": "DNMRSTP10S1",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Down Main to Roma Street Platform 10 Switch 1 Block 1",
+          "blockId": "DNMRSTP10S1",
           "direction": "bidirectional",
           "geometry": [
             {
@@ -983,10 +1052,12 @@
       ]
     },
     {
-      "id": "DNS_UPS_S1",
+      "name": "Down Suburban to Up Suburban Switch 3",
+      "id": "DNSUPSS3",
       "blocks": [
         {
-          "blockId": "",
+      "name": "Down Suburban to Up Suburban Switch 3 Block 1",
+          "blockId": "DNSUPSS3B1",
           "geometry": [
             {
               "x": 720.0005798339844,
@@ -1001,10 +1072,12 @@
       ]
     },
     {
-      "id": "DNS_UPS_S2",
+      "name": "Down Suburban to Up Suburban Switch 4",
+      "id": "DNSUPSS4",
       "blocks": [
         {
-          "blockId": "",
+          "name": "Down Suburban to Up Suburban Switch 4 Block 1",
+          "blockId": "DNSUPSS4B1",
           "geometry": [
             {
               "x": 720.0005798339844,

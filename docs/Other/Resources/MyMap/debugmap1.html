@@ -66,6 +66,12 @@
       async function main() {
         let res = await fetch("data.json");
         /** @typedef {object} RailData
+         * @property {object[]} stations
+         * @property {string} stations.id
+         * @property {object} stations.location
+         * @property {number} stations.location.x
+         * @property {number} stations.location.y
+         * @property {string} stations.name
          * @property {object} metadata
          * @property {string} metadata.version
          * @property {string} metadata.coordinateSystem
@@ -90,7 +96,7 @@
         /** @type {CanvasRenderingContext2D} */
         const ctx = canvas.getContext("2d");
 
-        const scaleFactor = 1; // Adjust based on your coordinate scale
+        const scaleFactor = 2; // Adjust based on your coordinate scale
 
         /** @typedef {object} DBPoint
          * @property {number} x
@@ -145,6 +151,7 @@
           });
         });
 
+        /** @param {RailData} data */
         function renderTracks(data) {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
           // ctx.fillStyle = "#000";
@@ -155,7 +162,7 @@
               ctx.beginPath();
               // ctx.strokeStyle = `hsl(${trackIndex * 30}, 100%, 50%)`; // Different color per track
               ctx.strokeStyle = "#FF0000";
-              if (/^[A-Z]{3}_P\d+$/.test(block.blockId))
+              if (/^[A-Z]{3}P\d+$/.test(block.blockId))
                 ctx.strokeStyle = "#0000FF";
               ctx.lineWidth = 4 / viewport.scale;
               block.geometry.forEach((point, pointIndex) => {
@@ -180,11 +187,12 @@
               // Draw block ID labels
               const firstPoint = block.geometry[0];
               ctx.fillStyle = "#FFF";
-              ctx.font = "8px Arial";
+              let fontSize = Math.min(30 / viewport.scale, 12);
+              ctx.font = fontSize + "px Arial";
               ctx.fillText(
                 block.blockId,
                 firstPoint.x * scaleFactor + 5,
-                firstPoint.y * scaleFactor + 2
+                firstPoint.y * scaleFactor + fontSize / 2
               );
             });
           });
@@ -207,7 +215,24 @@
               data.tracks[v.trackIndex].blocks[v.blockIndex].geometry[
                 v.pointIndex
               ];
-            ctx.fillRect(x - 1, y - 1, 2, 2);
+            ctx.fillRect(
+              x * scaleFactor - scaleFactor,
+              y * scaleFactor - scaleFactor,
+              2 * scaleFactor,
+              2 * scaleFactor
+            );
+          });
+
+          data.stations.forEach((s) => {
+            let { x, y } = s.location;
+            x *= scaleFactor;
+            y *= scaleFactor;
+            ctx.fillStyle = "#FFF";
+            let fontSize = 15 * scaleFactor;
+            ctx.font = fontSize + "px Arial";
+            ctx.fillText(s.name, x - ctx.measureText(s.name).width / 2, y + fontSize / 2 - fontSize / 4);
+            ctx.font = fontSize / 2 + "px Arial";
+            ctx.fillText(s.id, x - ctx.measureText(s.id).width / 2, y + fontSize)
           });
         }
 
@@ -323,7 +348,12 @@
         }
         function findClosestPoint(x, y) {
           let closest = db_points[0];
-          let minDist = distance({ x, y }, data.tracks[closest.trackIndex].blocks[closest.blockIndex].geometry[closest.pointIndex]);
+          let minDist = distance(
+            { x, y },
+            data.tracks[closest.trackIndex].blocks[closest.blockIndex].geometry[
+              closest.pointIndex
+            ]
+          );
 
           for (const point of db_points) {
             const dist = distance({ x, y }, point);
@@ -341,6 +371,8 @@
 
           // Convert screen coordinates to plane coordinates
           const planeCoords = screenToPlaneCoords(ev.offsetX, ev.offsetY);
+          planeCoords.x /= scaleFactor;
+          planeCoords.y /= scaleFactor;
 
           // Find closest point
           const closest = findClosestPoint(planeCoords.x, planeCoords.y);
