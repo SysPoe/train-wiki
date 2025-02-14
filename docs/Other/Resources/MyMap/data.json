@@ -13,6 +13,14 @@
         "y": 663.3708562099388
       },
       "name": "Roma Street"
+    },
+    {
+      "id": "BNC",
+      "location": {
+        "x": 912.5,
+        "y": 740
+      },
+      "name": "Central"
     }
   ],
   "tracks": [
@@ -65,6 +73,36 @@
           "geometry": [
             {
               "x": 540.0010757446289,
+              "y": 593.9605407714844
+            },
+            {
+              "x": 860,
+              "y": 593.9605407714844
+            }
+          ]
+        },
+        {
+          "name": "Central Platform 6",
+          "blockId": "BNCP6",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 860,
+              "y": 593.9605407714844
+            },
+            {
+              "x": 965,
+              "y": 593.9605407714844
+            }
+          ]
+        },
+        {
+          "blockId": "DNM3",
+          "direction": "bidirectional",
+          "name": "Down Main",
+          "geometry": [
+            {
+              "x": 965,
               "y": 593.9605407714844
             },
             {
@@ -196,6 +234,36 @@
           "geometry": [
             {
               "x": 534.0010681152344,
+              "y": 630.9604187011719
+            },
+            {
+              "x": 860,
+              "y": 630.9604187011719
+            }
+          ]
+        },
+        {
+          "blockId": "BNCP5",
+          "name": "Central Platform 5",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 860,
+              "y": 630.9604187011719
+            },
+            {
+              "x": 965,
+              "y": 630.9604187011719
+            }
+          ]
+        },
+        {
+          "blockId": "UPM3",
+          "name": "Up Main",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 965,
               "y": 630.9604187011719
             },
             {
@@ -416,6 +484,36 @@
             },
             {
               "x": 623.0028991699219,
+              "y": 719.9606628417969
+            },
+            {
+              "x": 865,
+              "y": 719.9606628417969
+            }
+          ]
+        },
+        {
+          "blockId": "BNCP1",
+          "name": "Central Platform 1",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 865,
+              "y": 719.9606628417969
+            },
+            {
+              "x": 943,
+              "y": 719.9606628417969
+            }
+          ]
+        },
+        {
+          "blockId": "UPS3",
+          "name": "Up Suburban",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 943,
               "y": 719.9606628417969
             },
             {
