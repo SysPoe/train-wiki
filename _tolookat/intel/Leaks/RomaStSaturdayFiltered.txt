@@ -1,0 +1,33 @@
+EP01 - Platform 9 @ 5:28:00 - Electric-hauled unit mineral train
+ER32 - Platform 7 @ 5:35:00 - Electric-hauled unit mineral train
+A902 - Platform 8 @ 5:48:00 - Electric-hauled passenger train in revenue service; max 100km/h
+2Q01 - Platform 13 @ 5:53:06 - EMU/SMU/IMU/ICE empty cars (any length)
+2Q03 - Platform 13 @ 6:00:12 - EMU/SMU/IMU/ICE empty cars (any length)
+ER34 - Platform 7 @ 6:08:00 - Electric-hauled unit mineral train
+ES00 - Platform 6 @ 7:10:00 - Electric-hauled unit mineral train
+C602 - Platform 14 @ 7:52:24 - Electric-hauled freight train; max speed 80km/h
+HF01 - Platform 9 @ 9:14:00 - Electric hauled or EMU departmental work train, tuition or test train
+EQ05 - Platform 13 @ 9:37:06 - Electric-hauled unit mineral train
+Q991 - Platform 10 @ 9:56:42 -  - Electric Tilt Train (empty or in revenue service)
+HF02 - Platform 8 @ 10:43:00 - Electric hauled or EMU departmental work train, tuition or test train
+CQ11 - Platform 13 @ 10:44:24 - Electric-hauled freight train; max speed 80km/h
+H0W4 - Platform 8 @ 10:55:00 - Electric hauled or EMU departmental work train, tuition or test train
+Q301 - Platform 10 @ 11:00:00 - Electric Tilt Train (empty or in revenue service)
+EFB1 - Platform 9 @ 13:14:00 - Electric-hauled unit mineral train
+EFB2 - Platform 8 @ 14:43:00 - Electric-hauled unit mineral train
+Q992 - Platform 10 @ 14:50:00 - Electric Tilt Train (empty or in revenue service)
+Q0Q2 - Platform 10 @ 15:07:00 - Electric Tilt Train (empty or in revenue service)
+H0W5 - Platform 8 @ 15:27:00 - Electric hauled or EMU departmental work train, tuition or test train
+Q911 - Platform 10 @ 15:30:00 - Electric Tilt Train (empty or in revenue service)
+HF03 - Platform 7 @ 16:15:00 - Electric hauled or EMU departmental work train, tuition or test train
+HF04 - Platform 8 @ 17:36:00 - Electric hauled or EMU departmental work train, tuition or test train
+EU98 - Platform 14 @ 19:19:00 - Electric-hauled unit mineral train
+ERN2 - Platform 7 @ 22:42:00 - Electric-hauled unit mineral train
+EQ99 - Platform 13 @ 23:04:18 - Electric-hauled unit mineral train
+EQ69 - Platform 6 @ 23:17:12 - Electric-hauled unit mineral train
+EQ07 - Platform 13 @ 23:35:48 - Electric-hauled unit mineral train
+20N4 - Platform 7 @ 23:43:00 - EMU/SMU/IMU/ICE empty cars (any length)
+E0N7 - Platform 9 @ 23:46:30 - Electric-hauled unit mineral train
+2R36 - Platform 7 @ 0:05:00 - EMU/SMU/IMU/ICE empty cars (any length)
+H0W3 - Platform 8 @ 0:05:30 - Electric hauled or EMU departmental work train, tuition or test train
+2001 - Platform 7 @ 0:14:00 - EMU/SMU/IMU/ICE empty cars (any length)
