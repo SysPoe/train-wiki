@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Track Layout Renderer</title>
+    <title>DEBUG Track Layout Renderer</title>
     <style>
       body {
         width: 100vw;
@@ -11,10 +11,25 @@
         overflow: hidden;
         background-color: black;
       }
+      .options {
+        background-color: white;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      button {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <canvas id="railCanvas"></canvas>
+    <div class="options">
+      <button onclick="copyX()">=X</button>
+      <button onclick="copyY()">=Y</button>
+      <button onclick="plusX()">+X</button>
+      <button onclick="minusX()">-X</button>
+    </div>
 
     <script>
       const sampleDataB = {
@@ -68,8 +83,6 @@
         /** @type {RailData} */
         let data = await res.json();
 
-        data.tracks = data.tracks.reverse();
-
         /** @type {HTMLCanvasElement} */
         const canvas = document.getElementById("railCanvas");
         canvas.width = document.body.getBoundingClientRect().width;
@@ -78,6 +91,59 @@
         const ctx = canvas.getContext("2d");
 
         const scaleFactor = 1; // Adjust based on your coordinate scale
+
+        /** @typedef {object} DBPoint
+         * @property {number} x
+         * @property {number} y
+         * @property {number} trackIndex
+         * @property {number} blockIndex
+         * @property {number} pointIndex
+         * @property {string} color
+         */
+        /** @type {DBPoint[]} */
+        let db_points = [];
+
+        /** @typedef {DBSelector}
+         * @property {number} t
+         * @property {number} b
+         * @property {number} p
+         */
+        /** @type {DBSelector[]} */
+        let selected_db = [];
+
+        data.tracks.forEach((track, trackIndex) => {
+          let prevX = Number.NEGATIVE_INFINITY;
+          let prevY = Number.NEGATIVE_INFINITY;
+
+          track.blocks.forEach((block, blockIndex) => {
+            block.geometry.forEach((point, pointIndex) => {
+              if (
+                (Math.abs(point.y - prevY) >= 0.01 &&
+                  Math.abs(point.y - prevY) / Math.abs(point.x - prevX) <=
+                    0.3) ||
+                Math.abs(point.y - prevY) <= 2
+              )
+                point.y = prevY;
+              if (
+                (Math.abs(point.x - prevX) >= 0.01 &&
+                  Math.abs(point.x - prevX) / Math.abs(point.y - prevY) <=
+                    0.3) ||
+                Math.abs(point.x - prevX) <= 2
+              )
+                point.x = prevX;
+              prevY = point.y;
+              prevX = point.x;
+
+              db_points.push({
+                trackIndex,
+                blockIndex,
+                pointIndex,
+                ...point,
+                color: `hsl(${trackIndex * 50}, 100%, 50%)`,
+              });
+            });
+          });
+        });
 
         function renderTracks(data) {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -91,9 +157,7 @@
               ctx.strokeStyle = "#FF0000";
               if (/^[A-Z]{3}_P\d+$/.test(block.blockId))
                 ctx.strokeStyle = "#0000FF";
-              ctx.lineWidth = Math.max(3 / viewport.scale, 2);
-              block.geometry[0].x -= 0.01;
-
+              ctx.lineWidth = 4 / viewport.scale;
               block.geometry.forEach((point, pointIndex) => {
                 const x = point.x * scaleFactor;
                 const y = point.y * scaleFactor;
@@ -108,7 +172,6 @@
               ctx.stroke();
             });
           });
-
           data.tracks.forEach((v) => {
             let prevX = Number.NEGATIVE_INFINITY;
             let prevY = Number.NEGATIVE_INFINITY;
@@ -125,7 +188,65 @@
               );
             });
           });
+          db_points.forEach((v) => {
+            // ctx.fillStyle = v.color;
+            ctx.fillStyle = "#77F";
+            let i = 0;
+            for (let j of selected_db) {
+              if (
+                v.blockIndex == j.b &&
+                v.pointIndex == j.p &&
+                v.trackIndex == j.t
+              ) {
+                ctx.fillStyle = i == 0 ? "#fff200" : "#0F0";
+                break;
+              }
+              i++;
+            }
+            let { x, y } =
+              data.tracks[v.trackIndex].blocks[v.blockIndex].geometry[
+                v.pointIndex
+              ];
+            ctx.fillRect(x - 1, y - 1, 2, 2);
+          });
         }
+
+        window.copyX = () => {
+          data.tracks[selected_db[1].t].blocks[selected_db[1].b].geometry[
+            selected_db[1].p
+          ].x =
+            data.tracks[selected_db[0].t].blocks[selected_db[0].b].geometry[
+              selected_db[0].p
+            ].x;
+          redraw();
+        };
+
+        window.copyY = () => {
+          data.tracks[selected_db[1].t].blocks[selected_db[1].b].geometry[
+            selected_db[1].p
+          ].y =
+            data.tracks[selected_db[0].t].blocks[selected_db[0].b].geometry[
+              selected_db[0].p
+            ].y;
+          redraw();
+        };
+
+        window.plusX = () => {
+          let i = selected_db.length - 1;
+          data.tracks[selected_db[i].t].blocks[selected_db[i].b].geometry[
+            selected_db[i].p
+          ].x++;
+          redraw();
+        };
+
+        window.minusX = () => {
+          let i = selected_db.length - 1;
+          data.tracks[selected_db[i].t].blocks[selected_db[i].b].geometry[
+            selected_db[i].p
+          ].x--;
+          redraw();
+        };
+
         // Add viewport transformations
         window.viewport = {
           x: 0,
@@ -168,15 +289,11 @@
           // Redraw the canvas with the updated viewport
           redraw();
         }
-
-        // Start panning (mouse down)
         function startPan(event) {
           isPanning = true;
           startPanX = event.offsetX - viewport.x;
           startPanY = event.offsetY - viewport.y;
         }
-
-        // Handle panning (mouse move)
         function handlePan(event) {
           if (isPanning) {
             viewport.x = event.offsetX - startPanX;
@@ -184,9 +301,6 @@
             redraw();
           }
         }
-
-        // End panning (mouse up)
-
         function endPan() {
           isPanning = false;
         }
@@ -196,6 +310,56 @@
         canvas.addEventListener("mousedown", startPan);
         canvas.addEventListener("mousemove", handlePan);
         canvas.addEventListener("mouseup", endPan);
+        // Convert screen coordinates to plane coordinates
+        function screenToPlaneCoords(screenX, screenY) {
+          // Remove viewport translation and scaling
+          const planeX = (screenX - viewport.x) / viewport.scale;
+          const planeY = (screenY - viewport.y) / viewport.scale;
+          return { x: planeX, y: planeY };
+        }
+
+        function distance(p1, p2) {
+          return Math.sqrt(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2));
+        }
+        function findClosestPoint(x, y) {
+          let closest = db_points[0];
+          let minDist = distance({ x, y }, data.tracks[closest.trackIndex].blocks[closest.blockIndex].geometry[closest.pointIndex]);
+
+          for (const point of db_points) {
+            const dist = distance({ x, y }, point);
+            if (dist < minDist) {
+              minDist = dist;
+              closest = JSON.parse(JSON.stringify(point));
+            }
+          }
+          return closest;
+        }
+
+        canvas.addEventListener("auxclick", (ev) => {
+          if (ev.button != 1) return;
+          ev.preventDefault();
+
+          // Convert screen coordinates to plane coordinates
+          const planeCoords = screenToPlaneCoords(ev.offsetX, ev.offsetY);
+
+          // Find closest point
+          const closest = findClosestPoint(planeCoords.x, planeCoords.y);
+
+          // Display info
+          console.log("Click coordinates (plane):", planeCoords);
+          console.log("Closest point:", closest);
+
+          if (selected_db.length >= 2) selected_db = selected_db.slice(1);
+          selected_db.push({
+            t: closest.trackIndex,
+            b: closest.blockIndex,
+            p: closest.pointIndex,
+          });
+
+          console.log(selected_db);
+
+          redraw();
+        });
 
         // Add redraw trigger
         function redraw() {
@@ -203,7 +367,11 @@
           ctx.clearRect(0, 0, canvas.width, canvas.height);
           ctx.translate(viewport.x, viewport.y);
           ctx.scale(viewport.scale, viewport.scale);
+
+          data.tracks[11].blocks[0].geometry[0].x = 393.0029139518738;
+
           renderTracks(data);
+          window.data = data;
         }
 
         // Initial render
