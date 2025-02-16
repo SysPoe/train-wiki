@@ -63,7 +63,7 @@
         /** @type {HTMLCanvasElement} */
         const canvas = document.getElementById("railCanvas");
         canvas.width = document.body.getBoundingClientRect().width;
-        canvas.height = document.body.getBoundingClientRect().width;
+        canvas.height = document.body.getBoundingClientRect().height;
         /** @type {CanvasRenderingContext2D} */
         const ctx = canvas.getContext("2d");
 
@@ -170,6 +170,7 @@
           db_points.forEach((v) => {
             // ctx.fillStyle = v.color;
             ctx.fillStyle = "#77F";
+            let pixelSize = 1 * scaleFactor;
             let i = 0;
             for (let j of selected_db) {
               if (
@@ -177,7 +178,8 @@
                 v.pointIndex == j.p &&
                 v.trackIndex == j.t
               ) {
-                ctx.fillStyle = i == 0 ? "#fff200" : "#0F0";
+                ctx.fillStyle = i == 0 ? "#ff6200" : "#0F0";
+                pixelSize = 1.5 * scaleFactor;
                 break;
               }
               i++;
@@ -187,10 +189,10 @@
                 v.pointIndex
               ];
             ctx.fillRect(
-              x * scaleFactor - scaleFactor,
-              y * scaleFactor - scaleFactor,
-              2 * scaleFactor,
-              2 * scaleFactor
+              x * scaleFactor - pixelSize,
+              y * scaleFactor - pixelSize,
+              2 * pixelSize,
+              2 * pixelSize
             );
           });
 
@@ -374,7 +376,6 @@
 
           // Find closest point
           const closest = findClosestPoint(planeCoords.x, planeCoords.y);
-
 
           if (selected_db.length >= 2) selected_db = [];
           selected_db.push({
