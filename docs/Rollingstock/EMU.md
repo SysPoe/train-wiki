@@ -19,6 +19,8 @@ Sets 01–13 have a smooth roof, while Sets 14–88, which were built from 1983 
 
 All cars are air-conditioned with air operated doors, which can be opened by passengers and are closed by drivers. A public address system, UHF crew to crew radio and crew intercommunication systems are fitted. Guards sometimes make passenger announcements when the automatic announcements aren’t working.
 
+For some reason, the emergency brake actually takes longer to stop than the full service brake (maybe due to wheel slippage?), but QR crews are required to press the emergency brake in an emergency. Bit of an oversight there.
+
 ## Timeline
 
 - _July 1979 - December 1986_: EMU units delivered.
