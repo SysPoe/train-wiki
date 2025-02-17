@@ -90,6 +90,10 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 
 > EMU53 at Darra Station, Platform 1, operating BRIP (Brisbane City - Ipswich) service. Run 1554. Taken 28/12/24 @ 18:59. [View png](../media/EMU53_Darra_preview.png).
 
+![](../media/EMU_NonDriving_Cab.jpg)
+
+> The non-driving cab of a '60-series' EMU. Taken 21st August 2014. Source: [Wongm's Rail Gallery](https://railgallery.wongm.com/brisbane-bits/F107_8927.jpg.html)
+
 ![](../media/EMU_cab.jpg)
 
 > The cab of an EMU maybe??. Source: [https://www.reddit.com/r/BrisbaneTrains/comments/1658g65/was_a_great_day_to_play_trains](https://www.reddit.com/r/BrisbaneTrains/comments/1658g65/was_a_great_day_to_play_trains/)
