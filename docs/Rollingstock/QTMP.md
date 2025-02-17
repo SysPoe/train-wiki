@@ -1,5 +1,7 @@
 # QTMP / NNGR (Queensland Train Manufacturing Program / New NGR)
 
+**This page is under construction!! Check out [QTMP on TMR's Website](https://www.tmr.qld.gov.au/projects/programs/queensland-train-manufacturing-program).**
+
 The QTMP is a $9.5 billion program funded by the Queensland Government to design, build, and maintain 65 new trains for the SEQ network. The program also includes the construction of a purpose-built manufacturing faciltiy in the Fraser Coast region, as well as a new rail faciltiy in Ormeau for train maintenance and stabling.
 
 > QTMP contract has an option for a further 10 but they cant guarantee they will be delivered before the Olympics, only the 65 already contracted.

@@ -1,5 +1,7 @@
 # NGR (New Generation Rollingstock)
 
+**This page is under construction!! Check out [NGR on Wikipedia](https://en.wikipedia.org/wiki/New_Generation_Rollingstock).**
+
 ![](../media/NGR_QR_SideShot.jpg)
 
 > The NGR as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
