@@ -56,11 +56,11 @@ The SMU200s were fitted with the Digital Voice Announcement System, which inform
   > - New electrical systems (in partnership with ABB), including upgrade of onboard traction equipment and installation of a new Train Control Management System (TCMS).
 - _2023_: Downer's SMU200 overhaul completed<sup>\[5\]</sup>.
 - _December 5, 2023_: Noske-Kaeser New Zealand awarded a contract to complete 10 Year Overhauls on IMU100s and SMU200s, including these replacements<sup>\[7\]</sup>:
-> - Compressors and various refrigeration components
-> - The PLC and switching gear
-> - Safety devices such as pressure transducers and heaters overtemperature switches
-> - Heaters, fans, insulation on covers
-> - \[add new?\] Circuit breakers to address obsolescence of existing breakers and compliance with MD-10-125
+  > - Compressors and various refrigeration components
+  > - The PLC and switching gear
+  > - Safety devices such as pressure transducers and heaters overtemperature switches
+  > - Heaters, fans, insulation on covers
+  > - \[add new?\] Circuit breakers to address obsolescence of existing breakers and compliance with MD-10-125
 
 ### Carriage Layout (Design A)
 

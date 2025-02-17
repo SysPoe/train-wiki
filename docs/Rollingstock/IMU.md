@@ -59,6 +59,7 @@ In order to keep the auxiliary converters and systems online through neutral sec
 76 (IM5121–4: driving motor car); 80 (IM7121–4: trailer car); 59 (IM8121–4: driving motor car)<sup>\[16\]</sup>
 
 ### Timeline
+
 - _1999_: IMU121-124 ordered<sup>\[2\]</sup>.
 - _2001 - 2002_: IMU121-124 entered service<sup>\[2\]</sup>.
 - _2021_: Brake and pneumatic overhauls of SMU220s and IMU120s completed by Faiveley Transport Australia Ltd at a price of $5,735,919.34<sup>\[13\]</sup>.
@@ -82,7 +83,6 @@ In order to keep the auxiliary converters and systems online through neutral sec
 
 ![](../media/Layouts/IMU120_C.jpg)
 
-
 ### Detailed Carriage Layout
 
 [Source](https://railknowledgebank.com/Presto/content/GetDoc.axd?ctID=MTk4MTRjNDUtNWQ0My00OTBmLTllYWUtZWFjM2U2OTE0ZDY3&rID=OTY2&pID=Nzkx&attchmnt=True&uSesDM=False&rIdx=MTg1Mw==&rCFU=) archived [here](../media/Archive/Andrew%20Whitten.pdf) - see figure A2
@@ -102,13 +102,11 @@ In order to keep the auxiliary converters and systems online through neutral sec
 [View full image](../media/Layouts/IMU120_DesignB_3.png)
 ![](../media/Layouts/IMU120_DesignB_3.png)
 
-
 ## EDI/Bombardier Interurban Multiple Unit 160 series (IMU160)
 
 ![](../media/IMU160_QR_SideShot.jpg)
 
 > The IMU160 as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
-
 
 The IMU160 Series trains were ordered in 2005 when the Gold Coast line was being upgraded and duplicated, and were introduced in service from 2007 to 2011. The units are virtually identical to the TransPerth B series trains<sup>\[19\]</sup>, which incorporate a European style Streamlined design, albeit with exposed Air-conditioning Pods<sup>\[18\]</sup>. They are also similar to the V/Line VLocity DMU, and Adelaide Metro 4000 class EMU trains with alterations to the headlights to complement with the rest of the Citytrain fleet<sup>\[2\]</sup>.
 
@@ -136,6 +134,7 @@ In 2007, it was discovered during a "1200-point check" that the air conditioning
 ![](../media/Layouts/IMU160_C.jpg)
 
 ### IMU160 Virtual Tour
+
 <iframe width="400" height="240" src="https://my.matterport.com/show/?m=b2NXFEAnhyA" frameborder="0" allowfullscreen allow="xr-spatial-tracking" title="Virtual Tour"></iframe>
 
 See: [https://www.queenslandrail.com.au/Customers/Accessibility/Site%20Assets/Virtual%20Tours/IMU.html](https://www.queenslandrail.com.au/Customers/Accessibility/Site%20Assets/Virtual%20Tours/IMU.html)

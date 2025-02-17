@@ -27,21 +27,20 @@ Check out the [Discovery Pass](https://transportnsw.info/tickets-opal/regional-t
 **Heritage / Other Railways**
 
 - [ ] [Mary Valley Rattler](https://www.maryvalleyrattler.com.au/)
-> - [ ] [Classic Rattler Run](https://www.maryvalleyrattler.com.au/train-journeys/classic-rattler-run/) $69
-> - [ ] [VIP Experience](https://www.maryvalleyrattler.com.au/packages/vip-club-car/) $159
-> - [ ] [VIP Booth Experience](https://www.maryvalleyrattler.com.au/packages/vip-booth/) $159
-> - [ ] [Silver Bullet High Tea Experience](https://www.maryvalleyrattler.com.au/train-journeys/silver-bullet-high-tea/) $119
-> - [ ] [Footplate Friends Experience](https://www.maryvalleyrattler.com.au/footplate-friends-experience/) $495
+  > - [ ] [Classic Rattler Run](https://www.maryvalleyrattler.com.au/train-journeys/classic-rattler-run/) $69
+  > - [ ] [VIP Experience](https://www.maryvalleyrattler.com.au/packages/vip-club-car/) $159
+  > - [ ] [VIP Booth Experience](https://www.maryvalleyrattler.com.au/packages/vip-booth/) $159
+  > - [ ] [Silver Bullet High Tea Experience](https://www.maryvalleyrattler.com.au/train-journeys/silver-bullet-high-tea/) $119
+  > - [ ] [Footplate Friends Experience](https://www.maryvalleyrattler.com.au/footplate-friends-experience/) $495
 - [ ] [Queensland Pioneer Steam Railway stuff](https://www.facebook.com/QldPioneerSteamRailway)
 - [ ] [The Rosewood Railway](https://www.rosewoodrailway.org.au/)
 - [ ] The [Savannahlander](https://savannahlander.com.au)
-
 
 ## New Zealand
 
 **Dunedin Railways**
 
-- [x] [The Taieri Gorge](https://www.dunedinrailways.co.nz/cruise-excursions/the-taieri-gorge-cruise-excursion) - Dunedin to Pukerangi (via Taieri Gorge)  (Completed 10 Jan 2025)
+- [x] [The Taieri Gorge](https://www.dunedinrailways.co.nz/cruise-excursions/the-taieri-gorge-cruise-excursion) - Dunedin to Pukerangi (via Taieri Gorge) (Completed 10 Jan 2025)
 - [ ] [The Seasider](https://www.dunedinrailways.co.nz/journeys/the-seasider-journey) - Dunedin to Merton (via Seacliff and Karitane)
 - [ ] [The Victorian](https://www.dunedinrailways.co.nz/journeys/the-victorian-journey) - Dunedin to Ōamaru (3h stop)
 - [ ] [The Coastal Express](https://www.dunedinrailways.co.nz/journeys/the-coastal-express) - Dunedin to Waitati
@@ -94,7 +93,9 @@ See [packages](https://www.rockymountaineer.com/package-search)
 - [ ] [Rainforest to Gold Rush ](https://www.rockymountaineer.com/train-routes/rainforest-gold-rush) - Vancouver to Japser via Whistler & Quesnel (3 days)
 
 ### Heritage Railways
+
 #### British Columbia
+
 - [ ] [Alberni Pacific Railway](https://www.albernipacificrailway.ca/)
 - [ ] [BC Forest Discover Centre](https://bcforestdiscoverycentre.com/)
 - [ ] [Fraser Valley Heritage Railway Society](https://fvhrs.org/)
@@ -105,8 +106,10 @@ See [packages](https://www.rockymountaineer.com/package-search)
 - [ ] [Railway Museum of British Columbia](https://www.wcra.org/)
 
 #### Saskatchewan
+
 - [ ] [Southern Prairie Railway](https://www.southernprairierailway.ca/) [fb](https://www.facebook.com/southernprairierailway/) (Go Ogema!!!)
 - [ ] [Wheatland Express Excursion Train](https://wheatlandexpresstrain.ca/) [fb](https://www.facebook.com/wheatlandexpressexcursiontrain/)
 
 #### The Other Provinces
+
 See: [https://en.wikipedia.org/wiki/List_of_heritage_railways_in_Canada](https://en.wikipedia.org/wiki/List_of_heritage_railways_in_Canada)

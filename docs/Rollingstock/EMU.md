@@ -105,7 +105,7 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 
 - **\[1\]** [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-electric-multiple-unit-emu)
 - **\[2\]** [https://www.railtram.com.au/emu-electric-multiple-unit](https://www.railtram.com.au/emu-electric-multiple-unit)
-- **\[3\]** [https://en.wikipedia.org/wiki/Electric*multiple_unit*(Queensland_Rail)](<https://en.wikipedia.org/wiki/Electric_multiple_unit_(Queensland_Rail)>)
+- **\[3\]** [https://en.wikipedia.org/wiki/Electric_multiple_unit\_(Queensland_Rail)](<https://en.wikipedia.org/wiki/Electric_multiple_unit_(Queensland_Rail)>)
 - **\[4\]** [https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/emu](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/emu)
 - **\[5\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365) archived [here](../media/Archive/qr-contract-disclosure-fy2023-2024.csv)
 - **\[6\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2024-2025](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2024-2025) archived [here](../media/Archive/qr-contract-disclosure-fy2024-2025.csv)

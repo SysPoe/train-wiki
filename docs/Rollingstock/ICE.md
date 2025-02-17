@@ -119,4 +119,4 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md). See al
 ## Sources
 
 - **\[1\]** [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-intercity-express-ice](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-intercity-express-ice)
-- **\[2\]** [https://en.wikipedia.org/wiki/InterCity*Express*(Queensland\*Rail)](<https://en.wikipedia.org/wiki/InterCity_Express*(Queensland_Rail)>)
+- **\[2\]** [https://en.wikipedia.org/wiki/InterCity_Express\_(Queensland_Rail)](<https://en.wikipedia.org/wiki/InterCity_Express_(Queensland_Rail)>)
