@@ -9,3 +9,5 @@ Bonjour! Here is where I record the sightings of freight trains (and maybe other
 - Fri 0925 - freight going north on exhibition during track closures. 17/01/25
 - Fri 1025 - coal Aurizon going south on Cleveland line, just after Morningside during track closures. 17/01/25
 - Sat 1604 - Aurizon going north passing Auchenflower, during track closures. 18/01/25
+- Sun 0912 - freight heading north between Burpengary and Morayfield. Possibly YU45 or 82P3. 16/02/25
+- Sun 1012 - Pacific national freight heading in the direction of fortitude valley from central platform 6. 16/02/25
