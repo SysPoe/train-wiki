@@ -899,7 +899,7 @@
       "id": "UPEXF1",
       "blocks": [
         {
-          "name": "Roma Street Side Road Platform 14",
+          "name": "Roma Street Platform 14",
           "blockId": "RSTP14",
           "direction": "bidirectional",
           "geometry": [
@@ -924,7 +924,7 @@
       "id": "DNEX",
       "blocks": [
         {
-          "name": "Roma Street Side Road Platform 13",
+          "name": "Roma Street Platform 13",
           "blockId": "RSTP13",
           "direction": "bidirectional",
           "geometry": [
@@ -1472,5 +1472,7 @@
         }
       ]
     }
-  ]
+  ],
+  "switches": [],
+  "signals": []
 }
