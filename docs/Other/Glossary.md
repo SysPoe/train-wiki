@@ -17,3 +17,5 @@ Here is a glossary for some of the acronyms or terms that you might see. I'll pr
 - **OOL**: Not an acronym, but the IATA code for Gold Coast Airport at Coolangatta
 - **STUG**: Suburban Turn Up and Go
 - **TMR**: Department of Transport and Main Roads
+
+See also: [Abbreviations and Acronyms | Railways and Tramways of Australia](https://www.railtram.com.au/abbreviations-and-acronyms)
