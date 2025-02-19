@@ -64,6 +64,7 @@ The SMU200s were fitted with the Digital Voice Announcement System, which inform
   > - Safety devices such as pressure transducers and heaters overtemperature switches
   > - Heaters, fans, insulation on covers
   > - \[add new?\] Circuit breakers to address obsolescence of existing breakers and compliance with MD-10-125
+- _2036_: SMU200s anticipated to commence retirement (as of August 2021)<sup>\[9\]</sup>.
 
 ### Carriage Layout (Design A)
 
@@ -115,6 +116,10 @@ SMU222, along with another unit, is usually used for driver training.
 
 Source: [https://www.reddit.com/r/brisbane/comments/k0hqc3/comment/gdijsfo](https://www.reddit.com/r/brisbane/comments/k0hqc3/comment/gdijsfo)
 
+### Timeline
+
+- _2038_: SMU220s anticipated to commence retirement (as of August 2021)<sup>\[9\]</sup>.
+
 ### Carriage Layout
 
 #### Carriage 1
@@ -134,6 +139,10 @@ Source: [https://www.reddit.com/r/brisbane/comments/k0hqc3/comment/gdijsfo](http
 ![](../media/SMU260_QR_SideShot.jpg)
 
 > The SMU260 as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
+
+### Timeline
+
+- _2050_: SMU260s anticipated to commence retirement (as of August 2021)<sup>\[9\]</sup>.
 
 ### Carriage Layout
 
@@ -157,6 +166,12 @@ Source: [https://www.reddit.com/r/brisbane/comments/k0hqc3/comment/gdijsfo](http
 >
 > The original interior of an SMU200. Copyright Shane O'Brien. Seen on: [QROTI - Travel Information - Fleet - SMU](https://web.archive.org/web/20080720231805/http://qroti.com/travelinfo/qr/fleet/smu/) (archived from [the original](http://qroti.com/travelinfo/qr/fleet/smu/)).
 
+![](../media/SMU200_Interior_2.jpg)
+
+> [View full image](../media/SMU200_Interior_2.jpg)
+>
+> The interior of a Queensland Rail SMU 200 series unit. Taken May 18, 2008 by Ash Kyd. This was the old style, before QR refurbished them. [Source](https://www.flickr.com/photos/ashkyd/2501756494/).
+
 There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 
 ## Sources
@@ -169,3 +184,4 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 - **\[6\]** [https://queensland-trains.fandom.com/wiki/SEQ_Network_Fleet](https://queensland-trains.fandom.com/wiki/SEQ_Network_Fleet)
 - **\[7\]** [https://qtenders.epw.qld.gov.au/qtenders/contract/view.do?CSRFNONCE=376F38EAD88F3EB9E36E5CC47D8CB634&tenderId=48267](https://qtenders.epw.qld.gov.au/qtenders/contract/view.do?CSRFNONCE=376F38EAD88F3EB9E36E5CC47D8CB634&tenderId=48267)
 - **\[8\]** [QROTI - Travel Information - Fleet - SMU](https://web.archive.org/web/20080720231805/http://qroti.com/travelinfo/qr/fleet/smu/) archived from [the original](http://qroti.com/travelinfo/qr/fleet/smu/).
+- **\[9\]** Question on Notice No. 913 - August 31 2021: [https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf](https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf)
