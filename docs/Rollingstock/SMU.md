@@ -12,11 +12,13 @@ The SMUs are a class of units used by QR in SEQ, manufactured between 1994 and 2
 
 The 12 SMU200s were introduced in 1994 due to a shortage in rollingstock caused by an increase in demand<sup>\[1\]</sup>, as well as to offset the loco-hauled SX Set run services that were slowly being phased out for health and safety reasons<sup>\[2\]</sup>. The trains, numbered SMU201-212, entered service on the 16<sup>th</sup> of August 1994 and were the first new trains since EMU deliveries ended in 1989<sup>\[1\]</sup>.
 
-The units used modern thyristor traction control systems (EMUs also used thyristor TCS's), with the units set up similar to the EMUs with a Driver-Motor, Motor, and Driver Trailer cars. They use blower for cooling both the traction equipment and braking grids, and although the EMUs are quite louder with their high-pitch traction motors, the SMU200s (and IMU100s) are known to be quite loud on take-off due to their blowers winding up. Although when running they are very quiet and have the typical gear switching sound of a thyristor control system<sup>\[2\]</sup>.
+The units used modern GTO (gate turn-off) thyristor traction control systems<sup>\[8\]</sup> (EMUs also used thyristor TCS's), with the units set up similar to the EMUs with a Driver-Motor, Motor, and Driver Trailer cars. They use blower for cooling both the traction equipment and braking grids, and although the EMUs are quite louder with their high-pitch traction motors, the SMU200s (and IMU100s) are known to be quite loud on take-off due to their blowers winding up. Although when running they are very quiet and have the typical gear switching sound of a thyristor control system<sup>\[2\]</sup>.
+
+Train drivers also have access to full computerized information about the performance of the train<sup>\[8\]</sup>.
 
 The SMU200s are commonly mixed with SMU220 class to make up 6-car trains, however as they use the Scharfenburg coupler they can be coupled to EMUs, IMUs, ICE sets, and Tilt Trains for haulage purposes only as they are not 100% electrically compatible<sup>\[2\]</sup>.
 
-The SMU200s were fitted with the Digital Voice Announcement System, which inform the passengers of the route and next station over the Public Address system, from their manufacturing, while the EMUs were only fitted with it later<sup>\[4\]</sup>.
+The SMU200s were fitted with the Digital Voice Announcement System, which inform the passengers of the route and next station over the Public Address system, from their manufacturing, while the EMUs were only fitted with it later<sup>\[4\]</sup>. They also featured new Passenger Emergency Intercoms, which were also added to the EMUs later<sup>\[8\]</sup>.
 
 ### Specs
 
@@ -50,6 +52,7 @@ The SMU200s were fitted with the Digital Voice Announcement System, which inform
 
 ### Timeline
 
+- _August 16, 1994_: First SMU200 entered service<sup>\[1\]</sup>.
 - _December 2018_: Downer awarded an $80 million contract to overhaul the IMU100s and SMU200s to be completed at Downer’s Maryborough Service Delivery Centre<sup>\[5\]</sup>, including:
   > - Interior refresh – new floor coverings, refreshed handrails and grab handles and new seat foams and covers for enhanced customer experience
   > - Overhaul of key train subsystems to ensure the safety and reliability of the fleet
@@ -148,6 +151,12 @@ Source: [https://www.reddit.com/r/brisbane/comments/k0hqc3/comment/gdijsfo](http
 
 ### Gallery
 
+![](../media/SMU200_Interior_1.png)
+
+> [View full image](../media/SMU200_Interior_1.png)
+>
+> The original interior of an SMU200. Copyright Shane O'Brien. Seen on: [QROTI - Travel Information - Fleet - SMU](https://web.archive.org/web/20080720231805/http://qroti.com/travelinfo/qr/fleet/smu/) (archived from [the original](http://qroti.com/travelinfo/qr/fleet/smu/)).
+
 There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 
 ## Sources
@@ -159,3 +168,4 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 - **\[5\]** [https://www.downergroup.com/downer-secures-80-million-queensland-rail-con](https://www.downergroup.com/downer-secures-80-million-queensland-rail-con)
 - **\[6\]** [https://queensland-trains.fandom.com/wiki/SEQ_Network_Fleet](https://queensland-trains.fandom.com/wiki/SEQ_Network_Fleet)
 - **\[7\]** [https://qtenders.epw.qld.gov.au/qtenders/contract/view.do?CSRFNONCE=376F38EAD88F3EB9E36E5CC47D8CB634&tenderId=48267](https://qtenders.epw.qld.gov.au/qtenders/contract/view.do?CSRFNONCE=376F38EAD88F3EB9E36E5CC47D8CB634&tenderId=48267)
+- **\[8\]** [QROTI - Travel Information - Fleet - SMU](https://web.archive.org/web/20080720231805/http://qroti.com/travelinfo/qr/fleet/smu/) archived from [the original](http://qroti.com/travelinfo/qr/fleet/smu/).
