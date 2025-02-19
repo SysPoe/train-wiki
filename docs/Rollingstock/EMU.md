@@ -19,6 +19,8 @@ Sets 01–13 have a smooth roof, while Sets 14–88, which were built from 1983 
 
 All cars are air-conditioned with air operated doors, which can be opened by passengers and are closed by drivers. A public address system, UHF crew to crew radio and crew intercommunication systems are fitted. Guards sometimes make passenger announcements when the automatic announcements aren’t working.
 
+They were paired with SMU200s 'early on', but after a derailment between Central and Roma Street (leaving the old tunnels towards Platform 7) they put a stop to it<sup>\[8\]</sup>.
+
 For some reason, the emergency brake actually takes longer to stop than the full service brake (maybe due to wheel slippage?), but QR crews are required to press the emergency brake in an emergency. Bit of an oversight there.
 
 ## Timeline
@@ -111,3 +113,4 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 - **\[5\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365) archived [here](../media/Archive/qr-contract-disclosure-fy2023-2024.csv)
 - **\[6\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2024-2025](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2024-2025) archived [here](../media/Archive/qr-contract-disclosure-fy2024-2025.csv)
 - **\[7\]** Question on Notice No. 913 - August 31 2021: [https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf](https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf) archived [here](../media/Archive/913-2021.pdf)
+- **\[8\]** [https://web.archive.org/web/20220319105847/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/](https://web.archive.org/web/20220319105847/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/) archived from [the original](https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/)

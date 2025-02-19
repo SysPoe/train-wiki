@@ -16,7 +16,7 @@ The units used modern GTO (gate turn-off) thyristor traction control systems<sup
 
 Train drivers also have access to full computerized information about the performance of the train<sup>\[8\]</sup>.
 
-The SMU200s are commonly mixed with SMU220 class to make up 6-car trains, however as they use the Scharfenburg coupler they can be coupled to EMUs, IMUs, ICE sets, and Tilt Trains for haulage purposes only as they are not 100% electrically compatible<sup>\[2\]</sup>.
+The SMU200s are commonly mixed with SMU220 class to make up 6-car trains, however as they use the Scharfenburg coupler they can be coupled to EMUs, IMUs, ICE sets, and Tilt Trains for haulage purposes only as they are not 100% electrically compatible<sup>\[2\]</sup>. It appears that they used to be paired with IMU100/120s, but they stopped doing it in about 2014<sup>\[13\]</sup>. Allegedly, "the brakes are quite different so they always felt rough as guts when they stopped"<sup>\[12\]</sup>. They were also paired with EMUs early on, but after a derailment between Central and Roma Street (leaving the old tunnels towards Platform 7) they put a stop to it<sup>\[12\]</sup>.
 
 The SMU200s were fitted with the Digital Voice Announcement System, which inform the passengers of the route and next station over the Public Address system, from their manufacturing, while the EMUs were only fitted with it later<sup>\[4\]</sup>. They also featured new Passenger Emergency Intercoms, which were also added to the EMUs later<sup>\[8\]</sup>.
 
@@ -53,7 +53,7 @@ The SMU200s were fitted with the Digital Voice Announcement System, which inform
 ### Timeline
 
 - _August 16, 1994_: First SMU200 entered service<sup>\[1\]</sup>.
-- _2017_: IMU100s and SMU200s underwent an overhaul, including an upgrade of the traction package and Train Control Managment System on 10 IMU100s and 12 SMU200s, and one of the pneumatic cab doors of an IMU100 got upgraded. This work was done by Downer EDI Rail for $105,430,828<sup>\[10\]</sup>.
+- _2017_: IMU100s and SMU200s underwent an overhaul, including an upgrade of the traction package and Train Control Management System on 10 IMU100s and 12 SMU200s, and one of the pneumatic cab doors of an IMU100 got upgraded. This work was done by Downer EDI Rail for $105,430,828<sup>\[10\]</sup>.
 - _December 2018_: Downer awarded an $80 million contract to overhaul the IMU100s and SMU200s to be completed at Downer’s Maryborough Service Delivery Centre<sup>\[5\]</sup>, including:
   > - Interior refresh – new floor coverings, refreshed handrails and grab handles and new seat foams and covers for enhanced customer experience
   > - Overhaul of key train subsystems to ensure the safety and reliability of the fleet
@@ -190,3 +190,5 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 - **\[9\]** Question on Notice No. 913 - August 31 2021: [https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf](https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf) archived [here](../media/Archive/913-2021.pdf)
 - **\[10\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2022-2023/resource/d135ec7d-4a7a-40b2-98e4-3df90365f374](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2022-2023/resource/d135ec7d-4a7a-40b2-98e4-3df90365f374) archived [here](../media/Archive/qr-contract-disclosure-fy2022-2023.csv)
 - **\[11\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365) archived [here](../media/Archive/qr-contract-disclosure-fy2023-2024.csv)
+- **\[12\]** [https://web.archive.org/web/20220319105847/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/](https://web.archive.org/web/20220319105847/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/) archived from [the original](https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/)
+- **\[13\]** [https://web.archive.org/web/20220318053602/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i14bmsr/](https://web.archive.org/web/20220318053602/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i14bmsr/) archived from [the original](https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i14bmsr/)
