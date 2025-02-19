@@ -32,7 +32,7 @@ For some reason, the emergency brake actually takes longer to stop than the full
 - _Late 1993_: EMUs fitted with yellow cab ends for higher visibility.
 - _1996_: Some EMUs appeared on Gold Coast line services, although they were only used sparingly, not being geared to operate at the 140km/h line speed.
 - _1998-2000_: The cab windows were modified on EMU60-88 for better visibility and also the fitting of a rear view mirror and security cameras inside.
-- _2000_: The first series EMUs (01-19) were upgraded with high visibility cab ends which incorporated a fender (which incorporates an anti-climber to precent outriders hanging off the back of a unit) with ditch lights and a new colour scheme with a black band across the windscreen (hence the nickname of these units, ‘Bandicoots’).
+- _2000_: The first series EMUs (01-19) were upgraded with high visibility cab ends which incorporated a fender (which incorporates an anti-climber to prevent outriders hanging off the back of a unit) with ditch lights and a new color scheme with a black band across the windscreen (hence the nickname of these units, ‘Bandicoots’).
 - _May 2001_: EMU62 was severely damaged after an Arson attack at Mayne.
 - _21 September 2001_: EMU05 and EMU60 were both written off in the Cattletrain derailment at Petrie in September. EMU62 was returned to service, while one 3-car unit was salvaged out of both EMU05 and EMU60 to form EMU60, including EM305 replacing EM160, EM260, and EM360.
 - _2018_: Withdrawls begin of the EMUs as NGRs were delivered.
@@ -40,7 +40,7 @@ For some reason, the emergency brake actually takes longer to stop than the full
 - _August 2019_: Queensland Rail operated a farewell tour with units 01 and 04 over two days covering all Brisbane suburban lines including a reenactment of the first electric train service in Brisbane from Ferny Grove to Darra. Both units were removed from service and taken to Ipswich Workshops for static preservation.
 - _2020_: EMU60 scrapped.
 - _2023_: QR replaced the routers in EMUs, IMU100s, SMU200s, IMU120s, and SMU220s. The work was contracted out to Nomad Digital and cost $1.75 million<sup>\[5\]</sup>. QR also contracted UGL Rail to do a wheelset overhaul on one or (probably) multiple EMU trains, costing $700 thousand<sup>\[5\]</sup>.
-- _2024_: QR performed a variety of operations on one or multiple EMU trains (I'm guessing muiltiple because surely it can't cost that much to do it on just one), including:
+- _2024_: QR performed a variety of operations on one or multiple EMU trains (I'm guessing multiple because surely it can't cost that much to do it on just one), including:
   > - An overhaul of the transformers and reactors, contracted to AC Hargreaves and costing $1.32 million<sup>\[5\]</sup>.
   > - An overhaul of the AC units done by Noske-Kaeser Rail & Vehicle and costing $1.19 million<sup>\[5\]</sup>.
   > - Changed out some side doors on EMU trains, contracted to Festo for $422 thousand<sup>\[5\]</sup>.
