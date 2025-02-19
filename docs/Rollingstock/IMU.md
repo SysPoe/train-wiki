@@ -26,6 +26,7 @@ Common Lines Served: Gold Coast line, Airport line, Nambour and Gympie North lin
 - _January 17, 2020_: QR paid out $2.6 million to CoachAir for `"2019 IMU100 SMU200 HVAC Overhaul"`, possibly as part of Downer's refurbishment that started Dec 2018<sup>\[12\]</sup>.
 - _2023_: QR replaced the routers in EMUs, IMU100s, SMU200s, IMU120s, and SMU220s. The work was contracted out to Nomad Digital and cost $1.75 million<sup>\[12\]</sup>.
 - _2023_: Refurbishment of IMU100s and SMU200s was completed including the interiors, with the sole exception of IMU105, which still retains it's green ocean themed seat covers<sup>\[8\]</sup>.
+- _2038_: IMU100s anticipated to commence retirement (as of August 2021)<sup>\[21\]</sup>.
 
 ### Carriage Layout
 
@@ -66,6 +67,7 @@ In order to keep the auxiliary converters and systems online through neutral sec
 - _2022_: Coupler overhaul of SMU220s and IMU120s completed by Voith Turbo Pty Ltd at a price of $3,200,000, and compressor and air dryer overhauls completed by Knorr-Bremse Australia Pty Ltd at a price of $975,475.54<sup>\[13\]</sup>.
 - _2023_: Routers replaced in EMUs, IMU100s, SMU200s, IMU120s and SMU220s by Nomad Digital Pty Ltd for $1,756,757.72<sup>\[12\]</sup>.
 - _November 30, 2023_: QR issued a tender for contractors to perform a Traction Package and TCMS Replacement on IMU120/160s and SMU220/260s (98x 3-car vehicles in total), stating that the existing Bombardier MITRAC traction package and Train Control Management System (TCMS) [known as TPT] equipment is becoming obsolete<sup>\[17\]</sup>.
+- _2038_: IMU120s anticipated to commence retirement (as of August 2021)<sup>\[21\]</sup>.
 
 ### Carriage Layout
 
@@ -114,6 +116,8 @@ They operate as three-car sets, with a driving motor car at each end and a trail
 
 In 2007, it was discovered during a "1200-point check" that the air conditioning units on top of the carriages had been built 10mm too wide for the loading gauge, sparking concerns over tunnel clearance in a 4m section between Central and Fortitude Valley stations<sup>\[20\]</sup>.
 
+IMU160s are anticipated to commence retirement in 2049 (as of August 2021)<sup>\[21\]</sup>.
+
 **Seating Capacity:**<br>
 66 (IM5161–88: driving motor car); 84 (IM7161–88: trailer car); 65 (IM8161–88: driving motor car)<sup>\[19\]</sup>.
 
@@ -161,3 +165,4 @@ See: [https://www.queenslandrail.com.au/Customers/Accessibility/Site%20Assets/Vi
 - **\[18\]** [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/edibombardier-interurban-multiple-unit-160-series-imu160](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/edibombardier-interurban-multiple-unit-160-series-imu160)
 - **\[19\]** [https://www.railtram.com.au/imu-interurban-multiple-unit-160](https://www.railtram.com.au/imu-interurban-multiple-unit-160)
 - **\[20\]** [https://web.archive.org/web/20110811094831/http://www.couriermail.com.au/news/queensland/bungle-halts-trains/story-e6freoof-1111113052829](https://web.archive.org/web/20110811094831/http://www.couriermail.com.au/news/queensland/bungle-halts-trains/story-e6freoof-1111113052829) archived from [the original](http://www.couriermail.com.au/news/queensland/bungle-halts-trains/story-e6freoof-1111113052829)
+- **\[21\]** Question on Notice No. 913 - August 31 2021: [https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf](https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf)

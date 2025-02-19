@@ -46,6 +46,7 @@ For some reason, the emergency brake actually takes longer to stop than the full
   > - Changed out some side doors on EMU trains, contracted to Festo for $422 thousand<sup>\[5\]</sup>.
   > - Changed out some couplers, contracted to Voith Turbo for $2.94 million<sup>\[5\]</sup>.
   > - "Bogie relife", and "Bogie Relife 1" (Heavy Overhaul of QR EMU Bogie) both contracted to Downer EDI Rail and totalling $12.63 million<sup>\[5, 6\]</sup>.
+- _2025_: EMUs anticipated to commence retirement (as of August 2021)<sup>\[7\]</sup>.
 
 ## Fleet Status
 
@@ -109,3 +110,4 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 - **\[4\]** [https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/emu](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts/emu)
 - **\[5\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365) archived [here](../media/Archive/qr-contract-disclosure-fy2023-2024.csv)
 - **\[6\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2024-2025](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2024-2025) archived [here](../media/Archive/qr-contract-disclosure-fy2024-2025.csv)
+- **\[7\]** Question on Notice No. 913 - August 31 2021: [https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf](https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf)
