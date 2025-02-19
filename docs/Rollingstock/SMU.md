@@ -4,7 +4,7 @@
 
 The SMUs are a class of units used by QR in SEQ, manufactured between 1994 and 2011. SMUs are divided into 3 subclasses, the SMU200, SMU220, and SMU260<sup>\[1\]</sup>.
 
-## Walkers/Adtranz Surban Multiple Unit 200 series (SMU200)
+## Walkers/Adtranz Suburban Multiple Unit 200 series (SMU200)
 
 ![](../media/SMU200_QR_SideShot.jpg)
 
@@ -45,7 +45,7 @@ The SMU200s were fitted with the Digital Voice Announcement System, which inform
 | Transmission                  | Bogie suspended traction motor through cardan shaft to right angle axle gear drive unit<sup>\[4\]</sup>                                                   |
 | Gear Ratio                    | 1:5.169<sup>\[4\]</sup>                                                                                                                                   |
 | Braking System                | Regenerative electric and electropneumatic thread brake<sup>\[4\]</sup>                                                                                   |
-| Auxillary System              | 2 x 100 kVA three phase static converters<sup>\[4\]</sup>                                                                                                 |
+| Auxiliary System              | 2 x 100 kVA three phase static converters<sup>\[4\]</sup>                                                                                                 |
 | Climate Control               | 2 x roof mounted air conditioners per car each with 30 kW cooling capacity<sup>\[4\]</sup>                                                                |
 
 ### Timeline
