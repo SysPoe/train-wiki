@@ -53,10 +53,13 @@ The SMU200s were fitted with the Digital Voice Announcement System, which inform
 ### Timeline
 
 - _August 16, 1994_: First SMU200 entered service<sup>\[1\]</sup>.
+- _2017_: IMU100s and SMU200s underwent an overhaul, including an upgrade of the traction package and Train Control Managment System on 10 IMU100s and 12 SMU200s, and one of the pneumatic cab doors of an IMU100 got upgraded. This work was done by Downer EDI Rail for $105,430,828<sup>\[10\]</sup>.
 - _December 2018_: Downer awarded an $80 million contract to overhaul the IMU100s and SMU200s to be completed at Downer’s Maryborough Service Delivery Centre<sup>\[5\]</sup>, including:
   > - Interior refresh – new floor coverings, refreshed handrails and grab handles and new seat foams and covers for enhanced customer experience
   > - Overhaul of key train subsystems to ensure the safety and reliability of the fleet
   > - New electrical systems (in partnership with ABB), including upgrade of onboard traction equipment and installation of a new Train Control Management System (TCMS).
+- _January 17, 2020_: QR paid out $2.6 million to CoachAir for `"2019 IMU100 SMU200 HVAC Overhaul"`, possibly as part of Downer's refurbishment that started Dec 2018<sup>\[11\]</sup>.
+- _2023_: QR replaced the routers in EMUs, IMU100s, SMU200s, IMU120s, and SMU220s. The work was contracted out to Nomad Digital and cost $1.75 million<sup>\[11\]</sup>.
 - _2023_: Downer's SMU200 overhaul completed<sup>\[5\]</sup>.
 - _December 5, 2023_: Noske-Kaeser New Zealand awarded a contract to complete 10 Year Overhauls on IMU100s and SMU200s, including these replacements<sup>\[7\]</sup>:
   > - Compressors and various refrigeration components
@@ -185,3 +188,5 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 - **\[7\]** [https://qtenders.epw.qld.gov.au/qtenders/contract/view.do?CSRFNONCE=376F38EAD88F3EB9E36E5CC47D8CB634&tenderId=48267](https://qtenders.epw.qld.gov.au/qtenders/contract/view.do?CSRFNONCE=376F38EAD88F3EB9E36E5CC47D8CB634&tenderId=48267)
 - **\[8\]** [QROTI - Travel Information - Fleet - SMU](https://web.archive.org/web/20080720231805/http://qroti.com/travelinfo/qr/fleet/smu/) archived from [the original](http://qroti.com/travelinfo/qr/fleet/smu/).
 - **\[9\]** Question on Notice No. 913 - August 31 2021: [https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf](https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf)
+- **\[10\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2022-2023/resource/d135ec7d-4a7a-40b2-98e4-3df90365f374](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2022-2023/resource/d135ec7d-4a7a-40b2-98e4-3df90365f374) archived [here](../media/Archive/qr-contract-disclosure-fy2022-2023.csv)
+- **\[11\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2023-2024/resource/22563422-0ea2-4bb0-80fb-a0428afc6365) archived [here](../media/Archive/qr-contract-disclosure-fy2023-2024.csv)
