@@ -36,7 +36,11 @@
                     "type": "object",
                     "properties": {
                       "x": { "type": "number" },
-                      "y": { "type": "number" }
+                      "y": { "type": "number" },
+                      "switchId": {
+                        "$comment": "The presence of the switchId parameter indicates that that switch should be consulted for the next geometry point as the track may be diverging.",
+                        "type": "string"
+                      }
                     },
                     "required": ["x", "y"]
                   }
@@ -87,24 +91,31 @@
         "properties": {
           "id": { "type": "string" },
           "name": { "type": "string" },
-          "position": {
-            "type": "object",
-            "properties": {
-              "x": { "type": "number" },
-              "y": { "type": "number" }
-            },
-            "required": ["x", "y"]
+          "connections": {
+            "$comment": "Specifies which tracks are connected to the switch. The first two should always be the main tracks, and the remaining ones are the diverging tracks.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "trackId": { "type": "string" },
+                "blockId": { "type": "string" },
+                "direction": {
+                  "$comment": "The direction refers to if the xy at index -1 is the one that the switch is connecting to (false), or if it is index 0 (true).",
+                  "type": "boolean"
+                }
+              },
+              "required": ["trackId", "blockId", "direction"]
+            }
           },
           "state": {
-            "type": "string",
-            "enum": ["diverging", "straight"]
-          },
-          "connections": {
+            "$comment": "Specifies which two tracks are currently connected by the switch (given by the index in 'connections'). If undefined, just use index 0 and 1 as defined in 'connections'.",
             "type": "array",
-            "items": { "type": "string" }
+            "items": { "type": "integer" },
+            "minItems": 2,
+            "maxItems": 2
           }
         },
-        "required": ["id", "position", "state"]
+        "required": ["id", "connections"]
       }
     },
     "stations": {

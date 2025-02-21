@@ -54,6 +54,23 @@
               "y": 668.9605407714844
             },
             {
+              "x": 131.99893188476562,
+              "y": 668.9605407714844,
+              "switchId": "DNMRSTP13S1"
+            }
+          ]
+        },
+        {
+          "name": "Down Main",
+          "blockId": "DNM1-5",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 131.99893188476562,
+              "y": 668.9605407714844,
+              "switchId": "DNMRSTP13S1"
+            },
+            {
               "x": 294.9996795654297,
               "y": 668.9605407714844
             },
@@ -938,7 +955,8 @@
             },
             {
               "x": 131.99893188476562,
-              "y": 668.9605407714844
+              "y": 668.9605407714844,
+              "switchId": "DNMRSTP13S1"
             }
           ]
         }
@@ -1473,6 +1491,29 @@
       ]
     }
   ],
-  "switches": [],
+  "switches": [
+    {
+      "id": "DNMRSTP13S1",
+      "name": "Down Main to Roma Street Platform 13 Switch 1",
+      "connections": [
+        {
+          "trackId": "DNM",
+          "blockId": "DNM1",
+          "direction": false
+        },
+        {
+          "trackId": "DNM",
+          "blockId": "DNM1-5",
+          "direction": true
+        },
+        {
+          "trackId": "DNEX",
+          "blockId": "RSTP13",
+          "direction": false
+        }
+      ],
+      "state": [0, 1]
+    }
+  ],
   "signals": []
 }
