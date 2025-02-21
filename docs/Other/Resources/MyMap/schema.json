@@ -109,7 +109,7 @@
                   "items": { "type": "integer" }
                 }
               },
-              "required": ["trackId", "blockId", "direction"]
+              "required": ["trackId", "blockId", "direction", "canGoWith"]
             }
           },
           "state": {
