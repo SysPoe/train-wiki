@@ -109,8 +109,19 @@
                   "items": { "type": "integer" }
                 }
               },
-              "required": ["trackId", "blockId", "direction", "canGoWith"]
+              "required": ["trackId", "blockId", "direction"]
             }
+          },
+          "pairings": {
+            "$comment": "Which block pairings are allowed on this switch.",
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {"type": "integer"},
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "minItems": 1
           },
           "state": {
             "$comment": "Specifies which two tracks are currently connected by the switch (given by the index in 'connections'). If undefined, just use index 0 and 1 as defined in 'connections'.",
@@ -120,7 +131,7 @@
             "maxItems": 2
           }
         },
-        "required": ["id", "connections"]
+        "required": ["id", "connections", "pairings"]
       }
     },
     "stations": {

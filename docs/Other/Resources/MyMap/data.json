@@ -1512,7 +1512,11 @@
           "direction": false
         }
       ],
-      "state": [0, 1]
+      "state": [0, 1],
+      "pairings": [
+        [0, 1],
+        [0, 2]
+      ]
     }
   ],
   "signals": []
