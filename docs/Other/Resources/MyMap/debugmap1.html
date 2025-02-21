@@ -34,28 +34,62 @@
     </div>
 
     <script>
+      const CONFIG = {
+        // Colors
+        lineColor: "#F00",
+        platformLineColor: "#00F",
+        switchLineColor: "#AA0",
+        pointColor: "#77F",
+        trackLabelColor: "#FFF",
+        stationLabelColor: "#FFF",
+
+        // Fonts
+        trackLabelFontSize: (vs, sf) => Math.min(15 / vs, 6) * sf,
+        trackLabelFont: (vs, sf) => Math.min(15 / vs, 6) * sf + "px Arial",
+        stationLabelFontSize: (vs, sf) => 15 * scaleFactor,
+        stationLabelFont: (vs, sf) => 15 * scaleFactor + "px Arial",
+
+        // Widths & Distances
+        lineWidth: (vs) => Math.max(4 / vs, 1),
+        switchLineWidth: (vs) => Math.max(5 / vs, 1.2),
+        switchDrawCap: () => 10,
+        pointSize: (vs, sf) => sf,
+      };
+
       async function main() {
         let res = await fetch("data.json");
+
         /** @typedef {object} RailData
+         * @property {object} metadata
+         * @property {string} metadata.version
+         * @property {string} metadata.coordinateSystem
+         * @property {number} metadata.scale
          * @property {object[]} stations
          * @property {string} stations.id
          * @property {object} stations.location
          * @property {number} stations.location.x
          * @property {number} stations.location.y
          * @property {string} stations.name
-         * @property {object} metadata
-         * @property {string} metadata.version
-         * @property {string} metadata.coordinateSystem
-         * @property {number} metadata.scale
          * @property {object[]} tracks
          * @property {string} tracks.id
          * @property {string} tracks.name
          * @property {object[]} tracks.blocks
+         * @property {string} tracks.blocks.name
          * @property {string} tracks.blocks.blockId
          * @property {string} tracks.blocks.direction
          * @property {object[]} tracks.blocks.geometry
          * @property {number} tracks.blocks.geometry.x
          * @property {number} tracks.blocks.geometry.y
+         * @property {string} tracks.blocks.geometry.switchId
+         * @property {object[]} switches
+         * @property {string} switches.id
+         * @property {string} switches.name
+         * @property {object[]} switches.connections
+         * @property {string} switches.connections.trackId
+         * @property {string} switches.connections.blockId
+         * @property {boolean} switches.connections.direction
+         * @property {number[]} switches.state
+         * @property {} signals
          */
         /** @type {RailData} */
         let data = await res.json();
@@ -88,11 +122,17 @@
         /** @type {DBSelector[]} */
         let selected_db = [];
 
+        let idToIdx = {};
+
         data.tracks.forEach((track, trackIndex) => {
           let prevX = Number.NEGATIVE_INFINITY;
           let prevY = Number.NEGATIVE_INFINITY;
 
+          if (idToIdx[track.id] === undefined)
+            idToIdx[track.id] = { "": trackIndex };
+
           track.blocks.forEach((block, blockIndex) => {
+            idToIdx[track.id][block.blockId] = [trackIndex, blockIndex];
             block.geometry.forEach((point, pointIndex) => {
               if (
                 (Math.abs(point.y - prevY) >= 0.01 &&
@@ -128,49 +168,10 @@
           // ctx.fillStyle = "#000";
           // ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-          data.tracks.forEach((track, trackIndex) => {
-            track.blocks.forEach((block) => {
-              ctx.beginPath();
-              // ctx.strokeStyle = `hsl(${trackIndex * 30}, 100%, 50%)`; // Different color per track
-              ctx.strokeStyle = "#FF0000";
-              if (/^[A-Z]{3}P\d+$/.test(block.blockId))
-                ctx.strokeStyle = "#0000FF";
-              ctx.lineWidth = 4 / viewport.scale;
-              block.geometry.forEach((point, pointIndex) => {
-                const x = point.x * scaleFactor;
-                const y = point.y * scaleFactor;
-
-                if (pointIndex === 0) {
-                  ctx.moveTo(x, y);
-                } else {
-                  ctx.lineTo(x, y);
-                }
-              });
-
-              ctx.stroke();
-            });
-          });
-          data.tracks.forEach((v) => {
-            let prevX = Number.NEGATIVE_INFINITY;
-            let prevY = Number.NEGATIVE_INFINITY;
-
-            v.blocks.forEach((block) => {
-              // Draw block ID labels
-              const firstPoint = block.geometry[0];
-              ctx.fillStyle = "#FFF";
-              let fontSize = Math.min(30 / viewport.scale, 12);
-              ctx.font = fontSize + "px Arial";
-              ctx.fillText(
-                block.blockId,
-                firstPoint.x * scaleFactor + 5,
-                firstPoint.y * scaleFactor + fontSize / 2
-              );
-            });
-          });
-          db_points.forEach((v) => {
+          /* Points */ db_points.forEach((v) => {
             // ctx.fillStyle = v.color;
-            ctx.fillStyle = "#77F";
-            let pixelSize = 1 * scaleFactor;
+            ctx.fillStyle = CONFIG.pointColor;
+            let pixelSize = CONFIG.pointSize(viewport.scale, scaleFactor);
             let i = 0;
             for (let j of selected_db) {
               if (
@@ -195,14 +196,128 @@
               2 * pixelSize
             );
           });
+          /* Tracks */ data.tracks.forEach((track, trackIndex) => {
+            track.blocks.forEach((block) => {
+              ctx.beginPath();
+              // ctx.strokeStyle = `hsl(${trackIndex * 30}, 100%, 50%)`; // Different color per track
+              ctx.strokeStyle = CONFIG.lineColor;
+              if (/^[A-Z]{3}P\d+$/.test(block.blockId))
+                ctx.strokeStyle = CONFIG.platformLineColor;
+              ctx.lineWidth = CONFIG.lineWidth(viewport.scale);
 
-          data.stations.forEach((s) => {
+              block.geometry.forEach((point, pointIndex) => {
+                const x = point.x * scaleFactor;
+                const y = point.y * scaleFactor;
+
+                if (pointIndex === 0) {
+                  ctx.moveTo(x, y);
+                } else {
+                  ctx.lineTo(x, y);
+                }
+              });
+
+              ctx.stroke();
+            });
+          });
+          /* Switches */
+          data.switches.forEach((s) => {
+            const state = s.state || [0, 1];
+            const fromConnection = s.connections[state[0]];
+            const toConnection = s.connections[state[1]];
+
+            const fromD =
+              idToIdx[fromConnection.trackId][fromConnection.blockId];
+            const toD = idToIdx[toConnection.trackId][toConnection.blockId];
+
+            const from = data.tracks[fromD[0]].blocks[fromD[1]];
+            const to = data.tracks[toD[0]].blocks[toD[1]];
+
+            const fromStart = fromConnection.direction
+              ? 1
+              : from.geometry.length - 2;
+            const fromTo = fromConnection.direction
+              ? 0
+              : from.geometry.length - 1;
+            const toStart = toConnection.direction ? 1 : to.geometry.length - 2;
+            const toTo = toConnection.direction ? 0 : to.geometry.length - 1;
+
+            ctx.strokeStyle = CONFIG.switchLineColor;
+            ctx.lineWidth = CONFIG.switchLineWidth(viewport.scale);
+            ctx.beginPath();
+
+            let fromX = from.geometry[fromStart].x;
+            let fromY = from.geometry[fromStart].y;
+
+            let distFrom = Math.sqrt(
+              (from.geometry[fromTo].x - fromX) ** 2 +
+                (from.geometry[fromTo].y - fromY) ** 2
+            );
+            if (distFrom > CONFIG.switchDrawCap(viewport.scale)) {
+              let mult = CONFIG.switchDrawCap(viewport.scale) / distFrom;
+              let dx = from.geometry[fromTo].x - fromX;
+              let dy = from.geometry[fromTo].y - fromY;
+              fromX = from.geometry[fromTo].x - dx * mult;
+              fromY = from.geometry[fromTo].y - dy * mult;
+            }
+
+            let toX = to.geometry[toStart].x;
+            let toY = to.geometry[toStart].y;
+
+            let distTo = Math.sqrt(
+              (to.geometry[toTo].x - toX) ** 2 +
+                (to.geometry[toTo].y - toY) ** 2
+            );
+            if (distTo > CONFIG.switchDrawCap(viewport.scale)) {
+              let mult = CONFIG.switchDrawCap(viewport.scale) / distTo;
+              let dx = to.geometry[toTo].x - toX;
+              let dy = to.geometry[toTo].y - toY;
+              toX = to.geometry[toTo].x - dx * mult;
+              toY = to.geometry[toTo].y - dy * mult;
+            }
+
+            ctx.moveTo(fromX * scaleFactor, fromY * scaleFactor);
+            ctx.lineTo(
+              from.geometry[fromTo].x * scaleFactor,
+              from.geometry[fromTo].y * scaleFactor
+            );
+            ctx.moveTo(toX * scaleFactor, toY * scaleFactor);
+            ctx.lineTo(
+              to.geometry[toTo].x * scaleFactor,
+              to.geometry[toTo].y * scaleFactor
+            );
+
+            ctx.stroke();
+          });
+          /* Track labels */ data.tracks.forEach((v) => {
+            let prevX = Number.NEGATIVE_INFINITY;
+            let prevY = Number.NEGATIVE_INFINITY;
+
+            v.blocks.forEach((block) => {
+              // Draw block ID labels
+              const firstPoint = block.geometry[0];
+              ctx.fillStyle = CONFIG.trackLabelColor;
+              let fontSize = CONFIG.trackLabelFontSize(
+                viewport.scale,
+                scaleFactor
+              );
+              ctx.font = CONFIG.trackLabelFont(viewport.scale, scaleFactor);
+              ctx.fillText(
+                block.blockId,
+                firstPoint.x * scaleFactor + 5,
+                firstPoint.y * scaleFactor + fontSize / 2
+              );
+            });
+          });
+          /* Station labels */ data.stations.forEach((s) => {
             let { x, y } = s.location;
             x *= scaleFactor;
             y *= scaleFactor;
-            ctx.fillStyle = "#FFF";
-            let fontSize = 15 * scaleFactor;
-            ctx.font = fontSize + "px Arial";
+            ctx.fillStyle = CONFIG.stationLabelColor;
+            let fontSize = CONFIG.stationLabelFontSize(
+              viewport.scale,
+              scaleFactor
+            );
+            ctx.font = CONFIG.stationLabelFont(viewport.scale, scaleFactor);
             ctx.fillText(
               s.name,
               x - ctx.measureText(s.name).width / 2,
@@ -376,6 +491,8 @@
 
           // Find closest point
           const closest = findClosestPoint(planeCoords.x, planeCoords.y);
+
+          console.log(closest);
 
           if (selected_db.length >= 2) selected_db = [];
           selected_db.push({
