@@ -6,6 +6,8 @@
 
 > The NGR as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
 
+Apparently the pantographs last half as long as the other trains, and they have more flange squeal.
+
 ## Some Observations about NGRs
 
 ### Uncomfortable Seats

@@ -18,22 +18,23 @@ The QTMP is a $9.5 billion program funded by the Queensland Government to design
 
 ## Timeline
 
-- *October 2020:* Funding announced for a new fleet of trains.
-- *June 2021:* Alstom, CAF and Downer announced as shortlisted applicants to deliver Queensland Train Manufacturing Program.
-- *October 2021:* Torbanlea announced as the location of the train manufacturing facility.
-- *April 2022:* Early works commenced for the manufacturing facility.
-- *Mid-2022:* Shortlisted applicants submitted final proposals.
-- *October 2022:* Ormeau announced as the location for the rail facility.
-- *February 2023:* Announcement of Downer as the preferred applicant to deliver Queensland Train Manufacturing Program.
-- *June 2023:* Downer awarded the contract to deliver the Queensland Train Manufacturing Program.
-- *Late 2023:* Site construction works at the manufacturing and rail facilities started.
+- _October 2020_: Funding announced for a new fleet of trains.
+- _June 2021_: Alstom, CAF and Downer announced as shortlisted applicants to deliver Queensland Train Manufacturing Program.
+- _October 2021_: Torbanlea announced as the location of the train manufacturing facility.
+- _April 2022_: Early works commenced for the manufacturing facility.
+- _Mid-2022_: Shortlisted applicants submitted final proposals.
+- _October 2022_: Ormeau announced as the location for the rail facility.
+- _February 2023_: Announcement of Downer as the preferred applicant to deliver Queensland Train Manufacturing Program.
+- _June 2023_: Downer awarded the contract to deliver the Queensland Train Manufacturing Program.
+- _Late 2023_: Site construction works at the manufacturing and rail facilities started.
 
 <font style="font-size: 10px">(Future dates: indicative only)</font style="font-size: 10px">
 
-- *Late 2025:* Construction of the Torbanlea train manufacturing facility completed and train manufacturing begins.
-- *Late 2026:* The first train is completed and begins testing.
-- *Late 2026:* Ormeau rail facility construction completed.
-- *2032:* All trains expected to be in service.
+- _Late 2025_: Construction of the Torbanlea train manufacturing facility completed and train manufacturing begins.
+- _Late 2026_: The first train is completed and begins testing.
+- _Late 2026_: Ormeau rail facility construction completed.
+- _Q2 2026_: QTMP Scheduled to enter service.
+- _2032_: All trains expected to be in service.
 
 ## Gallery
 
