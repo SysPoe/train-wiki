@@ -36,6 +36,12 @@ Here is a selection of some of my train photos that I think are nice, in no part
 
 ### IMU160s
 
+![](../media/MyGallery/IMU173_182_FortitudeValley_BRCA-CABOOLTURE_1153_ORIGINAL.png)
+
+> [View full image](../media/MyGallery/IMU173_182_FortitudeValley_BRCA-CABOOLTURE_1153_ORIGINAL.png)
+>
+> IMU173 and 182 arriving at Fortitude Valley platform 4, running BRCA Caboolture service. Run 1153. Taken 20/02/25 @ 18:56.
+
 ![](../media/MyGallery/IMU183_Central_RPBR-ROMA-STREET_T956.png)
 
 > [View full image](../media/MyGallery/IMU183_Central_RPBR-ROMA-STREET_T956.png)
@@ -53,6 +59,12 @@ Here is a selection of some of my train photos that I think are nice, in no part
 > SMU 243 crossing a rail bridge (5R4JCWHR+V9W), operating BRIP (Ipswich) Roma Street service. Run 1957. Taken 12/28/24 @ 18:32.
 
 ### SMU260s
+
+![](../media/MyGallery/SMU263_InTransit_5R4MH3R5+56Q_MILTON_ORIGINAL_2.png)
+
+> [View full image](../media/MyGallery/SMU263_InTransit_5R4MH3R5+56Q_MILTON_ORIGINAL_2.png)
+>
+> SMU263 heading to Milton just south of Toombul. Taken 08/02/24 @ 18:50.
 
 ![](../media/MyGallery/SMU280_EagleJunction_IPCA-CABOOLTURE.png)
 
@@ -111,3 +123,9 @@ Here is a selection of some of my train photos that I think are nice, in no part
 > [View full image](../media/MyGallery/Electric%20Tilt%20Train%20at%20Caboolture%201%20Q301.png)
 >
 > The Electric Tilt Train arriving at Caboolture Station, platform 1, for the almost-daily Q301 service to Rockhampton. Taken 01/21/25 @ 11:51.
+
+![](../media/MyGallery/PN002%20Down%20Main%20Fortitude%20Valley%20Pl%204.png)
+
+> [View full image](../media/MyGallery/PN002%20Down%20Main%20Fortitude%20Valley%20Pl%204.png)
+>
+> PN002 heading north on the down main, passing Fortitude Valley Platform 4. Taken 20/02/25 @ 18:53.
