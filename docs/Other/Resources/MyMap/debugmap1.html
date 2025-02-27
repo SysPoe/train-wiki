@@ -35,6 +35,8 @@
 
     <script>
       const CONFIG = {
+        renderLabels: true,
+
         // Colors
         lineColor: "#F00",
         platformLineColor: "#00F",
@@ -46,8 +48,8 @@
         // Fonts
         trackLabelFontSize: (vs, sf) => Math.min(15 / vs, 6) * sf,
         trackLabelFont: (vs, sf) => Math.min(15 / vs, 6) * sf + "px Arial",
-        stationLabelFontSize: (vs, sf) => 15 * scaleFactor,
-        stationLabelFont: (vs, sf) => 15 * scaleFactor + "px Arial",
+        stationLabelFontSize: (vs, sf) => 15 * sf,
+        stationLabelFont: (vs, sf) => 15 * sf + "px Arial",
 
         // Widths & Distances
         lineWidth: (vs) => Math.max(4 / vs, 1),
@@ -219,8 +221,7 @@
               ctx.stroke();
             });
           });
-          /* Switches */
-          data.switches.forEach((s) => {
+          /* Switches */ data.switches.forEach((s) => {
             const state = s.state || [0, 1];
             const fromConnection = s.connections[state[0]];
             const toConnection = s.connections[state[1]];
@@ -288,6 +289,7 @@
 
             ctx.stroke();
           });
+          if (!CONFIG.renderLabels) return;
           /* Track labels */ data.tracks.forEach((v) => {
             let prevX = Number.NEGATIVE_INFINITY;
             let prevY = Number.NEGATIVE_INFINITY;

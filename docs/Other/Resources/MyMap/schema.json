@@ -102,11 +102,6 @@
                 "direction": {
                   "$comment": "The direction refers to if the xy at index -1 is the one that the switch is connecting to (false), or if it is index 0 (true).",
                   "type": "boolean"
-                },
-                "canGoWith": {
-                  "$comment": "Which other lines it can be paired with, by their index in the connections array.",
-                  "type": "array",
-                  "items": { "type": "integer" }
                 }
               },
               "required": ["trackId", "blockId", "direction"]

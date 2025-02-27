@@ -262,6 +262,42 @@
               "y": 685.9604187011719
             },
             {
+              "x": 110.99895858764648,
+              "y": 685.9604187011719,
+              "switchId": "UPMDNSS1"
+            }
+          ]
+        },
+        {
+          "name": "Up Main",
+          "blockId": "UPM1-5",
+          "direction": "bidirectional",
+          
+          "geometry": [
+            {
+              "x": 110.99895858764648,
+              "y": 685.9604187011719,
+              "switchId": "UPMDNSS1"
+            },
+            {
+              "x": 139.99894857406616,
+              "y": 685.9604187011719,
+              "switchId": "UPMRSTP14S1"
+            }
+          ]
+        },
+        {
+          "name": "Up Main",
+          "blockId": "UPM1-7",
+          "direction": "bidirectional",
+          
+          "geometry": [
+            {
+              "x": 139.99894857406616,
+              "y": 685.9604187011719,
+              "switchId": "UPMRSTP14S1"
+            },
+            {
               "x": 300.9989128112793,
               "y": 685.9604187011719
             },
@@ -427,6 +463,23 @@
             {
               "x": 68,
               "y": 703.9605102539062
+            },
+            {
+              "x": 127.99894857406616,
+              "y": 703.9605102539062,
+              "switchId": "UPMDNSS2"
+            }
+          ]
+        },
+        {
+          "name": "Down Suburban",
+          "blockId": "DNS1-5",
+          "direction": "bidirectional",
+          "geometry": [
+            {
+              "x": 127.99894857406616,
+              "y": 703.9605102539062,
+              "switchId": "UPMDNSS2"
             },
             {
               "x": 354.000244140625,
@@ -901,11 +954,13 @@
           "geometry": [
             {
               "x": 110.99895858764648,
-              "y": 685.9604187011719
+              "y": 685.9604187011719,
+              "switchId": "UPMDNSS1"
             },
             {
               "x": 127.99894857406616,
-              "y": 703.9605102539062
+              "y": 703.9605102539062,
+              "switchId": "UPMDNSS2"
             }
           ]
         }
@@ -930,7 +985,8 @@
             },
             {
               "x": 139.99894857406616,
-              "y": 685.9604187011719
+              "y": 685.9604187011719,
+              "switchId": "UPMRSTP14S1"
             }
           ]
         }
@@ -1509,6 +1565,84 @@
         {
           "trackId": "DNEX",
           "blockId": "RSTP13",
+          "direction": false
+        }
+      ],
+      "state": [0, 1],
+      "pairings": [
+        [0, 1],
+        [0, 2]
+      ]
+    },
+    {
+      "id": "UPMDNSS1",
+      "name": "Up Main to Down Suburban Switch 1",
+      "connections": [
+        {
+          "trackId": "UPM",
+          "blockId": "UPM1",
+          "direction": false
+        },
+        {
+          "trackId": "UPM",
+          "blockId": "UPM1-5",
+          "direction": true
+        },
+        {
+          "trackId": "UPMDNSS1",
+          "blockId": "UPMDNSS1B1",
+          "direction": true
+        }
+      ],
+      "state": [0, 1],
+      "pairings": [
+        [0, 1],
+        [0, 2]
+      ]
+    },
+    {
+      "id": "UPMDNSS2",
+      "name": "Up Main to Down Suburban Switch 2",
+      "connections": [
+        {
+          "trackId": "DNS",
+          "blockId": "DNS1",
+          "direction": false
+        },
+        {
+          "trackId": "DNS",
+          "blockId": "DNS1-5",
+          "direction": true
+        },
+        {
+          "trackId": "UPMDNSS1",
+          "blockId": "UPMDNSS1B1",
+          "direction": false
+        }
+      ],
+      "state": [0, 1],
+      "pairings": [
+        [0, 1],
+        [1, 2]
+      ]
+    },
+    {
+      "id": "UPMRSTP14S1",
+      "name": "Up Main to Roma Street Platform 14 Switch 1",
+      "connections": [
+        {
+          "trackId": "UPM",
+          "blockId": "UPM1-5",
+          "direction": false
+        },
+        {
+          "trackId": "UPM",
+          "blockId": "UPM1-7",
+          "direction": true
+        },
+        {
+          "trackId": "UPEXF1",
+          "blockId": "RSTP14",
           "direction": false
         }
       ],
