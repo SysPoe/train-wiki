@@ -26,6 +26,12 @@ In 2005, the ICE power pairs again headed to Maryborough to receive angled windo
 
 Driving motor cars 5155 and 5156 were named City of Brisbane and City of Rockhampton to mark the commencement of the Spirit of Capricorn service in July 1989<sup>\[2\]</sup>.
 
+Like all other passenger trains operating within the Brisbane Suburban Area, ICEs are fitted with AWS (Audible Warning System). When there is an upcoming restrictive signal (any signal other than green), the driver must acknowledge the warning provided for it within three seconds of its receipt by pressing a button on trains' control panels. If the approaching signal is green, no acknowledgment by the driver is required. Should a train proceed past a restrictive signal without the driver having first acknowledged the warning, the train’s emergency brakes are automatically applied to stop the train. For AWS to operate, both track and rollingstock must be equipped<sup>\[3\]</sup>.
+
+SMUs, along with IMUs, EMUs, and probably NGRs, are also fitted with door sensors and traction interlocks. The sensors trigger the doors to open if they detect an obstruction upon closing, much like an elevator door. Traction interlocks block power to the trains’ drive motors until all doors have fully closed preventing trains from moving with doors open or obstructed<sup>\[3\]</sup>.
+
+SMUs, IMUs and ICEs were supplied with rigid steel skirts that protect the wheels and undercarriage equipment. These skirts extend to within approximately 50 mm of the rails, and provide a measure of protection from damage caused by collisions with obstructions at track level<sup>\[3\]</sup>.
+
 ## Technical Details
 
 | Name                                                                                          | Value                                                    |
@@ -120,3 +126,4 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md). See al
 
 - **\[1\]** [https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-intercity-express-ice](https://qrig.org/motive-power/self-propelled-passenger-stock/electric-multiple-units/walkersadtranz-intercity-express-ice)
 - **\[2\]** [https://en.wikipedia.org/wiki/InterCity_Express\_(Queensland_Rail)](<https://en.wikipedia.org/wiki/InterCity_Express_(Queensland_Rail)>)
+- **\[3\]** [https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf](https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf)

@@ -23,6 +23,12 @@ They were paired with SMU200s 'early on', but after a derailment between Central
 
 For some reason, the emergency brake actually takes longer to stop than the full service brake (maybe due to wheel slippage?), but QR crews are required to press the emergency brake in an emergency. Bit of an oversight there.
 
+Like all other passenger trains operating within the Brisbane Suburban Area, EMUs are fitted with AWS (Audible Warning System). When there is an upcoming restrictive signal (any signal other than green), the driver must acknowledge the warning provided for it within three seconds of its receipt by pressing a button on trains' control panels. If the approaching signal is green, no acknowledgment by the driver is required. Should a train proceed past a restrictive signal without the driver having first acknowledged the warning, the train’s emergency brakes are automatically applied to stop the train. For AWS to operate, both track and rollingstock must be equipped<sup>\[9\]</sup>.
+
+EMUs are also fitted with door sensors and traction interlocks. The sensors trigger the doors to open if they detect an obstruction upon closing, much like an elevator door. Traction interlocks block power to the trains’ drive motors until all doors have fully closed preventing trains from moving with doors open or obstructed.  EMUs did not have these upon fabrication, however they were all retrofitted with them as part of a refurbishment program by September 2000 at a cost of $35,000 per 3-car (not inflation adjusted)<sup>\[9\]</sup>.
+
+Unlike other units, EMUs do not have rigid steel skirts to protect the wheels and undercarriage equipment<sup>\[9\]</sup>.
+
 ## Timeline
 
 - _July 1979 - December 1986_: EMU units delivered.
@@ -33,6 +39,7 @@ For some reason, the emergency brake actually takes longer to stop than the full
 - _August 1990_: Units 84 and 68 ran through to Gympie North temporarily.
 - _Late 1993_: EMUs fitted with yellow cab ends for higher visibility.
 - _1996_: Some EMUs appeared on Gold Coast line services, although they were only used sparingly, not being geared to operate at the 140km/h line speed.
+_25 March 1996_: A Citytrain EMU collided with a freight train on 25 March 1996 at Bowen Hills. A subsequent board of inquiry into the collision found that it was caused by driver error. The driver of the passenger train failed to stop at a red signal, and the passenger train collided with the freight train as it crossed the track beyond the signal. The collision injured eight passengers and one employee, and caused extensive damage to both trains. The direct cost of the collision was estimated to be $2.72 million (not inflation adjusted)<sup>\[9\]</sup>.
 - _1998-2000_: The cab windows were modified on EMU60-88 for better visibility and also the fitting of a rear view mirror and security cameras inside.
 - _2000_: The first series EMUs (01-19) were upgraded with high visibility cab ends which incorporated a fender (which incorporates an anti-climber to prevent outriders hanging off the back of a unit) with ditch lights and a new color scheme with a black band across the windscreen (hence the nickname of these units, ‘Bandicoots’).
 - _May 2001_: EMU62 was severely damaged after an Arson attack at Mayne.
@@ -114,3 +121,4 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 - **\[6\]** [https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2024-2025](https://www.data.qld.gov.au/dataset/queensland-rail-contract-disclosure-fy2024-2025) archived [here](../media/Archive/qr-contract-disclosure-fy2024-2025.csv)
 - **\[7\]** Question on Notice No. 913 - August 31 2021: [https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf](https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf) archived [here](../media/Archive/913-2021.pdf)
 - **\[8\]** [https://web.archive.org/web/20220319105847/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/](https://web.archive.org/web/20220319105847/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/) archived from [the original](https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/)
+- **\[9\]** [https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf](https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf)

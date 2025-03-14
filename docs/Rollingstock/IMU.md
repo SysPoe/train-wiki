@@ -5,6 +5,12 @@ The IMUs were introduced to provide new rollingstock for the Gold Coast line in 
 Depots: Mayne, Robina, Nambour<sup>\[11\]</sup><br>
 Common Lines Served: Gold Coast line, Airport line, Nambour and Gympie North line<sup>\[11\]</sup>
 
+Like all other passenger trains operating within the Brisbane Suburban Area, IMUs are fitted with AWS (Audible Warning System). When there is an upcoming restrictive signal (any signal other than green), the driver must acknowledge the warning provided for it within three seconds of its receipt by pressing a button on trains' control panels. If the approaching signal is green, no acknowledgment by the driver is required. Should a train proceed past a restrictive signal without the driver having first acknowledged the warning, the train’s emergency brakes are automatically applied to stop the train. For AWS to operate, both track and rollingstock must be equipped<sup>\[22\]</sup>.
+
+SMUs, along with IMUs, EMUs, and probably NGRs, are also fitted with door sensors and traction interlocks. The sensors trigger the doors to open if they detect an obstruction upon closing, much like an elevator door. Traction interlocks block power to the trains’ drive motors until all doors have fully closed preventing trains from moving with doors open or obstructed<sup>\[22\]</sup>.
+
+SMUs, IMUs and ICEs were supplied with rigid steel skirts that protect the wheels and undercarriage equipment. These skirts extend to within approximately 50 mm of the rails, and provide a measure of protection from damage caused by collisions with obstructions at track level<sup>\[22\]</sup>.
+
 ## EDI/Bombardier Interurban Multiple Unit 100 series (IMU100)
 
 ![](../media/IMU100_QR_SideShot.jpg)
@@ -166,3 +172,4 @@ See: [https://www.queenslandrail.com.au/Customers/Accessibility/Site%20Assets/Vi
 - **\[19\]** [https://www.railtram.com.au/imu-interurban-multiple-unit-160](https://www.railtram.com.au/imu-interurban-multiple-unit-160)
 - **\[20\]** [https://web.archive.org/web/20110811094831/http://www.couriermail.com.au/news/queensland/bungle-halts-trains/story-e6freoof-1111113052829](https://web.archive.org/web/20110811094831/http://www.couriermail.com.au/news/queensland/bungle-halts-trains/story-e6freoof-1111113052829) archived from [the original](http://www.couriermail.com.au/news/queensland/bungle-halts-trains/story-e6freoof-1111113052829)
 - **\[21\]** Question on Notice No. 913 - August 31 2021: [https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf](https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf) archived [here](../media/Archive/913-2021.pdf)
+- **\[22\]** [https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf](https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf)
