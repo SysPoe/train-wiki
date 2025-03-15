@@ -12,7 +12,11 @@ NGRs most of the day, with IMUs at peak times. You may get like 3 IMUs a day, so
 
 ## Beenleigh / Ferny Grove
 
-NGRs are prohibited on Ferny Grove line because Gathorne Station is so curved that the guard who has to positioned at the back on NGRs can't see all the way around the platform. Because Beenleigh is Ferny Grove's pair, it does not get NGRs either. Thus, mostly IMUs / SMUs will appear on the line, with EMUs sometimes on Ferny Grove.
+The NGR trains are not able to run on the Ferny Grove line at all, as they leave a large gap
+between the train and platform at some stations, meaning passengers cannot board safely and,
+at Newmarket and Keperra, the platforms are too short to accommodate the NGR trains at all.
+Due to these issues—and the pairing of the Ferny Grove and Beenleigh lines—it means the NGR
+trains also do not run on the Beenleigh line as part of the regular timetable<sup>\[1\]</sup>. Thus, mostly IMUs / SMUs will appear on the line, with EMUs sometimes on Ferny Grove.
 
 ## Redcliffe Peninsula / Springfield Line:
 
@@ -20,7 +24,8 @@ NGRs are common on the Redcliffe Peninsula / Springfield Line because of the lar
 
 ## Rosewood
 
-NGRs are not allowed west of Ipswich, so there is mostly IMUs, SMUs, and EMUs on the Rosewood line.
+On the Rosewood line, the NGR trains are too long for the platform, forcing passengers into the
+front three cars, otherwise they would step and fall onto the tracks<sup>\[1\]</sup>. Therefore, there is mostly IMUs, SMUs, and EMUs on the Rosewood line.
 
 ## Ipswich / Caboolture / Nambour
 
@@ -28,9 +33,17 @@ Mainly SMUs and IMUs but some NGRs.
 
 ## Gympie North
 
-NGRs will not operate on Sunshine Coast line services north of Nambour until signalling upgrades to Gympie North have been completed. Currently trains are required to be compatible with the operation of Automatic Train Protection which isn't fitted on the NGRs. (Information may be outdated).
+NGRs are now allowed on the Gympie North line.
 
-The Gympie North line generally features IMU100's/120's due to the ATP requirement.
+~~NGRs will not operate on Sunshine Coast line services north of Nambour until signalling upgrades to Gympie North have been completed. Currently trains are required to be compatible with the operation of Automatic Train Protection which isn't fitted on the NGRs. (Information may be outdated).~~
+
+~~The Gympie North line generally features IMU100's/120's due to the ATP requirement. ~~
+
+[https://www.reddit.com/r/brisbane/comments/17v0tsi/comment/k98p2kb/](https://www.reddit.com/r/brisbane/comments/17v0tsi/comment/k98p2kb/)
+
+> Correct, need a forward facing observer seat in the driving cab for a second driver which the 160/260s don’t have and ~~ngrs cant work past nambour yet.~~
+
+> There's this thing called route competency, and only Gympie North, some Nambour, some Caboolture and some Mayne (Bowen Hills) depot crew are qualified for. There are some crew at Mayne who can't work north of Northgate, or south of Yeerongpilly/Corinda. And there's a bit of a clique with old timers who want to keep their "rare" route competency for themselves, and there's a big thing with seniority of service to learn extra routes such as Nambour and Gympie North. 
 
 ## Cleveland / Shorncliffe
 
@@ -39,3 +52,6 @@ The Cleveland / Shorncliffe line has the second least amount of NGRs on it, afte
 ## Post CRR
 
 NGR, along with upgraded SMU 260 trains, will be the only trains permitted to travel in the Cross River Rail tunnels
+
+## Sources
+- **\[1\]** [https://documents.parliament.qld.gov.au/tableOffice/questionsAnswers/2024/868-2024.pdf](https://documents.parliament.qld.gov.au/tableOffice/questionsAnswers/2024/868-2024.pdf)
