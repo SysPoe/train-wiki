@@ -51,7 +51,7 @@ The Cleveland / Shorncliffe line has the second least amount of NGRs on it, afte
 
 ## Post CRR
 
-NGR, along with upgraded SMU 260 trains, will be the only trains permitted to travel in the Cross River Rail tunnels
+NGR, along with upgraded SMU 260 trains, will be the only trains permitted to travel in the Cross River Rail tunnels.
 
 ## Sources
 - **\[1\]** [https://documents.parliament.qld.gov.au/tableOffice/questionsAnswers/2024/868-2024.pdf](https://documents.parliament.qld.gov.au/tableOffice/questionsAnswers/2024/868-2024.pdf)
