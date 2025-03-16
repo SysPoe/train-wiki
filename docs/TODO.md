@@ -62,43 +62,45 @@ Varsity Lakes Station
 
 # Pages
 
-- ICE
-- NGR
-- QTMP
-- SMU
-- IMU
-- QR's rollingstock
-- Tips while Lineside
-- Lineside histories
-- Good trainspotting locations - petrie
-- Good trainspotting locations - Eagle junction
-- Good trainspotting locations - Under Gympie Rd
-- Train horns
-- Things to do on the QR Netowrk
-- [https://qroti.com/](https://qroti.com/)
+- [x] ICE
+- [ ] NGR
+- [ ] QTMP
+- [x] SMU
+- [ ] IMU
+- [x] QR's rollingstock
+- [ ] Tips while Lineside
+- [ ] Lineside histories
+- [ ] Good trainspotting locations - petrie
+- [ ] Good trainspotting locations - Eagle junction
+- [ ] Good trainspotting locations - Under Gympie Rd
+- [ ] Train horns
+- [ ] Things to do on the QR Netowrk
+- [ ] [https://qroti.com/](https://qroti.com/)
   > - Last active: [https://web.archive.org/web/20110218064554/http://www.qroti.com/](https://web.archive.org/web/20110218064554/http://www.qroti.com/)
   > - Retired: [https://web.archive.org/web/20110513234651/http://qroti.com/](https://web.archive.org/web/20110513234651/http://qroti.com/)
-- [http://www.railpage.org.au/qrhistory/](http://www.railpage.org.au/qrhistory/)
-- EMU events
-- look into QR contract disclosures
-- Freight timetables for other than CAB-ROK
-- SEQ Timetable
-- Should I really include location data for all of my images? (in the descriptions)
-- Taieri Gorge
-- Ocean Beach railway
-- Other heritage services in Brisbane?
-- Full run numbering guide
-- FTT for other than CABROK
-- improve FTT to show which trains are where (possibly on a map???)
-- [Brisbane Suburban System Infromation Pack](https://www.queenslandrail.com.au/business/acccess/Documents/Brisbane%20Metropolitan%20System%20Information%20Pack%20-%20Issue%203%20-%20October%202016.pdf).
+- [ ] [http://www.railpage.org.au/qrhistory/](http://www.railpage.org.au/qrhistory/)
+- [ ] EMU events between 2001 and 2019
+- [x] look into QR contract disclosures
+- [ ] Freight timetables for other than CAB-ROK
+- [ ] SEQ Timetable
+- [ ] Should I really include location data for all of my images? (in the descriptions)
+- [ ] ~~Taieri Gorge~~
+- [ ] ~~Ocean Beach railway~~
+- [ ] ~~Other heritage services in Brisbane?~~
+- [ ] Full run numbering guide
+- [ ] FTT for other than CABROK
+- [ ] improve FTT to show which trains are where (possibly on a map???)
+- [ ] [Brisbane Suburban System Infromation Pack](https://www.queenslandrail.com.au/business/acccess/Documents/Brisbane%20Metropolitan%20System%20Information%20Pack%20-%20Issue%203%20-%20October%202016.pdf).
   > - Appendix D
   > - Appendix F
   > - Appendix H
-- Network schematic [here](https://www.queenslandrail.com.au/business/acccess/Access%20Undertaking%20and%20related%20documents/Queensland%20Rail%20Network%20Infrastructure%20Ownership%20Line%20Diagrams%20October%202024%20(PDF,%208.89%20MB).pdf)
-- [North Coast Line System South Information Pack](https://www.queenslandrail.com.au/business/acccess/Documents/North%20Coast%20Line%20South%20System%20Information%20Pack-%20Issue%204%20-%20May%202024%20%28PDF%2C%2010.72%20MB%29.pdf)
-> -  Appendix D
-> -  Appendix F
-- [NCLS North IP](https://www.queenslandrail.com.au/business/acccess/Documents/North%20Coast%20Line%20North%20System%20Information%20Pack-%20Issue%204%20-%20May%202024%20(PDF,%2010.72%20MB).pdf#search=North%20Coast%20Line%20System%20Information%20Pack)
-- [https://www.yumpu.com/user/queenslandrail.com.au](https://www.yumpu.com/user/queenslandrail.com.au)
-- [QCLS](https://www.queenslandscalemodels.com.au/Qld%20Colour%20Light%20Signalling.doc.pdf)
--  boggo rd/park rd platform four has stopping markers for the XPT
+- [x] Network schematic [here](<https://www.queenslandrail.com.au/business/acccess/Access%20Undertaking%20and%20related%20documents/Queensland%20Rail%20Network%20Infrastructure%20Ownership%20Line%20Diagrams%20October%202024%20(PDF,%208.89%20MB).pdf>)
+- [ ] [North Coast Line System South Information Pack](https://www.queenslandrail.com.au/business/acccess/Documents/North%20Coast%20Line%20South%20System%20Information%20Pack-%20Issue%204%20-%20May%202024%20%28PDF%2C%2010.72%20MB%29.pdf)
+  > - Appendix D
+  > - Appendix F
+- [ ] [NCLS North IP](<https://www.queenslandrail.com.au/business/acccess/Documents/North%20Coast%20Line%20North%20System%20Information%20Pack-%20Issue%204%20-%20May%202024%20(PDF,%2010.72%20MB).pdf#search=North%20Coast%20Line%20System%20Information%20Pack>)
+- [ ] [https://www.yumpu.com/user/queenslandrail.com.au](https://www.yumpu.com/user/queenslandrail.com.au)
+- [ ] [QCLS](https://www.queenslandscalemodels.com.au/Qld%20Colour%20Light%20Signalling.doc.pdf)
+- [ ] boggo rd/park rd platform four has stopping markers for the XPT
+- [ ] Cyclone alfred pics + bus audio recording
+- [ ] NGR Commision of Inquiry [here](https://www.parliament.qld.gov.au/Work-of-the-Assembly/Tabled-Papers/docs/5618t1970/5618t1970.pdf)
