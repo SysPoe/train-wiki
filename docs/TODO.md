@@ -104,3 +104,5 @@ Varsity Lakes Station
 - [ ] boggo rd/park rd platform four has stopping markers for the XPT
 - [ ] Cyclone alfred pics + bus audio recording
 - [ ] NGR Commision of Inquiry [here](https://www.parliament.qld.gov.au/Work-of-the-Assembly/Tabled-Papers/docs/5618t1970/5618t1970.pdf)
+- [ ] NGR 19-10-2017 incident images
+- [ ] Independent audit into the reliability of SEQ (as of 14 mar 2012) [here](https://www.tmr.qld.gov.au/~/media/Travelandtransport/Rail/Rail%20audit/IndependentrailauditFinalreport.pdf). It has some cool things about OHLE failiures, a bit like air crash investigation.

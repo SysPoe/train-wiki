@@ -16,6 +16,8 @@ The QTMP is a $9.5 billion program funded by the Queensland Government to design
 >
 > See: [https://channellife.com.au/story/st-engineering-wins-contract-for-new-train-information-system-in-qld](https://channellife.com.au/story/st-engineering-wins-contract-for-new-train-information-system-in-qld)
 
+QTMP trains will be "the most accessible trains in Australia", with leading technology including train boarding bridges and electronic levelling control to address the horizontal and vertical gaps between platforms and trains. This will allow people using mobility devices and wheelchairs the option to board independently at any door without assistance and use one of the 20 wheelchair allocated spaces located throughout the train<sup>\[1\]</sup>.
+
 ## Timeline
 
 - _October 2020_: Funding announced for a new fleet of trains.
@@ -40,3 +42,7 @@ The QTMP is a $9.5 billion program funded by the Queensland Government to design
 
 ![QTMP Concept](../media/QTMP_1.webp)
 ![QTMP Concept](../media/QTMP_2.jpeg)
+
+## Sources
+
+- **\[1\]** [https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2023/1232-2023.pdf](https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2023/1232-2023.pdf)
