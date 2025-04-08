@@ -66,6 +66,7 @@ Varsity Lakes Station
 - [ ] NGR
 - [ ] QTMP
 - [x] SMU
+- [ ] SMU 260 train ordering
 - [ ] IMU
 - [x] QR's rollingstock
 - [ ] Tips while Lineside
