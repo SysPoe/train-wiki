@@ -10,6 +10,14 @@ SMUs, along with IMUs, EMUs, and probably NGRs, are also fitted with door sensor
 
 SMUs, IMUs and ICEs were supplied with rigid steel skirts that protect the wheels and undercarriage equipment. These skirts extend to within approximately 50 mm of the rails, and provide a measure of protection from damage caused by collisions with obstructions at track level<sup>\[15\]</sup>.
 
+<!--
+███████ ███    ███ ██    ██ ██████   ██████   ██████
+██      ████  ████ ██    ██      ██ ██  ████ ██  ████
+███████ ██ ████ ██ ██    ██  █████  ██ ██ ██ ██ ██ ██
+     ██ ██  ██  ██ ██    ██ ██      ████  ██ ████  ██
+███████ ██      ██  ██████  ███████  ██████   ██████
+-->
+
 ## Walkers/Adtranz Suburban Multiple Unit 200 series (SMU200)
 
 ![](../media/SMU200_QR_SideShot.jpg)
@@ -110,6 +118,14 @@ May also be SMU220, but I can't tell the difference.
 [View full image](../media/Layouts/SMU200_DesignB_3.png)
 ![](../media/Layouts/SMU200_DesignB_3.png)
 
+<!--
+███████ ███    ███ ██    ██ ██████  ██████   ██████
+██      ████  ████ ██    ██      ██      ██ ██  ████
+███████ ██ ████ ██ ██    ██  █████   █████  ██ ██ ██
+     ██ ██  ██  ██ ██    ██ ██      ██      ████  ██
+███████ ██      ██  ██████  ███████ ███████  ██████
+-->
+
 ## EDI/Bombardier Suburban Multiple Unit 220 series (SMU220)
 
 ![](../media/SMU220_QR_SideShot.jpg)
@@ -207,13 +223,29 @@ SMU220s do not have toilets or luggage compartments. At the time of ordering, QR
 
 ![](../media/Layouts/SMU220_C.jpg)
 
+<!--
+███████ ███    ███ ██    ██ ██████   ██████   ██████
+██      ████  ████ ██    ██      ██ ██       ██  ████
+███████ ██ ████ ██ ██    ██  █████  ███████  ██ ██ ██
+     ██ ██  ██  ██ ██    ██ ██      ██    ██ ████  ██
+███████ ██      ██  ██████  ███████  ██████   ██████
+-->
+
 ## EDI/Bombardier Suburban Multiple Unit 260 series (SMU260)
 
 ![](../media/SMU260_QR_SideShot.jpg)
 
 > The SMU260 as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
 
-36 SMU260-class trains, numbered SMU261 to 296, were delivered between 2008 and 2011<sup>\[14\]</sup>.
+The early-mid 2000s was a period of substantial demographic and economic expansion in SEQ. Between 2004 and 2006, public transport trips increased 9.7% and 11.6% respectively year-over-year. This growth was propelled by several factors, including the introduction of integrated fares and ticketing in 2004 and progressive improvements to service levels<sup>\[17\]</sup>. Projections from the time also indicated a significant 57% rise in employment within the Brisbane CBD from 2006 to 2026<sup>\[18\]</sup>.
+
+The need was recognized by QR, and in 2005 they ordered eight SMU260s from Downer EDI Rail to cater for this increase in demand<sup>\[21\]</sup>. The SMU260 series was specifically introduced as a "congestion-busting fleet," designed to provide a substantial increase in the number of available seats for commuters<sup>\[19\]</sup>. The first two units, SMU261-262, official entered service in August of 2008, and were observed operating Ekka shuttle services on August 11, 2008<sup>\[21\]</sup>.
+
+In March 2009, a further 20 trains were ordered, scheduled for delivery between August 2010 and December 2011<sup>\[20\]</sup>.
+
+_Note: Somehow, there is a large discrepancy in the timeline as, even though I've only found evidence for the order of 8 trains in 2005 and 20 more in 2009 (or perhaps 14, according to wuiskemodels<sup>\[21\]</sup>), in total 36 trains were delivered. Perhaps there was another order in the middle or something._
+
+The SMU260 operates as a permanently-coupled 3-car set, with two sets often coupled together to form a 6-car train for increased capacity and redundancy<sup>\[23\]</sup> (operating as a 6-car set is is the preferred business operating model<sup>\[22\]</sup>).
 
 ### Timeline
 
@@ -267,3 +299,10 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 - **\[14\]** [https://documents.parliament.qld.gov.au/com/IPNRC-C217/C20172018-A745/qon-est-19Jul2017No4-Transport.pdf](https://documents.parliament.qld.gov.au/com/IPNRC-C217/C20172018-A745/qon-est-19Jul2017No4-Transport.pdf)
 - **\[15\]** [https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf](https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf)
 - **\[16\]** [https://www.parliament.qld.gov.au/Work-of-the-Assembly/Tabled-Papers/docs/4998t948a/4998t948a.pdf](https://www.parliament.qld.gov.au/Work-of-the-Assembly/Tabled-Papers/docs/4998t948a/4998t948a.pdf)
+- **\[17\]** [https://thredbo-conference-series.org/downloads/thredbo10_papers/thredbo10-themeA-Streeting-Barlow.pdf](https://thredbo-conference-series.org/downloads/thredbo10_papers/thredbo10-themeA-Streeting-Barlow.pdf)
+- **\[18\]** [https://australasiantransportresearchforum.org.au/wp-content/uploads/2022/03/2009_Bitzios_Dennis_Grodum.pdf](https://australasiantransportresearchforum.org.au/wp-content/uploads/2022/03/2009_Bitzios_Dennis_Grodum.pdf)
+- **\[19\]** [https://statements.qld.gov.au/statements/52425](https://statements.qld.gov.au/statements/52425)
+- **\[20\]** [http://www.railway-technology.com/news/news51072.html](http://www.railway-technology.com/news/news51072.html) archived [here](https://web.archive.org/web/20140301202741/http://www.railway-technology.com/news/news51072.html)
+- **\[21\]** [https://www.wuiskemodels.com/prototype/index.php?sfpg=MDA1LS1FTEVDVFJJQyBTVUJVUkJBTiBTRVRTL1NNVSAyNjAgU0VSSUVTLyoqKioqODcwNGUwNjU3OTkyNzgxOGZmNzRhMzkxNzU2MWEzOTY](https://www.wuiskemodels.com/prototype/index.php?sfpg=MDA1LS1FTEVDVFJJQyBTVUJVUkJBTiBTRVRTL1NNVSAyNjAgU0VSSUVTLyoqKioqODcwNGUwNjU3OTkyNzgxOGZmNzRhMzkxNzU2MWEzOTY) archived [here](https://web.archive.org/web/20150411113044/https://www.wuiskemodels.com/prototype/index.php?sfpg=MDA1LS1FTEVDVFJJQyBTVUJVUkJBTiBTRVRTL1NNVSAyNjAgU0VSSUVTLyoqKioqODcwNGUwNjU3OTkyNzgxOGZmNzRhMzkxNzU2MWEzOTY)
+- **\[22\]** [https://www.atsb.gov.au/sites/default/files/media/5781009/ro-2019-009-final-1.pdf](https://www.atsb.gov.au/sites/default/files/media/5781009/ro-2019-009-final-1.pdf)
+- **\[23\]** [https://www.queenslandrail.com.au/forcustomers/accessibility/our-trains/smu-260](https://www.queenslandrail.com.au/forcustomers/accessibility/our-trains/smu-260)

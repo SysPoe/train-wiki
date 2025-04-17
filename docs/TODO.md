@@ -63,10 +63,10 @@ Varsity Lakes Station
 # Pages
 
 - [x] ICE
-- [ ] NGR
+- [ ] NGR (TODO: Controversy)
 - [ ] QTMP
-- [x] SMU
-- [ ] IMU
+- [x] SMU (TODO: SMU260)
+- [ ] IMU (TODO: 160 Timeline)
 - [x] QR's rollingstock
 - [ ] Tips while Lineside
 - [ ] Lineside histories
