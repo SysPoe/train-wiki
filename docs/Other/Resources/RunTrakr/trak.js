@@ -263,6 +263,9 @@
  */
 
 const fs = require("fs");
+const Holidays = require("date-holidays");
+const PH = new Holidays("AU", "QLD").isHoliday(new Date());
+if(PH) console.log("Today is a public holiday");
 let data = JSON.parse(fs.readFileSync("runData.json").toString());
 
 async function fetchData() {
@@ -340,7 +343,7 @@ async function fetchData() {
     resmodels = resmodels.filter((v) => v != undefined && v != null);
 
     for (const v of resmodels) {
-      let display = `${v.day} ${v.time} ${v.origin} - ${v.dest} ${v.line} service`;
+      let display = `${v.day} ${v.time} ${v.origin} - ${v.dest} ${v.line} service${PH ? " (PH)" : ""}`;
       if (data[v.run].used[display] == true) continue;
 
       console.log(v.run, display);

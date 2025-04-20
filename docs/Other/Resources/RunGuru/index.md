@@ -8,7 +8,7 @@ Enter your run number and find out what it means!
 
 [Run Numbering Guide](../../../Train-Spotting/Run-Numbering-Guide.md)
 
-_RunTrakr data is not complete and is updated periodically._
+_[RunTrakr](../RunTrakr/index.md) data is not complete and is updated periodically._
 
 <script>
   async function run() {
