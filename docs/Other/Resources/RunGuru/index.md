@@ -13,6 +13,11 @@ Enter your run number and find out what it means!
     let dataRes = await fetch("data.json");
     let data = await dataRes.json();
 
+    let trakrRes = await fetch("../RunTrakr/runData.json");
+    let trakr = await trakrRes.json();
+
+    console.debug(trakr);
+
     document.querySelector("#train").onkeydown = ev => {
     if(ev.key == "Enter") interpretTrainNumber()};
 
@@ -52,6 +57,8 @@ Enter your run number and find out what it means!
         if (matches) other.push(data.other[pos]);
       }
 
+      let trakrHits = trakr[trainNumber].contains.map(v => v.display)
+
       document.querySelector(".results").innerHTML = `
 Train ${trainNumber} is a <code>[${first.join(
         " OR a "
@@ -59,6 +66,12 @@ Train ${trainNumber} is a <code>[${first.join(
         other.length > 0
           ? ` It might also be <code>[${other.join(
               " AND "
+            )}]</code>`
+          : ""
+      }${
+        trakrHits.length > 0
+          ? ` It has also been the <code>[${trakrHits.join(
+              " AND THE "
             )}]</code>`
           : ""
       }<br><br>
