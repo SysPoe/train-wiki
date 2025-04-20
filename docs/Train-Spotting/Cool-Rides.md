@@ -38,3 +38,5 @@ TO ADD:
 - Rosewood Railway [fb](https://www.facebook.com/RosewoodRailway.org.au) [web](https://www.rosewoodrailway.org.au/)
 - Sunshine Express [web](https://www.sunshineexpress.org.au/) [fb maybe?](https://www.facebook.com/arhsqld)
 - Woodford Railway [web](https://angrms.org.au/) [fb](https://www.facebook.com/TheWoodfordRailway)
+- Don River Railway [web](https://donriverrailway.com.au/) [fb](https://www.facebook.com/donriverrailway/)
+- West Coast Wilderness Railway [web](https://wcwr.com.au/) [fb](https://www.facebook.com/WestCoastWildernessRailway) [insta](https://www.instagram.com/westcoastwildernessrailway/) [yt](https://www.youtube.com/@wildernessrailway)
