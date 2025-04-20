@@ -8,6 +8,8 @@ Enter your run number and find out what it means!
 
 [Run Numbering Guide](../../../Train-Spotting/Run-Numbering-Guide.md)
 
+_RunTrakr data updated periodically._
+
 <script>
   async function run() {
     let dataRes = await fetch("data.json");
@@ -57,7 +59,7 @@ Enter your run number and find out what it means!
         if (matches) other.push(data.other[pos]);
       }
 
-      let trakrHits = trakr[trainNumber].contains.map(v => v.display)
+      let trakrHits = trakr[trainNumber] ? trakr[trainNumber].contains.map(v => v.display) : [];
 
       document.querySelector(".results").innerHTML = `
 Train ${trainNumber} is a <code>[${first.join(
