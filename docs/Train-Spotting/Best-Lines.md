@@ -30,13 +30,13 @@ Mainly SMUs and IMUs but some NGRs.
 
 NGRs are now allowed on the Gympie North line.
 
-~~NGRs will not operate on Sunshine Coast line services north of Nambour until signalling upgrades to Gympie North have been completed. Currently trains are required to be compatible with the operation of Automatic Train Protection which isn't fitted on the NGRs. (Information may be outdated).~~
+<s>NGRs will not operate on Sunshine Coast line services north of Nambour until signalling upgrades to Gympie North have been completed. Currently trains are required to be compatible with the operation of Automatic Train Protection which isn't fitted on the NGRs. (Information may be outdated).</s>
 
-~~The Gympie North line generally features IMU100's/120's due to the ATP requirement. ~~
+<s>The Gympie North line generally features IMU100's/120's due to the ATP requirement.</s>
 
 [https://www.reddit.com/r/brisbane/comments/17v0tsi/comment/k98p2kb/](https://www.reddit.com/r/brisbane/comments/17v0tsi/comment/k98p2kb/)
 
-> Correct, need a forward facing observer seat in the driving cab for a second driver which the 160/260s don’t have and ~~ngrs cant work past nambour yet.~~
+> Correct, need a forward facing observer seat in the driving cab for a second driver which the 160/260s don’t have and <s>ngrs cant work past nambour yet.</s>
 
 > There's this thing called route competency, and only Gympie North, some Nambour, some Caboolture and some Mayne (Bowen Hills) depot crew are qualified for. There are some crew at Mayne who can't work north of Northgate, or south of Yeerongpilly/Corinda. And there's a bit of a clique with old timers who want to keep their "rare" route competency for themselves, and there's a big thing with seniority of service to learn extra routes such as Nambour and Gympie North.
 
