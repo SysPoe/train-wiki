@@ -5,7 +5,7 @@
  * @returns {string} Formatted time string or 'N/A'.
  */
 function formatTime(timestampSeconds) {
-  if (!timestampSeconds && timestampSeconds !== 0) return "N/A"; // Allow 0 timestamp
+  if (!timestampSeconds && timestampSeconds !== 0) return "??:??"; // Allow 0 timestamp
   const date = new Date(timestampSeconds * 1000); // Convert seconds to milliseconds
   return date.toLocaleTimeString([], {
     hour: "2-digit",
@@ -51,6 +51,8 @@ async function getDepartures(station, startTime = Date.now() / 1000) {
 
   station = station.trim().toLowerCase().replaceAll("station", "").trim();
   let stationID = st_btoa[station];
+
+  /*
   let URL = `https://anytrip.com.au/api/v3/region/au4/departures/au4%3Aplace_${stationID}?depArr=deparr&limit=150&offset=0&ts=${startTime}&useRedis=true&modes=au4:trains`;
   let res = await fetch(URL);
   let jsres = await res.json();
@@ -63,18 +65,25 @@ async function getDepartures(station, startTime = Date.now() / 1000) {
       run,
       tripID: v.tripInstance._path,
       routeName: v.tripInstance.trip.route.name,
-      departureTimestamp: 
+      departureTimestamp:
         v.stopTimeInstance.departure.time + v.stopTimeInstance.departure.delay,
       departureTime: formatTime(
         v.stopTimeInstance.departure.time + v.stopTimeInstance.departure.delay
       ),
     };
   });
+  */
+
+  let dep = await findUpcomingTrainDepartures(
+    `place_${stationID}`,
+    150,
+    startTime
+  );
 
   return dep;
 }
 
-async function getStops(train) {
+async function getStops(train, filter = true) {
   console.log(
     `Fetching stops for train ${train.run} (${
       train.routeName
@@ -83,6 +92,7 @@ async function getStops(train) {
 
   if (st_atob == null || st_btoa == null) await getAB();
 
+  /*
   const res = await fetch(
     `https://anytrip.com.au/api/v3/region/au4/${train.tripID}`
   );
@@ -114,6 +124,14 @@ async function getStops(train) {
   stops = stops
     .filter((v) => v.arrivalTimestamp > train.departureTimestamp)
     .sort((a, b) => a.arrivalTimestamp - b.arrivalTimestamp);
+  */
+
+  let stops = await getTripDetails(train.tripId, filter);
+
+  if (filter)
+    stops = stops
+      .filter((v) => v.arrivalTimestamp > train.departureTimestamp)
+      .sort((a, b) => a.arrivalTimestamp - b.arrivalTimestamp);
 
   console.log(`Stops for train ${train.run}:`, stops);
   return stops;
@@ -303,11 +321,19 @@ async function findDirectRouteSegment(
   // Check departures sequentially for the first one that stops at the destination
   for (const train of departures) {
     const stops = await getStops(train);
+    const ufstops = await getStops(train, false);
     const destinationStop = stops.find(
       (stop) =>
-        stop.station.toLowerCase() === destinationStation.toLowerCase() &&
+        stop.station.toLowerCase().split("station")[0].trim() ===
+          destinationStation.toLowerCase().split("station")[0].trim() &&
         stop.arrivalTimestamp !== null // Ensure it has an arrival time
     );
+    departureStation = ufstops.find(
+      (stop) =>
+        stop.station.toLowerCase().split("station")[0].trim() ===
+          originStation.toLowerCase().split("station")[0].trim() &&
+        stop.arrivalTimestamp !== null // Ensure it has an arrival time
+    ).station;
 
     if (destinationStop) {
       // Found the first valid train for this segment
@@ -315,7 +341,7 @@ async function findDirectRouteSegment(
         train,
         trainId: train.run,
         trainName: train.headline,
-        departureStation: originStation,
+        departureStation,
         departureTime: train.departureTime,
         departureTimestamp: train.departureTimestamp,
         arrivalStation: destinationStation,
@@ -351,7 +377,9 @@ function displayMultiStepRoute(routeSegments, journeyStations) {
     }</p>
                         <div class="font-medium text-blue-700">${
                           segment.trainName
-                        } (${segment.trainId} - ${segment.train.routeName})</div>
+                        } (${segment.trainId} - ${
+      segment.train.routeName
+    })</div>
                         <div>Departs from ${
                           segment.departureStation
                         }: <span class="font-semibold">${
