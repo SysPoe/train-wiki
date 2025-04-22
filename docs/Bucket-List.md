@@ -56,6 +56,9 @@ Check out the [Discovery Pass](https://transportnsw.info/tickets-opal/regional-t
 - [ ] [Northern Explorer](https://www.greatjourneysnz.com/scenic-trains/northern-explorer-train/) - Auckland to Wellington
 - [ ] [Te Huia](https://www.tehuiatrain.co.nz/) - Frankton (Hamilton) to The Strand (Auckland)
 
+**Other**
+- [ ] [Forgotten World Adventures](https://forgottenworldadventures.co.nz/) - Golf Cart on train tracks. 43km half-day is NZD345, 84km full day is NZD455, 142km two-day w/ hotel is NZD1045 per person.
+
 ## Canada
 
 ### "Main Line"
