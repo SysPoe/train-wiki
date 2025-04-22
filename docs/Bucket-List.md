@@ -35,6 +35,8 @@ Check out the [Discovery Pass](https://transportnsw.info/tickets-opal/regional-t
 - [ ] [Queensland Pioneer Steam Railway stuff](https://www.facebook.com/QldPioneerSteamRailway)
 - [ ] [The Rosewood Railway](https://www.rosewoodrailway.org.au/)
 - [ ] The [Savannahlander](https://savannahlander.com.au)
+- [x] [Don River Railway](https://donriverrailway.com.au/) - A really nice railway with a museum that has lot of cool trains to see, and train rides on their railcar.
+- [x] [West Coast Wilderness Railway](https://wcwr.com.au/) AU$85 (second) AU$125 (first)
 
 ## New Zealand
 
