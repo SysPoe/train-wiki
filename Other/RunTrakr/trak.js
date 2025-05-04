@@ -262,11 +262,13 @@
  * @property {ApiResponse} response - The main response data containing stops, alerts, and departures.
  */
 
+const FILE_PATH = "./runData.json";
+
 const fs = require("fs");
 const Holidays = require("date-holidays");
 const PH = new Holidays("AU", "QLD").isHoliday(new Date());
-if(PH) console.log("Today is a public holiday");
-let data = JSON.parse(fs.readFileSync("runData.json").toString());
+if (PH) console.log("Today is a public holiday");
+let data = JSON.parse(fs.readFileSync(FILE_PATH).toString());
 
 async function fetchData() {
   try {
@@ -343,7 +345,9 @@ async function fetchData() {
     resmodels = resmodels.filter((v) => v != undefined && v != null);
 
     for (const v of resmodels) {
-      let display = `${v.day} ${v.time} ${v.origin} - ${v.dest} ${v.line} service${PH ? " (PH)" : ""}`;
+      let display = `${v.day} ${v.time} ${v.origin} - ${v.dest} ${
+        v.line
+      } service${PH ? " (PH)" : ""}`;
       if (data[v.run].used[display] == true) continue;
 
       console.log(v.run, display);
@@ -354,7 +358,7 @@ async function fetchData() {
   } catch (error) {
     console.error("Failed to fetch data:", error);
   } finally {
-    fs.writeFileSync("runData.json", JSON.stringify(data));
+    fs.writeFileSync(FILE_PATH, JSON.stringify(data));
   }
 }
 

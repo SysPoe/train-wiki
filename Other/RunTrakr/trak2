@@ -1,0 +1,9 @@
+#!/bin/bash
+
+$i=0
+while [$i -lt 1]
+do
+    ./trak
+    echo "Sleeping 60"
+    sleep 60
+done

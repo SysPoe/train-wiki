@@ -225,7 +225,7 @@ async function findDirectRouteSegment(
         stop.station.toLowerCase().split("station")[0].trim() ===
           originStation.toLowerCase().split("station")[0].trim() &&
         stop.arrivalTimestamp !== null // Ensure it has an arrival time
-    ).station.split("station")[0].trim();
+    ).station;
 
     if (destinationStop) {
       // Found the first valid train for this segment
@@ -237,7 +237,7 @@ async function findDirectRouteSegment(
         departureStation,
         departureTime: train.departureTime,
         departureTimestamp: train.departureTimestamp,
-        arrivalStation: destinationStop.station.split("station")[0].trim(),
+        arrivalStation: destinationStop.station,
         arrivalTime: destinationStop.arrivalTime,
         arrivalTimestamp: destinationStop.arrivalTimestamp,
       };
@@ -274,7 +274,9 @@ function displayMultiStepRoute(routeSegments, journeyStations) {
             <div class="flex justify-between items-baseline mb-2">
                  <p class="text-sm font-medium text-gray-500">Step ${
                    index + 1
-                 }: ${segment.departureStation} to ${segment.arrivalStation}</p>
+                 }: ${segment.departureStation.split("station")[0].trim()} to ${
+      segment.arrivalStation.split("station")[0].trim()
+    }</p>
                  <p class="text-sm text-gray-600 font-medium">Travel time: ${formattedSegmentDuration}</p>
             </div>
             <div class="font-medium text-blue-700">${segment.trainName} (${
@@ -291,8 +293,15 @@ function displayMultiStepRoute(routeSegments, journeyStations) {
 
     // Add wait time information if it's not the last segment
     if (index < routeSegments.length - 1) {
-      const waitTime = Math.round((routeSegments[index + 1].departureTimestamp - segment.arrivalTimestamp) / 60);
-      console.log(routeSegments[index + 1].departureTimestamp, segment.arrivalTimestamp)
+      const waitTime = Math.round(
+        (routeSegments[index + 1].departureTimestamp -
+          segment.arrivalTimestamp) /
+          60
+      );
+      console.log(
+        routeSegments[index + 1].departureTimestamp,
+        segment.arrivalTimestamp
+      );
       totalWaitMinutes += waitTime; // Add to total wait time
       const formattedWaitTime = formatDuration(waitTime); // Format the wait time
 
