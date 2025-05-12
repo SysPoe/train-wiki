@@ -1,3 +1,5 @@
+**/gtfs.sqlite
+
 .venv
 .idea
 temp
