@@ -136,7 +136,7 @@ May also be SMU220, but I can't tell the difference.
 
 In June 1996, QR made an investment submission to Queensland Transport (QT), recommending the government to purchase 30 x 3 car sets of rollingstock to operate a safe, efficient, and reliable rail service until 2002/2003. The purpose of purchasing the additional rollingstock was fourfold<sup>\[16\]</sup>:
 
-1. Firstly, it would help QR play its part in achieving the state government’s objective of increasing public transport usage by 50% by 2011. This is a bold objective as public transport usage is currently decreasing.
+1. Firstly, it would help QR play its part in achieving the state government’s objective of increasing public transport usage by 50% by 2011. This was a bold objective as public transport usage was decreasing.
 2. Secondly, QR would use twelve of the three car sets to cater for the continuing increase in rail patronage, particularly during peak hours. Rail patronage grew from 37 million passengers in 1994-95 to 41.5 million passengers in 1997-98. QR anticipated that patronage for Citytrain services would increase to 47.5 million passengers by 2002-2003.
    > The twelve three car sets would be configured as six, six car trains. Two of these trains would operate on the Caboolture line, two on the Beenleigh line and two on the Ipswich line. With the introduction of the tilt trains in November 1998, three of the five car ICE (Inter-City Express) trains would be available for the Sunshine Coast to Brisbane line.
 3. Thirdly, QR would use fourteen of the new three car sets to replace the inferior silver SX rollingstock which it still used on peak hour Citytrain services. SX carriages were not electrified, were slower than the new rollingstock, have doors and windows which were difficult to open, inferior seating, and were drawn by diesel locomotives which produce more noise and air pollution than the new locomotives. They were also not well patronised as rail passengers usually prefer to wait for an electrified train.
@@ -178,24 +178,19 @@ SMU222, along with another unit, is usually used for driver training.
 
 Source: [https://www.reddit.com/r/brisbane/comments/k0hqc3/comment/gdijsfo](https://www.reddit.com/r/brisbane/comments/k0hqc3/comment/gdijsfo)
 
+SMU232 was installed with new white destination boards that are going to be used on the QTMPs<sup>\[24\]</sup>. It was seen testing them by jrvh31 ([flickr](https://www.flickr.com/photos/201254799@N04/)) on the 25th of May, and I also spotted it on June the 2nd:
+
+![](../media/SMU232_White.jpg)
+
+> SMU232/225 running a test train approaching Sunshine. This unit is testing new destination boards that will be seen on QR’s new QTMP Multiple Units. All rights reserved by [jrvh31](https://www.flickr.com/photos/201254799@N04/)
+
 These units had several benefits compared to the EMUs<sup>\[16\]</sup>:
 
-- Air conditioning units are positioned in the roof in the centre of each carriage
-  rather than on the sides. This decreases condensation on the windows and failure
-  due to humidity.
-- The rollingstock features an improved traction package which includes a driver
-  monitoring system. A computer near the driver gives a graphic display of the train
-  functions and notifies the driver when there is a fault, the location of the fault and
-  the rectification procedure, where possible.
-- All carriages have CCTV security cameras installed. A QR guard can monitor
-  activities in the carriages as the cameras are linked to a display system which
-  scrolls through screens showing each carriage.
-- The seats have new arms which are more difficult for vandals to break off. Other
-  anti-vandalism measures already incorporated into most rollingstock are carpet up
-  the side walls to the windows, the security cameras and retention of a guard on
-  each train.
-- The new rollingstock has more rotatable parts which increases the speed of
-  maintenance and repairs.
+- Air conditioning units are positioned in the roof in the centre of each carriage rather than on the sides. This decreases condensation on the windows and failure due to humidity.
+- The rollingstock features an improved traction package which includes a driver monitoring system. A computer near the driver gives a graphic display of the train functions and notifies the driver when there is a fault, the location of the fault and the rectification procedure, where possible.
+- All carriages have CCTV security cameras installed. A QR guard can monitor activities in the carriages as the cameras are linked to a display system which scrolls through screens showing each carriage.
+- The seats have new arms which are more difficult for vandals to break off. Other anti-vandalism measures already incorporated into most rollingstock are carpet up the side walls to the windows, the security cameras and retention of a guard on each train.
+- The new rollingstock has more rotatable parts which increases the speed of maintenance and repairs.
 
 SMU220s do not have toilets or luggage compartments. At the time of ordering, QR maintained that toilets are not necessary on suburban trains as the average trip length is 19 kilometres and toilets are provided at most stations<sup>\[16\]</sup>.
 
@@ -306,3 +301,4 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 - **\[21\]** [https://www.wuiskemodels.com/prototype/index.php?sfpg=MDA1LS1FTEVDVFJJQyBTVUJVUkJBTiBTRVRTL1NNVSAyNjAgU0VSSUVTLyoqKioqODcwNGUwNjU3OTkyNzgxOGZmNzRhMzkxNzU2MWEzOTY](https://www.wuiskemodels.com/prototype/index.php?sfpg=MDA1LS1FTEVDVFJJQyBTVUJVUkJBTiBTRVRTL1NNVSAyNjAgU0VSSUVTLyoqKioqODcwNGUwNjU3OTkyNzgxOGZmNzRhMzkxNzU2MWEzOTY) archived [here](https://web.archive.org/web/20150411113044/https://www.wuiskemodels.com/prototype/index.php?sfpg=MDA1LS1FTEVDVFJJQyBTVUJVUkJBTiBTRVRTL1NNVSAyNjAgU0VSSUVTLyoqKioqODcwNGUwNjU3OTkyNzgxOGZmNzRhMzkxNzU2MWEzOTY)
 - **\[22\]** [https://www.atsb.gov.au/sites/default/files/media/5781009/ro-2019-009-final-1.pdf](https://www.atsb.gov.au/sites/default/files/media/5781009/ro-2019-009-final-1.pdf)
 - **\[23\]** [https://www.queenslandrail.com.au/forcustomers/accessibility/our-trains/smu-260](https://www.queenslandrail.com.au/forcustomers/accessibility/our-trains/smu-260)
+- **\[24\]** [https://www.flickr.com/photos/201254799@N04/54557160080/](https://www.flickr.com/photos/201254799@N04/54557160080/)
