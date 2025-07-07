@@ -1,14 +1,16 @@
 # EMU (Walkers/Adtranz Electric Multiple Unit)
 
+**After the EMU farewell tour on Saturday, 5th July 2025, all EMUs have been retired from revenue service and are either being scrapped, preserved, or stored.**
+
 ![](../media/EMU_QR_SideShot.jpg)
 
 > The EMU as seen on [QR's _Carriage Layouts_ page](https://www.queenslandrail.com.au/forcustomers/accessibility/carriage-layouts)
 
-EMUs are objectively the best of all the train types on the QR SEQ network (in my opinion).
+EMUs were objectively the best of all the train types on the SEQ network (in my opinion).
 
 Back in the 1970s, QR stared electrifying Brisbane's suburban railways. The first section completed was between Ferny Grove and Darra and naturally, QR needed some new electric trains to run along the electrified route.
 
-QR ordered a batch of modern air-conditioned commuter trains from Walkers/ASEA at Maryborough. The EMUs are composed of three cars permanently coupled and are capable of seating up to 248 passengers, however they are often operated with two sets coupled together to form a six-car set. The 88 suburban units weigh approx. 150 tonnes, are 72.4m over couplers, have a maximum service speed of 100km/h (62.5mph) and an emergency stopping distance from that speed of only 415 metres.
+QR ordered a batch of modern air-conditioned commuter trains from Walkers/ASEA at Maryborough. The EMUs were composed of three cars permanently coupled and were capable of seating up to 248 passengers, however they were often operated with two sets coupled together to form a six-car set. The 88 suburban units weigh approx. 150 tonnes, were 72.4m over couplers, have a maximum service speed of 100km/h (62.5mph) and an emergency stopping distance from that speed of only 415 metres.
 
 Individual car seating capacity:
 
@@ -17,17 +19,17 @@ Individual car seating capacity:
 
 Sets 01–13 have a smooth roof, while Sets 14–88, which were built from 1983 to 1986, have a corrugated roof. Most sets consist of a driving motor car, motor car and a driving trailer car. Sets 60–79 consist of a driving motor car, motor car and a trailer car, and thus have a driver’s cab at only one end, so operate with two sets combined to form a six-carriage train.
 
-All cars are air-conditioned with air operated doors, which can be opened by passengers and are closed by drivers. A public address system, UHF crew to crew radio and crew intercommunication systems are fitted. Guards sometimes make passenger announcements when the automatic announcements aren’t working.
+All cars were air-conditioned with air operated doors, which could be opened by passengers and were closed by drivers. A public address system, UHF crew to crew radio and crew intercommunication systems were fitted. Guards sometimes made passenger announcements when the automatic announcements aren’t working.
 
 They were paired with SMU200s 'early on', but after a derailment between Central and Roma Street (leaving the old tunnels towards Platform 7) they put a stop to it<sup>\[8\]</sup>.
 
-For some reason, the emergency brake actually takes longer to stop than the full service brake (maybe due to wheel slippage?), but QR crews are required to press the emergency brake in an emergency. Bit of an oversight there.
+For some reason, the emergency brake actually took longer to stop than the full service brake (maybe due to wheel slippage?), but QR crews were required to press the emergency brake in an emergency. Bit of an oversight there.
 
-Like all other passenger trains operating within the Brisbane Suburban Area, EMUs are fitted with AWS (Audible Warning System). When there is an upcoming restrictive signal (any signal other than green), the driver must acknowledge the warning provided for it within three seconds of its receipt by pressing a button on trains' control panels. If the approaching signal is green, no acknowledgment by the driver is required. Should a train proceed past a restrictive signal without the driver having first acknowledged the warning, the train’s emergency brakes are automatically applied to stop the train. For AWS to operate, both track and rollingstock must be equipped<sup>\[9\]</sup>.
+Like all other passenger trains operating within the Brisbane Suburban Area, EMUs were fitted with AWS (Audible Warning System). When there is an upcoming restrictive signal (any signal other than green), the driver must acknowledge the warning provided for it within three seconds of its receipt by pressing a button on trains' control panels. If the approaching signal is green, no acknowledgment by the driver is required. Should a train proceed past a restrictive signal without the driver having first acknowledged the warning, the train’s emergency brakes were automatically applied to stop the train. For AWS to operate, both track and rollingstock must be equipped<sup>\[9\]</sup>.
 
-EMUs are also fitted with door sensors and traction interlocks. The sensors trigger the doors to open if they detect an obstruction upon closing, much like an elevator door. Traction interlocks block power to the trains’ drive motors until all doors have fully closed preventing trains from moving with doors open or obstructed.  EMUs did not have these upon fabrication, however they were all retrofitted with them as part of a refurbishment program by September 2000 at a cost of $35,000 per 3-car (not inflation adjusted; ~$70,000 in 2025)<sup>\[9\]</sup>.
+EMUs were also fitted with door sensors and traction interlocks. The sensors trigger the doors to open if they detect an obstruction upon closing, much like an elevator door. Traction interlocks block power to the trains’ drive motors until all doors have fully closed preventing trains from moving with doors open or obstructed. EMUs did not have these upon fabrication, however they were all retrofitted with them as part of a refurbishment program by September 2000 at a cost of $35,000 per 3-car (not inflation adjusted; ~$70,000 in 2025)<sup>\[9\]</sup>.
 
-Unlike other units, EMUs do not have rigid steel skirts to protect the wheels and undercarriage equipment<sup>\[9\]</sup>.
+Unlike other units, EMUs did not have rigid steel skirts to protect the wheels and undercarriage equipment<sup>\[9\]</sup>.
 
 ## Timeline
 
@@ -49,7 +51,7 @@ Unlike other units, EMUs do not have rigid steel skirts to protect the wheels an
 - _August 2019_: Queensland Rail operated a farewell tour with units 01 and 04 over two days covering all Brisbane suburban lines including a reenactment of the first electric train service in Brisbane from Ferny Grove to Darra. Both units were removed from service and taken to Ipswich Workshops for static preservation.
 - _2020_: EMU60 scrapped.
 - _2023_: QR replaced the routers in EMUs, IMU100s, SMU200s, IMU120s, and SMU220s. The work was contracted out to Nomad Digital and cost $1.75 million<sup>\[5\]</sup>. QR also contracted UGL Rail to do a wheelset overhaul on one or (probably) multiple EMU trains, costing $700 thousand<sup>\[5\]</sup>.
-- _2024, March 22_: QR launches an investigation following the detection of asbestos in an EMU. It was found in black bitumen paint on the floor and ceiling during asbestos clearing certification as part of the EMU disposal program. EMUs were deemed still safe to travel on, as the paint was sealed in areas that are not accessible to the public, however they were still progressively taken out of service for inspections<sup>\[10\]</sup>.
+- _2024, March 22_: QR launches an investigation following the detection of asbestos in an EMU. It was found in black bitumen paint on the floor and ceiling during asbestos clearing certification as part of the EMU disposal program. EMUs were deemed still safe to travel on, as the paint was sealed in areas that were not accessible to the public, however they were still progressively taken out of service for inspections<sup>\[10\]</sup>.
 - _2024, March 27_: An independent asbestos assessor inspected the EMUs and deemed them safe to return to service. The asbestos was found to be in a sealed part of the train, and therefore when the shell of the EMU is covered there is negligible risk of exposure to asbestos<sup>\[11\]</sup>.
 - _2024_: QR performed a variety of operations on one or multiple EMU trains (I'm guessing multiple because surely it can't cost that much to do it on just one), including:
   > - An overhaul of the transformers and reactors, contracted to AC Hargreaves and costing $1.32 million<sup>\[5\]</sup>.
@@ -58,6 +60,8 @@ Unlike other units, EMUs do not have rigid steel skirts to protect the wheels an
   > - Changed out some couplers, contracted to Voith Turbo for $2.94 million<sup>\[5\]</sup>.
   > - "Bogie relife", and "Bogie Relife 1" (Heavy Overhaul of QR EMU Bogie) both contracted to Downer EDI Rail and totalling $12.63 million<sup>\[5, 6\]</sup>.
 - _2025_: EMUs anticipated to commence retirement (as of August 2021)<sup>\[7\]</sup>.
+- _2025, July 1_: All EMUs retired from revenue service.
+- _2025, July 5_: EMU farewell tour. Originally 55 and 59 were scheduled to do it,however 55 had issues and only 59 performed the tour. Leaving from Roma Street, the EMU was so full it barely even had standing room and even that was only in the front carriages. SEQTA boarded in the back, and I had to race the train to Caboolture.
 
 ## Fleet Status
 
@@ -65,11 +69,11 @@ Unlike other units, EMUs do not have rigid steel skirts to protect the wheels an
 | ------------ | ------------ | ------------- | ----------------------------------------------------------------------------- |
 | 1977         | 13           | 01–13         | All withdrawn and scrapped, excluding 01 and 04, which are stored at Ipswich. |
 | 1979         | 11           | 14–24         | All withdrawn.                                                                |
-| 1980         | 16           | 25–40         | Units 30–38, 42 and 48 have been withdrawn.                                   |
+| 1980         | 16           | 25–40         | All withdrawn.                                                                |
 | 1980         | 20           | 60–79         | Single cab units, 60 originally numbered 80. All scrapped.                    |
-| 1983         | 16           | 41–56         | Units 52 and 54 have been withdrawn.                                          |
+| 1983         | 16           | 41–56         | All.                                                                          |
 | 1984         | 8            | 81–88         |                                                                               |
-| 1985         | 4            | 57–59, 80     | Units 58 and 80 have been withdrawn.                                          |
+| 1985         | 4            | 57–59, 80     | All withdrawn.                                                                |
 
 ## Carriage Layout
 
@@ -124,5 +128,5 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 - **\[7\]** Question on Notice No. 913 - August 31 2021: [https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf](https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf) archived [here](../media/Archive/913-2021.pdf)
 - **\[8\]** [https://web.archive.org/web/20220319105847/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/](https://web.archive.org/web/20220319105847/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/) archived from [the original](https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/)
 - **\[9\]** [https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf](https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf)
-- **\[10\]** [https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx](https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx)
-- **\[11\]** [https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Updated-Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx](https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Updated-Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx)
+- **\[10\]** [https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx](<https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx>)
+- **\[11\]** [https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Updated-Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx](<https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Updated-Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx>)
