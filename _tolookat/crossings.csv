@@ -1,0 +1,224 @@
+Line Section,Km,Road Name,Type,Vehicular Protection,Signs,Open Status,Responsible Authority
+BOX FLAT LOOP,,,,,,,
+416,0.54,Ella Street,Public Level,Signs,X T,Open,LGA
+416,0.74,Property Access Road,Occupation,Signs,X T,Open,PRI
+416,1.28,Property Access Road,Public Level,Signs,X T,Open,PRI
+BRISBANE - SYDNEY LINE (1435 gauge),,,,,,,
+474,8.48,(on passing loop),QR,Signs,X S,Open,QR
+474,9.819,Railway Parade (on siding),Public Level,Signs,X G,Open,LGA
+474,9.851,Old Beaudesert Road (on siding),Public Level,Signs,X G,Open,LGA
+474,9.935,Old Beaudesert Road,Public Level,Half Boomgates,,Open,LGA
+474,11.58,Musgrave Road,Public Level,Half Boomgates,,Open,LGA
+CLEVELAND BRANCH,,,,,,,
+810,2.91,Cavendish Road,Public Level,Half Boomgates,,Open,LGA
+810,3.24,Stanley Street East,Public Level,Half Boomgates,,Open,LGA
+810,7.6,Barrack Road,Public Level,Half Boomgates,,Open,LGA
+812,9.18,Queensport Road,Public Level,Signs,,Open,QR
+812,11.425,,QR,Nil,,Open,QR
+812,14.1,Kianawah Road,Public Level,Half Boomgates,,Open,LGA
+813,15.72,Wynnum North Road,Public Level,Half Boomgates,,Open,LGA
+813,16.41,Glenora Street (Wynnum Road),Public Level,Half Boomgates,,Open,LGA
+813,17.45,Florence Street (Ronald Street),Public Level,Half Boomgates,,Open,LGA
+813,20.75,Lota Station Pedestrian Access,Pedestrian,,,Open,QR
+813,31.75,,QR,,,Open,QR
+EBENEZER BRANCH,,,,,,,
+543,0.26,Hi-rail Take Off,QR,Nil,,Open,PRI
+543,0.56,,Occupation,Nil,,Open,PRI
+543,1.95,,Occupation,Nil,,Open,PRI
+543,2.09,,Public Level,Signs,,Open,LGA
+543,2.87,Property Access Road,Occupation,Signs,X S,Open,PRI
+543,3.08,Bremer Road,Public Level,Half Boomgates,,Open,LGA
+543,3.84,Coal Haulage Road,Occupation,Half Boomgates,X S,Open,PRI
+543,5.382,Lanes Road,Public Level,Signs,X,Open,LGA
+543,6.24,Balloon Loop Access Road,Occupation,Signs,X S,Open,PRI
+543,6.98,Balloon Loop Road,Occupation,Signs,X S,Open,PRI
+FERNY GROVE BRANCH,,,,,,,
+527,1.291,Epacras / Le Geyt Street,Pedestrian,,,Open,QR
+527,1.785,Windsor Station Pedestrian Access,Pedestrian,Nil,,Open,QR
+527,3.97,Wilston Road,Public Level,Half Boomgates,,Open,LGA
+527,5.49,South Pine Road,Public Level,Half Boomgates,,Open,LGA
+527,7.35,Prospect Road,Public Level,Half Boomgates,,Open,LGA
+527,8.15,Osborne Road,Public Level,Half Boomgates,X,Open,LGA
+527,8.27,Construction Road (Temporary,QR,Nil,,Proposed,QR
+,,Crossing),,,,,
+527,8.35,Lutschews Station Pedestrian Access,Pedestrian,Nil,,Open,QR
+527,8.45,Blackwood Street,Public Level,Half Boomgates,,Open,LGA
+527,8.785,Glenholm Street,Public Level,Half Boomgates,,Open,LGA
+527,10.19,Dawson Parade,Public Level,Half Boomgates,PVYB,Open,LGA
+527,10.96,Kmart Station Pedestrian Access,Pedestrian,Nil,,Open,QR
+527,12.83,Samford Road,Public Level,Half Boomgates,X,Open,LGA
+527,13.23,Arbor Street,Public Level,Half Boomgates,,Open,LGA
+527,13.358,Ferny Grove Station Pedestrian Access,Pedestrian,Nil,,Open,QR
+527,13.525,Ferny Grove Station Pedestrian Access,Pedestrian,Nil,,Open,QR
+527,13.815,Station Carpark Access Road,Public Level,Locked Gates,,Open,QR
+GOLD COAST LINE (Beenleigh to Robina),,,,,,,
+515,40.87,,QR,,,Open,QR
+515,52.39,QR Maintenance (blocked with chain,QR,Nil,,Open,QR
+,,barriers),,,,,
+515,67.7,,QR,,,Open,QR
+429,74.37,,QR,,,Open,QR
+429,85.12,QR Pedestrian Access,QR,,,Open,QR
+429,85.36,QR Pedestrian Access,QR,,,Open,QR
+GOLD COAST LINE (Roma St to Beenleigh),,,,,,,
+801,0.08,QR Maintenance Access Road,QR,Nil,,Open,QR
+801,8.814,QR Maintenance Access Road,QR,Nil,,Open,QR
+801,11.65,Old Beaudesert Road,Public Level,Half Boomgates,,Open,LGA
+802,14.72,Boundary Road,Public Level,Half Boomgates,,Open,LGA
+802,16.81,Stones Road,Public Level,Signs,X,Open,LGA
+802,19.8,Bonemill Road,Public Level,Half Boomgates,,Open,LGA
+802,19.85,Marshall Road,Public Level,Half Boomgates,,Open,LGA
+802,20.77,Warriewood Road,Public Level,Half Boomgates,,Open,LGA
+802,21.846,Temporary QR Construction Crossing,Occupation,Nil,,Open,QR
+802,21.99,Beenleigh Road,Public Level,Half Boomgates,,Open,LGA
+802,25.35,Oates Avenue,Public Level,Half Boomgates,X,Open,LGA
+802,30.15,Station Road,Public Level,Half Boomgates,,Open,LGA
+802,34.245,Ormeau Station Pedestrian Access,Pedestrian,,,Open,QR
+803,35.92,Loane Drive,Occupation,Signs,X S,Open,PRI
+803,37.25,Holmview Road,Public Level,Half Boomgates,X S,Open,LGA
+803,38.035,Ballast Access Road,QR,Nil,,Open,QR
+HAMILTON COLD STORES BRANCH,,,,,,,
+707,0.175,Jackson Street,QR,Nil,,Open,QR
+707,0.425,Kingsford Smith Drive,Public Level,Flashing Lights,,Open,LGA
+707,1.52,Theodore Street (BP Siding),Public Level,Signs,X G,Open,LGA
+707,1.583,Cullen Avenue West (BP Siding),Public Level,Signs,X G,Open,LGA
+707,1.703,Cullen Avenue West (BP Siding),Public Level,Signs,X G,Open,LGA
+INNER CITY LINE,,,,,,,
+522,0.06,Pedestrian Emergency Access,QR,Nil,,Open,QR
+522,0.84,Pedestrian Emergency Access,QR,Nil,,Open,QR
+IPSWICH WORKSHOPS BRANCH,,,,,,,
+506,0.612,Ipswich Riverlink Mall Pedestrian,Pedestrian,,,Open,PRI
+,,Access,,,,,
+506,0.73,Downs Street,Occupation,Signs,X S,Proposed,PRI
+506,0.95,Lowry Street,Occupation,Nil,,Open,PRI
+506,1.38,Northern Industrial Access Road,Occupation,Nil,,Open,PRI
+506,1.898,Museum Service Yard Access Road,Public Level,Signs,X G,Open,QR
+MAIN LINE,,,,,,,
+501,0.308,Platform 3 Maintenance / Emergency,QR,Nil,,Open,QR
+,,Road,,,,,
+501,6.7,Boorooppin Stn P'forms 1 and 2,QR,Nil,,Proposed,QR
+,,Const Access Rd,,,,,
+501,6.73,Boorooppin Stn P'forms 3 and 4,QR,Nil,,Proposed,QR
+,,Const Access Rd,,,,,
+501,10.04,Sherwood Road,Public Level,Half Boomgates,X,Open,LGA
+502,10.26,Wacol Station Road,Public Level,Half Boomgates,,Open,LGA
+502,27.68,,Occupation,,,Open,PRI
+502,31.36,Pipe Work Access Road,Occupation,Half Boomgates,,Open,PRI
+505,37.98,Pedestrian Emergency Access,QR,,,Open,QR
+708,40.673,Wulkuraka Station Pedestrian Access,Pedestrian,,,Open,QR
+709,43.16,Karrabin - Rosewood Road,Public Level,Half Boomgates,,Open,LGA
+709,43.34,Karrabin Station Pedestrian Access,Pedestrian,,,Open,QR
+709,46.09,Redbank Road,Public Level,Half Boomgates,,Open,MRD
+709,47.09,To Buckley Road,Public Level,Signs,X S,Open,LGA
+709,47.78,Station Pedestrian Access,Pedestrian,Nil,,Open,QR
+709,48.2,Haigalea - Amberley Road,Public Level,Half Boomgates,,Open,MRD
+709,50.01,Thagoona - Haigalea Road,Public Level,Half Boomgates,,Open,LGA
+709,51.87,Thagoona Station Pedestrian Access,Pedestrian,,,Open,QR
+314,55.3,Emergency Crossing,Public Level,Nil,,Open,QR
+314,56.08,John Street - Ipswich Rosewood Road,Public Level,Half Boomgates,,Open,MRD
+MAYNARD YARD,,,,,,,
+860,0.32,ICB On Ramp Pier 6 Construction,QR,Nil,,Proposed,QR
+,,Access Road,,,,,
+NORTH COAST LINE,,,,,,,
+820,0.311,QR Maintenance Road,QR,Signs,S,Open,QR
+820,1.21,QR,QR,Nil,,Open,QR
+820,1.9,,QR,,,Open,QR
+820,3.29,Campbell Street,Public Level,Half Boomgates,,Open,LGA
+820,3.56,ICB On Ramp Pier 7 Construction,QR,Nil,,Proposed,QR
+,,Access Road,,,,,
+820,3.654,,QR,Signs,X S,Open,QR
+820,3.878,,QR,Signs,X S,Open,QR
+313,4.36,,Pedestrian,Nil,,Open,QR
+313,4.6,,QR,Nil,,Open,QR
+823,11.105,QR Maintenance Road,QR,Half Boomgates,,Open,QR
+823,11.39,Northgate Road,Public Level,Half Boomgates,,Open,LGA
+823,13.34,Bilsen Road,Public Level,Half Boomgates,,Open,LGA
+823,14.44,Newman Road,Public Level,Half Boomgates,,Open,LGA
+823,17.39,Sandgate Road,Public Level,Half Boomgates,X,Open,LGA
+823,19.81,Telegraph Road,Public Level,Half Boomgates,,Open,MRD
+823,23.38,South Pine Road,Public Level,Half Boomgates,,Open,LGA
+823,24.72,,QR,Nil,,Open,QR
+824,28.74,Todd's Road,Public Level,Half Boomgates,X,Open,LGA
+824,28.98,QR Pedestrian Access,QR,,,Open,QR
+824,29.83,,QR,,,Open,QR
+824,30.57,Mackie Road,Public Level,Half Boomgates,X PWB,Open,LGA
+824,41.52,Rowley Road,Public Level,Half Boomgates,X,Open,LGA
+824,47.53,Station Road,Public Level,Half Boomgates,X,Open,PRI
+824,49.03,Oakhurst Entrance To Private Property,Occupation,Signs,X S,Open,PRI
+824,49.67,Mt Bevan Road,Public Level,Half Boomgates,X G,Open,LGA
+400,61.682,Limestone Road (Toorbul Road),QR,Nil,,Open,LGA
+400,65.116,QR Maintenance Road,QR,Signs,S,Open,QR
+400,66.342,Property Access Road,Occupation,Flashing Lights,,Open,PRI
+400,69.842,Property Access Road,Occupation,Signs,X S,Open,PRI
+400,76.566,Beerburrum,Public Level,Half Boomgates,,Open,LGA
+400,76.747,Mainline Street (Kilcoy- Beerwah,Public Level,Half Boomgates,,Open,LGA
+,,Road),,,,,
+400,78.947,Beerwah Station Pedestrian Access,Pedestrian,,,Open,QR
+400,82.36,Detsundra Street,Public Level,Half Boomgates,,Open,MRD
+400,82.49,,Pedestrian,,,Proposed,QR
+400,82.5,,QR,,,Proposed,QR
+400,82.525,,QR,,,Proposed,QR
+400,82.6,,Pedestrian,,,Proposed,QR
+400,83.035,Gympie Street,Public Level,Signs,X S,Open,LGA
+400,85.645,,QR,Signs,X S,Open,QR
+400,86.324,,QR,Signs,S,Open,QR
+400,87.135,QR Maintenance Road,QR,Signs,X S,Open,QR
+400,87.813,Bray Road,Public Level,Half Boomgates,,Open,LGA
+400,89.44,QR Maintenance Road,QR,Signs,X S,Open,QR
+PINKENBA BRANCH,,,,,,,
+529,1.664,Kitchener Road (Zillman Road),Public Level,Half Boomgates,,Open,LGA
+529,2.448,Eagle Farm Racecourse Entrance,Occupation,Nil,,Open,PRI
+529,3.237,Racetrack Stabling Area Pedestrian,Pedestrian,,,Open,QR
+,,Access,,,,,
+529,3.287,Nudgee Road,Public Level,Half Boomgates,X,Open,LGA
+530,4.3,Eagle Farm Station Pedestrian Access,Pedestrian,Nil,,Open,QR
+530,5.004,Schneider Road,Occupation,Signs,T,Open,PRI
+530,6.03,Military Access Road,Occupation,Nil,,Open,PRI
+530,6.47,Sugar Mill Road,Public Level,Flashing Lights,,Open,LGA
+530,7.015,Randle Road,Public Level,Flashing Lights,PWB,Open,LGA
+978,7.78,Pinkenba Balloon Loop Access Road,QR,Signs,S,Open,QR
+PINKENBA YARD,,,,,,,
+323,7.48,Eagle Farm Road,Public Level,Flashing Lights,,Open,LGA
+323,8.39,(On Quarantine Siding),Occupation,Signs,X S,Open,QR
+323,8.41,(On Pinkenba Balloon Loop and BP,Occupation,,,Open,LGA
+,,Siding),,,,,
+323,8.69,Engira Street (On BP Siding),Public Level,Signs,X S,Open,LGA
+323,8.98,Radio Street (On Pinkenba Balloon,Public Level,Signs,X S T,Open,LGA
+,,Loop),,,,,
+323,9.19,(On BP Siding),Occupation,,,Open,PRI
+323,9.32,(On BP Siding),Occupation,,,Open,PRI
+323,9.52,(On BP Siding),Occupation,,,Open,PRI
+323,10.02,(On BP Siding),Occupation,,,Open,PRI
+323,10.07,(On Boat Passage Siding off BP Siding),Public Level,Signs,X T,Open,MRD
+323,10.12,(On BP Siding),Occupation,,,Open,PRI
+323,11.62,(On BP Siding),Occupation,,,Open,PRI
+REDBANK YARD,,,,,,,
+503,0.165,River Road,Public Level,Signs,X G,Open,LGA
+503,0.2,River Road,Public Level,Signs,X G,Open,QR
+ROMA STREET FORK,,,,,,,
+134,0.216,QR Maintenance Road,QR,Flashing Lights,,Open,QR
+SHORNCLIFFE BRANCH,,,,,,,
+531,3.11,St Vincents Road,Public Level,Half Boomgates,,Open,LGA
+531,5.612,Nudgee Station Pedestrian Access,Pedestrian,,,Open,QR
+531,8.48,Adams Street,Public Level,Half Boomgates,,Open,LGA
+531,9.42,Kennerley Street,Public Level,Half Boomgates,,Open,LGA
+531,9.94,Curlew Street,Public Level,Flashing Lights,,Open,LGA
+531,10.46,Palm Avenue,Public Level,Half Boomgates,,Open,LGA
+531,10.85,QR Staff Parking Area Access Road,QR,Nil,,Open,QR
+SWANBANK BRANCH (BOX FLAT),,,,,,,
+504,0.33,QR Maintenance Access Road,QR,Nil,,Open,MRD
+504,0.84,Brisbane Rd (Ipswich Road),Public Level,Flashing Lights,,Open,MRD
+504,0.976,Ipswich Racecourse Pedestrian Access,Pedestrian,,,Open,QR
+504,1.09,Heaslip Street/Ipswich Racecourse,Pedestrian,,,Open,LGA
+,,Pedestrian Access,,,,,
+504,1.17,Property Access Road,Occupation,Signs,X S,Open,PRI
+504,1.23,Property Access Road,Occupation,,,Open,PRI
+504,1.25,Property Access Road,Occupation,Signs,X S,Open,PRI
+504,1.41,Property Access Road,Occupation,Signs,X S,Open,PRI
+504,1.5,Anderson Street,Public Level,Signs,X G,Open,LGA
+504,2.24,Thomas Street,Public Level,Flashing Lights,,Open,LGA
+504,2.67,Mary Street,Public Level,Signs,X S,Open,LGA
+504,3.295,Mary Street,Public Level,Signs,X S,Open,LGA
+TENNYSON BRANCH,,,,,,,
+804,0,Yard Access,Public Level,,,Open,LGA
+804,3.03,,Occupation,,,Open,QR
+804,3.84,,QR,,,Open,QR
