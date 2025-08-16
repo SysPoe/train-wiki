@@ -1,69 +1,72 @@
 # Run Numbering Guide
 
-Adapted from [https://qrig.org/safeworking/train-numbering-guide](https://qrig.org/safeworking/train-numbering-guide) to
-only include relevant entries for suburban areas.
+For SEQ suburban trains
 
 ## 1st Number Designation
 
-This denotes some informaion about what the locomotive / type of the train is.
+Rollingstock type.
 
-`1` - 6 car EMU, SMU or HS/SMU in revenue service <br>
-`2` - EMU/SMU/IMU/ICE empty cars (any length) <br>
-`D` - NGR train in revenue service <br>
-`J` - 3-car EMU, SMU or HS/SMU in revenue service <br>
-`T` - 6-car IMU in revenue service <br>
-`U` - 3-car IMU in revenue service <br>
-`X` - ICE or ICE/EMU in revenue service (any length) <br>
+`1` - 6 car SMU in revenue service <br>
+`2` - 6 car SMU non-revenue service <br>
+`A` - 6 car IMU non-revenue service <br>
+`B` - 3 car IMU non-revenue service <br>
+`C` - 3 car SMU non-revenue service <br>
+`D` - NGR train in revenue service<br>
+`E` - NGR non-revenue service<br>
+`J` - 3 car SMU in revenue service <br>
+`T` - 6 car IMU in revenue service <br>
+`U` - 3 car IMU in revenue service <br>
+`W` - Unknown. Possibly train equipped w/ L2 ETCS non-revenue service or test train <br>
+`X` - Train equipped w/ L2 ETCS in revenue service <br>
 
 ## 2nd Number Designation
 
-This denotes where the train's destination is.
+Destination range.
 
-`0` - Bowen Hills/Mayne Area <br>
-`1` - Caboolture (Suburban) <br>
-`4` - Gympie North <br>
-`5` - Beyond Darra to Grandchester (except Rosewood EMU services) <br>
-`6` - Rosewood (suburban EMUs only, even numbers) <br>
-`7` - Beenleigh line (Suburban) <br>
-`8` - Cleveland (Suburban) <br>
-`9` - Roma Street <br>
-`A` - Shorncliffe line (Suburban) <br>
-`B` - Pinkenba / Doomben line (Suburban) <br>
-`C` - Corinda via South Brisbane (Suburban) <br>
-`C` - From Corinda to Yeerongpilly (Suburban) <br>
-`D` - Darra via Toowong (Suburban) <br>
-`E` - Ferny Grove line (Suburban) <br>
+`0` - Electric Train Balloon; Bowen Hills or electric Train Shed South via Roma Street; Mayne area <br>
+`1` - Dakabin - Caboolture <br>
+`4` - Yandina - Gympie North <br>
+`5` - Riverview - Ipswich <br>
+`6` - Thomas Street - Rosewood <br>
+`7` - Trinder Park - Beenleigh <br>
+`8` - Lota - Cleveland <br>
+`9` - Roma Street; ETS turnback via main lines <br>
+`A` - Bindha - Banyo Yard - Shorncliffe <br>
+`B` - Clayfield - Doomben / Pinkenba <br>
+`C` - Corinda via South Brisbane; From Corinda to Yeerongpilly <br>
+`D` - Milton - Redbank <br>
+`E` - Windsor - Ferny Grove <br>
 `F` - Various destinations as determined by Control: <br>
-&nbsp;&nbsp;&nbsp; - 0-79 Brisbane District <br>
-&nbsp;&nbsp;&nbsp; - 80-89 Rockhampton District <br>
-&nbsp;&nbsp;&nbsp; - 90-99 Townsville District <br>
-`G` - Beyond Beenleigh to Robina (Suburban) <br>
-`K` - Springfield <br>
-`L` - Yandina (Suburban) <br>
-`M` - From Cleveland to Bowen Hills (Suburban) <br>
-`N` - Exhibition via Brisbane Central (Suburban) <br>
-`P` - Airport Spur (Suburban) <br>
-`R` - From Shorncliffe to Roma Street (Suburban) <br>
-`S` - From Shorncliffe to South Bank/Yeerongpilly (Suburban) <br>
-`X` - Exhibition Direct (Suburban) <br>
-`Y` - Kippa Ring / Petrie <br>
-`Z` - Exhibition (Suburban) <br>
+&nbsp;&nbsp;&nbsp; - 0-79 Brisbane District (3rd/4th char) <br>
+&nbsp;&nbsp;&nbsp; - 80-89 Rockhampton District (3rd/4th char) <br>
+&nbsp;&nbsp;&nbsp; - 90-99 Townsville District (3rd/4th char) <br>
+`G` - Ormeau - Varsity Lakes <br>
+`K` - Richlands - Springfield Central <br>
+`L` - Elimbah - Nambour <br>
+`M` - Electric Train Shed via Bowen Hills; Electric Balloon and suburban lines <br>
+`N` - Exhibition via Brisbane Central <br>
+`P` - International - Domestic (Airport) <br>
+`R` - Roma Street; Electric Train Shed South via Suburban Lines <br>
+`S` - South Brisbane - Park Road <br>
+`U` - Wulkuraka NGR Maintenance Facility <br>
+`V` - Dutton Park - Kuraby <br>
+`W` - Albion - Northgate <br>
+`X` - Exhibition Direct <br>
+`Y` - Virginia - Kippa-Ring <br>
+`Z` - Exhibition <br>
 
-## 3rd Character - Part of the train ID or additional information
+## Third Character
 
-Mainly part of the trains actual number but in many cases, the 3rd character is used to supply additional information on
-the train. If the 3rd character is numeric, there is no additional information. 3rd character alpha codes are not found
-in any manual or text book. They are usually locally agreed characters and can vary in different parts of the state.
+Used for denoting express and/or peak running, or empty unit specifics
 
-Brisbane district:-
+`0`-`9` - Standard running (all stations for suburban lines; all-day express patterns for interurban lines)<br>
+`T`,`U`,`V` - AM express running as per standard pattern (Ipswich, Rosewood, Cleveland only)<br>
+`X`,`Y`,`Z` - PM express running as per standard pattern (Ipswich, Rosewood, Cleveland only)<br>
+`M`,`N` - PM peak only; Used to denote short-finishing PM peak services (Cleveland, Beenleigh lines)<br>
 
-NOTE - 'a' = Alpha, 'n' = numeric, 'x' = alpha/numeric. All descriptions have examples, except “work trains”.
+## Fourth Character
 
-Suburban: <br>
-`xDYn` - Via South Brisbane to Darra (1DY2) <br>
-`x5Yn` - Via South Brisbane to Ipswich (15Y2) <br>
-`xxPn` - School train (18P4) (may be cancelled during school holidays) <br>
-`xxTn` - Extra service for special events etc. (1GT4) <br>
-`xFXn` - Exhibition Circular Services (1FX5) <br>
+Directional indicator
 
-With the new timetable, third character alpha's are just a continuation of the numerals (IE: 0,1, 2 -> 8, 9, A, B etc. EG: 4 successive Airport trains might be TP97, 1P99, TPA1, 1PA3 etc).
+`even number` - Service concludes its run heading in the up direction <br>
+`odd number` - Service concludes its run heading in the down direction <br>
