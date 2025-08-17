@@ -51,7 +51,7 @@ Enter a train number below to see a breakdown of its meaning for both suburban a
         border-bottom: 1px solid #eee;
     }
     .result-item {
-        margin-bottom: 8px;
+        margin-bottom: 4px;
     }
     .result-item strong {
         font-weight: 600;
@@ -96,29 +96,31 @@ Enter a train number below to see a breakdown of its meaning for both suburban a
                 outputHtml += `<h4>SEQ Suburban Interpretation</h4>`;
                 
                 const s_char1 = data.suburban.first[char1] || '<span class="not-found">No suburban meaning.</span>';
-                outputHtml += `<div class="result-item"><strong>1st Char ('${char1}'):</strong> ${s_char1}</div>`;
+                outputHtml += `<div class="result-item"><strong>1st Char:</strong> ${s_char1}</div>`;
 
                 const s_char2 = data.suburban.second[char2] || '<span class="not-found">Not a suburban route code.</span>';
-                outputHtml += `<div class="result-item"><strong>2nd Char ('${char2}'):</strong> ${s_char2}</div>`;
+                outputHtml += `<div class="result-item"><strong>2nd Char:</strong> ${s_char2}</div>`;
                 
-                let s_char3 = '<span class="not-found">Not specified or standard.</span>';
+                let s_char3 = '<span class="not-found">Not specified.</span>';
                 if (char3) {
-                    const specialCombo = data.suburban.combinations[combo23];
-                    if (specialCombo) {
-                        s_char3 = `(Special Combo '${combo23}') ${specialCombo}`;
-                    } else if (/[0-9]/.test(char3)) {
+                    if (/[0-9]/.test(char3)) {
                         s_char3 = data.suburban.third.numeric_default;
                     } else {
-                        s_char3 = data.suburban.third[char3] || '<span class="not-found">Unknown express/peak code.</span>';
+                        s_char3 = data.suburban.third[char3] || '<span class="not-found">No specific 3rd character interpretation.</span>';
                     }
                 }
-                outputHtml += `<div class="result-item"><strong>3rd Char ('${char3 || ''}'):</strong> ${s_char3}</div>`;
+                outputHtml += `<div class="result-item"><strong>3rd Char:</strong> ${s_char3}</div>`;
 
                 let s_char4 = '<span class="not-found">Not specified.</span>';
                 if (char4 && /[0-9]/.test(char4)) {
                    s_char4 = parseInt(char4) % 2 === 0 ? data.suburban.fourth.even : data.suburban.fourth.odd;
                 }
-                outputHtml += `<div class="result-item"><strong>4th Char ('${char4 || ''}'):</strong> ${s_char4}</div>`;
+                outputHtml += `<div class="result-item"><strong>4th Char:</strong> ${s_char4}</div>`;
+
+                if (combo23 && data.suburban.combinations[combo23]) {
+                    const specialComboMeaning = data.suburban.combinations[combo23];
+                    outputHtml += `<div class="result-item"><strong>Special Combo:</strong> ${specialComboMeaning}</div>`;
+                }
 
 
                 // --- REGIONAL INTERPRETATION ---
@@ -128,29 +130,31 @@ Enter a train number below to see a breakdown of its meaning for both suburban a
                 if (Array.isArray(r_char1)) {
                     r_char1 = r_char1.join('<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ');
                 }
-                outputHtml += `<div class="result-item"><strong>1st Char ('${char1}'):</strong> ${r_char1}</div>`;
+                outputHtml += `<div class="result-item"><strong>1st Char:</strong> ${r_char1}</div>`;
                 
                 const r_char2 = findRegionalMeaning(data.regional.second, char2) || '<span class="not-found">Not a regional destination code.</span>';
-                outputHtml += `<div class="result-item"><strong>2nd Char ('${char2}'):</strong> ${r_char2}</div>`;
+                outputHtml += `<div class="result-item"><strong>2nd Char:</strong> ${r_char2}</div>`;
 
-                let r_char3 = '<span class="not-found">Not specified or part of train ID.</span>';
+                let r_char3 = '<span class="not-found">Not specified.</span>';
                 if (char3) {
-                    const specialCombo = data.regional.combinations[combo23];
-                     if (specialCombo) {
-                        r_char3 = `(Special Combo '${combo23}') ${specialCombo}`;
-                    } else if (/[0-9]/.test(char3)) {
+                    if (/[0-9]/.test(char3)) {
                         r_char3 = "Part of the train's ID number.";
                     } else {
-                        r_char3 = findRegionalMeaning(data.regional.third, char3) || '<span class="not-found">Unknown special use code.</span>';
+                        r_char3 = findRegionalMeaning(data.regional.third, char3) || '<span class="not-found">No specific 3rd character interpretation.</span>';
                     }
                 }
-                outputHtml += `<div class="result-item"><strong>3rd Char ('${char3 || ''}'):</strong> ${r_char3}</div>`;
+                outputHtml += `<div class="result-item"><strong>3rd Char:</strong> ${r_char3}</div>`;
 
                 let r_char4 = '<span class="not-found">Not specified.</span>';
                 if (char4 && /[0-9]/.test(char4)) {
                    r_char4 = parseInt(char4) % 2 === 0 ? data.regional.fourth.even : data.regional.fourth.odd;
                 }
-                outputHtml += `<div class="result-item"><strong>4th Char ('${char4 || ''}'):</strong> ${r_char4}</div>`;
+                outputHtml += `<div class="result-item"><strong>4th Char:</strong> ${r_char4}</div>`;
+                
+                if (combo23 && data.regional.combinations[combo23]) {
+                    const specialComboMeaning = data.regional.combinations[combo23];
+                    outputHtml += `<div class="result-item"><strong>Special Combo:</strong> ${specialComboMeaning}</div>`;
+                }
 
                 resultsDiv.innerHTML = outputHtml;
             })
