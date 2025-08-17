@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Train Route Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #3498db; /* Blue color */
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        /* Style for dynamically added via station rows */
+        .via-station-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem; /* Spacing between elements */
+            margin-bottom: 0.75rem; /* Spacing below row */
+        }
+         .via-station-row input[type="text"] {
+            flex-grow: 1; /* Allow station name input to grow */
+        }
+         .via-station-row input[type="number"] {
+            width: 5rem; /* Fixed width for wait time */
+        }
+         .via-station-row button {
+            flex-shrink: 0; /* Prevent remove button from shrinking */
+        }
+        /* Ensure datetime-local icon is visible */
+        input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+            cursor: pointer;
+            filter: invert(0.6); /* Adjust color if needed */
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="bg-white p-6 md:p-8 rounded-lg shadow-lg w-full max-w-2xl">
+        <h1 class="text-2xl md:text-3xl font-bold mb-6 text-center text-gray-800">Multi-Step Train Route Finder</h1>
+
+        <form id="route-form" class="space-y-4">
+            <div>
+                <label for="origin" class="block text-sm font-medium text-gray-700 mb-1">Origin Station:</label>
+                <input type="text" id="origin" name="origin" required placeholder="e.g., Central Station"
+                       class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-150 ease-in-out">
+            </div>
+
+            <div>
+                <label for="departure-time" class="block text-sm font-medium text-gray-700 mb-1">Depart After:</label>
+                <input type="datetime-local" id="departure-time" name="departure-time" required
+                       class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-150 ease-in-out">
+            </div>
+
+
+            <div id="via-stations-container" class="space-y-3 border-t border-b border-gray-200 py-4">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Via Stations (Optional):</label>
+                </div>
+            <button type="button" id="add-via-btn"
+                    class="text-sm bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium py-1 px-3 rounded-md transition duration-150 ease-in-out">
+                + Add Via Station
+            </button>
+
+
+            <div>
+                <label for="destination" class="block text-sm font-medium text-gray-700 mb-1">Destination Station:</label>
+                <input type="text" id="destination" name="destination" required placeholder="e.g., Varsity Lakes"
+                       class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-150 ease-in-out">
+            </div>
+
+            <button type="submit"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md shadow-md transition duration-150 ease-in-out flex items-center justify-center space-x-2">
+                <span>Find Route</span>
+                <div id="loading-indicator" class="loading-spinner hidden"></div>
+            </button>
+        </form>
+
+        <div id="results" class="mt-6 text-gray-700">
+            <p class="text-center text-gray-500">Enter origin, destination, departure time, and optional via points to find routes.</p>
+        </div>
+
+        <div id="error-message" class="mt-4 text-red-600 text-center font-medium hidden">
+        </div>
+    </div>
+
+    <script src="js/utils1.js"></script>
+    <script src="js/utils2.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

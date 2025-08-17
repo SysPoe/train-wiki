@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway SVG Markup Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add the svg-pan-zoom library -->
+    <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+</head>
+<body>
+    <h1>Railway SVG Markup Tool</h1>
+
+    <div class="toolbar">
+        <label for="elementType">Mark selected as:</label>
+        <select id="elementType">
+            <option value="station">Station</option>
+            <option value="track">Track</option>
+            <option value="signal">Signal</option>
+            <option value="junction">Junction</option>
+            <option value="label">Label</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="elementName">Name/ID:</label>
+        <input type="text" id="elementName" placeholder="e.g., Brisbane Central">
+        <button id="addMarkButton">Add Mark</button>
+        <button id="removeMarkButton">Remove Mark</button>
+        <hr>
+        <button id="exportButton">Export Data</button>
+        <p>Selected Element ID: <code id="selectedElementId">None</code></p>
+    </div>
+
+    <div id="map-container">
+        <!-- SVG will be loaded here -->
+        <div id="svg-render-area">
+            <!-- The SVG element will be placed here by JS -->
+        </div>
+    </div>
+
+    <!-- Load markup.js AFTER svg-pan-zoom -->
+    <script src="markup.js"></script>
+</body>
+</html>

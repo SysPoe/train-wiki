@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Railway map of Queensland, 1939</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
+
+      iframe {
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .container {
+        position: relative;
+        padding: 0;
+        margin: 0;
+      }
+
+      .line {
+        position: absolute;
+        background: black;
+        opacity: 0.5;
+        width: 2px;
+      }
+
+      .buttons {
+        position: absolute;
+        left: 5px;
+        bottom: 5px;
+        z-index: 1000;
+        background: white;
+      }
+
+      .buttons button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+      <a href="../../">Home</a>
+      <a href="../../media/MapsPosters/1939-Rail-Map.jpg" download
+        >Download Compressed JPG</a
+      >
+      <a href="https://nla.gov.au/nla.obj-232952155/m" download
+        >Download TIFF</a
+      >
+      <a href="https://nla.gov.au/nla.obj-232952155/view">Source</a>
+    </div>
+    <iframe src="https://zoomhub.net/jkzej" frameborder="0" allowfullscreen></iframe>
+  </body>
+</html>
