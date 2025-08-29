@@ -130,13 +130,73 @@ The first character defines the train type, motive power, and maximum speed.
 
 The second character defines the train's destination or operational area.
 
-*(This section remains unchanged from your provided file)*
-
 #### Coal & Mineral Systems
-...
+
+`1` - Saraji mine (Mackay Coal System) <br>
+`2` - Goonyella (Mackay Coal System) <br>
+`3` - Peak Downs (Mackay Coal System) <br>
+`4` - Norwich Park (Mackay Coal System) <br>
+`5` - German Creek (Mackay Coal System) <br>
+`6` - Oaky Creek (Mackay Coal System) <br>
+`7` - Blair Athol (Mackay Coal System) <br>
+`8` - Riverside (Mackay Coal System) <br>
+`9` - North Goonyella (Mackay Coal System) <br>
+`A` - Abbott Point (Bowen Coal System) <br>
+`B` - Curragh (Gladstone); Box Flat (Brisbane); Sonoma Mine (Newlands) <br>
+`C` - Yongala (Gladstone Coal System) <br>
+`D` - Callemondah (Gladstone Coal System) <br>
+`E` - East End (Gladstone Limestone); Ensham (Gladstone); Ebenezer (Brisbane) <br>
+`F` - Golding (Gladstone Coal System) <br>
+`G` - Hay Point (Mackay Coal System) <br>
+`H` - Boorgoon (Gladstone Coal System) <br>
+`I` - Boonal (Gladstone Coal System) <br>
+`J` - Jilalan (Mackay Coal System) <br>
+`K` - Kinrola (Gladstone Coal System) <br>
+`L` - Fishermans Landing (Gladstone Limestone); Laleham (Gladstone); Lake Vermont (Goonyella) <br>
+`M` - Gregory (Gladstone Coal System) <br>
+`N` - Newlands (Bowen Coal System); Koorilgah (Gladstone Coal System) <br>
+`P` - Barney Point (Gladstone); Pring (Bowen Coal System) <br>
+`Q` - Moura Mine (Gladstone Coal System) <br>
+`R` - Callide Coalfields (Gladstone); Collinsville (Bowen); Burton (Mackay) <br>
+`S` - McNaughton (Bowen); Boundary Hill/Callide to QAL (Gladstone); Boorgoon to Stanwell (Gladstone) <br>
+`T` - Stuart-Calcium (Limestone); Moranbah North (Mackay Coal System) <br>
+`V` - Dalrymple Bay (Mackay Coal System) <br>
+`W` - Boundary Hill (Gladstone); Coppabella (Mackay); MacArthur (Mackay) <br>
+`Y` - Gordonstone (Gladstone Coal System) <br>
+`Z` - Gladstone Powerhouse (Gladstone); Mackay Harbour <br>
 
 #### Major Regional Locations & Lines
-...
+
+`0` - Bowen Hills/Mayne Area <br>
+`2` - Townsville <br>
+`3` - Rockhampton <br>
+`4` - Gympie North <br>
+`5` - Beyond Darra to Grandchester (except Rosewood EMU services) <br>
+`6` - Beyond Grandchester to Toowoomba <br>
+`7` - Moolabin/Clapham/Acacia Ridge (Freight) <br>
+`8` - Fisherman Islands (Freight) <br>
+`9` - Roma Street <br>
+`A` - Clermont; Forsayth <br>
+`B` - Clermont <br>
+`C` - Cairns <br>
+`D` - Proserpine; Dalby <br>
+`E` - Cloncurry; Emerald; Warwick <br>
+`F` - Various destinations as determined by Control <br>
+`G` - Gladstone; From Maryborough to Monto; Glenmorgan <br>
+`H` - Dirranbandi; Hughenden <br>
+`J` - Bundaberg; Jandowae <br>
+`K` - Kingaroy; Kuranda <br>
+`L` - Cobarra; Wandoan <br>
+`M` - Mount Isa; Mareeba; Maryborough; From Gladstone to Monto <br>
+`P` - Saint Lawrence; Milmerran; Springsure <br>
+`Q` - Bowen; Quilpie <br>
+`R` - Roma; Gracemere <br>
+`S` - Sarina; Charleville <br>
+`T` - Theodore; Phosphate Hill <br>
+`U` - Mackay; Rolleston <br>
+`V` - Cunnamulla; Biloela <br>
+`W` - Wallangarra; Beyond Emerald to Winton; From Hughenden to Winton <br>
+`Y` - Yaraka; Chinchilla; Yeppoon <br>
 
 ### 3rd Character Designation
 
