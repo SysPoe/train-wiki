@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "gtfs": "^4.17.3"
-  },
-  "devDependencies": {
-    "tsx": "^4.19.4"
-  }
-}
