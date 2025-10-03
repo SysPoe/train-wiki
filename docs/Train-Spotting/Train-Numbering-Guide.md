@@ -1,6 +1,6 @@
 # Train Numbering Guide
 
-Also check out [Run Guru](../Other/Resources/RunGuru/index.md) for a quick way to interpret train numbers!
+Also check out [Run Guru](../Other/Resources/RunGuru.md) for a quick way to interpret train numbers!
 
 ## SEQ Electric Services
 

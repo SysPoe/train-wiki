@@ -35,12 +35,6 @@ nav:
       - Other/SEQ-Craziness.md
       - Other/Station-Abbreviations.md
       - Other/Resources.md
-      - List of Resources:
-        - Other/Resources/Freight-Sightings.md
-        - Other/Resources/FTT/index.md
-        - PID Maker: Other/Resources/PID/index.html
-        - Other/Resources/RunGuru/index.md
-        - Other/Resources/Track-Speed.md
 
 markdown_extensions:
   - toc:

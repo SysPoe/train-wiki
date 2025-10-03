@@ -2,7 +2,7 @@
 
 Enter a train number below to see a breakdown of its meaning for both suburban and regional services. For a complete overview, please refer to the main guide.
 
-**[Full Train Numbering Guide](../../../Train-Spotting/Train-Numbering-Guide.md)**
+**[Full Train Numbering Guide](../../Train-Spotting/Train-Numbering-Guide.md)**
 
 ---
 
@@ -338,20 +338,20 @@ const trainData = {
         "S": "Southern Division"
       },
       "workTrains": {
-        "B": "Ballast (0FBn)",
-        "C": "Concrete Sleepers (0FCn)",
-        "P": "Pantograph test train (0FPn)",
-        "R": "Railset (0FRn)",
-        "S": "Spoil/Sleepers (0FSn)",
-        "T": "Test Engine/Train (0FTn)",
-        "W": "Wiring Train (0FWn)"
+        "B": "Ballast",
+        "C": "Concrete Sleepers",
+        "P": "Pantograph test train",
+        "R": "Railset",
+        "S": "Spoil/Sleepers",
+        "T": "Test Engine/Train",
+        "W": "Wiring Train"
       },
       "gladstoneBoonal": {
-        "I": "Jellinbah coal (EInn)",
-        "Y": "Yarrabee coal (EIYn)"
+        "I": "Jellinbah coal",
+        "Y": "Yarrabee coal"
       },
       "rockhampton": {
-        "R": "Livestock trains from Gracemere to Rockhampton (63R1)"
+        "R": "Livestock trains from Gracemere to Rockhampton"
       }
     },
     "fourthChar": {
