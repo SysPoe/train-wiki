@@ -1,6 +1,6 @@
-Title: My Train Photos
+Title: Train Photos
 
-# My Train Photos
+# Train Photos
 
 Here is a selection of some of my train photos that I think are nice, in no particular order (apart from the categories). There also might be some other ones that I took on the individual train pages, like that one taken @ Darra on the EMU page.
 
