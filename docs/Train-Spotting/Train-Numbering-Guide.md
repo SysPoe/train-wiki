@@ -2,7 +2,7 @@
 
 Also check out [Run Guru](../Other/Resources/RunGuru/index.md) for a quick way to interpret train numbers!
 
-## For SEQ suburban trains
+## SEQ Electric Services
 
 ### 1st Number Designation
 
@@ -82,8 +82,8 @@ Some services use a specific combination of the 2nd and 3rd characters to denote
 
 Directional indicator
 
-`even number` - Service concludes its run heading in the up direction <br>
-`odd number` - Service concludes its run heading in the down direction <br>
+`even number` - Service concludes it's run travelling in the "Up" direction.<br>
+`odd number` - Service concludes it's run travelling in the "Down" direction.<br>
 
 ## Regional Services
 
@@ -232,8 +232,8 @@ Used to differentiate coal from two mines.<br>
 
 A numeric digit that is part of the train's ID and indicates its direction.
 
-`even number` - Train is travelling in the "Up" direction (generally towards Brisbane).<br>
-`odd number` - Train is travelling in the "Down" direction (generally away from Brisbane).<br>
+`even number` - Service concludes it's run travelling in the "Up" direction.<br>
+`odd number` - Service concludes it's run travelling in the "Down" direction.<br>
 
 **Exceptions:**
 
