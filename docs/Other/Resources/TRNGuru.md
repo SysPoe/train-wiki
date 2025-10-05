@@ -1,6 +1,6 @@
-# Run Guru
+# TRN Guru
 
-Enter a train number below to see a breakdown of its meaning for both suburban and regional services. For a complete overview, please refer to the main guide.
+Enter a train reporting number below to see a breakdown of its meaning for both suburban and regional services. For a complete overview, please refer to the main guide.
 
 **[Full Train Numbering Guide](../../Train-Spotting/Train-Numbering-Guide.md)**
 
@@ -367,6 +367,15 @@ const trainData = {
 
 const trainNumberInput = document.getElementById('trainNumber');
 const resultsDiv = document.getElementById('results');
+
+let currentURL = new URL(location.href);
+if(currentURL.searchParams.has('trainNumber')) {
+    const paramTrainNumber = currentURL.searchParams.get('trainNumber').trim().toUpperCase();
+    if(paramTrainNumber.length >= 3) {
+        trainNumberInput.value = paramTrainNumber;
+        decodeTrainNumber(paramTrainNumber);
+    }
+}
 
 trainNumberInput.addEventListener('input', (e) => {
     const trainNumber = e.target.value.trim().toUpperCase();
