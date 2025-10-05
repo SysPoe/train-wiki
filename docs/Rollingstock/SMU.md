@@ -274,7 +274,7 @@ The SMU260 operates as a permanently-coupled 3-car set, with two sets often coup
 >
 > The interior of a Queensland Rail SMU 200 series unit. Taken May 18, 2008 by Ash Kyd. This was the old style, before QR refurbished them. [Source](https://www.flickr.com/photos/ashkyd/2501756494/).
 
-There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
+There may also be other photos in the [Gallery](../Gallery/Photos.md)
 
 ## Sources
 

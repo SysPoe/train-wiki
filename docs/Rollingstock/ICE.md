@@ -62,7 +62,7 @@ SMUs, IMUs and ICEs were supplied with rigid steel skirts that protect the wheel
 
 ## Gallery
 
-There may also be other photos in the [Gallery](../Gallery/My-Photos.md). See also: [Wuiske Models ICE Prototype Photos](https://www.wuiskemodels.com/prototype/index.php?sfpg=MDA2LS1MT05HIERJU1RBTkNFIFBBU1NFTkdFUiBTRVRTL0lDRS8qKioqKjQ3YWE5MWM0YzMwMzc0MWVlMzY1Njc1NzAwNmViZWQ1)
+There may also be other photos in the [Gallery](../Gallery/Photos.md). See also: [Wuiske Models ICE Prototype Photos](https://www.wuiskemodels.com/prototype/index.php?sfpg=MDA2LS1MT05HIERJU1RBTkNFIFBBU1NFTkdFUiBTRVRTL0lDRS8qKioqKjQ3YWE5MWM0YzMwMzc0MWVlMzY1Njc1NzAwNmViZWQ1)
 
 ![](../media/QR_EMU_ICE_Details.jpg)
 

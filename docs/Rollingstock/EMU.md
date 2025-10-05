@@ -88,7 +88,7 @@ Unlike other units, EMUs do not have rigid steel skirts to protect the wheels an
 
 ## Gallery
 
-There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
+There may also be other photos in the [Gallery](../Gallery/Photos.md)
 
 ![](../media/QR_EMU_ICE_Details.jpg)
 
