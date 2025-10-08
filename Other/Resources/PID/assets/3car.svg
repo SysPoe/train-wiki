@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666665 8.4666667"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="25.137062"
+       y="4.5216815"
+       width="5.6848506"
+       height="22.173626"
+       id="rect2" />
+    <rect
+       x="25.137062"
+       y="4.5216813"
+       width="5.6848507"
+       height="22.173626"
+       id="rect2-4" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:0.365747;stroke-opacity:1"
+       id="rect1"
+       width="8.0409708"
+       height="8.0409708"
+       x="0.20587356"
+       y="0.19228262" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.53131452,0,0,0.53131452,-8.7111071,-3.6796147)"
+       id="text1"
+       style="font-size:5.33333px;line-height:0.8;white-space:pre;shape-inside:url(#rect2);fill:#0000ff"><tspan
+         x="25.136719"
+         y="8.0402323"
+         id="tspan2"><tspan
+           style="font-weight:bold"
+           id="tspan1">
+</tspan></tspan><tspan
+         x="25.136719"
+         y="12.306897"
+         id="tspan6"><tspan
+           style="font-weight:bold"
+           id="tspan3">C
+</tspan></tspan><tspan
+         x="25.136719"
+         y="16.573561"
+         id="tspan8"><tspan
+           style="font-weight:bold"
+           id="tspan7">A
+</tspan></tspan><tspan
+         x="25.136719"
+         y="20.840226"
+         id="tspan11"><tspan
+           style="font-weight:bold"
+           id="tspan10">R</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.6140425,0,0,0.6140425,-13.87416,0.35941534)"
+       id="text1-6"
+       style="font-size:5.33333px;line-height:0.8;white-space:pre;shape-inside:url(#rect2-4);display:inline;fill:#0000ff"><tspan
+         x="25.136719"
+         y="8.0402323"
+         id="tspan13"><tspan
+           style="font-weight:bold"
+           id="tspan12">3</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:0.8;font-family:Amiri;-inkscape-font-specification:Amiri;fill:#ffffff;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+       x="2.8157039"
+       y="2.714736"
+       id="text5"><tspan
+         id="tspan5"
+         style="stroke-width:0.264583"
+         x="2.8157039"
+         y="2.714736" /></text>
+  </g>
+</svg>

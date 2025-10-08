@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/coloris.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="dist/coloris.min.js"></script>
+    <script src="dist/html2canvas.min.js"></script>
+    <title>PID Maker</title>
+  </head>
+  <body>
+    <div class="hide">
+      <a href="../../../">Home</a>
+      <h1>SysPoe's Passenger Information Display Maker!</h1>
+      Please excuse the NGR logo. It's traced from a really bad photo I took.
+    </div>
+    <div class="container">
+      <div class="lmr">
+        <div class="lmrleft time" contenteditable="true" spellcheck="false">
+          8:59:55
+        </div>
+        <div class="lmrmiddle" contenteditable="true" spellcheck="false">
+          Next (1-6) Trains South & West
+        </div>
+        <!-- <div class="lmrright">Departs</div> -->
+      </div>
+      <div class="margin"></div>
+      <table class="service-table">
+        <tr class="header-row">
+          <th>Service</th>
+          <th>Platform</th>
+          <th>Departs</th>
+        </tr>
+        <tr id="tr1">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false" class="platform">5</td>
+          <td class="active">
+            <div class="ngr"><img src="./assets/NGR.svg" /></div>
+            <div class="tcar" style="display: none">
+              <img src="./assets/3car.svg" />
+            </div>
+          </td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+        <tr id="tr2">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false" class="platform">5</td>
+          <td class="active">
+            <div class="tcar" style="display: none">
+              <img src="./assets/3car.svg" />
+            </div>
+            <div class="ngr"><img src="./assets/NGR.svg" /></div>
+          </td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+        <tr id="tr3">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false" class="platform">5</td>
+          <td class="active">
+            <div class="ngr"><img src="./assets/NGR.svg" /></div>
+            <div class="tcar" style="display: none">
+              <img src="./assets/3car.svg" />
+            </div>
+          </td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+        <tr id="tr4">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false" class="platform">5</td>
+          <td class="active">
+            <div class="ngr"><img src="./assets/NGR.svg" /></div>
+            <div class="tcar" style="display: none">
+              <img src="./assets/3car.svg" />
+            </div>
+          </td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+        <tr id="tr5">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false" class="platform">5</td>
+          <td class="active">
+            <div class="ngr"><img src="./assets/NGR.svg" /></div>
+            <div class="tcar" style="display: none">
+              <img src="./assets/3car.svg" />
+            </div>
+          </td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+        <tr id="tr6">
+          <td contenteditable="true" spellcheck="false">9:01</td>
+          <td contenteditable="true" spellcheck="false">Ipswich</td>
+          <td contenteditable="true" class="active">Exp</td>
+          <td contenteditable="true" spellcheck="false" class="platform">5</td>
+          <td class="active">
+            <div class="ngr"><img src="./assets/NGR.svg" /></div>
+            <div class="tcar" style="display: none">
+              <img src="./assets/3car.svg" />
+            </div>
+          </td>
+          <td contenteditable="true" spellcheck="false">2 min</td>
+        </tr>
+      </table>
+    </div>
+    <a class="show" style="display: none;" href="#" onclick="location.hash = ''; location.reload();">Back</a>
+    <div class="hide">
+      <button onclick="takeshot()">Screenshot</button><br />
+    </div>
+
+    <div class="hide">
+      <div class="hide-buttons">
+        <button id="hide1" onclick="hide(1)">Hide #1</button>
+        <button id="hide2" onclick="hide(2)">Hide #2</button>
+        <button id="hide3" onclick="hide(3)">Hide #3</button>
+        <button id="hide4" onclick="hide(4)">Hide #4</button>
+        <button id="hide5" onclick="hide(5)">Hide #5</button>
+        <button id="hide6" onclick="hide(6)">Hide #6</button>
+        <button onclick="for(let i = 1; i <= 6; i++) hide(i, '0');">
+          Hide All
+        </button>
+        <button onclick="for(let i = 1; i <= 6; i++) hide(i, '1');">
+          Show All
+        </button>
+      </div>
+
+      <div class="tcar-buttons">
+        <button id="tcar1" onclick="car3(1)">3car #1</button>
+        <button id="tcar2" onclick="car3(2)">3car #2</button>
+        <button id="tcar3" onclick="car3(3)">3car #3</button>
+        <button id="tcar4" onclick="car3(4)">3car #4</button>
+        <button id="tcar5" onclick="car3(5)">3car #5</button>
+        <button id="tcar6" onclick="car3(6)">3car #6</button>
+        <button onclick="for(let i = 1; i <= 6; i++) car3(i, '0');">
+          3car All
+        </button>
+        <button onclick="for(let i = 1; i <= 6; i++) car3(i, '1');">
+          NGR All
+        </button>
+      </div>
+
+      <div class="select-station">
+        <input list="station-list" placeholder="Loading stations..." />
+        <datalist id="station-list"> </datalist>
+        <button onclick="findClosestStop()" title="Use your current location to find the closest station">📍</button>
+        <input type="checkbox" name="goto" id="goto" title="Enable to enter fullscreen mode with auto-updates every second">
+        <button onclick="updateStationSW()">South & West (WIP)</button>
+        <button onclick="updateStationNE()">North & East (WIP)</button>
+        <button onclick="updateStationAll()">All trains (WIP)</button>
+      </div>
+
+      <div class="color">
+        <div>
+          <label for="colsel1">Select color for #1: </label
+          ><input name="colsel1" id="colsel1" type="text" data-coloris />
+        </div>
+        <div>
+          <label for="colsel2">Select color for #2: </label
+          ><input name="colsel2" id="colsel2" type="text" data-coloris />
+        </div>
+        <div>
+          <label for="colsel3">Select color for #3: </label
+          ><input name="colsel3" id="colsel3" type="text" data-coloris />
+        </div>
+        <div>
+          <label for="colsel4">Select color for #4: </label
+          ><input name="colsel4" id="colsel4" type="text" data-coloris />
+        </div>
+        <div>
+          <label for="colsel5">Select color for #5: </label
+          ><input name="colsel5" id="colsel5" type="text" data-coloris />
+        </div>
+        <div>
+          <label for="colsel6">Select color for #6: </label
+          ><input name="colsel6" id="colsel6" type="text" data-coloris />
+        </div>
+      </div>
+
+      <br />
+      <div class="color-select">
+        Colors:
+        <ul>
+          <li>
+            <button onclick="setColor(1, '#00871C')">Set #1</button>
+            <button onclick="setColor(2, '#00871C')">Set #2</button>
+            <button onclick="setColor(3, '#00871C')">Set #3</button>
+            <button onclick="setColor(4, '#00871C')">Set #4</button>
+            <button onclick="setColor(5, '#00871C')">Set #5</button>
+            <button onclick="setColor(6, '#00871C')">Set #6</button>
+            #00871C Ipswich / Sunshine Coast
+          </li>
+          <li>
+            <button onclick="setColor(1, '#E31837')">Set #1</button>
+            <button onclick="setColor(2, '#E31837')">Set #2</button>
+            <button onclick="setColor(3, '#E31837')">Set #3</button>
+            <button onclick="setColor(4, '#E31837')">Set #4</button>
+            <button onclick="setColor(5, '#E31837')">Set #5</button>
+            <button onclick="setColor(6, '#E31837')">Set #6</button>
+            #E31837 Beenleigh / Ferny Grove
+          </li>
+          <li>
+            <button onclick="setColor(1, '#4D84C3')">Set #1</button>
+            <button onclick="setColor(2, '#4D84C3')">Set #2</button>
+            <button onclick="setColor(3, '#4D84C3')">Set #3</button>
+            <button onclick="setColor(4, '#4D84C3')">Set #4</button>
+            <button onclick="setColor(5, '#4D84C3')">Set #5</button>
+            <button onclick="setColor(6, '#4D84C3')">Set #6</button>
+            #4D84C3 Springfield Central / Redcliffe
+          </li>
+          <li>
+            <button onclick="setColor(1, '#00467F')">Set #1</button>
+            <button onclick="setColor(2, '#00467F')">Set #2</button>
+            <button onclick="setColor(3, '#00467F')">Set #3</button>
+            <button onclick="setColor(4, '#00467F')">Set #4</button>
+            <button onclick="setColor(5, '#00467F')">Set #5</button>
+            <button onclick="setColor(6, '#00467F')">Set #6</button>
+            #00467F Cleveland / Shorncliffe
+          </li>
+          <li>
+            <button onclick="setColor(1, '#A39D46')">Set #1</button>
+            <button onclick="setColor(2, '#A39D46')">Set #2</button>
+            <button onclick="setColor(3, '#A39D46')">Set #3</button>
+            <button onclick="setColor(4, '#A39D46')">Set #4</button>
+            <button onclick="setColor(5, '#A39D46')">Set #5</button>
+            <button onclick="setColor(6, '#A39D46')">Set #6</button>
+            #A39D46 Gold Coast / Airport
+          </li>
+          <li>
+            <button onclick="setColor(1, '#BF65A8')">Set #1</button>
+            <button onclick="setColor(2, '#BF65A8')">Set #2</button>
+            <button onclick="setColor(3, '#BF65A8')">Set #3</button>
+            <button onclick="setColor(4, '#BF65A8')">Set #4</button>
+            <button onclick="setColor(5, '#BF65A8')">Set #5</button>
+            <button onclick="setColor(6, '#BF65A8')">Set #6</button>
+            #BF65A8 Doomben
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

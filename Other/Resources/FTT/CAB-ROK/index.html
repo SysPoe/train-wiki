@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <title>CABROK Freight Timetable</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        position: relative;
+        padding: 0;
+        margin: 0;
+      }
+
+      .line {
+        position: absolute;
+        background: black;
+        opacity: 0.5;
+        width: 2px;
+      }
+
+      .buttons {
+        position: absolute;
+        left: 5px;
+        bottom: 5px;
+        z-index: 1000;
+        background: white;
+      }
+
+      .buttons button {
+        cursor: pointer;
+      }
+    </style>
+    <script src='https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js'></script>
+
+  </head>
+  <body>
+    <div class="buttons">
+      <a href="../../">Home</a>
+      <button id="prev">Previous Day</button>
+      <button id="next">Next Day</button>
+    </div>
+    <div id="loading">Loading (~55MB)...</div>
+    <script>
+      let days = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ];
+      let currentDay = 0;
+
+      document.querySelector("#prev").onclick = () => {
+        currentDay += 6;
+        currentDay %= 7;
+        location.hash = days[currentDay];
+        location.reload();
+      };
+      document.querySelector("#next").onclick = () => {
+        currentDay++;
+        currentDay %= 7;
+        location.hash = days[currentDay];
+        location.reload();
+      };
+
+      let container = document.createElement("div");
+      let image = document.createElement("img");
+
+      let day = new Date().toLocaleString("en-us", { weekday: "long" });
+      if (location.hash.replace("#", "") != "")
+        day = location.hash.replace("#", "");
+      location.hash = day;
+      currentDay = days.indexOf(day);
+
+      container.classList.add("container");
+
+      image.src = `./Timetables/CAB to ROK ${day}/0.jpg`;
+      image.style.display = "none";
+
+      document.body.append(container);
+
+      container.appendChild(image);
+      image.onload = () => {
+        document.getElementById("loading").remove();
+        image.style.display = "";
+        image.height = document.body.getBoundingClientRect().height;
+
+        const IMG_HEIGHT = 9761;
+
+        const px_left = 2320;
+        const px_right = 18222;
+        const px_bottom = 9020;
+        const px_top = 1027;
+
+        let startTime = new Date();
+        startTime.setMilliseconds(0);
+        startTime.setSeconds(0);
+        startTime.setMinutes(0);
+        startTime.setHours(0);
+
+        let endTime = new Date();
+        endTime.setMilliseconds(0);
+        endTime.setSeconds(0);
+        endTime.setMinutes(0);
+        endTime.setHours(0);
+        endTime.setDate(endTime.getDate() + 1);
+
+        let tval = (new Date() - startTime) / (endTime - startTime);
+
+        let v_left = tval * (px_right - px_left) + px_left;
+
+        let line = document.createElement("div");
+        line.classList.add("line");
+
+        let scale = image.height / IMG_HEIGHT;
+
+        line.style.height = `${(px_bottom - px_top) * scale}px`;
+        line.style.left = `${v_left * scale - 1}px`;
+        line.style.top = `${px_top * scale}px`;
+
+        container.prepend(line);
+
+        setInterval(() => {
+          if (tval > 1) location.reload();
+          tval = (new Date() - startTime) / (endTime - startTime);
+          v_left = tval * (px_right - px_left) + px_left;
+          line.style.left = `${v_left * scale}px`;
+        }, 10_000);
+
+        panzoom(container);
+      };
+    </script>
+  </body>
+</html>

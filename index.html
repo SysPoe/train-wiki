@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    <meta name="author" content="SysPoe">
+    
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SysPoe's Train Wiki</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "Hello!", url: "#_top", children: [
+              {title: "Contact Me", url: "#contact-me" },
+          ]},
+        ];
+
+    </script>
+    <script src="./js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+      <div class="wm-top-title">
+        SysPoe's Train Wiki<br>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+    <ul class="wm-toctree wm-toc-repo">
+      <li class="wm-toc-li wm-toc-lev1">
+      <a class="wm-article-link wm-toc-text" href="https://github.com/SysPoe/train-wiki/">
+        <i class="fa fa-github"></i>
+
+        GitHub
+      </a>
+      </li>
+    </ul>
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Home</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Rollingstock</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Rollingstock/ICE/" class="wm-article-link wm-toc-text">ICE (Walkers/Adtranz InterCity Express)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Rollingstock/EMU/" class="wm-article-link wm-toc-text">EMU (Walkers/Adtranz Electric Multiple Unit)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Rollingstock/IMU/" class="wm-article-link wm-toc-text">IMU (Interurban Multiple Unit)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Rollingstock/SMU/" class="wm-article-link wm-toc-text">SMU (Suburban Multiple Unit)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Rollingstock/NGR/" class="wm-article-link wm-toc-text">NGR (New Generation Rollingstock)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Rollingstock/QTMP/" class="wm-article-link wm-toc-text">QTMP / NNGR (Queensland Train Manufacturing Program / New NGR)</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Train Spotting</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Train-Spotting/AnyTrip/" class="wm-article-link wm-toc-text">AnyTrip</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Train-Spotting/Best-Lines/" class="wm-article-link wm-toc-text">Best Lines to See Different Models</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Train-Spotting/Cool-Rides/" class="wm-article-link wm-toc-text">Cool Rides</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Train-Spotting/Train-Numbering-Guide/" class="wm-article-link wm-toc-text">Train Numbering Guide</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Train-Spotting/Tips-While-Lineside/" class="wm-article-link wm-toc-text">(External) Tips While Lineside</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Gallery</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Gallery/Blueprints/" class="wm-article-link wm-toc-text">Blueprints</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Gallery/Photos/" class="wm-article-link wm-toc-text">Train Photos</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Other</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Other/Brisbane-Day-Trips/" class="wm-article-link wm-toc-text">(External) Things to do on the QR Network</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Other/Glossary/" class="wm-article-link wm-toc-text">Glossary</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Other/Honk/" class="wm-article-link wm-toc-text">Train Horns</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Other/SEQ-Craziness/" class="wm-article-link wm-toc-text">SEQ Train Craziness</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Other/Station-Abbreviations/" class="wm-article-link wm-toc-text">Station Abbreviations</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="Other/Resources/" class="wm-article-link wm-toc-text">Resources</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="Rollingstock/ICE/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="Rollingstock/ICE/" class="btn btn-xs btn-link">
+        ICE (Walkers/Adtranz InterCity Express)
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="hello">Hello!<a class="headerlink" href="#hello" title="Permanent link">&para;</a></h1>
+<p>Welcome to <em>SysPoe's Train Wiki!</em>
+This site is dedicated to Queensland Rail's SEQ network and providing information for people who love trains (like me!) Other trains that I am interested in may appear here as well. And maybe buses too.</p>
+<p>This website is still a bit of a work in progress, so you might find some pages with notes or other things that I want to remember to add later, but aren't fully fleshed out. Some other pages might link to external websites which contain similar information until I decide to transfer it over and add my own stuff.</p>
+<p>Have fun!</p>
+<p>By the way, if you would like the original uncompressed versions of the images in the gallery, and maybe some other train photos please feel free to <a href="mailto:poe@duck.com">email me</a>. Please also email me if you find any issues with the site, would like me to add more information about a certain topic, or you have your own photos that you would like to add (with full credit given).</p>
+<h2 id="contact-me">Contact Me<a class="headerlink" href="#contact-me" title="Permanent link">&para;</a></h2>
+<p>Email: <a href="mailto:poe@duck.com">poe@duck.com</a> <br>
+Github: <a href="https://github.com/SysPoe">https://github.com/SysPoe</a> <br>
+You can also see the source code of this wiki over at <a href="https://github.com/SysPoe/train-wiki">https://github.com/SysPoe/train-wiki</a>. It might not last there forever, though, and I might have to migrate the media to another site that allows for larger files. So far, almost all of the media and archives are stored in the repo. As of Oct 3, 2025, it totals a whopping 2.2GB.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="Rollingstock/ICE/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="Rollingstock/ICE/" class="btn btn-xs btn-link">
+        ICE (Walkers/Adtranz InterCity Express)
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/SysPoe/train-wiki/edit/main/docs/index.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-10-08 06:53:05.724632+00:00
+-->

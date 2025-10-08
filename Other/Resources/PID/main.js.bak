@@ -1,0 +1,809 @@
+let zones = [
+  {
+    north: {
+      display: "North",
+      zones: [],
+    },
+    south: {
+      display: "City & South",
+      zones: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 0,
+    stations: [
+      "gympie north",
+      "traveston",
+      "cooran",
+      "pomona",
+      "cooroy",
+      "eumundi",
+      "yandina",
+    ],
+  },
+  {
+    north: {
+      display: "North",
+      zones: [0],
+    },
+    south: {
+      display: "City & South",
+      zones: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 0,
+    stations: [
+      "nambour",
+      "woombye",
+      "palmwoods",
+      "eudlo",
+      "mooloolah",
+      "landsborough",
+      "beerwah",
+      "glasshouse mountains",
+      "beerburrum",
+      "elimbah",
+    ],
+  },
+  {
+    north: {
+      display: "North",
+      zones: [0, 1],
+    },
+    south: {
+      display: "City & South",
+      zones: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 0,
+    stations: ["caboolture", "morayfield", "burpengary", "narangba", "dakabin"],
+  },
+  {
+    north: {
+      display: "East",
+      zones: [],
+    },
+    south: {
+      display: "City & South",
+      zones: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 1,
+    stations: [
+      "kallangur",
+      "murrumba downs",
+      "mango hill",
+      "mango hill east",
+      "rothwell",
+      "kippa-ring",
+    ],
+  },
+  {
+    north: {
+      display: "North & East",
+      zones: [0, 1, 2, 3],
+    },
+    south: {
+      display: "City & South",
+      zones: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 0,
+    stations: [
+      "petrie",
+      "lawnton",
+      "bray park",
+      "strathpine",
+      "bald hills",
+      "carseldine",
+      "zillmere",
+      "geebung",
+      "sunshine",
+      "virginia",
+    ],
+  },
+  {
+    north: {
+      display: "East",
+      zones: [],
+    },
+    south: {
+      display: "City & South",
+      zones: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 0,
+    stations: [
+      "bindha",
+      "banyo",
+      "nudgee",
+      "boondall",
+      "north boondall",
+      "deagon",
+      "sandgate",
+      "shorncliffe",
+    ],
+  },
+  {
+    north: {
+      display: "North & East",
+      zones: [0, 1, 2, 3, 4, 5],
+    },
+    south: {
+      display: "City & South",
+      zones: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 0,
+    stations: ["northgate", "nundah", "toombul"],
+  },
+  {
+    north: {
+      display: "North",
+      zones: [],
+    },
+    south: {
+      display: "City & South",
+      zones: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 1,
+    stations: ["international airport", "domestic airport"],
+  },
+  {
+    north: {
+      display: "East",
+      zones: [0, 1, 2, 3, 4, 5, 6, 7],
+    },
+    south: {
+      display: "City & South",
+      zones: [9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 1,
+    stations: ["clayfield", "hendra", "ascot", "doomben"],
+  },
+  {
+    north: {
+      display: "North & East",
+      zones: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    },
+    south: {
+      display: "City & South",
+      zones: [10, 11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 0,
+    stations: ["eagle junction", "wooloowin", "albion"],
+  },
+  {
+    north: {
+      display: "North",
+      zones: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    },
+    south: {
+      display: "City & South",
+      zones: [11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 0,
+    stations: [
+      "ferny grove",
+      "keperra",
+      "grovely",
+      "oxford park",
+      "michleton",
+      "gaythorne",
+      "enoggera",
+      "alderley",
+      "newmarket",
+      "wilston",
+    ],
+  },
+  {
+    north: {
+      display: "North & East",
+      zones: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    },
+    south: {
+      display: "City & South/West",
+      zones: [12, 13, 14, 15, 16, 17, 18],
+    },
+    order: 0,
+    stations: [
+      "bowen hills",
+      "fortitude valley",
+      "central",
+      "roma street",
+      "exhibition",
+    ],
+  },
+  {
+    north: {
+      display: "City & North",
+      zones: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    },
+    south: {
+      display: "South & East",
+      zones: [13, 14, 15, 16, 17, 18],
+    },
+    order: 0,
+    stations: [
+      "south brisbane",
+      "south bank",
+      "boggo rd",
+      "park rd",
+      "boggo rd/park rd",
+      "boggo rd / park rd",
+      "boggo road",
+      "park road",
+      "boggo road/park road",
+      "boggo road / park road",
+    ],
+  },
+  {
+    north: {
+      display: "City & North",
+      zones: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    },
+    south: {
+      display: "West",
+      zones: [14, 15, 16, 17, 18],
+    },
+    order: 0,
+    stations: [
+      "milton",
+      "auchenflower",
+      "toowong",
+      "taringa",
+      "indooroopilly",
+      "chelmer",
+      "graceville",
+      "sherwood",
+      "corinda",
+      "oxley",
+      "darra",
+    ],
+  },
+  {
+    north: {
+      display: "City & West",
+      zones: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    },
+    south: {
+      display: "East",
+      zones: [15, 16, 17, 18],
+    },
+    order: 0,
+    stations: [
+      "buranda",
+      "coorparoo",
+      "norman park",
+      "morningside",
+      "cannon hill",
+      "murarrie",
+      "hemmant",
+      "lindum",
+      "wynnum north",
+      "wynnum",
+      "wynnum central",
+      "manly",
+      "lota",
+      "thorneside",
+      "birkdale",
+      "wellington point",
+      "ormiston",
+      "cleveland",
+    ],
+  },
+  {
+    north: {
+      display: "City & North",
+      zones: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    },
+    south: {
+      display: "South",
+      zones: [16, 17, 18],
+    },
+    order: 0,
+    stations: [
+      "dutton park",
+      "fairfield",
+      "yeronga",
+      "moorooka",
+      "rocklea",
+      "coopers plains",
+      "banoon",
+      "sunnybank",
+      "altandi",
+      "runcorn",
+      "fruitgrove",
+      "kuraby",
+      "trinder park",
+      "woodridge",
+      "kingston",
+      "loganlea",
+      "bethania",
+      "edens landing",
+      "holmview",
+      "beenleigh",
+    ],
+  },
+  {
+    north: {
+      display: "City & North",
+      zones: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    },
+    south: {
+      display: "South",
+      zones: [15, 18],
+    },
+    order: 0,
+    stations: ["richlands", "springfield", "springfield central"],
+  },
+  {
+    north: {
+      display: "City & North",
+      zones: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    },
+    south: {
+      display: "South",
+      zones: [15, 18],
+    },
+    order: 0,
+    stations: [
+      "wacol",
+      "gailes",
+      "goodna",
+      "redbank",
+      "riverview",
+      "dinmore",
+      "ebbw vale",
+      "bundamba",
+      "booval",
+      "east ipswich",
+      "ipswich",
+      "thomas street",
+      "wulkuraka",
+      "karrabin",
+      "walloon",
+      "thagoona",
+      "rosewood",
+    ],
+  },
+  {
+    north: {
+      display: "City & North",
+      zones: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    },
+    south: {
+      display: "South",
+      zones: [],
+    },
+    order: 0,
+    stations: [
+      "ormeau",
+      "pimpama",
+      "coomera",
+      "hope island",
+      "nerang",
+      "merrimac",
+      "robina",
+      "varsity lakes",
+    ],
+  },
+];
+let innerInnerCity = [
+  "bowen hills",
+  "fortitude valley",
+  "central",
+  "roma street",
+  "exhibition",
+  "south brisbane",
+  "south bank",
+  "boggo rd",
+  "park rd",
+  "boggo rd/park rd",
+  "boggo rd / park rd",
+  "boggo road",
+  "park road",
+  "boggo road/park road",
+  "boggo road / park road",
+];
+let innerCity = {
+  colour: "#c7c8ca",
+  stations: [
+    "northgate",
+    "nundah",
+    "toombul",
+    "eagle junction",
+    "wooloowin",
+    "albion",
+    ...innerInnerCity,
+  ],
+};
+let nameOverrides = {
+  "Kippa-Ring": "Redcliffe",
+  "Varsity Lakes": "Gold Coast",
+};
+
+function takeshot() {
+  const element = document.querySelector(".container");
+
+  // Use html2canvas to take a screenshot
+  html2canvas(element).then((canvas) => {
+    // Convert the canvas to a data URL
+    const dataURL = canvas.toDataURL("image/png");
+
+    // Create a temporary link to download the image
+    const link = document.createElement("a");
+    link.href = dataURL;
+    link.download = "screenshot.png";
+    link.click();
+  });
+}
+function car3(num, setTo = null) {
+  let pel = document.querySelector("#tr" + num);
+  let mkel = document.querySelector("#tcar" + num);
+  let ngr = pel.querySelectorAll("td")[4].querySelector(".ngr");
+  let tcar = pel.querySelectorAll("td")[4].querySelector(".tcar");
+  if ((ngr.style.display == "" && setTo == null) || setTo == "0") {
+    ngr.style.display = "none";
+    tcar.style.display = "";
+    mkel.innerText = "NGR #" + num;
+  } else {
+    ngr.style.display = "";
+    tcar.style.display = "none";
+    mkel.innerText = "3car #" + num;
+  }
+}
+function hide(num, setTo = null) {
+  let el = document.querySelector("#tr" + num);
+  if (el.classList.contains("hidden")) el.classList.remove("hidden");
+  if (setTo != null) {
+    el.style.opacity = setTo;
+    if (setTo == "1") {
+      document.querySelector("#hide" + num).innerText = "Hide #" + num;
+      el.querySelectorAll("[contenteditable=false]").forEach((v) =>
+        v.setAttribute("contenteditable", "true")
+      );
+    } else {
+      document.querySelector("#hide" + num).innerText = "Show #" + num;
+      el.classList.add("hidden");
+      el.querySelectorAll("[contenteditable=true]").forEach((v) =>
+        v.setAttribute("contenteditable", "false")
+      );
+    }
+    return;
+  }
+  if (el.style.opacity == "") el.style.opacity = "1";
+  document.querySelector("#hide" + num).innerText =
+    el.style.opacity == "1" ? "Show #" + num : "Hide #" + num;
+  if (el.style.opacity == "1") {
+    el.classList.add("hidden");
+    el.querySelectorAll("[contenteditable=true]").forEach((v) =>
+      v.setAttribute("contenteditable", "false")
+    );
+  } else {
+    el.querySelectorAll("[contenteditable=false]").forEach((v) =>
+      v.setAttribute("contenteditable", "true")
+    );
+  }
+  el.style.opacity = el.style.opacity == "1" ? "0" : "1";
+}
+function setColor(i, val) {
+  document.querySelector("#colsel" + i).value = val;
+  document.querySelector("#tr" + i).style.backgroundColor = val;
+}
+for (let i = 1; i <= 6; i++) {
+  document.querySelector("#colsel" + i).onchange = () => {
+    let val = document.querySelector("#colsel" + i).value;
+    document.querySelector("#tr" + i).style.backgroundColor = val;
+  };
+}
+
+let ctrl = false;
+document.onkeydown = (ev) => {
+  if (ev.key == "Control") ctrl = true;
+};
+document.onkeyup = (ev) => {
+  if (ev.key == "Control") ctrl = false;
+};
+
+document.querySelectorAll(".active").forEach((el) => {
+  el.onclick = (e) => {
+    if (el.parentElement.style.opacity == "0") return;
+    if (ctrl) return;
+    if (
+      e.target != el &&
+      (e.target.classList.contains("active") ||
+        e.target.classList.contains("inactive") ||
+        e.target.classList.contains("ignore"))
+    )
+      return;
+    if (el.classList.contains("active")) {
+      el.classList.remove("active");
+      el.classList.add("inactive");
+      if (el.hasAttribute("contenteditable"))
+        el.setAttribute("contenteditable", "false");
+    } else {
+      el.classList.remove("inactive");
+      el.classList.add("active");
+      if (el.hasAttribute("contenteditable"))
+        el.setAttribute("contenteditable", "true");
+    }
+  };
+});
+
+function getZone(st) {
+  st = st.toLowerCase().replace("station", "").trim();
+  for (let i = 0; i < zones.length; i++) {
+    if (zones[i].stations.includes(st)) return i;
+  }
+  return -1;
+}
+
+async function main() {
+  let res = await fetch(
+    "https://corsproxy.io/?url=" +
+      encodeURIComponent(
+        "https://anytrip.com.au/api/v3/region/au4/stops?limit=500&maxLat=-26.39899568258307&maxLon=153.7892943671533&minLat=-28.226719490511584&minLon=152.33085930855955&modes=au4:trains"
+      )
+  );
+  let stations = await res.json();
+  window.stations = stations;
+
+  let sList = document.querySelector("#station-list");
+
+  let nameToID = {};
+
+  async function _updateStation(
+    id,
+    thisStation,
+    filterfunc = (v) => {
+      return true;
+    },
+    display = "Next Inbound and Outbound Trains"
+  ) {
+    let res = await fetch(
+      "https://corsproxy.io/?url=" +
+        encodeURIComponent(
+          "https://anytrip.com.au/api/v3/region/au4/departures/" +
+            encodeURIComponent(id) +
+            "?limit=250&modes=au4:trains"
+        )
+    );
+    let js = await res.json();
+    window.station = js;
+
+    let now = new Date();
+    let time = now.getTime();
+
+    js.response.departures = js.response.departures
+      .filter((v) => v.tripInstance.trip.route.mode == "au4:trains")
+      .filter((v) => v.stopTimeInstance.departure.time - time / 1000 > 0)
+      .filter(filterfunc)
+      .sort(
+        (a, b) =>
+          a.stopTimeInstance.departure.time - b.stopTimeInstance.departure.time
+      );
+    let len = Math.min(js.response.departures.length, 6);
+    for (let i = 6; i > len; i--) {
+      hide(i, "0");
+    }
+    for (let i = 1; i <= len; i++) {
+      hide(i, "1");
+    }
+
+    document.querySelector(".lmrmiddle").innerText = display;
+
+    let nowh = ((now.getHours() - 1) % 12) + 1;
+    let nowm = now.getMinutes().toString();
+    let nows = now.getSeconds().toString();
+
+    while (nowm.length < 2) nowm = "0" + nowm;
+    while (nows.length < 2) nows = "0" + nows;
+
+    document.querySelector(".time").innerText = `${nowh}:${nowm}:${nows}`;
+
+    for (let i = 1; i <= len; i++) {
+      let dep = js.response.departures[i - 1];
+      let plt = dep.stopTimeInstance.stop.disassembled.platformName;
+      let det = dep.stopTimeInstance.departure.time;
+      let deldet = det;
+      if (dep.stopTimeInstance.departure.delay != undefined)
+        deldet -= dep.stopTimeInstance.departure.delay;
+      let dest = dep.tripInstance.trip.headsign.headline
+        .trim()
+        .replace(/ station$/, "")
+        .trim();
+      if (nameOverrides[dest] != undefined) dest = nameOverrides[dest];
+      let color = "#" + dep.tripInstance.trip.route.color;
+      let isNGR =
+        dep.vehicle.vehicleModel != undefined &&
+        (dep.vehicle.vehicleModel.includes("NGR") ||
+          (dep.vehicle.vehicleModel.trim().length == 4 &&
+            dep.vehicle.vehicleModel.trim()[0] == "D"));
+      let isTCar =
+        dep.vehicle.vehicleModel != undefined &&
+        (dep.vehicle.vehicleModel.includes("Run J") ||
+          dep.vehicle.vehicleModel.includes("Run U") ||
+          (dep.vehicle.vehicleModel.trim().length == 4 &&
+            (dep.vehicle.vehicleModel.trim()[0] == "J" ||
+              dep.vehicle.vehicleModel.trim()[0] == "U")));
+
+      let _d = new Date();
+      let stopsRes = await fetch(
+        "https://corsproxy.io/?url=" +
+          encodeURIComponent(
+            "https://anytrip.com.au/api/v3/region/au4/" + dep.tripInstance._path
+          )
+      );
+      let stops = (await stopsRes.json()).response;
+      let upTo = stops.realtimePattern.filter((v) => v.stop.parent.id == id)[0]
+        .index;
+      stops.realtimePattern = stops.realtimePattern.slice(upTo);
+      let _f = stops.realtimePattern.map((v) =>
+        v.stop.disassembled.stationName.replace("station", "").trim()
+      );
+      if (_f.includes("Caboolture") && _f.includes("Nambour"))
+        dest = "Caboolture / Namb";
+      if (
+        innerCity.stations.includes(
+          stops.realtimePattern[
+            stops.realtimePattern.length - 1
+          ].stop.parent.fullName
+            .toLowerCase()
+            .replace("station", "")
+            .trim()
+        )
+      )
+        color = innerCity.colour;
+      if (
+        !innerInnerCity.includes(
+          thisStation.toLowerCase().replace(" station", "").trim()
+        )
+      ) {
+        for (let i = upTo + 1; i < stops.realtimePattern.length; i++) {
+          let { stop } = stops.realtimePattern[i];
+          if (
+            innerCity.stations.includes(
+              stop.parent.fullName.toLowerCase().replace("station", "").trim()
+            )
+          ) {
+            dest = "City & " + dest;
+            break;
+          }
+        }
+      }
+
+      setColor(i, color);
+      let td = (v) =>
+        document.querySelector("#tr" + i).querySelectorAll("td")[v];
+      td(1).innerText = dest;
+      if (td(2).classList.contains("active")) td(2).classList.remove("active");
+      td(2).classList.add("inactive");
+      td(2).setAttribute("contenteditable", "false");
+      td(3).innerText = plt;
+      car3(i, isNGR ? "1" : "0");
+      if (isNGR || isTCar) {
+        if (td(4).classList.contains("inactive"))
+          td(4).classList.remove("inactive");
+        td(4).classList.add("active");
+      } else {
+        if (td(4).classList.contains("active"))
+          td(4).classList.remove("active");
+        td(4).classList.add("inactive");
+      }
+
+      let deth = ((new Date(deldet * 1000).getHours() - 1) % 12) + 1;
+      let detm = new Date(deldet * 1000).getMinutes().toString();
+      while (detm.length < 2) detm = "0" + detm;
+      td(0).innerText = `${deth}:${detm}`;
+      let estdepmin = Math.floor((det - time / 1000) / 60) % 60;
+      let estdeph = Math.floor(Math.floor((det - time / 1000) / 60) / 60);
+      td(5).innerText =
+        estdeph == 0
+          ? estdepmin + " min"
+          : // : `${estdeph}:${estdepmin < 10 ? "0" : ""}${estdepmin}`;
+            `${deth}:${detm}`;
+      // console.log(dep);
+    }
+  }
+
+  window.updateStationSW = async () => {
+    let el = document.querySelector(".select-station input");
+    let id = nameToID[el.value];
+    let zoneSt = getZone(el.value);
+    console.log(zoneSt);
+
+    _updateStation(
+      id,
+      el.value,
+      (v) => {
+        let dest = v.tripInstance.trip.headsign.headline;
+        let destZone = getZone(dest);
+        if (zoneSt == destZone) {
+          let cel = el.value.toLowerCase().replace("station", "").trim();
+          let del = dest.toLowerCase().replace("station", "").trim();
+          if (
+            zones[zoneSt].order == 0 &&
+            zones[zoneSt].stations.findIndex((s) => s == cel) <
+              zones[zoneSt].stations.findIndex((s) => s == del)
+          )
+            return true;
+          if (
+            zones[zoneSt].order == 1 &&
+            zones[zoneSt].stations.findIndex((s) => s == cel) >
+              zones[zoneSt].stations.findIndex((s) => s == del)
+          )
+            return true;
+        }
+        return zones[zoneSt].south.zones.includes(destZone);
+      },
+      "Next (1-6) Trains " +
+        (id == "au4:place_romsta"
+          ? "South & West"
+          : zones[zoneSt].south.display)
+    );
+  };
+  window.updateStationNE = async () => {
+    let el = document.querySelector(".select-station input");
+    let id = nameToID[el.value];
+    let res = await fetch(
+      "https://corsproxy.io/?url=" +
+        encodeURIComponent(
+          "https://anytrip.com.au/api/v3/region/au4/departures/" +
+            encodeURIComponent(id) +
+            "?limit=250"
+        )
+    );
+
+    let zoneSt = getZone(el.value);
+    console.log(zoneSt);
+    _updateStation(
+      id,
+      el.value,
+      (v) => {
+        let dest = v.tripInstance.trip.headsign.headline;
+        let destZone = getZone(dest);
+        if (zoneSt == destZone) {
+          let cel = el.value.toLowerCase().replace("station", "").trim();
+          let del = dest.toLowerCase().replace("station", "").trim();
+          if (
+            zones[zoneSt].order == 0 &&
+            zones[zoneSt].stations.findIndex((s) => s == cel) >
+              zones[zoneSt].stations.findIndex((s) => s == del)
+          )
+            return true;
+          if (
+            zones[zoneSt].order == 1 &&
+            zones[zoneSt].stations.findIndex((s) => s == cel) <
+              zones[zoneSt].stations.findIndex((s) => s == del)
+          )
+            return true;
+        }
+        return zones[zoneSt].north.zones.includes(destZone);
+      },
+      "Next (1-6) Trains " + zones[zoneSt].north.display
+    );
+  };
+  window.updateStationAll = async () => {
+    let el = document.querySelector(".select-station input");
+    let id = nameToID[el.value];
+    _updateStation(id, el.value);
+  };
+
+  stations.response.stops.forEach((s) => {
+    let option = document.createElement("option");
+    option.value = s.stop.fullName;
+    option.innerText = s.stop.fullName;
+    nameToID[s.stop.fullName] = s.stop.id;
+    sList.appendChild(option);
+  });
+
+  document
+    .querySelector(".select-station input")
+    .setAttribute("placeholder", "Select your station...");
+
+  if (window.location.hash.replace("#", "").trim() != "") {
+    document
+      .querySelectorAll(".hide")
+      .forEach((el) => (el.style.display = "none"));
+    document.querySelector(".select-station input").value = decodeURIComponent(
+      location.hash.replace("#", "")
+    );
+    // window.updateStationAll();
+    // window.updateStationSW();
+    window.updateStationNE();
+  }
+}
+main();
