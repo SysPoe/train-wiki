@@ -221,10 +221,10 @@ const trainData = {
       "odd": "Service concludes travelling in the 'Down' direction"
     },
     "specialPatterns": {
-      "xDYn": "Via South Brisbane to Darra",
-      "x5Yn": "Via South Brisbane to Ipswich",
-      "xxTn": "Extra service for special events etc.",
-      "xFXn": "Exhibition Circular Services"
+    //   "xDYn": "Via South Brisbane to Darra",
+    //   "x5Yn": "Via South Brisbane to Ipswich",
+    //   "xxTn": "Extra service for special events etc.",
+    //   "xFXn": "Exhibition Circular Services"
     }
   },
   "regional": {
@@ -397,9 +397,9 @@ function decodeTrainNumber(trainNumber) {
 
     let html = `<div class="train-number-display">${trainNumber}</div>`;
 
-    // Check if it's SEQ Electric or Regional
-    const isSeqElectric = trainData.seqElectric.firstChar[char1] !== undefined;
-    const isRegional = trainData.regional.firstChar[char1] !== undefined;
+    // Check if it's SEQ Electric or Regional. Treat '?' as an explicit unknown (wildcard)
+    const isSeqElectric = trainData.seqElectric.firstChar[char1] !== undefined || char1 === '?';
+    const isRegional = trainData.regional.firstChar[char1] !== undefined || char1 === '?';
 
     if (!isSeqElectric && !isRegional) {
         html += '<div class="error">Invalid train number. First character not recognized.</div>';
@@ -428,7 +428,12 @@ function decodeSeqElectric(trainNumber, char1, char2, char3, char4) {
 
     // First character
     const firstCharDesc = trainData.seqElectric.firstChar[char1];
-    if (firstCharDesc) {
+    if (char1 === '?') {
+        html += `<div class="result-item">
+            <span class="char-label">1st Character <span class="highlight">${char1}</span> - Rollingstock Type:</span>
+            <div class="char-value">Unknown (entered '?')</div>
+        </div>`;
+    } else if (firstCharDesc) {
         html += `<div class="result-item">
             <span class="char-label">1st Character <span class="highlight">${char1}</span> - Rollingstock Type:</span>
             <div class="char-value">${firstCharDesc}</div>
@@ -437,7 +442,12 @@ function decodeSeqElectric(trainNumber, char1, char2, char3, char4) {
 
     // Second character
     const secondCharDesc = trainData.seqElectric.secondChar[char2];
-    if (secondCharDesc) {
+    if (char2 === '?') {
+        html += `<div class="result-item">
+            <span class="char-label">2nd Character <span class="highlight">${char2}</span> - Destination Range:</span>
+            <div class="char-value">Unknown (entered '?')</div>
+        </div>`;
+    } else if (secondCharDesc) {
         html += `<div class="result-item">
             <span class="char-label">2nd Character <span class="highlight">${char2}</span> - Destination Range:</span>
             <div class="char-value">${secondCharDesc}</div>
@@ -452,7 +462,12 @@ function decodeSeqElectric(trainNumber, char1, char2, char3, char4) {
     // Third character
     if (char3) {
         const thirdCharDesc = trainData.seqElectric.thirdChar[char3];
-        if (thirdCharDesc) {
+        if (char3 === '?') {
+            html += `<div class="result-item">
+                <span class="char-label">3rd Character <span class="highlight">${char3}</span> - Running Pattern:</span>
+                <div class="char-value">Unknown (entered '?')</div>
+            </div>`;
+        } else if (thirdCharDesc) {
             html += `<div class="result-item">
                 <span class="char-label">3rd Character <span class="highlight">${char3}</span> - Running Pattern:</span>
                 <div class="char-value">${thirdCharDesc}</div>
@@ -467,23 +482,33 @@ function decodeSeqElectric(trainNumber, char1, char2, char3, char4) {
 
     // Fourth character (direction)
     if (char4) {
-        const isEven = !isNaN(char4) && parseInt(char4) % 2 === 0;
-        const direction = isEven ? trainData.seqElectric.fourthChar.even : trainData.seqElectric.fourthChar.odd;
-        html += `<div class="result-item">
-            <span class="char-label">4th Character <span class="highlight">${char4}</span> - Direction:</span>
-            <div class="char-value">${direction}</div>
-        </div>`;
+        if (char4 === '?') {
+            html += `<div class="result-item">
+                <span class="char-label">4th Character <span class="highlight">${char4}</span> - Direction:</span>
+                <div class="char-value">Unknown (entered '?')</div>
+            </div>`;
+        } else {
+            const isEven = !isNaN(char4) && parseInt(char4) % 2 === 0;
+            const direction = isEven ? trainData.seqElectric.fourthChar.even : trainData.seqElectric.fourthChar.odd;
+            html += `<div class="result-item">
+                <span class="char-label">4th Character <span class="highlight">${char4}</span> - Direction:</span>
+                <div class="char-value">${direction}</div>
+            </div>`;
+        }
     }
 
     // Check for special patterns
-    const pattern = char2 + char3;
-    for (const [key, value] of Object.entries(trainData.seqElectric.specialPatterns)) {
-        const patternRegex = key.replace(/x/g, '.').replace(/n/g, '\\d');
-        if (new RegExp(patternRegex).test(trainNumber)) {
-            html += `<div class="result-item special-pattern">
-                <span class="char-label">🌟 Special Pattern Detected:</span>
-                <div class="char-value">${value}</div>
-            </div>`;
+    // Only check for special patterns if the 2nd and 3rd characters are known (not '?')
+    if (char2 !== '?' && char3 !== '?') {
+        const pattern = char2 + char3;
+        for (const [key, value] of Object.entries(trainData.seqElectric.specialPatterns)) {
+            const patternRegex = key.replace(/x/g, '.').replace(/n/g, '\\d');
+            if (new RegExp(patternRegex).test(trainNumber)) {
+                html += `<div class="result-item special-pattern">
+                    <span class="char-label">🌟 Special Pattern Detected:</span>
+                    <div class="char-value">${value}</div>
+                </div>`;
+            }
         }
     }
 
@@ -497,7 +522,12 @@ function decodeRegional(trainNumber, char1, char2, char3, char4) {
 
     // First character
     const firstCharDesc = trainData.regional.firstChar[char1];
-    if (firstCharDesc) {
+    if (char1 === '?') {
+        html += `<div class="result-item">
+            <span class="char-label">1st Character <span class="highlight">${char1}</span> - Train Type:</span>
+            <div class="char-value">Unknown (entered '?')</div>
+        </div>`;
+    } else if (firstCharDesc) {
         html += `<div class="result-item">
             <span class="char-label">1st Character <span class="highlight">${char1}</span> - Train Type:</span>
             <div class="char-value">`;
@@ -520,103 +550,121 @@ function decodeRegional(trainNumber, char1, char2, char3, char4) {
             <span class="char-label">2nd Character <span class="highlight">${char2}</span> - Destination/Area:</span>
             <div class="char-value">`;
         
-        const coalMineral = trainData.regional.secondChar.coalMineral[char2];
-        const majorLocation = trainData.regional.secondChar.majorLocations[char2];
-        
-        if (coalMineral || majorLocation) {
-            html += '<div class="multiple-options">';
-            
-            if (coalMineral) {
-                if (Array.isArray(coalMineral)) {
-                    coalMineral.forEach(desc => {
-                        html += `<div class="option">${desc}</div>`;
-                    });
-                } else {
-                    html += `<div class="option">${coalMineral}</div>`;
-                }
-            }
-            
-            if (majorLocation) {
-                if (Array.isArray(majorLocation)) {
-                    majorLocation.forEach(desc => {
-                        html += `<div class="option">${desc}</div>`;
-                    });
-                } else {
-                    html += `<div class="option">${majorLocation}</div>`;
-                }
-            }
-            
-            html += '</div>';
+        if (char2 === '?') {
+            html += 'Unknown (entered "?")';
         } else {
-            html += 'Unknown destination/area';
+            const coalMineral = trainData.regional.secondChar.coalMineral[char2];
+            const majorLocation = trainData.regional.secondChar.majorLocations[char2];
+            
+            if (coalMineral || majorLocation) {
+                html += '<div class="multiple-options">';
+                
+                if (coalMineral) {
+                    if (Array.isArray(coalMineral)) {
+                        coalMineral.forEach(desc => {
+                            html += `<div class="option">${desc}</div>`;
+                        });
+                    } else {
+                        html += `<div class="option">${coalMineral}</div>`;
+                    }
+                }
+                
+                if (majorLocation) {
+                    if (Array.isArray(majorLocation)) {
+                        majorLocation.forEach(desc => {
+                            html += `<div class="option">${desc}</div>`;
+                        });
+                    } else {
+                        html += `<div class="option">${majorLocation}</div>`;
+                    }
+                }
+                
+                html += '</div>';
+            } else {
+                html += 'Unknown destination/area';
+            }
         }
         html += `</div></div>`;
     }
 
     // Third character (special meanings)
     if (char3) {
-        let thirdCharMeanings = [];
-        
-        // Check Pacific National
-        if (trainData.regional.thirdChar.pacificNational[char3]) {
-            thirdCharMeanings.push(trainData.regional.thirdChar.pacificNational[char3]);
-        }
-        
-        // Check Livestock
-        if (trainData.regional.thirdChar.livestock[char3]) {
-            thirdCharMeanings.push('Livestock - ' + trainData.regional.thirdChar.livestock[char3]);
-        }
-        
-        // Check Work Trains (if char1 is 0 and char2 is F)
-        if (char1 === '0' && char2 === 'F' && trainData.regional.thirdChar.workTrains[char3]) {
-            thirdCharMeanings.push(trainData.regional.thirdChar.workTrains[char3]);
-        }
-        
-        // Check Gladstone Boonal (if char2 is I)
-        if (char2 === 'I' && trainData.regional.thirdChar.gladstoneBoonal[char3]) {
-            thirdCharMeanings.push(trainData.regional.thirdChar.gladstoneBoonal[char3]);
-        }
-        
-        // Check Rockhampton
-        if (trainData.regional.thirdChar.rockhampton[char3]) {
-            thirdCharMeanings.push(trainData.regional.thirdChar.rockhampton[char3]);
-        }
-
-        if (thirdCharMeanings.length > 0) {
+        if (char3 === '?') {
             html += `<div class="result-item">
                 <span class="char-label">3rd Character <span class="highlight">${char3}</span> - Special Designation:</span>
-                <div class="char-value">`;
-            thirdCharMeanings.forEach(meaning => {
-                html += `<div class="option">${meaning}</div>`;
-            });
-            html += `</div></div>`;
-        } else if (isNaN(char3)) {
-            html += `<div class="result-item">
-                <span class="char-label">3rd Character <span class="highlight">${char3}</span>:</span>
-                <div class="char-value">Part of train ID (locally agreed-upon character)</div>
+                <div class="char-value">Unknown (entered '?')</div>
             </div>`;
         } else {
-            html += `<div class="result-item">
-                <span class="char-label">3rd Character <span class="highlight">${char3}</span>:</span>
-                <div class="char-value">Part of train ID</div>
-            </div>`;
+            let thirdCharMeanings = [];
+            
+            // Check Pacific National
+            if (trainData.regional.thirdChar.pacificNational[char3]) {
+                thirdCharMeanings.push(trainData.regional.thirdChar.pacificNational[char3]);
+            }
+            
+            // Check Livestock
+            if (trainData.regional.thirdChar.livestock[char3]) {
+                thirdCharMeanings.push('Livestock - ' + trainData.regional.thirdChar.livestock[char3]);
+            }
+            
+            // Check Work Trains (if char1 is 0 and char2 is F)
+            if (char1 === '0' && char2 === 'F' && trainData.regional.thirdChar.workTrains[char3]) {
+                thirdCharMeanings.push(trainData.regional.thirdChar.workTrains[char3]);
+            }
+            
+            // Check Gladstone Boonal (if char2 is I)
+            if (char2 === 'I' && trainData.regional.thirdChar.gladstoneBoonal[char3]) {
+                thirdCharMeanings.push(trainData.regional.thirdChar.gladstoneBoonal[char3]);
+            }
+            
+            // Check Rockhampton
+            if (trainData.regional.thirdChar.rockhampton[char3]) {
+                thirdCharMeanings.push(trainData.regional.thirdChar.rockhampton[char3]);
+            }
+
+            if (thirdCharMeanings.length > 0) {
+                html += `<div class="result-item">
+                    <span class="char-label">3rd Character <span class="highlight">${char3}</span> - Special Designation:</span>
+                    <div class="char-value">`;
+                thirdCharMeanings.forEach(meaning => {
+                    html += `<div class="option">${meaning}</div>`;
+                });
+                html += `</div></div>`;
+            } else if (isNaN(char3)) {
+                html += `<div class="result-item">
+                    <span class="char-label">3rd Character <span class="highlight">${char3}</span>:</span>
+                    <div class="char-value">Part of train ID (locally agreed-upon character)</div>
+                </div>`;
+            } else {
+                html += `<div class="result-item">
+                    <span class="char-label">3rd Character <span class="highlight">${char3}</span>:</span>
+                    <div class="char-value">Part of train ID</div>
+                </div>`;
+            }
         }
     }
 
     // Fourth character (direction)
     if (char4) {
-        const isEven = !isNaN(char4) && parseInt(char4) % 2 === 0;
-        const direction = isEven ? trainData.regional.fourthChar.even : trainData.regional.fourthChar.odd;
-        html += `<div class="result-item">
-            <span class="char-label">4th Character <span class="highlight">${char4}</span> - Direction:</span>
-            <div class="char-value">${direction}</div>
-        </div>`;
-        
-        // Add exceptions warning if applicable
-        if (char2 === 'F' || (char1 >= '6' && char1 <= '9')) {
-            html += `<div class="warning">
-                ⚠️ ${trainData.regional.fourthChar.exceptions.join(' ')}
+        if (char4 === '?') {
+            html += `<div class="result-item">
+                <span class="char-label">4th Character <span class="highlight">${char4}</span> - Direction:</span>
+                <div class="char-value">Unknown (entered '?')</div>
             </div>`;
+        } else {
+            const isEven = !isNaN(char4) && parseInt(char4) % 2 === 0;
+            const direction = isEven ? trainData.regional.fourthChar.even : trainData.regional.fourthChar.odd;
+            html += `<div class="result-item">
+                <span class="char-label">4th Character <span class="highlight">${char4}</span> - Direction:</span>
+                <div class="char-value">${direction}</div>
+            </div>`;
+
+            // Add exceptions warning if applicable (only when char2 and char1 are known)
+            if ((char2 === 'F' || (char1 >= '6' && char1 <= '9')) && char2 !== '?' && char1 !== '?') {
+                html += `<div class="warning">
+                    ⚠️ ${trainData.regional.fourthChar.exceptions.join(' ')}
+                </div>`;
+            }
         }
     }
 
