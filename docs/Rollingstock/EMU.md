@@ -60,8 +60,7 @@ Unlike other units, EMUs did not have rigid steel skirts to protect the wheels a
   > - Changed out some couplers, contracted to Voith Turbo for $2.94 million<sup>\[5\]</sup>.
   > - "Bogie relife", and "Bogie Relife 1" (Heavy Overhaul of QR EMU Bogie) both contracted to Downer EDI Rail and totalling $12.63 million<sup>\[5, 6\]</sup>.
 - _2025_: EMUs anticipated to commence retirement (as of August 2021)<sup>\[7\]</sup>.
-- _2025, July 1_: All EMUs retired from revenue service.
-- _2025, July 5_: EMU farewell tour. Originally 55 and 59 were scheduled to do it,however 55 had issues and only 59 performed the tour. Leaving from Roma Street, the EMU was so full it barely even had standing room and even that was only in the front carriages. SEQTA boarded in the back, and I had to race the train to Caboolture.
+- _2025, 5 July_: EMU farewell tour, marking the last EMU service, operated by EMU59, the last remaining main-line worthy EMU train. EMU59 ran on the Ipswich, Caboolture, Ferny Grove, and Shorncliffe lines<sup>\[12\]</sup>.
 
 ## Fleet Status
 
@@ -71,8 +70,8 @@ Unlike other units, EMUs did not have rigid steel skirts to protect the wheels a
 | 1979         | 11           | 14–24         | All withdrawn.                                                                |
 | 1980         | 16           | 25–40         | All withdrawn.                                                                |
 | 1980         | 20           | 60–79         | Single cab units, 60 originally numbered 80. All scrapped.                    |
-| 1983         | 16           | 41–56         | All.                                                                          |
-| 1984         | 8            | 81–88         |                                                                               |
+| 1983         | 16           | 41–56         | All withdrawn.                                                                |
+| 1984         | 8            | 81–88         | All withdrawn.                                                                |
 | 1985         | 4            | 57–59, 80     | All withdrawn.                                                                |
 
 ## Carriage Layout
@@ -91,7 +90,7 @@ Unlike other units, EMUs did not have rigid steel skirts to protect the wheels a
 
 ## Gallery
 
-There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
+There may also be other photos in the [Gallery](../Gallery/Photos.md)
 
 ![](../media/QR_EMU_ICE_Details.jpg)
 
@@ -128,5 +127,6 @@ There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
 - **\[7\]** Question on Notice No. 913 - August 31 2021: [https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf](https://documents.parliament.qld.gov.au/tableoffice/questionsanswers/2021/913-2021.pdf) archived [here](../media/Archive/913-2021.pdf)
 - **\[8\]** [https://web.archive.org/web/20220319105847/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/](https://web.archive.org/web/20220319105847/https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/) archived from [the original](https://www.reddit.com/r/brisbane/comments/tgrjny/comment/i19m44u/)
 - **\[9\]** [https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf](https://documents.parliament.qld.gov.au/committees/TSAFE/pre1999/tsafe23.pdf)
-- **\[10\]** [https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx](<https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx>)
-- **\[11\]** [https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Updated-Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx](<https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Updated-Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx>)
+- **\[10\]** [https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx](https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx)
+- **\[11\]** [https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Updated-Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx](https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/Updated-Queensland-Rail-statement-on-asbestos-present-in-an-Electric-Multiple-Unit-(EMU)-train.aspx)
+- **\[12\]** [https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/End-of-the-line-for-Queensland-Rails-beloved-Electric-Multiple-Units.aspx](https://www.queenslandrail.com.au/about%20us/Media%20Centre/Media%20Releases/Pages/End-of-the-line-for-Queensland-Rails-beloved-Electric-Multiple-Units.aspx)

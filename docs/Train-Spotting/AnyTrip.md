@@ -6,7 +6,7 @@ on the TransLink network in SEQ, as well as other regions where available, like 
 It can also provide information on the bus and train, like run number, vehicle model, and other stats. However, it is
 not perfect as it uses the run number to determine the vehicle model, only allowing it to accurately tell you if the
 train is an NGR, or _could_ be an EMU. Most of the run numbers for the suburban network
-start with either `1`, `D`, `T`, or `J`. As you can see at the [Run Numbering Guide](Run-Numbering-Guide.md), `1` and
+start with either `1`, `D`, `T`, or `J`. As you can see at the [Train Numbering Guide](Train-Numbering-Guide.md), `1` and
 `J` can be either an SMU or EMU, and SMU260s with IMU160s regularly use run numbers that start with `T` or `1`. The run
 number can be used to divine more information, however. If the 2nd digit is a `6`, then it is an EMU running
 Rosewood service.

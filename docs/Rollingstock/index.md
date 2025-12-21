@@ -11,9 +11,8 @@ QR currently operates a fleet of :
   > - 10 IMU100s (101-110)
   > - 4 IMU120s (121-124)
   > - 28 IMU160s (161-188)
-- ~30 [EMUs](./EMU.md) (01-88 exc. 01-24, 30-38, 42, 48, 52, 54, 58, 60-79, and 80) <sup>\[3\]</sup>
 
-QR also previously operated 20 [ICE-class](./ICE.md) carriages in 4-6 car formations (all withdrawn by 2021)<sup>\[4\]</sup> and are currently building 65 new six-car "[QTMP](./QTMP.md)" trains that are all planned to enter service before 2032<sup>\[5\]</sup>.
+QR also previously operated 20 [ICE-class](./ICE.md) carriages in 4-6 car formations (all withdrawn by 2021)<sup>\[4\]</sup>, as well as 88 [EMU-class](./EMU.md) carriages in 3-6 car formations (all withdrawn by 2025), and are currently building 65 new six-car "[QTMP](./QTMP.md)" trains that are all planned to enter service before 2032<sup>\[5\]</sup>.
 
 ## Sources
 

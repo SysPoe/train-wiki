@@ -70,9 +70,6 @@ Varsity Lakes Station
 - [x] QR's rollingstock
 - [ ] Tips while Lineside
 - [ ] Lineside histories
-- [ ] Good trainspotting locations - petrie
-- [ ] Good trainspotting locations - Eagle junction
-- [ ] Good trainspotting locations - Under Gympie Rd
 - [ ] Train horns
 - [ ] Things to do on the QR Netowrk
 - [ ] [https://qroti.com/](https://qroti.com/)
@@ -84,10 +81,7 @@ Varsity Lakes Station
 - [ ] Freight timetables for other than CAB-ROK
 - [ ] SEQ Timetable
 - [ ] Should I really include location data for all of my images? (in the descriptions)
-- [ ] ~~Taieri Gorge~~
-- [ ] ~~Ocean Beach railway~~
-- [ ] ~~Other heritage services in Brisbane?~~
-- [ ] Full run numbering guide
+- [x] Full run numbering guide
 - [ ] FTT for other than CABROK
 - [ ] improve FTT to show which trains are where (possibly on a map???)
 - [ ] [Brisbane Suburban System Infromation Pack](https://www.queenslandrail.com.au/business/acccess/Documents/Brisbane%20Metropolitan%20System%20Information%20Pack%20-%20Issue%203%20-%20October%202016.pdf).

@@ -46,7 +46,7 @@ u/EliraeTheBow on [Reddit](https://www.reddit.com/r/brisbane/comments/1b68fog/co
 
 ## Gallery
 
-There may also be other photos in the [Gallery](../Gallery/My-Photos.md)
+There may also be other photos in the [Gallery](../Gallery/Photos.md)
 
 ![](../media/Gallery/NGR_Cutthrough.jpg)
 
