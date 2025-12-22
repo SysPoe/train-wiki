@@ -86,7 +86,7 @@ Ontario to Québec
 - [ ] [Toronto to Windsor](https://www.viarail.ca/en/explore-our-destinations/trains/ontario-and-quebec/toronto-windsor) (4h 15min, Economy Class and Business class)
 - [ ] [Toronto to Sarnia](https://www.viarail.ca/en/explore-our-destinations/trains/ontario-and-quebec/toronto-sarnia) (4h 45min, Economy Class and Business class)
 - [ ] [Toronto to Niagara Falls](https://www.viarail.ca/en/explore-our-destinations/trains/ontario-and-quebec/toronto-niagara-falls) (2h, Economy Class)
-- [ ] [Toronto to Ottawa](https://www.viarail.ca/en/explore-our-destinations/trains/ontario-and-quebec/toronto-ottawa) (4h 25min, Economy Class and Business Class)
+- [x] [Toronto to Ottawa](https://www.viarail.ca/en/explore-our-destinations/trains/ontario-and-quebec/toronto-ottawa) (4h 25min, Economy Class and Business Class)
 - [ ] [Toronto to Montréal](https://www.viarail.ca/en/explore-our-destinations/trains/ontario-and-quebec/toronto-montreal) (5h 10min, Economy Class and Business Class)
 - [ ] [Ottawa to Québec](https://www.viarail.ca/en/explore-our-destinations/trains/ontario-and-quebec/ottawa-quebec-city) (5h 50min, Economy Class and Business Class)
 

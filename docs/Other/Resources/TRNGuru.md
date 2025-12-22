@@ -178,6 +178,7 @@ const trainData = {
       "E": "Windsor - Ferny Grove",
       "F": "Various destinations as determined by Control (0-79 Brisbane District, 80-89 Rockhampton District, 90-99 Townsville District)",
       "G": "Ormeau - Varsity Lakes",
+      "H": "Manly / Cannon Hill",
       "K": "Richlands - Springfield Central",
       "L": "Elimbah - Nambour",
       "M": "Electric Train Shed via Bowen Hills; Electric Balloon and suburban lines",

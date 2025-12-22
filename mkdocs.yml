@@ -19,7 +19,6 @@ nav:
   - Train Spotting:
       # - Train-Spotting/index.md
       - Train-Spotting/AnyTrip.md
-      - Train-Spotting/Best-Lines.md
       - Train-Spotting/Cool-Rides.md
       - Train-Spotting/Train-Numbering-Guide.md
       - Train-Spotting/Tips-While-Lineside.md
@@ -28,9 +27,6 @@ nav:
       - Gallery/Photos.md
   - Other:
       - Other/Brisbane-Day-Trips.md
-      - Other/Glossary.md
-      - Other/Honk.md
-      - Other/SEQ-Craziness.md
       - Other/Station-Abbreviations.md
       - Other/Resources.md
 

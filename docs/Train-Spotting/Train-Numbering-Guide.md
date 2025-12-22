@@ -43,6 +43,7 @@ Destination range.
 &nbsp;&nbsp;&nbsp; - 80-89 Rockhampton District (3rd/4th char) <br>
 &nbsp;&nbsp;&nbsp; - 90-99 Townsville District (3rd/4th char) <br>
 `G` - Ormeau - Varsity Lakes <br>
+`H` - Manly / Cannon Hill <br>
 `K` - Richlands - Springfield Central <br>
 `L` - Elimbah - Nambour <br>
 `M` - Electric Train Shed via Bowen Hills; Electric Balloon and suburban lines <br>
